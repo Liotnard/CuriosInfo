@@ -34,11 +34,11 @@ Implémentation technique demandée
 - Remplacer l’unique <TopicScatterPlot> par deux composants (ex: <MediaScatterPlot variant="powerSociety" .../> et <MediaScatterPlot variant="identityEvolution" .../>)
 - Ou bien garder TopicScatterPlot mais le rendre paramétrable par variant.
 - Centraliser l’état de survol/sélection dans le parent :
-  - const [activeMediaId, setActiveMediaId] = useState<string | null>(null)
-  - const [lockedMediaId, setLockedMediaId] = useState<string | null>(null)
-  - id effectif = lockedMediaId ?? activeMediaId
+  - const [activeactorId, setActiveactorId] = useState<string | null>(null)
+  - const [lockedactorId, setLockedactorId] = useState<string | null>(null)
+  - id effectif = lockedactorId ?? activeactorId
   - passer onHover/onLeave/onPointClick au plot
-- Chaque point doit porter media.id et les charts doivent réagir au même mediaId actif.
+- Chaque point doit porter media.id et les charts doivent réagir au même actorId actif.
 - Prévoir un mapping de coordonnées par media :
   - media.positions.powerSociety { x, y }
   - media.positions.identityEvolution { x, y }

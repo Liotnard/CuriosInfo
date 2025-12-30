@@ -47,14 +47,14 @@ MODELE DE DONNEES (Prisma)
   createdAt, updatedAt
 - Article:
   id (uuid)
-  mediaId (fk)
+  actorId (fk)
   url (unique)
   urlHash (unique)
   title (string)
   excerpt (string nullable)
   publishedAt (datetime)
   createdAt
-  index(mediaId, publishedAt)
+  index(actorId, publishedAt)
 - Topic (Sujet):
   id (uuid)
   slug (unique)
