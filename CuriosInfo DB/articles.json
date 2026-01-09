@@ -856,5 +856,26 @@
     "excerpt": null,
     "published_at": "2025-10-08T00:00:00.000Z",
     "created_at": "2025-12-26T16:47:01.744Z"
+  },
+    {
+    "id": 79,
+    "topicId": 2,
+    "actorId": 12,
+    "url": "https://example.com/controversies/article-78",
+    "urlHash": "000000000000000000000000000000000000000000000000000000000000004e",
+    "title": "Non, on veut des comptes clairs et précis",
+    "excerpt": null,
+    "published_at": "2025-10-08T00:00:00.000Z",
+    "created_at": "2025-12-26T16:47:01.744Z"
+  },  {
+    "id": 80,
+    "topicId": 2,
+    "actorId": 15,
+    "url": "https://example.com/controversies/article-78",
+    "urlHash": "000000000000000000000000000000000000000000000000000000000000004e",
+    "title": "Oui, la transparence est en marche",
+    "excerpt": null,
+    "published_at": "2025-10-08T00:00:00.000Z",
+    "created_at": "2025-12-26T16:47:01.744Z"
   }
 ]
