@@ -2,7 +2,7 @@
   {
     "id": 1,
     "topicId": 1,
-    "actorId": 12,
+    "actorId": 1,
     "url": "https://example.com/le-monde/article-1",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000001",
     "title": "Dossier : comprendre la réforme - Le Monde",
@@ -13,7 +13,7 @@
   {
     "id": 2,
     "topicId": 1,
-    "actorId": 12,
+    "actorId": 2,
     "url": "https://example.com/le-monde/article-2",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000002",
     "title": "Réforme des retraites : les enjeux économiques - Le Monde",
@@ -24,7 +24,7 @@
   {
     "id": 3,
     "topicId": 1,
-    "actorId": 12,
+    "actorId": 3,
     "url": "https://example.com/le-monde/article-3",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000003",
     "title": "Débat : perspectives divergentes - Le Monde",
@@ -35,7 +35,7 @@
   {
     "id": 4,
     "topicId": 1,
-    "actorId": 12,
+    "actorId": 4,
     "url": "https://example.com/le-monde/article-4",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000004",
     "title": "Dossier : comprendre la réforme - Le Monde",
@@ -57,7 +57,7 @@
   {
     "id": 6,
     "topicId": 1,
-    "actorId": 13,
+    "actorId": 5,
     "url": "https://example.com/le-figaro/article-6",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000006",
     "title": "Société : réactions des syndicats - Le Figaro",
@@ -68,7 +68,7 @@
   {
     "id": 7,
     "topicId": 1,
-    "actorId": 13,
+    "actorId": 6,
     "url": "https://example.com/le-figaro/article-7",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000007",
     "title": "Société : réactions des syndicats - Le Figaro",
@@ -79,7 +79,7 @@
   {
     "id": 8,
     "topicId": 1,
-    "actorId": 13,
+    "actorId": 7,
     "url": "https://example.com/le-figaro/article-8",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000008",
     "title": "Analyse politique : les positions des partis - Le Figaro",
@@ -101,7 +101,7 @@
   {
     "id": 10,
     "topicId": 1,
-    "actorId": 14,
+    "actorId": 8,
     "url": "https://example.com/liberation/article-10",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000000a",
     "title": "Gouvernement français : nouvelles mesures en débat - Libération",
@@ -112,7 +112,7 @@
   {
     "id": 11,
     "topicId": 1,
-    "actorId": 14,
+    "actorId": 9,
     "url": "https://example.com/liberation/article-11",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000000b",
     "title": "Débat : perspectives divergentes - Libération",
@@ -123,7 +123,7 @@
   {
     "id": 12,
     "topicId": 1,
-    "actorId": 14,
+    "actorId": 10,
     "url": "https://example.com/liberation/article-12",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000000c",
     "title": "Gouvernement français : nouvelles mesures en débat - Libération",
@@ -145,7 +145,7 @@
   {
     "id": 14,
     "topicId": 1,
-    "actorId": 15,
+    "actorId": 11,
     "url": "https://example.com/france-24/article-14",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000000e",
     "title": "Réforme des retraites : les enjeux économiques - France 24",
@@ -156,7 +156,7 @@
   {
     "id": 15,
     "topicId": 1,
-    "actorId": 15,
+    "actorId": 12,
     "url": "https://example.com/france-24/article-15",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000000f",
     "title": "Dossier : comprendre la réforme - France 24",
@@ -695,7 +695,7 @@
   {
     "id": 64,
     "topicId": 1,
-    "actorId": 27,
+    "actorId": 30,
     "url": "https://example.com/idriss-aberkane/article-64",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000040",
     "title": "Analyse critique de la situation - Idriss Aberkane",
@@ -717,7 +717,7 @@
   {
     "id": 66,
     "topicId": 1,
-    "actorId": 28,
+    "actorId": 31,
     "url": "https://example.com/francois-begaudeau/article-66",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000042",
     "title": "Commentaire sur les développements - François Bégaudeau",
@@ -728,7 +728,7 @@
   {
     "id": 67,
     "topicId": 1,
-    "actorId": 28,
+    "actorId": 32,
     "url": "https://example.com/francois-begaudeau/article-67",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000043",
     "title": "Perspective personnelle et engagée - François Bégaudeau",
@@ -739,7 +739,7 @@
   {
     "id": 68,
     "topicId": 1,
-    "actorId": 28,
+    "actorId": 33,
     "url": "https://example.com/francois-begaudeau/article-68",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000044",
     "title": "Commentaire sur les développements - François Bégaudeau",
@@ -750,7 +750,7 @@
   {
     "id": 69,
     "topicId": 1,
-    "actorId": 28,
+    "actorId": 34,
     "url": "https://example.com/francois-begaudeau/article-69",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000045",
     "title": "Réflexion sur les enjeux - François Bégaudeau",
@@ -772,7 +772,7 @@
   {
     "id": 71,
     "topicId": 1,
-    "actorId": 29,
+    "actorId": 35,
     "url": "https://example.com/raphael-glucksmann/article-71",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000047",
     "title": "Tribune d'opinion - Raphaël Glucksmann",
@@ -783,7 +783,7 @@
   {
     "id": 72,
     "topicId": 1,
-    "actorId": 29,
+    "actorId": 36,
     "url": "https://example.com/raphael-glucksmann/article-72",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000048",
     "title": "Commentaire sur les développements - Raphaël Glucksmann",
@@ -794,7 +794,7 @@
   {
     "id": 73,
     "topicId": 1,
-    "actorId": 29,
+    "actorId": 37,
     "url": "https://example.com/raphael-glucksmann/article-73",
     "urlHash": "0000000000000000000000000000000000000000000000000000000000000049",
     "title": "Décryptage de la question - Raphaël Glucksmann",
@@ -805,7 +805,7 @@
   {
     "id": 74,
     "topicId": 1,
-    "actorId": 30,
+    "actorId": 41,
     "url": "https://example.com/controversies/article-74",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000004a",
     "title": "Perspective personnelle et engagée - Controverses",
@@ -816,7 +816,7 @@
   {
     "id": 75,
     "topicId": 1,
-    "actorId": 30,
+    "actorId": 40,
     "url": "https://example.com/controversies/article-75",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000004b",
     "title": "Commentaire sur les développements - Controverses",
@@ -827,7 +827,7 @@
   {
     "id": 76,
     "topicId": 1,
-    "actorId": 30,
+    "actorId": 39,
     "url": "https://example.com/controversies/article-76",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000004c",
     "title": "Décryptage de la question - Controverses",
@@ -838,7 +838,7 @@
   {
     "id": 77,
     "topicId": 1,
-    "actorId": 30,
+    "actorId": 38,
     "url": "https://example.com/controversies/article-77",
     "urlHash": "000000000000000000000000000000000000000000000000000000000000004d",
     "title": "Réflexion sur les enjeux - Controverses",
