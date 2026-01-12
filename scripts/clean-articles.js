@@ -6,8 +6,8 @@ const raw = fs.readFileSync(p, 'utf8');
 let arr = JSON.parse(raw);
 arr = arr.map(a => {
   const copy = { ...a };
-  delete copy.mediaName;
-  delete copy.mediaType;
+  delete copy.actorName;
+  delete copy.actor_type;
   return copy;
 });
 fs.writeFileSync(p, JSON.stringify(arr, null, 2), 'utf8');

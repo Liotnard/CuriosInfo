@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Journalistic / Editorial Palette - Crisp, High Contrast, Sophisticated */
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+
+  --background: 0 0% 98%;      /* Very light gray/white paper feel */
+  --foreground: 240 10% 3.9%;  /* Almost black text */
+
+  --card: 0 0% 100%;
+  --card-foreground: 240 10% 3.9%;
+ 
+  --popover: 0 0% 100%;
+  --popover-foreground: 240 10% 3.9%;
+ 
+  --primary: 240 5.9% 10%;     /* Dark charcoal for primary actions */
+  --primary-foreground: 0 0% 98%;
+ 
+  --secondary: 240 4.8% 95.9%; /* Light gray for secondary elements */
+  --secondary-foreground: 240 5.9% 10%;
+ 
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
+ 
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+ 
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+
+  --border: 240 5.9% 90%;
+  --input: 240 5.9% 90%;
+  --ring: 240 5.9% 10%;
+ 
+  --radius: 0.3rem; /* Slightly sharper corners for that newspaper feel */
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    @apply font-bold tracking-tight text-primary;
+  }
+
+  /* Specific typographic utilities */
+  .font-display {
+    font-family: var(--font-serif);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Custom chart tooltips */
+.recharts-tooltip-wrapper {
+  @apply !z-50;
+}

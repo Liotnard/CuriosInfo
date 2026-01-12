@@ -1,0 +1,14 @@
+node_modules
+**/node_modules
+dist
+.DS_Store
+server/public
+*.tar.gz
+.env
+.env.*
+*.log
+.turbo/
+.cache/
+**/.DS_Store
+**/dist
+**/build
