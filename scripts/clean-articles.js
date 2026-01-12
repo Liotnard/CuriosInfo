@@ -7,7 +7,7 @@ let arr = JSON.parse(raw);
 arr = arr.map(a => {
   const copy = { ...a };
   delete copy.actorName;
-  delete copy.actorType;
+  delete copy.actor_type;
   return copy;
 });
 fs.writeFileSync(p, JSON.stringify(arr, null, 2), 'utf8');
