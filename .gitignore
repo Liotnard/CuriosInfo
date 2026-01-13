@@ -12,3 +12,5 @@ server/public
 **/.DS_Store
 **/dist
 **/build
+assets/.config/
+assets/.local/

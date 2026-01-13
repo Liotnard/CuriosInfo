@@ -172,7 +172,7 @@ export function MediaCartography({ actorInTopic, articles }: MediaCartographyPro
                     : (type === 'personnalité' || type === 'personnalite') ? 'hsl(0, 80%, 50%)'
                       : (type === 'audiovisuel' || type === 'audiovisual') ? 'hsl(197, 88%, 48%)'
                         : (type === 'presse' || type === 'press') ? 'hsl(44, 79%, 46%)'
-                          : (type === 'independant' || type === 'indépendant') ? 'hsl(300, 80%, 50%)'
+                          : (type === 'independants' || type === 'indépendant') ? 'hsl(300, 80%, 50%)'
                             : 'hsl(210 8% 45%)';
 
                   return (

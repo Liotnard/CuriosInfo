@@ -1,5 +1,9 @@
+// everything commented below is old code kept for reference, while "//routes patch" is new code
+ 
+
 import { z } from 'zod';
-import { insertTopicSchema, insertActorSchema, actor, topics, articles } from './schema';
+//import { insertTopicSchema, insertActorSchema, actor, topics, articles } from './schema';
+import { ActorSchema, TopicSchema, TopicWithDetailsSchema, ArticleWithActorSchema, CreateTopicRequestSchema, UpdateTopicRequestSchema, UpdateActorRequestSchema, IngestResultSchema, } from "./contracts"; //routes patch
 
 // ============================================
 // SHARED ERROR SCHEMAS
@@ -30,26 +34,26 @@ export const api = {
       method: 'GET' as const,
       path: '/api/topics',
       responses: {
-        200: z.array(z.custom<typeof topics.$inferSelect>()),
+        200: z.array(TopicSchema), //z.array(z.custom<typeof topics.$inferSelect>()),
       },
     },
     get: {
       method: 'GET' as const,
       path: '/api/topics/:slug',
       responses: {
-        200: z.custom<typeof topics.$inferSelect & { 
+        200: TopicWithDetailsSchema /*z.custom<typeof topics.$inferSelect & { 
           articles: (typeof articles.$inferSelect & { actor: typeof actor.$inferSelect })[],
           actorInTopic: typeof actor.$inferSelect[]
-        }>(),
+        }>()*/,
         404: errorSchemas.notFound,
       },
     },
     create: {
       method: 'POST' as const,
       path: '/api/topics',
-      input: insertTopicSchema,
+      input: CreateTopicRequestSchema, //insertTopicSchema,
       responses: {
-        201: z.custom<typeof topics.$inferSelect>(),
+        201: TopicSchema, //z.custom<typeof topics.$inferSelect>(),
         400: errorSchemas.validation,
         401: errorSchemas.unauthorized,
       },
@@ -57,9 +61,9 @@ export const api = {
     update: {
       method: 'PATCH' as const,
       path: '/api/topics/:id',
-      input: insertTopicSchema.partial(),
+      input: UpdateTopicRequestSchema, //insertTopicSchema.partial(),
       responses: {
-        200: z.custom<typeof topics.$inferSelect>(),
+        200: TopicSchema, //z.custom<typeof topics.$inferSelect>(),
         400: errorSchemas.validation,
         401: errorSchemas.unauthorized,
         404: errorSchemas.notFound,
@@ -101,15 +105,15 @@ export const api = {
       method: 'GET' as const,
       path: '/api/actor',
       responses: {
-        200: z.array(z.custom<typeof actor.$inferSelect>()),
+        200: z.array(ActorSchema), //z.array(z.custom<typeof actor.$inferSelect>()),
       },
     },
     update: {
       method: 'PATCH' as const,
       path: '/api/actor/:id',
-      input: insertActorSchema.partial(),
+      input: UpdateActorRequestSchema, //insertActorSchema.partial(),
       responses: {
-        200: z.custom<typeof actor.$inferSelect>(),
+        200: ActorSchema, //z.custom<typeof actor.$inferSelect>(),
         401: errorSchemas.unauthorized,
         404: errorSchemas.notFound,
       },
@@ -125,7 +129,7 @@ export const api = {
         actorId: z.coerce.number().optional(),
       }),
       responses: {
-        200: z.array(z.custom<typeof articles.$inferSelect & { actor: typeof actor.$inferSelect }>()),
+        200: z.array(ArticleWithActorSchema), //z.array(z.custom<typeof articles.$inferSelect & { actor: typeof actor.$inferSelect }>()),
         401: errorSchemas.unauthorized,
       },
     },
@@ -133,11 +137,11 @@ export const api = {
       method: 'POST' as const,
       path: '/api/admin/ingest',
       responses: {
-        200: z.object({
+        200: IngestResultSchema, /*z.object({
           newArticles: z.number(),
           errors: z.number(),
           details: z.array(z.string()),
-        }),
+        }),*/
         401: errorSchemas.unauthorized,
       },
     },
@@ -147,11 +151,14 @@ export const api = {
 export function buildUrl(path: string, params?: Record<string, string | number>): string {
   let url = path;
   if (params) {
-    Object.entries(params).forEach(([key, value]) => {
+    for (const [key, value] of Object.entries(params)) {
+      url = url.replace(`:${key}`, String(value));
+    }
+    /*Object.entries(params).forEach(([key, value]) => {
       if (url.includes(`:${key}`)) {
         url = url.replace(`:${key}`, String(value));
       }
-    });
+    });*/
   }
   return url;
 }

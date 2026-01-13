@@ -54,7 +54,7 @@ export function ArticleCard({ article, actor }: ArticleCardProps) {
       case 'influenceur': return 'Influenceur';
       case 'presse éditoriale': return 'Presse éditoriale';
       case 'audiovisuel': return 'TV & Radio';
-      case 'independant' : return 'Presse indépendante';
+      case 'independants' : return 'Presse indépendante';
       case 'indépendant': return 'Presse indépendante';
       default: return 'inconnu';
     }

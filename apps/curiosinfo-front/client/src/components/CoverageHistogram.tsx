@@ -25,15 +25,15 @@ function normalizeType(t?: string | null) {
   if (s === "audiovisual") return "audiovisuel";
   if (s === "influencer") return "influenceur";
   if (s === "personnalite") return "personnalité";
-  if (s === "indépendant") return "independant";
+  if (s === "indépendant") return "independants";
   return s;
 }
 
 function typeLabel(t: string) {
-  if (t === "presse") return "Presse";
+  if (t === "presse") return "Pr. éditoriale";
   if (t === "audiovisuel") return "TV / Radio";
-  if (t === "independant") return "Indépendant";
-  if (t === "personnalité") return "Personnalités";
+  if (t === "independants") return "Pr. Indépendante";
+  if (t === "personnalité") return "Pe. politiques";
   if (t === "influenceur") return "Influenceurs";
   return t;
 }
@@ -44,7 +44,7 @@ function typeColor(typeRaw: string) {
     : (t === "personnalité") ? "hsl(0, 80%, 50%)"
       : (t === "audiovisuel") ? "hsl(197, 88%, 48%)"
         : (t === "presse") ? "hsl(44, 79%, 46%)"
-          : (t === "independant") ? "hsl(300, 80%, 50%)"
+          : (t === "independants") ? "hsl(300, 80%, 50%)"
             : "hsl(210 8% 45%)";
 }
 
