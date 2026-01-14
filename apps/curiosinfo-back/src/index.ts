@@ -90,14 +90,12 @@ if (process.env.NODE_ENV === "production") {
   // this serves both the API and the client.
   // It is the only port that is not firewalled.
   const port = parseInt(process.env.PORT || "5000", 10);
-  httpServer.listen(
-    {
-      port,
-      host: "0.0.0.0",
-      reusePort: true,
-    },
-    () => {
-      log(`serving on port ${port}`);
-    },
-  );
+  if (process.platform === "win32") {
+    httpServer.listen(port, () => log(`serving on port ${port}`));
+  } else {
+    httpServer.listen({ port, host: "0.0.0.0", reusePort: true }, () =>
+      log(`serving on port ${port}`),
+    );
+  }
+
 })();
