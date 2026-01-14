@@ -29,8 +29,8 @@ export const topics = pgTable("topics", {
   title: text("title").notNull(),
   summary: text("summary"), // Synthèse froide
   angleNote: text("angle_note"), // Micro-analyse
-  startAt: timestamp("start_at"),
-  endAt: timestamp("end_at"),
+  start_at: timestamp("start_at"),
+  end_at: timestamp("end_at"),
   created_at: timestamp("created_at").defaultNow().notNull(),
   updated_at: timestamp("updated_at").defaultNow().notNull(),
 });

@@ -1,8 +1,7 @@
-/*legacy code kept for reference
 import type { Express } from "express";
 import type { Server } from "http";
 import { storage } from "./storage";
-import { api, errorSchemas } from "@shared/routes";
+import { api, errorSchemas } from "../../curiosinfo-front/shared/routes";
 import { z } from "zod";
 import crypto from 'crypto';
 import Parser from 'rss-parser';
@@ -142,8 +141,7 @@ export async function registerRoutes(
           const exists = await storage.getArticleByHash(hash);
           if (exists) continue;
 
-          /* old code
-          await storage.createArticle({
+          /*await storage.createArticle({
             actorId: actor.id,
             url: url,
             urlHash: hash,
@@ -151,7 +149,7 @@ export async function registerRoutes(
             excerpt: item.contentSnippet || item.content || "",
             published_at: new Date(item.pubDate),
           });*/
-          /*newArticles++;
+          newArticles++;
         }
       } catch (e: any) {
         errors++;
@@ -165,4 +163,4 @@ export async function registerRoutes(
 
   return httpServer;
 }
-*/
+

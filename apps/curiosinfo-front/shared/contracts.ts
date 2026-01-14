@@ -32,8 +32,8 @@ export type Topic = {
   title: string;
   summary?: string | null;
   angleNote?: string | null;
-  startAt?: string | null;
-  endAt?: string | null;
+  start_at?: string | null;
+  end_at?: string | null;
 };
 
 export type ArticleWithActor = Article & { actor: Actor };
@@ -64,8 +64,8 @@ export const TopicSchema = z.object({
   title: z.string(),
   summary: z.string().nullable().optional(),
   angleNote: z.string().nullable().optional(),
-  startAt: z.string().nullable().optional(),
-  endAt: z.string().nullable().optional(),
+  start_at: z.string().nullable().optional(),
+  end_at: z.string().nullable().optional(),
 });
 
 export const ArticleSchema = z.object({
@@ -97,8 +97,8 @@ export const CreateTopicRequestSchema = z.object({
   title: z.string(),
   summary: z.string().nullable().optional(),
   angleNote: z.string().nullable().optional(),
-  startAt: z.string().nullable().optional(),
-  endAt: z.string().nullable().optional(),
+  start_at: z.date().nullable().optional(),
+  end_at: z.date().nullable().optional(),
 });
 
 export const UpdateTopicRequestSchema = CreateTopicRequestSchema.partial();

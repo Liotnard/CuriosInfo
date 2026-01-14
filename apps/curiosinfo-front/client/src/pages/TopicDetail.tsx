@@ -60,8 +60,8 @@ export default function TopicDetail() {
               Analyse
             </Badge>
             <span>
-              {topic.startAt ? format(new Date(topic.startAt), "d MMMM yyyy", { locale: fr }) : ""}
-              {topic.endAt && ` - ${format(new Date(topic.endAt), "d MMMM yyyy", { locale: fr })}`}
+              {topic.start_at ? format(new Date(topic.start_at), "d MMMM yyyy", { locale: fr }) : ""}
+              {topic.end_at && ` - ${format(new Date(topic.end_at), "d MMMM yyyy", { locale: fr })}`}
             </span>
           </div>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-display font-black text-primary mb-6 leading-tight max-w-4xl">

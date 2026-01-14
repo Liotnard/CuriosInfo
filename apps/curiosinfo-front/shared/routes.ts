@@ -1,4 +1,4 @@
-// everything commented below is old code kept for reference, while "//routes patch" is new code
+// everything commented below is legacy, while "//routes patch" is new code
  
 
 import { z } from 'zod';

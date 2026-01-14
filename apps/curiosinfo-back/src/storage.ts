@@ -1,12 +1,21 @@
-/*import fs from "fs";
+import fs from "fs";
 import path from "path";
 import {
-  actor, articles, topics, //topicArticles,
-  type Actor, type InsertActor, type UpdateActorRequest,
-  type Article, type InsertArticle,
-  type Topic, type InsertTopic, type UpdateTopicRequest, type TopicWithDetails,
-  type ArticleWithActor
-} from "@shared/schema";
+  actor,
+  articles,
+  topics,
+  type Actor,
+  type InsertActor,
+  type UpdateActorRequest,
+  type Article,
+  type InsertArticle,
+  type Topic,
+  type InsertTopic,
+  type UpdateTopicRequest,
+  type TopicWithDetails,
+  type ArticleWithActor,
+} from "../db/schema";
+
 import { eq, like, desc, and, inArray, sql } from "drizzle-orm";
 
 export interface IStorage {
@@ -384,4 +393,3 @@ if (process.env.USE_JSON_DB === "true" || !process.env.DATABASE_URL) {
 }
 
 export const storage = storageImpl;
-*/

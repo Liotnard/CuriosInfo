@@ -42,7 +42,7 @@ export default function Home() {
                   <CardHeader className="pb-3">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
                       <CalendarDays className="w-4 h-4" />
-                      {topic.startAt ? format(new Date(topic.startAt), "d MMM yyyy", { locale: fr }) : "En cours"}
+                      {topic.start_at ? format(new Date(topic.start_at), "d MMM yyyy", { locale: fr }) : "En cours"}
                     </div>
                     <h2 className="text-2xl font-display font-bold group-hover:text-primary transition-colors">
                       {topic.title}

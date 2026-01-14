@@ -29,8 +29,8 @@ export const topics = pgTable("topics", {
   title: text("title").notNull(),
   summary: text("summary"),
   angleNote: text("angle_note"),
-  startAt: timestamp("start_at"),
-  endAt: timestamp("end_at"),
+  start_at: timestamp("start_at"),
+  end_at: timestamp("end_at"),
   created_at: timestamp("created_at").defaultNow().notNull(),
   updated_at: timestamp("updated_at").defaultNow().notNull(),
 });
@@ -84,6 +84,17 @@ export const insertArticleSchema = createInsertSchema(articles).omit({
   id: true,
   created_at: true,
 });
+
+// Request types
+export type CreateTopicRequest = InsertTopic;
+export type UpdateTopicRequest = Partial<InsertTopic>;
+export type UpdateActorRequest = Partial<InsertActor>;
+// Extended Types for Responses
+export type ArticleWithActor = Article & { actor: Actor };
+export type TopicWithDetails = Topic & { 
+  //topicArticles: TopicArticle[];
+  actorInTopic: Actor[]; // Actor that have articles in this topic
+};
 
 // =======================
 // TYPES (SERVER SIDE)

@@ -29,7 +29,7 @@ function CreateTopicDialog() {
     const summary = formData.get("summary") as string;
 
     mutate(
-      { title, slug, summary, angleNote: "", startAt: new Date(), endAt: null },
+      { title, slug, summary, angleNote: "", start_at: new Date(), end_at: null },
       {
         onSuccess: () => {
           setOpen(false);
