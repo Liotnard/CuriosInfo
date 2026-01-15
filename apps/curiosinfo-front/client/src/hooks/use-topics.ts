@@ -1,6 +1,8 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api, buildUrl } from "@shared/routes";
-import { InsertTopic, InsertArticle, Article, Topic } from "@shared/schema";
+//import { InsertTopic, InsertArticle, Article, Topic } from "@shared/schema";
+import type { Topic, TopicWithDetails } from "@shared/contracts";
+import type { z } from "zod";
 import { useAdminToken } from "./use-admin-token";
 
 // Custom fetch wrapper that injects admin token
@@ -44,10 +46,13 @@ export function useTopic(slug: string) {
   });
 }
 
+type CreateTopicInput = z.infer<typeof api.topics.create.input>;
+
 export function useCreateTopic() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async (data: InsertTopic) => {
+    //mutationFn: async (data: InsertTopic) => {
+    mutationFn: async (data: CreateTopicInput) => {
       const res = await fetchWithAuth(api.topics.create.path, {
         method: api.topics.create.method,
         headers: { "Content-Type": "application/json" },
@@ -59,10 +64,13 @@ export function useCreateTopic() {
   });
 }
 
+type UpdateTopicInput = z.infer<typeof api.topics.update.input>;
+
 export function useUpdateTopic() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async ({ id, ...data }: Partial<InsertTopic> & { id: number }) => {
+    //mutationFn: async ({ id, ...data }: Partial<InsertTopic> & { id: number }) => {
+    mutationFn: async ({ id, ...data }: UpdateTopicInput & { id: number }) => {
       const url = buildUrl(api.topics.update.path, { id });
       const res = await fetchWithAuth(url, {
         method: api.topics.update.method,

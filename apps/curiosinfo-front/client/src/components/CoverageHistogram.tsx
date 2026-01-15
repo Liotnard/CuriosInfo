@@ -10,7 +10,8 @@ import {
 } from "recharts";
 import { Badge } from "@/components/ui/badge";
 import { motion } from "framer-motion";
-import type { Actor } from "@shared/schema";
+//import type { Actor } from "@shared/schema";
+import type { Actor } from "@shared/contracts";
 
 type TopicArticleData = { actorId: number };
 

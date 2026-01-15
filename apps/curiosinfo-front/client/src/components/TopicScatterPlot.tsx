@@ -1,6 +1,7 @@
 import { useMemo } from 'react';
 import { ResponsiveContainer, ScatterChart, Scatter, XAxis, YAxis, ZAxis, Tooltip, Cell, ReferenceLine, Label } from 'recharts';
-import { Actor } from "@shared/schema";
+//import { Actor } from "@shared/schema";
+import { Actor } from "@shared/contracts";
 import { Card } from "@/components/ui/card";
 
 interface TopicScatterPlotProps {

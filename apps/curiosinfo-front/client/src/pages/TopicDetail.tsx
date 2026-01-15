@@ -7,7 +7,7 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { Separator } from "@/components/ui/separator";
 import { Badge } from "@/components/ui/badge";
 import { format } from "date-fns";
-import { fr } from "date-fns/locale";
+import { ar, fr } from "date-fns/locale";
 import { motion } from "framer-motion";
 import { CoverageHistogram } from "@/components/CoverageHistogram";
 import { useActor } from "@/hooks/use-media";
@@ -129,8 +129,10 @@ export default function TopicDetail() {
                 transition={{ delay: 0.1 * Math.min(index, 10) }}
               >
                 <ArticleCard
-                  article={{ ...article, published_at: article.published_at || article.created_at }}
-                  actor={topic.actorInTopic?.find((m) => m.id === article.actorId)}
+                  /*article={{ ...article, published_at: article.published_at || article.created_at }}
+                  actor={topic.actorInTopic?.find((m) => m.id === article.actorId)}*/
+                  article={article}
+                  actor={article.actor ?? topic.actorInTopic?.find((m) => m.id === article.actorId)}
                 />
               </motion.div>
             ))}

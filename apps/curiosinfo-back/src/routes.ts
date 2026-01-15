@@ -30,20 +30,80 @@ export async function registerRoutes(
     res.json(topics);
   });
 
+function normalizeActor(a: any) { // helper with synthaxe to camelCase
+      if (!a) return null;
+      return {
+        id: a.id,
+        name: a.name,
+        slug: a.slug,
+        actor_type: a.actor_type,
+        feed_url: a.feed_url,
+        created_at: a.created_at,
+        updated_at: a.updated_at,
+        confidence: a.confidence ?? null,
+
+        // mapping snake_case -> camelCase
+        libAutor: a.libAutor ?? a.lib_autor ?? 0,
+        indivCol: a.indivCol ?? a.indiv_col ?? 0,
+        natioMon: a.natioMon ?? a.natio_mon ?? 0,
+        progCons: a.progCons ?? a.prog_cons ?? 0,
+      };
+    }
   // Get Topic Detail
   app.get(api.topics.get.path, async (req, res) => {
     const slug = req.params.slug;
     const topic = await storage.getTopicBySlug(slug);
-    if (!topic) {
-      return res.status(404).json({ message: "Topic not found" });
-    }
-    res.json(topic);
+
+    if (!topic) return res.status(404).json({ message: "Topic not found" });
+    const rawArticles = (topic as any).articles ?? (topic as any).topicArticles ?? [];
+
+    const actorInTopic = ((topic as any).actorInTopic ?? []).map(normalizeActor);
+    const actorById = new Map<number, any>(actorInTopic.map((a: any) => [a.id, a]));
+    /*const actorInTopic = (topic as any).actorInTopic ?? [];
+    // index rapide
+    const actorById = new Map<number, any>(actorInTopic.map((a: any) => [a.id, a]));*/ // legacy replace by normalizeActor
+
+    // normalise + embed actor
+    const articles = rawArticles.map((a: any) => ({
+      id: a.id,
+      topicId: a.topicId ?? a.topic_id,
+      actorId: a.actorId ?? a.actor_id,
+      url: a.url,
+      urlHash: a.urlHash ?? a.url_hash,
+      title: a.title,
+      excerpt: a.excerpt ?? null,
+      published_at: a.published_at ?? a.publishedAt,
+      created_at: a.created_at ?? a.createdAt,
+      actor: actorById.get(a.actorId ?? a.actor_id) ?? null,
+    }));
+
+    const normalized = {
+      id: topic.id,
+      slug: topic.slug,
+      title: topic.title,
+      summary: topic.summary ?? null,
+      angleNote: (topic as any).angleNote ?? (topic as any).angle_note ?? null,
+
+      // tu as choisi snake_case dans l’API
+      start_at: (topic as any).start_at ?? (topic as any).startAt ?? null,
+      end_at: (topic as any).end_at ?? (topic as any).endAt ?? null,
+      created_at: (topic as any).created_at ?? (topic as any).createdAt ?? null,
+      updated_at: (topic as any).updated_at ?? (topic as any).updatedAt ?? null,
+
+      articles,
+      actorInTopic,
+    };
+
+    res.json(normalized);
+
   });
 
   // List Actor
   app.get(api.actor.list.path, async (req, res) => {
     const actorList = await storage.getAllActor();
-    res.json(actorList);
+    //res.json(actorList); legacy
+    res.json(actorList.map(normalizeActor));
+
   });
 
   // === ADMIN ROUTES ===

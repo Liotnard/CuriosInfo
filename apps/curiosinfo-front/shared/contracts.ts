@@ -75,8 +75,8 @@ export const ArticleSchema = z.object({
   url: z.string().url(),
   title: z.string(),
   excerpt: z.string().nullable().optional(),
-  published_at: z.string(), // ISO date string
-  created_at: z.string().optional(),
+  published_at: z.coerce.string(), // ISO date string
+  created_at: z.coerce.string().optional(),
 });
 
 export const ArticleWithActorSchema = ArticleSchema.extend({
@@ -97,8 +97,8 @@ export const CreateTopicRequestSchema = z.object({
   title: z.string(),
   summary: z.string().nullable().optional(),
   angleNote: z.string().nullable().optional(),
-  start_at: z.date().nullable().optional(),
-  end_at: z.date().nullable().optional(),
+  start_at: z.coerce.date().nullable().optional(),
+  end_at: z.coerce.date().nullable().optional(),
 });
 
 export const UpdateTopicRequestSchema = CreateTopicRequestSchema.partial();

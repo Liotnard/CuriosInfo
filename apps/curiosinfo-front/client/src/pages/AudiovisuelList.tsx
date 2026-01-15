@@ -105,10 +105,10 @@ export default function AudiovisuelList() {
                 key={actor.id}
                 name={actor.name}
                 feed_url={actor.feed_url}
-                libAutor={actor.lib_autor}
-                indivCol={actor.indiv_col}
-                natioMon={actor.natio_mon}
-                progCons={actor.prog_cons}
+                libAutor={actor.libAutor}
+                indivCol={actor.indivCol}
+                natioMon={actor.natioMon}
+                progCons={actor.progCons}
               />
             ))}
           </div>

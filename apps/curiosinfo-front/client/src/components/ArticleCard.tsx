@@ -1,4 +1,5 @@
-import { Article, Actor } from "@shared/schema";
+//import { Article, Actor } from "@shared/schema";
+import { Article, Actor } from "@shared/contracts";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
 import { ExternalLink } from "lucide-react";

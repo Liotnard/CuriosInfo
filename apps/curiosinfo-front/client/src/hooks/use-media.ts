@@ -1,6 +1,8 @@
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api, buildUrl } from "@shared/routes";
-import { InsertActor } from "@shared/schema";
+//import { InsertActor } from "@shared/schema";
+import type { Actor } from "@shared/contracts";
+import type { z } from "zod";
 
 async function fetchWithAuth(url: string, options: RequestInit = {}) {
   const token = localStorage.getItem('admin_token');
@@ -38,10 +40,13 @@ export function useActor() {
   });
 }
 
+type UpdateActorInput = z.infer<typeof api.actor.update.input>;
+
 export function useUpdateActor() {
   const queryClient = useQueryClient();
   return useMutation({
-    mutationFn: async ({ id, ...data }: Partial<InsertActor> & { id: number }) => {
+    //mutationFn: async ({ id, ...data }: Partial<InsertActor> & { id: number }) => {
+    mutationFn: async ({ id, ...data }: UpdateActorInput & { id: number }) => {
       const url = buildUrl(api.actor.update.path, { id });
       const res = await fetchWithAuth(url, {
         method: api.actor.update.method,
