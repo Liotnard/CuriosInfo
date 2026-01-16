@@ -7,13 +7,18 @@ import { format } from "date-fns";
 import { fr } from "date-fns/locale";
 import { ArrowRight, CalendarDays } from "lucide-react";
 
+
+
+
 export default function Home() {
   const { data: topics, isLoading } = useTopics();
 
   return (
+    
     <div className="min-h-screen bg-background">
       <Header />
-      
+      <head><title>Curios Informations</title></head>
+
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-black text-primary mb-6">
