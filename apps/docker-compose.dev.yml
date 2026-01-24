@@ -1,0 +1,97 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: curios
+      POSTGRES_PASSWORD: curios
+      POSTGRES_DB: curiosinfo
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_dev:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U curios -d curiosinfo"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks: #[appnet]
+      default:
+        aliases:
+          - db
+
+  
+  migrate:
+    build:
+      context: ./curiosinfo-back
+      dockerfile: .docker/Dockerfile
+      target: dev
+    environment:
+      DATABASE_URL: "postgres://curios:curios@db:5432/curiosinfo"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["npx", "drizzle-kit", "push"]
+    networks: #[appnet]
+      default:
+        aliases:
+          - migrate
+
+  back:
+    container_name: back
+    hostname: back
+    build:
+      context: ./curiosinfo-back
+      dockerfile: .docker/Dockerfile
+      target: dev
+    environment:
+      NODE_ENV: development
+      PORT: "3000"
+      DATABASE_URL: "postgres://curios:curios@db:5432/curiosinfo"
+      USE_JSON_DB: "true"
+    ports:
+      - "3000:3000"
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    volumes:
+      - ./curiosinfo-back:/app
+      - /app/node_modules
+      - ./shared:/app/shared
+      - ../data:/app/data
+    networks: #[appnet]
+      default:
+        aliases:
+          - back
+
+  front:
+    build:
+      context: ./curiosinfo-front
+      dockerfile: .docker/Dockerfile
+      target: dev
+    environment:
+      NODE_ENV: development
+      # depending on front, API base URL might also be defined with Vite proxy
+      # VITE_API_BASE_URL: "http://localhost:3000"
+      # DATABASE_URL: "postgres://curios:curios@db:5432/curiosinfo"
+    ports:
+      - "5173:5173"
+    depends_on:
+      - back
+    volumes:
+      - ./curiosinfo-front:/app
+      - /app/node_modules
+      - ./shared:/app/shared
+    networks: #[appnet]
+      default:
+        aliases:
+          - front
+
+volumes:
+  pgdata_dev:
+
+#networks:
+  #appnet:
+    #driver: bridge
+ 

@@ -1,4 +1,13 @@
 /*legacy code kept for reference
+/*
+ * LEGACY CODE - This file is not used in development.
+ * The front-end uses Vite's dev server with a proxy to the back-end.
+ * In production, the back-end serves the front-end static files.
+ * 
+ * For reference on Express server setup, see: curiosinfo-back/src/index.ts
+ 
+
+
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { serveStatic } from "./static";

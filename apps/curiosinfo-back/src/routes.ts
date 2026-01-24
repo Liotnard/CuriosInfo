@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import type { Server } from "http";
 import { storage } from "./storage";
-import { api, errorSchemas } from "../../curiosinfo-front/shared/routes";
+import { api, errorSchemas } from "@shared/routes";
 import { z } from "zod";
 import crypto from 'crypto';
 import Parser from 'rss-parser';

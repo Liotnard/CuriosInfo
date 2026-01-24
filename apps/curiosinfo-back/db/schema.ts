@@ -85,16 +85,6 @@ export const insertArticleSchema = createInsertSchema(articles).omit({
   created_at: true,
 });
 
-// Request types
-export type CreateTopicRequest = InsertTopic;
-export type UpdateTopicRequest = Partial<InsertTopic>;
-export type UpdateActorRequest = Partial<InsertActor>;
-// Extended Types for Responses
-export type ArticleWithActor = Article & { actor: Actor };
-export type TopicWithDetails = Topic & { 
-  //topicArticles: TopicArticle[];
-  actorInTopic: Actor[]; // Actor that have articles in this topic
-};
 
 // =======================
 // TYPES (SERVER SIDE)
@@ -108,3 +98,15 @@ export type InsertTopic = z.infer<typeof insertTopicSchema>;
 
 export type Article = typeof articles.$inferSelect;
 export type InsertArticle = z.infer<typeof insertArticleSchema>;
+
+
+// Request types
+export type CreateTopicRequest = InsertTopic;
+export type UpdateTopicRequest = Partial<InsertTopic>;
+export type UpdateActorRequest = Partial<InsertActor>;
+// Extended Types for Responses
+export type ArticleWithActor = Article & { actor: Actor };
+export type TopicWithDetails = Topic & { 
+  //topicArticles: TopicArticle[];
+  actorInTopic: Actor[]; // Actor that have articles in this topic
+};

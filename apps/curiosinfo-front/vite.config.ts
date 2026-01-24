@@ -25,8 +25,17 @@ export default defineConfig({
       strict: true,
       deny: ["**/.*"],
     },
+    host: true,
+    hmr: {
+      host: "localhost",
+      protocol: "ws",
+      port: 5173,
+    },
     proxy: {
-      "/api": "http://localhost:5000",
+      "/api":{ 
+        target: "http://back:3000", 
+        changeOrigin: true,
+      }
     },
   },
 });
