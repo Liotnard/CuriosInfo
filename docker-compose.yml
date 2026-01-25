@@ -1,0 +1,70 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: curios
+      POSTGRES_PASSWORD: curios
+      POSTGRES_DB: curiosinfo
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U curios -d curiosinfo"]
+      interval: 5s
+      timeout: 3s
+      retries: 20
+    networks:
+      default:
+        aliases:
+          - db
+    restart: unless-stopped
+
+  migrate:
+    build:
+      context: ./app/apps/curiosinfo-back
+      dockerfile: .docker/Dockerfile
+      target: dev
+    environment:
+      DATABASE_URL: "postgres://curios:curios@db:5432/curiosinfo"
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["npx", "drizzle-kit", "push"]
+    restart: "no"
+
+  back:
+    container_name: curiosinfo-back
+    hostname: back
+    build:
+      context: ./app/apps/curiosinfo-back
+      dockerfile: .docker/Dockerfile
+      target: dev
+    environment:
+      NODE_ENV: development
+      PORT: "3000"
+      DATABASE_URL: "postgres://curios:curios@db:5432/curiosinfo"
+      USE_JSON_DB: "false"
+    depends_on:
+      db:
+        condition: service_healthy
+      migrate:
+        condition: service_completed_successfully
+    ports:
+      - "127.0.0.1:3000:3000"
+    restart: unless-stopped
+
+  front:
+    container_name: curiosinfo-front
+    build:
+      context: ./app/apps/curiosinfo-front
+      dockerfile: .docker/Dockerfile
+      target: dev
+    environment:
+      NODE_ENV: development
+    depends_on:
+      - back
+    ports:
+      - "127.0.0.1:5173:5173"
+    restart: unless-stopped
+
+volumes:
+  pgdata:
