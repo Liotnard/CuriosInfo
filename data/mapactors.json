@@ -1,0 +1,2663 @@
+[
+  {
+    "id": 1,
+    "name": "Le Monde",
+    "slug": "le-monde",
+    "urls": [
+      "https://www.lemonde.fr/",
+      "https://www.lemonde.fr/recherche/",
+      "https://www.lemonde.fr/international/",
+      "https://www.lemonde.fr/politique/",
+      "https://www.lemonde.fr/economie/",
+      "https://www.lemonde.fr/societe/",
+      "https://www.lemonde.fr/culture/",
+      "https://www.lemonde.fr/sport/",
+      "https://www.lemonde.fr/planete/",
+      "https://www.lemonde.fr/pixels/",
+      "https://www.lemonde.fr/sciences/",
+      "https://www.lemonde.fr/idees/",
+      "https://www.lemonde.fr/international/rss_full.xml",
+      "https://www.lemonde.fr/politique/rss_full.xml",
+      "https://www.lemonde.fr/economie/rss_full.xml",
+      "https://www.lemonde.fr/societe/rss_full.xml",
+      "https://www.lemonde.fr/culture/rss_full.xml",
+      "https://www.lemonde.fr/sport/rss_full.xml",
+      "https://www.lemonde.fr/planete/rss_full.xml",
+      "https://www.lemonde.fr/pixels/rss_full.xml",
+      "https://www.lemonde.fr/sciences/rss_full.xml",
+      "https://www.lemonde.fr/idees/rss_full.xml"
+    ],
+    "aliases": ["LeMonde", "Le Monde.fr", "le monde"]
+  },
+  {
+    "id": 2,
+    "name": "Le Figaro",
+    "slug": "le-figaro",
+    "urls": [
+      "https://www.lefigaro.fr/",
+      "https://www.lefigaro.fr/actualite-france",
+      "https://www.lefigaro.fr/international",
+      "https://www.lefigaro.fr/politique",
+      "https://www.lefigaro.fr/economie",
+      "https://www.lefigaro.fr/vox",
+      "https://www.lefigaro.fr/culture",
+      "https://www.lefigaro.fr/sports",
+      "https://www.lefigaro.fr/sciences",
+      "https://www.lefigaro.fr/recherche"
+    ],
+    "aliases": ["LeFigaro", "Le Figaro.fr", "le figaro"]
+  },
+  {
+    "id": 3,
+    "name": "Libération",
+    "slug": "liberation",
+    "urls": [
+      "https://www.liberation.fr/",
+      "https://www.liberation.fr/politique/",
+      "https://www.liberation.fr/societe/",
+      "https://www.liberation.fr/international/",
+      "https://www.liberation.fr/economie/",
+      "https://www.liberation.fr/culture/",
+      "https://www.liberation.fr/environnement/",
+      "https://www.liberation.fr/checknews/",
+      "https://www.liberation.fr/idees-et-debats/",
+      "https://www.liberation.fr/recherche/"
+    ],
+    "aliases": ["Liberation", "Libé", "Libération.fr"]
+  },
+  {
+    "id": 4,
+    "name": "La Croix",
+    "slug": "la-croix",
+    "urls": [
+      "https://www.la-croix.com/",
+      "https://www.la-croix.com/France",
+      "https://www.la-croix.com/Monde",
+      "https://www.la-croix.com/Religion",
+      "https://www.la-croix.com/Economie",
+      "https://www.la-croix.com/Sciences-et-ethique",
+      "https://www.la-croix.com/Culture",
+      "https://www.la-croix.com/Opinions",
+      "https://www.la-croix.com/Archives",
+      "https://www.la-croix.com/recherche"
+    ],
+    "aliases": ["LaCroix", "La Croix.com", "la croix"]
+  },
+  {
+    "id": 5,
+    "name": "L’Humanité",
+    "slug": "l-humanite",
+    "urls": [
+      "https://www.humanite.fr/",
+      "https://www.humanite.fr/politique",
+      "https://www.humanite.fr/societe",
+      "https://www.humanite.fr/social-et-economie",
+      "https://www.humanite.fr/monde",
+      "https://www.humanite.fr/culture",
+      "https://www.humanite.fr/environnement",
+      "https://www.humanite.fr/sports",
+      "https://www.humanite.fr/idees",
+      "https://www.humanite.fr/recherche"
+    ],
+    "aliases": ["LHumanite", "L'Humanité", "Humanité"]
+  },
+  {
+    "id": 6,
+    "name": "Le Parisien / Aujourd’hui en France",
+    "slug": "le-parisien",
+    "urls": [
+      "https://www.leparisien.fr/",
+      "https://www.leparisien.fr/politique/",
+      "https://www.leparisien.fr/economie/",
+      "https://www.leparisien.fr/societe/",
+      "https://www.leparisien.fr/faits-divers/",
+      "https://www.leparisien.fr/international/",
+      "https://www.leparisien.fr/sports/",
+      "https://www.leparisien.fr/culture-loisirs/",
+      "https://www.leparisien.fr/high-tech/",
+      "https://www.leparisien.fr/ile-de-france/"
+    ],
+    "aliases": ["Le Parisien", "Aujourd'hui en France", "leparisien"]
+  },
+  {
+    "id": 7,
+    "name": "Les Échos",
+    "slug": "les-echos",
+    "urls": [
+      "https://www.lesechos.fr/",
+      "https://www.lesechos.fr/politique-societe",
+      "https://www.lesechos.fr/economie-france",
+      "https://www.lesechos.fr/monde",
+      "https://www.lesechos.fr/finance-marches",
+      "https://www.lesechos.fr/tech-medias",
+      "https://www.lesechos.fr/industrie-services",
+      "https://www.lesechos.fr/pme-regions",
+      "https://www.lesechos.fr/idees-debats",
+      "https://www.lesechos.fr/recherche"
+    ],
+    "aliases": ["Les Echos", "LesEchos", "les échos"]
+  },
+  {
+    "id": 8,
+    "name": "L’Opinion",
+    "slug": "lopinion",
+    "urls": [
+      "https://www.lopinion.fr/",
+      "https://www.lopinion.fr/politique",
+      "https://www.lopinion.fr/economie",
+      "https://www.lopinion.fr/international",
+      "https://www.lopinion.fr/societe",
+      "https://www.lopinion.fr/culture",
+      "https://www.lopinion.fr/idees",
+      "https://www.lopinion.fr/tribunes",
+      "https://www.lopinion.fr/videos",
+      "https://www.lopinion.fr/recherche"
+    ],
+    "aliases": ["LOpinion", "L'Opinion", "L Opinion"]
+  },
+  {
+    "id": 9,
+    "name": "La Tribune",
+    "slug": "la-tribune",
+    "urls": [
+      "https://www.latribune.fr/",
+      "https://www.latribune.fr/economie/",
+      "https://www.latribune.fr/entreprises-finance/",
+      "https://www.latribune.fr/technos-medias/",
+      "https://www.latribune.fr/regions/",
+      "https://www.latribune.fr/opinions/",
+      "https://www.latribune.fr/economie/international/",
+      "https://www.latribune.fr/bourse/",
+      "https://www.latribune.fr/archives/",
+      "https://www.latribune.fr/recherche"
+    ],
+    "aliases": ["LaTribune", "La Tribune.fr", "la tribune"]
+  },
+  {
+    "id": 10,
+    "name": "L’Agefi",
+    "slug": "lagefi",
+    "urls": [
+      "https://www.agefi.fr/",
+      "https://www.agefi.fr/marches",
+      "https://www.agefi.fr/asset-management",
+      "https://www.agefi.fr/banque-assurance",
+      "https://www.agefi.fr/patrimoine",
+      "https://www.agefi.fr/reglementation",
+      "https://www.agefi.fr/entreprises",
+      "https://www.agefi.fr/gestion-d-actifs",
+      "https://www.agefi.fr/theme/immobilier/%E2%96%87.rss",
+      "https://www.agefi.fr/recherche"
+    ],
+    "aliases": ["LAgefi", "L'Agefi", "Agefi"]
+  },
+  {
+    "id": 11,
+    "name": "Le Canard enchaîné",
+    "slug": "le-canard-enchaine",
+    "urls": [
+      "https://www.lecanardenchaine.fr/",
+      "https://www.lecanardenchaine.fr/actualites",
+      "https://www.lecanardenchaine.fr/enquetes",
+      "https://www.lecanardenchaine.fr/webplus",
+      "https://www.lecanardenchaine.fr/dessins",
+      "https://www.lecanardenchaine.fr/politique/",
+      "https://www.lecanardenchaine.fr/economie/",
+      "https://www.lecanardenchaine.fr/international/",
+      "https://www.lecanardenchaine.fr/societe/",
+      "https://www.lecanardenchaine.fr/archives"
+    ],
+    "aliases": ["Le Canard enchaine", "Le Canard Enchaîné", "Canard enchaîné"]
+  },
+  {
+    "id": 12,
+    "name": "Charlie Hebdo",
+    "slug": "charlie-hebdo",
+    "urls": [
+      "https://charliehebdo.fr/",
+      "https://charliehebdo.fr/themes/politique/",
+      "https://charliehebdo.fr/themes/societe/",
+      "https://charliehebdo.fr/themes/international/",
+      "https://charliehebdo.fr/themes/ecologie/",
+      "https://charliehebdo.fr/themes/religions/",
+      "https://charliehebdo.fr/themes/sciences/",
+      "https://charliehebdo.fr/themes/culture/",
+      "https://charliehebdo.fr/themes/economie/",
+      "https://charliehebdo.fr/pages/cgv/"
+    ],
+    "aliases": ["CharlieHebdo", "Charlie Hebdo.fr", "charlie"]
+  },
+  {
+    "id": 13,
+    "name": "Le Point",
+    "slug": "le-point",
+    "urls": [
+      "https://www.lepoint.fr/",
+      "https://www.lepoint.fr/politique/",
+      "https://www.lepoint.fr/societe/",
+      "https://www.lepoint.fr/monde/",
+      "https://www.lepoint.fr/economie/",
+      "https://www.lepoint.fr/high-tech-internet/",
+      "https://www.lepoint.fr/culture/",
+      "https://www.lepoint.fr/science/",
+      "https://www.lepoint.fr/sport/",
+      "https://www.lepoint.fr/recherche/"
+    ],
+    "aliases": ["LePoint", "Le Point.fr", "le point"]
+  },
+  {
+    "id": 14,
+    "name": "L’Obs",
+    "slug": "lobs",
+    "urls": [
+      "https://www.nouvelobs.com/",
+      "https://www.nouvelobs.com/rss",
+      "https://www.nouvelobs.com/politique/",
+      "https://www.nouvelobs.com/societe/",
+      "https://www.nouvelobs.com/monde/",
+      "https://www.nouvelobs.com/economie/",
+      "https://www.nouvelobs.com/culture/",
+      "https://www.nouvelobs.com/ecologie/",
+      "https://www.nouvelobs.com/idees/",
+      "https://www.nouvelobs.com/recherche/"
+    ],
+    "aliases": ["LObs", "L'Obs", "Le Nouvel Obs", "Nouvel Obs"]
+  },
+  {
+    "id": 15,
+    "name": "L’Express",
+    "slug": "lexpress",
+    "urls": [
+      "https://www.lexpress.fr/",
+      "https://www.lexpress.fr/politique/",
+      "https://www.lexpress.fr/societe/",
+      "https://www.lexpress.fr/monde/",
+      "https://www.lexpress.fr/economie/",
+      "https://www.lexpress.fr/culture/",
+      "https://www.lexpress.fr/sciences-sante/",
+      "https://www.lexpress.fr/climat-environnement/",
+      "https://www.lexpress.fr/idees-et-debats/",
+      "https://www.lexpress.fr/recherche/"
+    ],
+    "aliases": ["LExpress", "L'Express", "L Express"]
+  },
+  {
+    "id": 16,
+    "name": "Marianne",
+    "slug": "marianne",
+    "urls": [
+      "https://www.marianne.net/",
+      "https://www.marianne.net/politique",
+      "https://www.marianne.net/societe",
+      "https://www.marianne.net/economie",
+      "https://www.marianne.net/monde",
+      "https://www.marianne.net/culture",
+      "https://www.marianne.net/tribunes",
+      "https://www.marianne.net/debats",
+      "https://www.marianne.net/videos",
+      "https://www.marianne.net/recherche"
+    ],
+    "aliases": ["Marianne.net", "marianne"]
+  },
+  {
+    "id": 17,
+    "name": "Valeurs actuelles",
+    "slug": "valeurs-actuelles",
+    "urls": [
+      "https://www.valeursactuelles.com/",
+      "https://www.valeursactuelles.com/politique",
+      "https://www.valeursactuelles.com/monde",
+      "https://www.valeursactuelles.com/economie",
+      "https://www.valeursactuelles.com/societe",
+      "https://www.valeursactuelles.com/culture",
+      "https://www.valeursactuelles.com/histoire",
+      "https://www.valeursactuelles.com/les-flux-rss-de-valeurs-actuelles",
+      "https://www.valeursactuelles.com/videos",
+      "https://www.valeursactuelles.com/recherche"
+    ],
+    "aliases": ["ValeursActuelles", "VA", "valeurs actuelles"]
+  },
+  {
+    "id": 18,
+    "name": "Le Monde diplomatique",
+    "slug": "le-monde-diplomatique",
+    "urls": [
+      "https://www.monde-diplomatique.fr/",
+      "https://www.monde-diplomatique.fr/archives",
+      "https://www.monde-diplomatique.fr/mensuel/",
+      "https://www.monde-diplomatique.fr/cartes",
+      "https://www.monde-diplomatique.fr/podcasts",
+      "https://www.monde-diplomatique.fr/recherche",
+      "https://www.monde-diplomatique.fr/communiques",
+      "https://www.monde-diplomatique.fr/livres",
+      "https://www.monde-diplomatique.fr/carnets",
+      "https://www.monde-diplomatique.fr/blog"
+    ],
+    "aliases": ["Monde Diplo", "Le Diplo", "LeMondeDiplomatique"]
+  },
+  {
+    "id": 19,
+    "name": "Courrier international",
+    "slug": "courrier-international",
+    "urls": [
+      "https://www.courrierinternational.com/",
+      "https://www.courrierinternational.com/une",
+      "https://www.courrierinternational.com/international",
+      "https://www.courrierinternational.com/france",
+      "https://www.courrierinternational.com/economie",
+      "https://www.courrierinternational.com/culture",
+      "https://www.courrierinternational.com/environnement",
+      "https://www.courrierinternational.com/politique",
+      "https://www.courrierinternational.com/long-format",
+      "https://www.courrierinternational.com/recherche"
+    ],
+    "aliases": ["CourrierInternational", "Courrier inter", "courrier international"]
+  },
+  {
+    "id": 20,
+    "name": "Alternatives Économiques",
+    "slug": "alternatives-economiques",
+    "urls": [
+      "https://www.alternatives-economiques.fr/",
+      "https://www.alternatives-economiques.fr/economie",
+      "https://www.alternatives-economiques.fr/societe",
+      "https://www.alternatives-economiques.fr/politique",
+      "https://www.alternatives-economiques.fr/monde",
+      "https://www.alternatives-economiques.fr/ecologie",
+      "https://www.alternatives-economiques.fr/idees",
+      "https://www.alternatives-economiques.fr/culture",
+      "https://www.alternatives-economiques.fr/dossiers",
+      "https://www.alternatives-economiques.fr/recherche"
+    ],
+    "aliases": ["Alternatives Economiques", "AlterEco", "Alternatives éco"]
+  },
+  {
+    "id": 21,
+    "name": "Politis",
+    "slug": "politis",
+    "urls": [
+      "https://www.politis.fr/",
+      "https://www.politis.fr/categories/politique/",
+      "https://www.politis.fr/categories/societe/",
+      "https://www.politis.fr/categories/international/",
+      "https://www.politis.fr/categories/economie/",
+      "https://www.politis.fr/categories/ecologie/",
+      "https://www.politis.fr/categories/culture/",
+      "https://www.politis.fr/categories/idees/",
+      "https://www.politis.fr/enquetes/",
+      "https://www.politis.fr/recherche/"
+    ],
+    "aliases": ["Politis.fr", "politis"]
+  },
+  {
+    "id": 22,
+    "name": "Regards",
+    "slug": "regards",
+    "urls": [
+      "https://regards.fr/",
+      "https://regards.fr/politique/",
+      "https://regards.fr/societe/",
+      "https://regards.fr/economie/",
+      "https://regards.fr/monde/",
+      "https://regards.fr/culture/",
+      "https://regards.fr/ecologie/",
+      "https://regards.fr/idees/",
+      "https://regards.fr/portfolio/",
+      "https://regards.fr/recherche/"
+    ],
+    "aliases": ["Regards.fr", "regards"]
+  },
+  {
+    "id": 23,
+    "name": "Socialter",
+    "slug": "socialter",
+    "urls": [
+      "https://www.socialter.fr/",
+      "https://www.socialter.fr/societe",
+      "https://www.socialter.fr/ecologie",
+      "https://www.socialter.fr/economie",
+      "https://www.socialter.fr/politique",
+      "https://www.socialter.fr/idees",
+      "https://www.socialter.fr/culture",
+      "https://www.socialter.fr/enquetes",
+      "https://www.socialter.fr/videos",
+      "https://www.socialter.fr/recherche"
+    ],
+    "aliases": ["Socialter.fr", "socialter"]
+  },
+  {
+    "id": 24,
+    "name": "Fakir",
+    "slug": "fakir",
+    "urls": [
+      "https://fakirpresse.info/",
+      "https://fakirpresse.info/Une",
+      "https://fakirpresse.info/Politique",
+      "https://fakirpresse.info/Societe",
+      "https://fakirpresse.info/Economie",
+      "https://fakirpresse.info/Enquetes",
+      "https://fakirpresse.info/International",
+      "https://fakirpresse.info/Culture",
+      "https://fakirpresse.info/Archives",
+      "https://fakirpresse.info/spip.php?page=recherche"
+    ],
+    "aliases": ["Fakir Presse", "Fakir mag", "fakir"]
+  },
+  {
+    "id": 25,
+    "name": "La Vie",
+    "slug": "la-vie",
+    "urls": [
+      "https://www.lavie.fr/",
+      "https://kiosque.lavie.fr/",
+      "https://www.lavie.fr/actualite",
+      "https://www.lavie.fr/societe",
+      "https://www.lavie.fr/religion",
+      "https://www.lavie.fr/culture",
+      "https://www.lavie.fr/ethique",
+      "https://www.lavie.fr/spiritualite",
+      "https://www.lavie.fr/ecologie",
+      "https://www.lavie.fr/recherche"
+    ],
+    "aliases": ["LaVie", "La Vie.fr", "la vie"]
+  },
+  {
+    "id": 26,
+    "name": "Famille Chrétienne",
+    "slug": "famille-chretienne",
+    "urls": [
+      "https://www.famillechretienne.fr/",
+      "https://www.famillechretienne.fr/actualite",
+      "https://www.famillechretienne.fr/eglise",
+      "https://www.famillechretienne.fr/societe",
+      "https://www.famillechretienne.fr/culture",
+      "https://www.famillechretienne.fr/famille",
+      "https://www.famillechretienne.fr/ethique",
+      "https://www.famillechretienne.fr/spiritualite",
+      "https://www.famillechretienne.fr/monde",
+      "https://www.facebook.com/famille.chretienne/"
+    ],
+    "aliases": ["Famille Chretienne", "FamilleChrétienne", "Famille Chrétienne"]
+  },
+  {
+    "id": 27,
+    "name": "Mediapart",
+    "slug": "mediapart",
+    "urls": [
+      "https://www.mediapart.fr/",
+      "https://www.mediapart.fr/recherche",
+      "https://www.mediapart.fr/journal/france",
+      "https://www.mediapart.fr/journal/politique",
+      "https://www.mediapart.fr/journal/international",
+      "https://www.mediapart.fr/journal/economie-et-social",
+      "https://www.mediapart.fr/journal/ecologie",
+      "https://www.mediapart.fr/journal/culture-idees",
+      "https://www.mediapart.fr/journal/videos",
+      "https://blogs.mediapart.fr/"
+    ],
+    "aliases": ["Médiapart", "Mediapart.fr", "mediapart"]
+  },
+  {
+    "id": 28,
+    "name": "Arrêt sur images",
+    "slug": "arret-sur-images",
+    "urls": [
+      "https://www.arretsurimages.net/",
+      "https://www.arretsurimages.net/emissions",
+      "https://www.arretsurimages.net/articles",
+      "https://www.arretsurimages.net/dossiers",
+      "https://www.arretsurimages.net/chroniques",
+      "https://www.arretsurimages.net/recherche",
+      "https://www.arretsurimages.net/podcasts",
+      "https://www.arretsurimages.net/videos",
+      "https://www.arretsurimages.net/a-la-une",
+      "https://www.arretsurimages.net/contact"
+    ],
+    "aliases": ["Arret sur images", "ASI", "Arrêt sur Images"]
+  },
+  {
+    "id": 29,
+    "name": "Disclose",
+    "slug": "disclose",
+    "urls": [
+      "https://disclose.ngo/",
+      "https://disclose.ngo/enquetes",
+      "https://disclose.ngo/articles",
+      "https://disclose.ngo/dossiers",
+      "https://disclose.ngo/ressources",
+      "https://disclose.ngo/a-propos",
+      "https://disclose.ngo/contact",
+      "https://disclose.ngo/presse",
+      "https://disclose.ngo/newsletter",
+      "https://disclose.ngo/recherche"
+    ],
+    "aliases": ["Disclose.ngo", "disclose"]
+  },
+  {
+    "id": 30,
+    "name": "StreetPress",
+    "slug": "streetpress",
+    "urls": [
+      "https://www.streetpress.com/",
+      "https://www.streetpress.com/rubriques/politique",
+      "https://www.streetpress.com/rubriques/societe",
+      "https://www.streetpress.com/rubriques/ecologie",
+      "https://www.streetpress.com/rubriques/culture",
+      "https://www.streetpress.com/rubriques/international",
+      "https://www.streetpress.com/rubriques/enquetes",
+      "https://www.streetpress.com/rubriques/video",
+      "https://www.streetpress.com/rubriques/podcast",
+      "https://www.streetpress.com/recherche"
+    ],
+    "aliases": ["Street Press", "streetpress"]
+  },
+  {
+    "id": 31,
+    "name": "Les Jours",
+    "slug": "les-jours",
+    "urls": [
+      "https://lesjours.fr/",
+      "https://lesjours.fr/obsessions/",
+      "https://lesjours.fr/series/",
+      "https://lesjours.fr/articles/",
+      "https://lesjours.fr/enquetes/",
+      "https://lesjours.fr/podcasts/",
+      "https://lesjours.fr/newsletters/",
+      "https://lesjours.fr/a-propos/",
+      "https://lesjours.fr/contact/",
+      "https://lesjours.fr/recherche/"
+    ],
+    "aliases": ["LesJours", "Les Jours.fr", "les jours"]
+  },
+  {
+    "id": 32,
+    "name": "Blast",
+    "slug": "blast",
+    "urls": [
+      "https://www.blast-info.fr/",
+      "https://www.blast-info.fr/enquetes",
+      "https://www.blast-info.fr/politique",
+      "https://www.blast-info.fr/societe",
+      "https://www.blast-info.fr/economie",
+      "https://www.blast-info.fr/international",
+      "https://www.blast-info.fr/culture",
+      "https://www.blast-info.fr/ecologie",
+      "https://www.blast-info.fr/videos",
+      "https://www.blast-info.fr/recherche"
+    ],
+    "aliases": ["BLAST", "Blast-info", "blast"]
+  },
+  {
+    "id": 33,
+    "name": "Off Investigation",
+    "slug": "off-investigation",
+    "urls": [
+      "https://www.off-investigation.fr/",
+      "https://www.off-investigation.fr/enquetes/",
+      "https://www.off-investigation.fr/articles/",
+      "https://www.off-investigation.fr/dossiers/",
+      "https://www.off-investigation.fr/a-propos/",
+      "https://www.off-investigation.fr/contact/",
+      "https://www.off-investigation.fr/soutenir/",
+      "https://www.off-investigation.fr/newsletter/",
+      "https://www.off-investigation.fr/recherche/",
+      "https://www.youtube.com/@offinvestigation"
+    ],
+    "aliases": ["OffInvestigation", "Off Investigation.fr", "off investigation"]
+  },
+  {
+    "id": 34,
+    "name": "Médiacités",
+    "slug": "mediacites",
+    "urls": [
+      "https://www.mediacites.fr/",
+      "https://www.mediacites.fr/enquetes/",
+      "https://www.mediacites.fr/articles/",
+      "https://www.mediacites.fr/dossiers/",
+      "https://www.mediacites.fr/abonnement/",
+      "https://www.mediacites.fr/a-propos/",
+      "https://www.mediacites.fr/contact/",
+      "https://www.mediacites.fr/newsletter/",
+      "https://www.mediacites.fr/recherche/",
+      "https://www.mediacites.fr/villes/"
+    ],
+    "aliases": ["Mediacites", "MédiaCités", "mediacites"]
+  },
+  {
+    "id": 35,
+    "name": "Contexte",
+    "slug": "contexte",
+    "urls": [
+      "https://about.contexte.com/",
+      "https://about.contexte.com/produits/",
+      "https://about.contexte.com/newsletters/",
+      "https://about.contexte.com/a-propos/",
+      "https://about.contexte.com/contact/",
+      "https://about.contexte.com/presse/",
+      "https://about.contexte.com/recrutement/",
+      "https://get.contexte.com/",
+      "https://x.com/Contexte",
+      "https://about.contexte.com/veille/"
+    ],
+    "aliases": ["Contexte.com", "contexte"]
+  },
+  {
+    "id": 36,
+    "name": "Basta!",
+    "slug": "basta",
+    "urls": [
+      "https://basta.media/",
+      "https://basta.media/politique",
+      "https://basta.media/societe",
+      "https://basta.media/economie",
+      "https://basta.media/ecologie",
+      "https://basta.media/international",
+      "https://basta.media/culture",
+      "https://basta.media/dossiers",
+      "https://basta.media/recherche",
+      "https://basta.media/newsletter"
+    ],
+    "aliases": ["Basta", "Basta!", "basta"]
+  },
+  {
+    "id": 37,
+    "name": "Reporterre",
+    "slug": "reporterre",
+    "urls": [
+      "https://reporterre.net/",
+      "https://reporterre.net/Politique",
+      "https://reporterre.net/Societe",
+      "https://reporterre.net/Economie",
+      "https://reporterre.net/Climat",
+      "https://reporterre.net/Agriculture",
+      "https://reporterre.net/Biodiversite",
+      "https://reporterre.net/Tribunes",
+      "https://reporterre.net/Archives",
+      "https://reporterre.net/Recherche"
+    ],
+    "aliases": ["Reporterre.net", "reporterre"]
+  },
+  {
+    "id": 38,
+    "name": "Vert",
+    "slug": "vert",
+    "urls": [
+      "https://vert.eco/",
+      "https://vert.eco/articles/",
+      "https://vert.eco/podcasts/",
+      "https://vert.eco/newsletters/",
+      "https://vert.eco/dossiers/",
+      "https://vert.eco/climat/",
+      "https://vert.eco/biodiversite/",
+      "https://vert.eco/politique/",
+      "https://vert.eco/solutions/",
+      "https://vert.eco/recherche/"
+    ],
+    "aliases": ["Vert le média", "Vert.eco", "vert"]
+  },
+  {
+    "id": 39,
+    "name": "The Conversation France",
+    "slug": "the-conversation-france",
+    "urls": [
+      "https://theconversation.com/",
+      "https://theconversation.com/fr",
+      "https://theconversation.com/fr/politique",
+      "https://theconversation.com/fr/economie",
+      "https://theconversation.com/fr/societe",
+      "https://theconversation.com/fr/international",
+      "https://theconversation.com/fr/environnement",
+      "https://theconversation.com/fr/sciences",
+      "https://theconversation.com/fr/culture",
+      "https://theconversation.com/fr/search"
+    ],
+    "aliases": ["The Conversation", "TheConversationFR", "The Conversation FR"]
+  },
+  {
+    "id": 40,
+    "name": "Slate.fr",
+    "slug": "slate-fr",
+    "urls": [
+      "https://www.slate.fr/",
+      "https://www.slate.fr/monde",
+      "https://www.slate.fr/france",
+      "https://www.slate.fr/economie",
+      "https://www.slate.fr/societe",
+      "https://www.slate.fr/culture",
+      "https://www.slate.fr/story",
+      "https://www.slate.fr/tech-internet",
+      "https://www.slate.fr/podcasts",
+      "https://www.slate.fr/recherche"
+    ],
+    "aliases": ["Slate", "Slate.fr", "slate"]
+  },
+  {
+    "id": 41,
+    "name": "HuffPost France",
+    "slug": "huffpost-france",
+    "urls": [
+      "https://www.huffingtonpost.fr/",
+      "https://www.huffingtonpost.fr/actualites/",
+      "https://www.huffingtonpost.fr/politique/",
+      "https://www.huffingtonpost.fr/international/",
+      "https://www.huffingtonpost.fr/economie/",
+      "https://www.huffingtonpost.fr/societe/",
+      "https://www.huffingtonpost.fr/culture/",
+      "https://www.huffingtonpost.fr/environnement/",
+      "https://www.huffingtonpost.fr/life/",
+      "https://www.huffingtonpost.fr/search/"
+    ],
+    "aliases": ["HuffPost", "Huffington Post France", "HuffPost FR"]
+  },
+  {
+    "id": 100,
+    "name": "BFM TV",
+    "slug": "bfm-tv",
+    "urls": [
+      "https://www.bfmtv.com/",
+      "https://www.bfmtv.com/actualites/",
+      "https://www.bfmtv.com/politique/",
+      "https://www.bfmtv.com/international/",
+      "https://www.bfmtv.com/economie/",
+      "https://www.bfmtv.com/societe/",
+      "https://www.bfmtv.com/faits-divers/",
+      "https://www.bfmtv.com/sante/",
+      "https://www.bfmtv.com/tech/",
+      "https://www.bfmtv.com/people/",
+      "https://www.bfmtv.com/sport/",
+      "https://www.bfmtv.com/plan-du-site/",
+      "https://www.bfmtv.com/archives/"
+    ],
+    "aliases": ["BFMTV", "BFMTV.com", "BFM"]
+  },
+  {
+    "id": 101,
+    "name": "CNews",
+    "slug": "cnews",
+    "urls": [
+      "https://www.cnews.fr/",
+      "https://www.cnews.fr/dernieres-infos",
+      "https://www.cnews.fr/politique",
+      "https://www.cnews.fr/france",
+      "https://www.cnews.fr/monde",
+      "https://www.cnews.fr/societe",
+      "https://www.cnews.fr/faits-divers",
+      "https://www.cnews.fr/sport",
+      "https://www.cnews.fr/culture",
+      "https://www.cnews.fr/les-replays",
+      "https://www.cnews.fr/les-podcasts",
+      "https://www.cnews.fr/les-flux-rss-de-cnewsfr"
+    ],
+    "aliases": ["CNEWS", "CNews.fr", "cnews"]
+  },
+  {
+    "id": 102,
+    "name": "LCI",
+    "slug": "lci",
+    "urls": [
+      "https://www.tf1info.fr/",
+      "https://www.tf1info.fr/direct/",
+      "https://www.tf1info.fr/politique/",
+      "https://www.tf1info.fr/international/",
+      "https://www.tf1info.fr/societe/",
+      "https://www.tf1info.fr/economie/",
+      "https://www.tf1info.fr/culture/",
+      "https://www.tf1info.fr/sante/",
+      "https://www.tf1info.fr/sport/",
+      "https://www.tf1info.fr/tech/",
+      "https://www.tf1info.fr/replay-lci/",
+      "https://www.tf1info.fr/recherche/"
+    ],
+    "aliases": ["LCI.fr", "LCI (TF1)", "lci"]
+  },
+  {
+    "id": 103,
+    "name": "France 24",
+    "slug": "france-24",
+    "urls": [
+      "https://www.france24.com/fr/",
+      "https://www.france24.com/fr/en-direct",
+      "https://www.france24.com/fr/derni%C3%A8res-informations",
+      "https://www.france24.com/fr/france",
+      "https://www.france24.com/fr/europe",
+      "https://www.france24.com/fr/moyen-orient",
+      "https://www.france24.com/fr/afrique",
+      "https://www.france24.com/fr/am%C3%A9riques",
+      "https://www.france24.com/fr/asie-pacifique",
+      "https://www.france24.com/fr/%C3%A9co-tech",
+      "https://www.france24.com/fr/culture",
+      "https://www.france24.com/fr/sports",
+      "https://www.france24.com/fr/flux-rss",
+      "https://www.france24.com/en/rss-feeds"
+    ],
+    "aliases": ["France24", "France 24.com", "france24"]
+  },
+  {
+    "id": 104,
+    "name": "RFI",
+    "slug": "rfi",
+    "urls": [
+      "https://www.rfi.fr/fr/",
+      "https://www.rfi.fr/fr/en-direct",
+      "https://www.rfi.fr/fr/derni%C3%A8res-actualit%C3%A9s",
+      "https://www.rfi.fr/fr/france",
+      "https://www.rfi.fr/fr/afrique",
+      "https://www.rfi.fr/fr/europe",
+      "https://www.rfi.fr/fr/moyen-orient",
+      "https://www.rfi.fr/fr/am%C3%A9riques",
+      "https://www.rfi.fr/fr/asie-pacifique",
+      "https://www.rfi.fr/fr/%C3%A9conomie",
+      "https://www.rfi.fr/fr/sports",
+      "https://www.rfi.fr/fr/podcasts/",
+      "https://www.rfi.fr/fr/contenu/20091023-rss"
+    ],
+    "aliases": ["Radio France Internationale", "RFI.fr", "rfi"]
+  },
+  {
+    "id": 105,
+    "name": "France Inter",
+    "slug": "france-inter",
+    "urls": [
+      "https://www.franceinter.fr/",
+      "https://www.franceinter.fr/direct",
+      "https://www.franceinter.fr/emissions",
+      "https://www.franceinter.fr/podcasts",
+      "https://www.franceinter.fr/videos",
+      "https://www.franceinter.fr/sujets/politique",
+      "https://www.franceinter.fr/sujets/societe",
+      "https://www.franceinter.fr/sujets/international",
+      "https://www.franceinter.fr/sujets/economie",
+      "https://www.franceinter.fr/sujets/culture",
+      "https://www.youtube.com/franceinter",
+      "https://www.facebook.com/franceinter/"
+    ],
+    "aliases": ["FranceInter", "Radio France Inter", "france inter"]
+  },
+  {
+    "id": 106,
+    "name": "Europe 1",
+    "slug": "europe-1",
+    "urls": [
+      "https://www.europe1.fr/",
+      "https://www.europe1.fr/direct",
+      "https://www.europe1.fr/emissions",
+      "https://www.europe1.fr/les-podcasts",
+      "https://www.europe1.fr/chroniques",
+      "https://www.europe1.fr/dossiers",
+      "https://www.europe1.fr/replays",
+      "https://www.europe1.fr/actualites",
+      "https://www.europe1.fr/international",
+      "https://www.europe1.fr/politique",
+      "https://www.europe1.fr/societe"
+    ],
+    "aliases": ["Europe1", "Europe 1.fr", "europe1"]
+  },
+  {
+    "id": 107,
+    "name": "RTL",
+    "slug": "rtl",
+    "urls": [
+      "https://www.rtl.fr/",
+      "https://www.rtl.fr/actu",
+      "https://www.rtl.fr/actu/politique",
+      "https://www.rtl.fr/actu/international",
+      "https://www.rtl.fr/actu/economie",
+      "https://www.rtl.fr/actu/societe-faits-divers",
+      "https://www.rtl.fr/culture",
+      "https://www.rtl.fr/sport",
+      "https://www.rtl.fr/programmes/tous",
+      "https://www.rtl.fr/podcasts"
+    ],
+    "aliases": ["RTL.fr", "rtl"]
+  },
+  {
+    "id": 108,
+    "name": "RMC",
+    "slug": "rmc",
+    "urls": [
+      "https://rmc.bfmtv.com/",
+      "https://rmc.bfmtv.com/actualites/",
+      "https://rmc.bfmtv.com/actualites/politique/",
+      "https://rmc.bfmtv.com/actualites/economie/",
+      "https://rmc.bfmtv.com/actualites/societe/",
+      "https://rmc.bfmtv.com/actualites/international/",
+      "https://rmc.bfmtv.com/actualites/sport/",
+      "https://rmc.bfmtv.com/emission/",
+      "https://rmc.bfmtv.com/podcasts/",
+      "https://rmc.bfmtv.com/replay-emissions/"
+    ],
+    "aliases": ["RMC.fr", "RMC (BFM)", "rmc"]
+  },
+  {
+    "id": 109,
+    "name": "TF1",
+    "slug": "tf1",
+    "urls": [
+      "https://www.tf1.fr/",
+      "https://www.tf1info.fr/",
+      "https://www.tf1info.fr/direct/",
+      "https://www.tf1info.fr/politique/",
+      "https://www.tf1info.fr/international/",
+      "https://www.tf1info.fr/societe/",
+      "https://www.tf1info.fr/economie/",
+      "https://www.tf1info.fr/culture/",
+      "https://www.tf1info.fr/sante/",
+      "https://www.tf1info.fr/sport/",
+      "https://www.tf1info.fr/tech/",
+      "https://x.com/TF1Info",
+      "https://www.youtube.com/@TF1INFO",
+      "https://www.facebook.com/TF1Info/"
+    ],
+    "aliases": ["TF1 Info", "TF1info", "tf1"]
+  },
+  {
+    "id": 110,
+    "name": "France 2",
+    "slug": "france-2",
+    "urls": [
+      "https://www.france.tv/france-2/",
+      "https://www.france.tv/france-2/jt-20h/",
+      "https://www.france.tv/france-2/jt-13h/",
+      "https://www.france.tv/france-2/envoye-special/",
+      "https://www.france.tv/france-2/complement-d-enquete/",
+      "https://www.france.tv/france-2/cash-investigation/",
+      "https://www.france.tv/france-2/telematin/",
+      "https://www.france.tv/france-2/affaire-conclue/",
+      "https://www.france.tv/france-2/les-infos/",
+      "https://www.france.tv/recherche/"
+    ],
+    "aliases": ["France2", "france 2"]
+  },
+  {
+    "id": 111,
+    "name": "France 3",
+    "slug": "france-3",
+    "urls": [
+      "https://www.france.tv/france-3/",
+      "https://www.france.tv/france-3/jt-19-20/",
+      "https://www.france.tv/france-3/jt-12-13/",
+      "https://www.france.tv/france-3/th%C3%A9matiques/",
+      "https://www.france.tv/france-3/regions/",
+      "https://www.france.tv/france-3/les-infos/",
+      "https://www.france.tv/recherche/",
+      "https://www.francetelevisions.fr/abonnements/information/france-3-regions"
+    ],
+    "aliases": ["France3", "france 3"]
+  },
+  {
+    "id": 112,
+    "name": "M6",
+    "slug": "m6",
+    "urls": [
+      "https://www.m6.fr/",
+      "https://www.m6.fr/direct",
+      "https://www.m6.fr/replay",
+      "https://www.m6.fr/programmes",
+      "https://www.m6.fr/emissions",
+      "https://www.m6.fr/jt",
+      "https://www.m6.fr/videos",
+      "https://www.m6.fr/series",
+      "https://www.m6.fr/films",
+      "https://pro.m6.fr/",
+      "https://www.6play.fr/",
+      "https://www.groupem6.fr/"
+    ],
+    "aliases": ["M6.fr", "m6"]
+  },
+  {
+    "id": 113,
+    "name": "Arte",
+    "slug": "arte",
+    "urls": [
+      "https://www.arte.tv/fr/",
+      "https://www.arte.tv/fr/direct/",
+      "https://www.arte.tv/fr/videos/",
+      "https://www.arte.tv/fr/guide/",
+      "https://www.arte.tv/fr/search/",
+      "https://www.arte.tv/fr/videos/RC-014046/arte-journal/",
+      "https://www.arte.tv/fr/videos/RC-016730/arte-reportage/",
+      "https://www.arte.tv/fr/videos/RC-021030/28-minutes/",
+      "https://www.arteradio.com/",
+      "https://www.arteradio.com/content/ou-nous-ecouter"
+    ],
+    "aliases": ["ARTE", "Arte.tv", "arte"]
+  },
+  {
+    "id": 114,
+    "name": "France Info",
+    "slug": "france-info",
+    "urls": [
+      "https://www.franceinfo.fr/",
+      "https://www.franceinfo.fr/politique/",
+      "https://www.franceinfo.fr/economie/",
+      "https://www.franceinfo.fr/societe/",
+      "https://www.franceinfo.fr/monde/",
+      "https://www.franceinfo.fr/sport/",
+      "https://www.franceinfo.fr/culture/",
+      "https://www.franceinfo.fr/sciences/",
+      "https://www.franceinfo.fr/environnement/",
+      "https://www.franceinfo.fr/replay-radio/",
+      "https://www.franceinfo.fr/replay-tv/",
+      "https://www.franceinfo.fr/recherche/"
+    ],
+    "aliases": ["Franceinfo", "franceinfo", "France Info TV"]
+  },
+  {
+    "id": 200,
+    "name": "HugoDécrypte",
+    "slug": "hugodecrypte",
+    "urls": [
+      "https://hugodecrypte.com/",
+      "https://hugodecrypte.com/actualites",
+      "https://hugodecrypte.com/newsletters",
+      "https://x.com/HugoDecrypte",
+      "https://www.instagram.com/hugodecrypte/",
+      "https://www.threads.com/@hugodecrypte",
+      "https://www.tiktok.com/@hugodecrypte",
+      "https://www.youtube.com/channel/UCAcAnMF0OrCtUep3Y4M-ZPw",
+      "https://www.youtube.com/@hugodecrypte",
+      "https://www.facebook.com/hugodecrypte/"
+    ],
+    "aliases": ["Hugo Decrypte", "HugoDecrypte", "Hugo Décrypte"]
+  },
+  {
+    "id": 201,
+    "name": "Sardoche",
+    "slug": "sardoche",
+    "urls": [
+      "https://sardoche.tv/",
+      "https://www.twitch.tv/sardoche",
+      "https://www.youtube.com/@SardocheLol",
+      "https://x.com/Sardoche_Lol",
+      "https://www.instagram.com/sardocheyeslife/",
+      "https://www.tiktok.com/@sardoche",
+      "https://www.facebook.com/Lolsardoche/",
+      "https://www.youtube.com/@SardocheLol/videos",
+      "https://www.youtube.com/@SardocheLol/streams",
+      "https://linktr.ee/sardoche"
+    ],
+    "aliases": ["SardocheTV", "sardoche"]
+  },
+  {
+    "id": 202,
+    "name": "Thinkerview",
+    "slug": "thinkerview",
+    "urls": [
+      "https://www.thinkerview.com/",
+      "https://www.thinkerview.com/itws/",
+      "https://www.thinkerview.com/category/thinkerview/",
+      "https://www.youtube.com/@thinkerview",
+      "https://www.youtube.com/@thinkerview/videos",
+      "https://www.youtube.com/@thinkerview/streams",
+      "https://x.com/thinker_view",
+      "https://www.facebook.com/thinkerview/",
+      "https://www.instagram.com/thinkerview/",
+      "https://www.tiktok.com/@thinkerview"
+    ],
+    "aliases": ["ThinkerView", "thinkerview"]
+  },
+  {
+    "id": 203,
+    "name": "Clément Viktorovitch",
+    "slug": "clement-viktorovitch",
+    "urls": [
+      "https://clemovitch.com/",
+      "https://clemovitch.com/articles/",
+      "https://clemovitch.com/medias/",
+      "https://x.com/Clemovitch",
+      "https://www.youtube.com/@ClementViktorovitch",
+      "https://www.youtube.com/@ClementViktorovitch/videos",
+      "https://www.instagram.com/clemovitch/",
+      "https://www.threads.com/@clemovitch",
+      "https://www.facebook.com/clementviktorovitch/",
+      "https://linktr.ee/clemovitch"
+    ],
+    "aliases": ["Clement Viktorovitch", "Viktorovitch"]
+  },
+  {
+    "id": 204,
+    "name": "Pascal Boniface",
+    "slug": "pascal-boniface",
+    "urls": [
+      "https://www.iris-france.org/",
+      "https://www.iris-france.org/auteurs/pascal-boniface/",
+      "https://www.iris-france.org/category/analyses/",
+      "https://www.iris-france.org/category/tribunes/",
+      "https://x.com/PascalBoniface",
+      "https://www.youtube.com/channel/UC4VOE8jQPWUPp4PpNK8zhIg",
+      "https://www.youtube.com/channel/UC4VOE8jQPWUPp4PpNK8zhIg/videos",
+      "https://www.youtube.com/playlist?list=PLQOYZrBXNS7VbAPcPMHFMzZ0BSY-BmyRi",
+      "https://www.facebook.com/InstitutIRIS/",
+      "https://www.linkedin.com/company/institut-de-relations-internationales-et-strategiques-iris/"
+    ],
+    "aliases": ["Boniface", "PascalBoniface"]
+  },
+  {
+    "id": 205,
+    "name": "Tatiana Ventôse",
+    "slug": "tatiana-ventose",
+    "urls": [
+      "https://x.com/TatianaVentose",
+      "https://www.youtube.com/channel/UC0cT8BZdFUmC0vgr1XS7aPA",
+      "https://www.youtube.com/channel/UC0cT8BZdFUmC0vgr1XS7aPA/videos",
+      "https://www.youtube.com/channel/UC0cT8BZdFUmC0vgr1XS7aPA/streams",
+      "https://www.instagram.com/tatianaventose/",
+      "https://www.tiktok.com/@tatianaventose",
+      "https://www.facebook.com/tatianaventose/",
+      "https://odysee.com/@TatianaVentose:0",
+      "https://t.me/tatianaventose",
+      "https://linktr.ee/tatianaventose"
+    ],
+    "aliases": ["Tatiana Ventose", "TatianaVentose"]
+  },
+  {
+    "id": 206,
+    "name": "Jean Massiet",
+    "slug": "jean-massiet",
+    "urls": [
+      "https://www.twitch.tv/jeanmassiet",
+      "https://www.youtube.com/channel/UCqv_wXmLSFtTDA39HQaLssQ",
+      "https://www.youtube.com/c/JeanMassiet/videos",
+      "https://www.youtube.com/c/JeanMassiet/shorts",
+      "https://x.com/JeanMassiet",
+      "https://www.instagram.com/jeanmassiet/",
+      "https://www.tiktok.com/@jeanmassiet",
+      "https://www.patreon.com/jeanmassiet",
+      "https://linktr.ee/jeanmassiet",
+      "https://www.youtube.com/channel/UCqv_wXmLSFtTDA39HQaLssQ/about"
+    ],
+    "aliases": ["JeanMassiet", "massiet"]
+  },
+  {
+    "id": 207,
+    "name": "Usul",
+    "slug": "usul",
+    "urls": [
+      "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets",
+      "https://www.mediapart.fr/studio",
+      "https://www.mediapart.fr/studio/videos",
+      "https://www.youtube.com/@OuvrezLesGuillemets",
+      "https://www.youtube.com/@OuvrezLesGuillemets/videos",
+      "https://x.com/usul2000",
+      "https://www.instagram.com/usul2000/",
+      "https://www.facebook.com/usul2000/",
+      "https://www.twitch.tv/usul2000",
+      "https://linktr.ee/usul2000"
+    ],
+    "aliases": ["Usul2000", "usul"]
+  },
+  {
+    "id": 208,
+    "name": "Hugo Clément",
+    "slug": "hugo-clement",
+    "urls": [
+      "https://x.com/hugoclement",
+      "https://www.instagram.com/hugoclementk/",
+      "https://www.threads.com/@hugoclementk",
+      "https://www.youtube.com/@HugoClement",
+      "https://www.youtube.com/@HugoClement/videos",
+      "https://www.france.tv/france-5/sur-le-front/",
+      "https://www.france.tv/",
+      "https://www.facebook.com/hugoclementofficiel/",
+      "https://www.tiktok.com/@hugoclement",
+      "https://linktr.ee/hugoclement"
+    ],
+    "aliases": ["Hugo Clement", "HugoClement"]
+  },
+  {
+    "id": 209,
+    "name": "Johan Reboul",
+    "slug": "johan-reboul",
+    "urls": [
+      "https://www.instagram.com/lejeuneengage/",
+      "https://www.threads.com/@lejeuneengage",
+      "https://x.com/LeJeuneEngage",
+      "https://www.youtube.com/@lejeuneengage",
+      "https://www.youtube.com/@lejeuneengage/videos",
+      "https://www.tiktok.com/@lejeuneengage",
+      "https://www.facebook.com/lejeuneengage/",
+      "https://linktr.ee/lejeuneengage",
+      "https://podcasts.apple.com/fr/podcast/le-jeune-engag%C3%A9/id",
+      "https://www.linkedin.com/in/johan-reboul/"
+    ],
+    "aliases": ["JohanReboul", "LeJeuneEngage"]
+  },
+  {
+    "id": 210,
+    "name": "Mister Geopolitix",
+    "slug": "mister-geopolitix",
+    "urls": [
+      "https://www.youtube.com/channel/UCX9lsdsTKfTi1eqoyL-RS-Q",
+      "https://www.youtube.com/%40MisterGeopolitix/videos",
+      "https://www.youtube.com/%40MisterGeopolitix/posts",
+      "https://www.instagram.com/mistergeopolitix/",
+      "https://x.com/MisterGeopolitix",
+      "https://www.tiktok.com/@mistergeopolitix",
+      "https://www.facebook.com/mistergeopolitix/",
+      "https://linktr.ee/mistergeopolitix",
+      "https://open.spotify.com/show/",
+      "https://podcasts.apple.com/"
+    ],
+    "aliases": ["MisterGeopolitix", "Mr Geopolitix"]
+  },
+  {
+    "id": 211,
+    "name": "Osons Causer",
+    "slug": "osons-causer",
+    "urls": [
+      "https://www.youtube.com/%40Osonscauser",
+      "https://www.youtube.com/%40Osonscauser/videos",
+      "https://www.youtube.com/c/Osonscauser/streams",
+      "https://x.com/osonscauser",
+      "https://www.facebook.com/osonscauser/",
+      "https://www.instagram.com/osonscauser/",
+      "https://www.tiktok.com/@osonscauser",
+      "https://osonscauser.com/",
+      "https://osonscauser.com/articles/",
+      "https://linktr.ee/osonscauser"
+    ],
+    "aliases": ["OsonsCauser", "osons causer"]
+  },
+  {
+    "id": 212,
+    "name": "Linguisticae",
+    "slug": "linguisticae",
+    "urls": [
+      "https://www.youtube.com/linguisticae",
+      "https://www.youtube.com/c/Linguisticae/videos",
+      "https://x.com/Linguisticae",
+      "https://www.instagram.com/linguisticae/",
+      "https://www.tiktok.com/@linguisticae",
+      "https://m.twitch.tv/montedelinguisticae",
+      "https://linktr.ee/linguisticae",
+      "https://www.facebook.com/linguisticae/",
+      "https://www.patreon.com/linguisticae",
+      "https://medium.com/@linguisticae"
+    ],
+    "aliases": ["Linguisticae", "linguisticae"]
+  },
+  {
+    "id": 213,
+    "name": "Le Réveilleur",
+    "slug": "le-reveilleur",
+    "urls": [
+      "https://lereveilleur.com/",
+      "https://lereveilleur.com/archives/",
+      "https://lereveilleur.com/recherche/",
+      "https://www.youtube.com/channel/UC1EacOJoqsKaYxaDomTCTEQ",
+      "https://www.youtube.com/%40lereveilleur/videos",
+      "https://www.youtube.com/%40lereveilleur/posts",
+      "https://x.com/lereveilleur",
+      "https://www.facebook.com/le.reveilleur/",
+      "https://www.instagram.com/le.reveilleur/",
+      "https://linktr.ee/lereveilleur"
+    ],
+    "aliases": ["Le Reveilleur", "LeReveilleur"]
+  },
+  {
+    "id": 214,
+    "name": "Heu?reka",
+    "slug": "heureka",
+    "urls": [
+      "https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ",
+      "https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ/videos",
+      "https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ/playlists",
+      "https://x.com/Heu7reka",
+      "https://www.instagram.com/heu7reka/",
+      "https://www.tiktok.com/@heu7reka",
+      "https://www.facebook.com/Heu7reka/",
+      "https://www.patreon.com/heureka",
+      "https://linktr.ee/Heu7reka",
+      "https://www.youtube.com/watch?v=J5pm4WCPPAs"
+    ],
+    "aliases": ["Heureka", "Heu'reka", "Heu?reka"]
+  },
+  {
+    "id": 215,
+    "name": "Stupid Economics",
+    "slug": "stupid-economics",
+    "urls": [
+      "https://www.youtube.com/%40StupidEco",
+      "https://www.youtube.com/%40StupidEco/videos",
+      "https://www.youtube.com/%40StupidEco/shorts",
+      "https://www.youtube.com/%40StupidEco/streams",
+      "https://x.com/Stupid_Eco",
+      "https://www.instagram.com/stupideconomics/",
+      "https://www.tiktok.com/@stupideconomics",
+      "https://fr.ulule.com/stupideconomics/",
+      "https://linktr.ee/stupideconomics",
+      "https://www.facebook.com/stupideconomics/"
+    ],
+    "aliases": ["StupidEconomics", "stupid economics"]
+  },
+  {
+    "id": 216,
+    "name": "Le Raptor",
+    "slug": "le-raptor",
+    "urls": [
+      "https://www.youtube.com/%40LeRaptor",
+      "https://www.youtube.com/channel/UC_i-uMpN1lEyuoUGDq-dajQ",
+      "https://www.youtube.com/channel/UC0dXVDfY8fiYtXPqd9tZhog",
+      "https://odysee.com/@LeRaptor:9",
+      "https://x.com/LeRaptorDissident",
+      "https://www.instagram.com/leraptor_dissident/",
+      "https://www.tiktok.com/@leraptor",
+      "https://www.facebook.com/LeRaptorDissident/",
+      "https://linktr.ee/leraptor",
+      "https://leraptor.fr/"
+    ],
+    "aliases": ["Raptor", "LeRaptor"]
+  },
+  {
+    "id": 217,
+    "name": "Bon Pote",
+    "slug": "bon-pote",
+    "urls": [
+      "https://bonpote.com/",
+      "https://bonpote.com/articles/",
+      "https://bonpote.com/category/climat/",
+      "https://bonpote.com/category/ecologie/",
+      "https://x.com/BonPote",
+      "https://www.instagram.com/bonpote/",
+      "https://www.instagram.com/bonpote/reels/",
+      "https://www.linkedin.com/company/bon-pote/",
+      "https://www.facebook.com/bonpote/",
+      "https://linktr.ee/bonpote"
+    ],
+    "aliases": ["BonPote", "bon pote"]
+  },
+  {
+    "id": 218,
+    "name": "Camille Étienne",
+    "slug": "camille-etienne",
+    "urls": [
+      "https://www.instagram.com/camilleetienne_/",
+      "https://www.threads.com/@camilleetienne_",
+      "https://x.com/camilleetienne_",
+      "https://www.tiktok.com/@camilleetienne",
+      "https://www.youtube.com/@CamilleEtienne",
+      "https://www.youtube.com/@CamilleEtienne/videos",
+      "https://www.facebook.com/camilleetienneofficiel/",
+      "https://linktr.ee/camilleetienne",
+      "https://www.linkedin.com/in/camille-etienne/",
+      "https://www.youtube.com/watch?v=CYx7L_VZwS8"
+    ],
+    "aliases": ["Camille Etienne", "CamilleEtienne"]
+  },
+  {
+    "id": 219,
+    "name": "Girl go green",
+    "slug": "girl-go-green",
+    "urls": [
+      "https://www.instagram.com/girl_go_green/",
+      "https://www.threads.com/@girl_go_green",
+      "https://x.com/girl_go_green",
+      "https://www.tiktok.com/@girl_go_green",
+      "https://www.youtube.com/@GirlGoGreen",
+      "https://www.youtube.com/@GirlGoGreen/videos",
+      "https://www.facebook.com/girlgogreen/",
+      "https://linktr.ee/girl_go_green",
+      "https://jobs.makesense.org/fr/media/s-inspirer/girl-go-green/",
+      "https://reporterre.net/Girl-go-green-le-bulldozer-de-la-lutte-ecolo-sur-Instagram"
+    ],
+    "aliases": ["GirlGoGreen", "Girl go green"]
+  },
+  {
+    "id": 220,
+    "name": "Rokhaya Diallo",
+    "slug": "rokhaya-diallo",
+    "urls": [
+      "https://rokhayadiallo.com/",
+      "https://x.com/RokhayaDiallo",
+      "https://www.instagram.com/rokhayadiallo/",
+      "https://www.threads.com/@rokhayadiallo",
+      "https://www.facebook.com/rokhayadiallo/",
+      "https://www.youtube.com/results?search_query=Rokhaya+Diallo",
+      "https://open.spotify.com/search/Rokhaya%20Diallo",
+      "https://www.linkedin.com/in/rokhaya-diallo/",
+      "https://theguardian.com/profile/rokhayadiallo",
+      "https://www.washingtonpost.com/people/rokhaya-diallo/"
+    ],
+    "aliases": ["RokhayaDiallo", "Diallo"]
+  },
+  {
+    "id": 221,
+    "name": "Assa Traoré",
+    "slug": "assa-traore",
+    "urls": [
+      "https://www.instagram.com/assa.traore_/",
+      "https://www.threads.com/@assa.traore_",
+      "https://x.com/AssaTraore",
+      "https://www.facebook.com/assatraoreofficiel/",
+      "https://www.tiktok.com/@assa.traore",
+      "https://www.youtube.com/results?search_query=Assa+Traor%C3%A9",
+      "https://linktr.ee/assatraore",
+      "https://open.spotify.com/search/Assa%20Traor%C3%A9",
+      "https://www.linkedin.com/search/results/all/?keywords=Assa%20Traor%C3%A9",
+      "https://www.comite-adama.org/"
+    ],
+    "aliases": ["Assa Traore", "AssaTraore"]
+  },
+  {
+    "id": 222,
+    "name": "Salomé Saqué",
+    "slug": "salome-saque",
+    "urls": [
+      "https://x.com/salomesaque",
+      "https://www.instagram.com/salomesaque/",
+      "https://www.threads.com/@salomesaque",
+      "https://www.tiktok.com/@salomesaque",
+      "https://www.youtube.com/results?search_query=Salom%C3%A9+Saqu%C3%A9",
+      "https://www.linkedin.com/in/salome-saque/",
+      "https://www.blast-info.fr/",
+      "https://www.blast-info.fr/search?q=salom%C3%A9%20saqu%C3%A9",
+      "https://www.payot-rivages.fr/",
+      "https://podcasts.apple.com/fr/search?term=Salom%C3%A9%20Saqu%C3%A9"
+    ],
+    "aliases": ["Salome Saque", "SalomeSaque"]
+  },
+  {
+    "id": 223,
+    "name": "Caroline Fourest",
+    "slug": "caroline-fourest",
+    "urls": [
+      "https://x.com/CarolineFourest",
+      "https://www.instagram.com/carolinefourest/",
+      "https://www.threads.com/@carolinefourest",
+      "https://www.facebook.com/raphaelenthovenofficiel/",
+      "https://www.youtube.com/results?search_query=Caroline+Fourest",
+      "https://www.franc-tireur.fr/",
+      "https://www.franc-tireur.fr/recherche?query=Fourest",
+      "https://www.lci.fr/",
+      "https://www.lci.fr/replay/",
+      "https://fr.wikipedia.org/wiki/Caroline_Fourest"
+    ],
+    "aliases": ["CarolineFourest", "Fourest"]
+  },
+  {
+    "id": 224,
+    "name": "Papacito",
+    "slug": "papacito",
+    "urls": [
+      "https://www.instagram.com/ugogiljimenez/",
+      "https://x.com/PapacitoOffical",
+      "https://www.facebook.com/PapacitoOfficiel/",
+      "https://www.patreon.com/cw/PapacitoLive",
+      "https://odysee.com/$/search?q=papacito",
+      "https://odysee.com/@dexikool:2/PAPACITO---live-furieux:8",
+      "https://fr.wikipedia.org/wiki/Papacito",
+      "https://www.instagram.com/papacito/",
+      "https://www.tiktok.com/@papacito",
+      "https://linktr.ee/ugogiljimenez"
+    ],
+    "aliases": ["Papacito", "papacito"]
+  },
+  {
+    "id": 225,
+    "name": "Thaïs d’Escufon",
+    "slug": "thais-descufon",
+    "urls": [
+      "https://x.com/ThaisEscufon",
+      "https://www.instagram.com/thaisdescufon/",
+      "https://www.threads.com/@thaisdescufon",
+      "https://www.youtube.com/channel/UCWS3mpxBmS9HXBcKymKfCRA",
+      "https://www.youtube.com/@ThaisdEscufonYT/videos",
+      "https://www.tiktok.com/@thaisdescufon",
+      "https://www.facebook.com/thaisdescufon/",
+      "https://odysee.com/@thaisdescufon:0",
+      "https://www.patreon.com/thaisdescufon",
+      "https://linktr.ee/thaisdescufon"
+    ],
+    "aliases": ["Thais d'Escufon", "ThaisDescufon", "Thaïs d’Escufon"]
+  },
+  {
+    "id": 226,
+    "name": "Eugénie Bastié",
+    "slug": "eugenie-bastie",
+    "urls": [
+      "https://x.com/EugenieBastie",
+      "https://www.instagram.com/eugeniebastieofficiel/",
+      "https://www.threads.com/@eugeniebastieofficiel",
+      "https://www.lefigaro.fr/auteur/eugenie-bastie",
+      "https://www.lefigaro.fr/vox",
+      "https://www.europe1.fr/emissions/le-choix-d-eugenie-bastie",
+      "https://www.youtube.com/results?search_query=Eug%C3%A9nie+Basti%C3%A9",
+      "https://www.linkedin.com/in/eugenie-bastie/",
+      "https://www.facebook.com/eugeniebastieofficiel/",
+      "https://linktr.ee/eugeniebastie"
+    ],
+    "aliases": ["Eugenie Bastie", "EugenieBastie"]
+  },
+  {
+    "id": 227,
+    "name": "Raphaël Enthoven",
+    "slug": "raphael-enthoven",
+    "urls": [
+      "https://x.com/Enthoven_R",
+      "https://www.instagram.com/raphael_enthoven/",
+      "https://www.threads.com/@raphael_enthoven",
+      "https://www.facebook.com/raphaelenthovenofficiel/",
+      "https://www.youtube.com/results?search_query=Rapha%C3%ABl+Enthoven",
+      "https://www.radiofrance.fr/franceinter",
+      "https://www.france.tv/",
+      "https://www.editions-observatoire.com/auteur/raphael-enthoven/",
+      "https://www.linkedin.com/in/raphael-enthoven/",
+      "https://fr.wikipedia.org/wiki/Rapha%C3%ABl_Enthoven"
+    ],
+    "aliases": ["Raphael Enthoven", "RaphaelEnthoven"]
+  },
+  {
+    "id": 300,
+    "name": "Acrimed",
+    "slug": "acrimed",
+    "urls": [
+      "https://www.acrimed.org/",
+      "https://www.acrimed.org/spip.php?page=recherche",
+      "https://www.acrimed.org/%2B-articles-%2B",
+      "https://www.acrimed.org/%2B-des-videos-%2B",
+      "https://www.acrimed.org/%2B-des-podcasts-%2B",
+      "https://www.acrimed.org/%2B-communiques-%2B",
+      "https://www.acrimed.org/%2B-Dossiers-%2B",
+      "https://www.acrimed.org/%2B-Agenda-%2B",
+      "https://www.acrimed.org/rubrique21.html",
+      "https://www.acrimed.org/spip.php?page=backend"
+    ],
+    "aliases": ["ACRIMED", "acrimed"]
+  },
+  {
+    "id": 301,
+    "name": "Lundi matin",
+    "slug": "lundi-matin",
+    "urls": [
+      "https://lundi.am/",
+      "https://lundi.am/spip.php?page=recherche",
+      "https://lundi.am/archives",
+      "https://lundi.am/audio",
+      "https://lundi.am/Ecoutez-nos-emissions-en-podcast",
+      "https://video.lundi.am/a/lundimatin/video-channels",
+      "https://video.lundi.am/c/lundiam/videos",
+      "https://feeds.buzzsprout.com/1865505.rss",
+      "https://lundi.am/spip.php?page=backend",
+      "https://lundi.am/spip.php?page=backend&id_rubrique=1"
+    ],
+    "aliases": ["LundiMatin", "lundi matin"]
+  },
+  {
+    "id": 302,
+    "name": "Contrepoints",
+    "slug": "contrepoints",
+    "urls": [
+      "https://www.contrepoints.org/",
+      "https://contrepoints.org/",
+      "https://contrepoints.org/articles/",
+      "https://contrepoints.org/category/politique/",
+      "https://contrepoints.org/category/economie/",
+      "https://contrepoints.org/category/societe/",
+      "https://contrepoints.org/category/technologie/",
+      "https://contrepoints.org/feed/",
+      "https://contrepoints.org/soutenir-contrepoints/",
+      "https://contrepoints.org/contact/"
+    ],
+    "aliases": ["ContrePoints", "contrepoints"]
+  },
+  {
+    "id": 303,
+    "name": "Atlantico",
+    "slug": "atlantico",
+    "urls": [
+      "https://atlantico.fr/",
+      "https://atlantico.fr/explore",
+      "https://atlantico.fr/explore/rdvs",
+      "https://atlantico.fr/explore/politique",
+      "https://atlantico.fr/explore/economie",
+      "https://atlantico.fr/explore/international",
+      "https://atlantico.fr/explore/societe",
+      "https://atlantico.fr/explore/technologie",
+      "https://atlantico.fr/about",
+      "https://atlantico.fr/explore/culture"
+    ],
+    "aliases": ["Atlantico.fr", "atlantico"]
+  },
+  {
+    "id": 304,
+    "name": "Causeur",
+    "slug": "causeur",
+    "urls": [
+      "https://www.causeur.fr/",
+      "https://www.causeur.fr/category/politique/",
+      "https://www.causeur.fr/category/monde/",
+      "https://www.causeur.fr/category/societe/",
+      "https://www.causeur.fr/category/culture/",
+      "https://www.causeur.fr/category/idees/",
+      "https://www.causeur.fr/abonnement",
+      "https://www.causeur.fr/author/",
+      "https://www.causeur.fr/?s=",
+      "https://www.causeur.fr/feed/"
+    ],
+    "aliases": ["Causeur.fr", "causeur"]
+  },
+  {
+    "id": 305,
+    "name": "L'Incorrect",
+    "slug": "lincorrect",
+    "urls": [
+      "https://lincorrect.org/",
+      "https://lincorrect.org/Categorie/politique/",
+      "https://lincorrect.org/Categorie/societe/",
+      "https://lincorrect.org/Categorie/culture/",
+      "https://lincorrect.org/Categorie/monde/",
+      "https://lincorrect.org/home-2-2-2-2-2-2-2/",
+      "https://lincorrect.org/hs/",
+      "https://lincorrect.org/?s=",
+      "https://lincorrect.org/abonnement/",
+      "https://lincorrect.org/feed/"
+    ],
+    "aliases": ["L Incorrect", "L’Incorrect", "LIncorrect"]
+  },
+  {
+    "id": 306,
+    "name": "Le Média",
+    "slug": "le-media",
+    "urls": [
+      "https://www.lemediatv.fr/",
+      "https://www.lemediatv.fr/direct",
+      "https://www.lemediatv.fr/podcasts",
+      "https://www.lemediatv.fr/emissions",
+      "https://www.lemediatv.fr/thematiques",
+      "https://www.lemediatv.fr/recherche",
+      "https://www.lemediatv.fr/soutien",
+      "https://video.lemediatv.fr/a/lemediatv/video-channels",
+      "https://video.lemediatv.fr/c/lemediatv/videos",
+      "https://www.lemediatv.fr/feed"
+    ],
+    "aliases": ["LeMedia", "Le Média TV", "lemediatv"]
+  },
+  {
+    "id": 307,
+    "name": "Frustration Magazine",
+    "slug": "frustration-magazine",
+    "urls": [
+      "https://www.frustrationmagazine.fr/",
+      "https://www.frustrationmagazine.fr/articles/",
+      "https://www.frustrationmagazine.fr/category/politique/",
+      "https://www.frustrationmagazine.fr/category/economie/",
+      "https://www.frustrationmagazine.fr/category/societe/",
+      "https://www.frustrationmagazine.fr/category/ecologie/",
+      "https://www.frustrationmagazine.fr/videos/",
+      "https://www.frustrationmagazine.fr/podcast/",
+      "https://www.frustrationmagazine.fr/?s=",
+      "https://www.frustrationmagazine.fr/feed/"
+    ],
+    "aliases": ["Frustration", "FrustrationMag", "Frustration magazine"]
+  },
+  {
+    "id": 308,
+    "name": "Splann!",
+    "slug": "splann",
+    "urls": [
+      "https://splann.org/",
+      "https://splann.org/enquetes/",
+      "https://splann.org/articles/",
+      "https://splann.org/dossiers/",
+      "https://splann.org/contact/",
+      "https://splann.org/soutenir/",
+      "https://splann.org/?s=",
+      "https://splann.org/feed/",
+      "https://podcast.splann.org/%40splannenstudio",
+      "https://podcast.splann.org/%40splannenstudio/feed.xml"
+    ],
+    "aliases": ["Splann", "Splann!"]
+  },
+  {
+    "id": 309,
+    "name": "Marsactu",
+    "slug": "marsactu",
+    "urls": [
+      "https://marsactu.fr/",
+      "https://marsactu.fr/actualites/",
+      "https://marsactu.fr/politique/",
+      "https://marsactu.fr/justice/",
+      "https://marsactu.fr/economie/",
+      "https://marsactu.fr/environnement/",
+      "https://marsactu.fr/culture/",
+      "https://marsactu.fr/dossiers/",
+      "https://marsactu.fr/?s=",
+      "https://marsactu.fr/feed/"
+    ],
+    "aliases": ["Marsactu.fr", "marsactu"]
+  },
+  {
+    "id": 310,
+    "name": "Next.ink",
+    "slug": "next-ink",
+    "urls": [
+      "https://next.ink/",
+      "https://next.ink/actualites/",
+      "https://next.ink/dossiers/",
+      "https://next.ink/lebrief/",
+      "https://next.ink/inpact-hardware/",
+      "https://next.ink/categorie/internet/",
+      "https://next.ink/categorie/logiciel/",
+      "https://next.ink/categorie/politique/",
+      "https://next.ink/?s=",
+      "https://next.ink/feed/"
+    ],
+    "aliases": ["Next", "NextInk", "next.ink"]
+  },
+  {
+    "id": 311,
+    "name": "Reflets.info",
+    "slug": "reflets",
+    "urls": [
+      "https://reflets.info/",
+      "https://reflets.info/articles",
+      "https://reflets.info/search",
+      "https://reflets.info/dossiers",
+      "https://reflets.info/articles/categories/monde",
+      "https://reflets.info/articles/categories/societe",
+      "https://reflets.info/articles/categories/technologies",
+      "https://reflets.info/feeds/public",
+      "https://reflets.info/articles/newsletter",
+      "https://reflets.info/articles/contact"
+    ],
+    "aliases": ["Reflets", "Reflets.info"]
+  },
+  {
+    "id": 312,
+    "name": "Rue89 Bordeaux",
+    "slug": "rue89-bordeaux",
+    "urls": [
+      "https://rue89bordeaux.com/",
+      "https://rue89bordeaux.com/category/politique/",
+      "https://rue89bordeaux.com/category/societe/",
+      "https://rue89bordeaux.com/category/environnement/",
+      "https://rue89bordeaux.com/category/culture/",
+      "https://rue89bordeaux.com/category/economie/",
+      "https://rue89bordeaux.com/dossiers/",
+      "https://rue89bordeaux.com/?s=",
+      "https://rue89bordeaux.com/feed/",
+      "https://alerte.rue89locaux.com/#/"
+    ],
+    "aliases": ["Rue89Bordeaux", "Rue 89 Bordeaux"]
+  },
+  {
+    "id": 313,
+    "name": "Rue89 Lyon",
+    "slug": "rue89-lyon",
+    "urls": [
+      "https://www.rue89lyon.fr/",
+      "https://www.rue89lyon.fr/category/politique/",
+      "https://www.rue89lyon.fr/category/societe/",
+      "https://www.rue89lyon.fr/category/environnement/",
+      "https://www.rue89lyon.fr/category/justice/",
+      "https://www.rue89lyon.fr/category/culture/",
+      "https://www.rue89lyon.fr/dossiers/",
+      "https://www.rue89lyon.fr/?s=",
+      "https://www.rue89lyon.fr/feed/",
+      "https://www.rue89lyon.fr/blogs/feed"
+    ],
+    "aliases": ["Rue89Lyon", "Rue 89 Lyon"]
+  },
+  {
+    "id": 314,
+    "name": "Rue89 Strasbourg",
+    "slug": "rue89-strasbourg",
+    "urls": [
+      "https://www.rue89strasbourg.com/",
+      "https://www.rue89strasbourg.com/category/politique",
+      "https://www.rue89strasbourg.com/category/societe",
+      "https://www.rue89strasbourg.com/category/environnement",
+      "https://www.rue89strasbourg.com/category/economie",
+      "https://www.rue89strasbourg.com/category/culture",
+      "https://www.rue89strasbourg.com/vie-pratique",
+      "https://www.rue89strasbourg.com/?s=",
+      "https://www.rue89strasbourg.com/feed/",
+      "https://www.rue89strasbourg.com/faq"
+    ],
+    "aliases": ["Rue89Strasbourg", "Rue 89 Strasbourg"]
+  },
+  {
+    "id": 315,
+    "name": "AOC",
+    "slug": "aoc",
+    "urls": [
+      "https://aoc.media/",
+      "https://aoc.media/analyse/",
+      "https://aoc.media/opinion/",
+      "https://aoc.media/critique/",
+      "https://aoc.media/entretien/",
+      "https://aoc.media/serie/",
+      "https://aoc.media/sommaire/",
+      "https://aoc.media/?s=",
+      "https://aoc.media/newsletter/",
+      "https://aoc.media/a-propos/"
+    ],
+    "aliases": ["AOC Media", "AOC.media"]
+  },
+  {
+    "id": 316,
+    "name": "Le Grand Continent",
+    "slug": "le-grand-continent",
+    "urls": [
+      "https://legrandcontinent.eu/fr/",
+      "https://legrandcontinent.eu/fr/analyses/",
+      "https://legrandcontinent.eu/fr/doctrines/",
+      "https://legrandcontinent.eu/fr/evenements/",
+      "https://legrandcontinent.eu/fr/evenements/past/",
+      "https://legrandcontinent.eu/fr/a-propos/",
+      "https://legrandcontinent.eu/fr/offre/",
+      "https://legrandcontinent.eu/fr/?s=",
+      "https://legrandcontinent.eu/fr/newsletter/",
+      "https://legrandcontinent.eu/fr/feed/"
+    ],
+    "aliases": ["Grand Continent", "LeGrandContinent"]
+  },
+  {
+    "id": 317,
+    "name": "Brief.me",
+    "slug": "brief-me",
+    "urls": [
+      "https://brief.me/",
+      "https://brief.me/edition",
+      "https://brief.me/inscription",
+      "https://brief.me/offres",
+      "https://brief.me/a-propos",
+      "https://brief.me/archives",
+      "https://brief.me/politique",
+      "https://brief.me/economie",
+      "https://brief.me/international",
+      "https://brief.me/rss"
+    ],
+    "aliases": ["Brief", "Brief.me"]
+  },
+  {
+    "id": 318,
+    "name": "XXI",
+    "slug": "xxi",
+    "urls": [
+      "https://www.revue21.fr/",
+      "https://www.revue21.fr/articles/",
+      "https://www.revue21.fr/numeros/",
+      "https://www.revue21.fr/auteurs/",
+      "https://www.revue21.fr/abonnement/",
+      "https://www.revue21.fr/a-propos/",
+      "https://www.revue21.fr/actualites/",
+      "https://www.revue21.fr/?s=",
+      "https://www.revue21.fr/newsletter/",
+      "https://www.revue21.fr/feed/"
+    ],
+    "aliases": ["Revue XXI", "XXI magazine"]
+  },
+  {
+    "id": 319,
+    "name": "Orient XXI",
+    "slug": "orient-xxi",
+    "urls": [
+      "https://orientxxi.info/",
+      "https://orientxxi.info/information",
+      "https://orientxxi.info/archives",
+      "https://orientxxi.info/?rubrique",
+      "https://orientxxi.info/?s=",
+      "https://orientxxi.info/newsletter",
+      "https://orientxxi.info/rss",
+      "https://orientxxi.info/podcast",
+      "https://orientxxi.info/videos",
+      "https://orientxxi.info/contact"
+    ],
+    "aliases": ["OrientXXI", "Orient 21"]
+  },
+  {
+    "id": 320,
+    "name": "Les Surligneurs",
+    "slug": "les-surligneurs",
+    "urls": [
+      "https://lessurligneurs.eu/",
+      "https://lessurligneurs.eu/category/le-droit-et-la-politique/",
+      "https://lessurligneurs.eu/category/verification/",
+      "https://lessurligneurs.eu/category/decryptage/",
+      "https://lessurligneurs.eu/category/chroniques/",
+      "https://lessurligneurs.eu/a-propos/",
+      "https://lessurligneurs.eu/contact/",
+      "https://lessurligneurs.eu/?s=",
+      "https://lessurligneurs.eu/feed/",
+      "https://lessurligneurs.eu/newsletter/"
+    ],
+    "aliases": ["Surligneurs", "LesSurligneurs"]
+  },
+  {
+    "id": 321,
+    "name": "Conspiracy Watch",
+    "slug": "conspiracy-watch",
+    "urls": [
+      "https://www.conspiracywatch.info/",
+      "https://www.conspiracywatch.info/les-articles/",
+      "https://www.conspiracywatch.info/les-analyses/",
+      "https://www.conspiracywatch.info/les-fiches/",
+      "https://www.conspiracywatch.info/les-dossiers/",
+      "https://www.conspiracywatch.info/podcast/",
+      "https://www.conspiracywatch.info/newsletter/",
+      "https://www.conspiracywatch.info/a-propos/",
+      "https://www.conspiracywatch.info/?s=",
+      "https://www.conspiracywatch.info/feed/"
+    ],
+    "aliases": ["ConspiracyWatch", "conspiracy watch"]
+  },
+  {
+    "id": 322,
+    "name": "Le Vent Se Lève (LVSL)",
+    "slug": "lvsl",
+    "urls": [
+      "https://lvsl.fr/",
+      "https://lvsl.fr/category/politique/",
+      "https://lvsl.fr/category/economie/",
+      "https://lvsl.fr/category/international/",
+      "https://lvsl.fr/category/ecologie/",
+      "https://lvsl.fr/category/culture/",
+      "https://lvsl.fr/dossiers/",
+      "https://lvsl.fr/a-propos/",
+      "https://lvsl.fr/?s=",
+      "https://lvsl.fr/feed/"
+    ],
+    "aliases": ["LVSL", "Le Vent Se Leve", "Le Vent se lève"]
+  },
+  {
+    "id": 323,
+    "name": "Révolution Permanente",
+    "slug": "revolution-permanente",
+    "urls": [
+      "https://www.revolutionpermanente.fr/",
+      "https://www.revolutionpermanente.fr/Politique",
+      "https://www.revolutionpermanente.fr/Societe",
+      "https://www.revolutionpermanente.fr/International",
+      "https://www.revolutionpermanente.fr/Economie",
+      "https://www.revolutionpermanente.fr/Culture",
+      "https://www.revolutionpermanente.fr/Dossiers",
+      "https://www.revolutionpermanente.fr/?recherche=",
+      "https://www.revolutionpermanente.fr/Abonnements",
+      "https://www.revolutionpermanente.fr/spip.php?page=backend"
+    ],
+    "aliases": ["Revolution Permanente", "RP", "Révolution Permanente"]
+  },
+  {
+    "id": 324,
+    "name": "Terrestres",
+    "slug": "terrestres",
+    "urls": [
+      "https://www.terrestres.org/",
+      "https://www.terrestres.org/articles/",
+      "https://www.terrestres.org/dossiers/",
+      "https://www.terrestres.org/series/",
+      "https://www.terrestres.org/chroniques/",
+      "https://www.terrestres.org/a-propos/",
+      "https://www.terrestres.org/newsletter/",
+      "https://www.terrestres.org/?s=",
+      "https://www.terrestres.org/feed/",
+      "https://www.terrestres.org/podcast/"
+    ],
+    "aliases": ["Terrestres.org", "terrestres"]
+  },
+  {
+    "id": 325,
+    "name": "Mediabask",
+    "slug": "mediabask",
+    "urls": [
+      "https://mediabask.eus/",
+      "https://mediabask.eus/fr/actualites",
+      "https://mediabask.eus/fr/politique",
+      "https://mediabask.eus/fr/societe",
+      "https://mediabask.eus/fr/economie",
+      "https://mediabask.eus/fr/culture",
+      "https://mediabask.eus/fr/sports",
+      "https://mediabask.eus/fr/archives",
+      "https://mediabask.eus/fr/recherche",
+      "https://mediabask.eus/rss"
+    ],
+    "aliases": ["MédiaBask", "Mediabask.eus"]
+  },
+  {
+    "id": 326,
+    "name": "Le Ravi",
+    "slug": "le-ravi",
+    "urls": [
+      "https://leravi.fr/",
+      "https://leravi.fr/category/politique/",
+      "https://leravi.fr/category/societe/",
+      "https://leravi.fr/category/environnement/",
+      "https://leravi.fr/category/culture/",
+      "https://leravi.fr/category/economie/",
+      "https://leravi.fr/enquetes/",
+      "https://leravi.fr/a-propos/",
+      "https://leravi.fr/?s=",
+      "https://leravi.fr/feed/"
+    ],
+    "aliases": ["LeRavi", "Le Ravi.fr"]
+  },
+  {
+    "id": 327,
+    "name": "La Revue Dessinée",
+    "slug": "la-revue-dessinee",
+    "urls": [
+      "https://www.larevuedessinee.fr/",
+      "https://www.larevuedessinee.fr/actualites/",
+      "https://www.larevuedessinee.fr/enquetes/",
+      "https://www.larevuedessinee.fr/numeros/",
+      "https://www.larevuedessinee.fr/auteurs/",
+      "https://www.larevuedessinee.fr/boutique/",
+      "https://www.larevuedessinee.fr/abonnement/",
+      "https://www.larevuedessinee.fr/a-propos/",
+      "https://www.larevuedessinee.fr/?s=",
+      "https://www.larevuedessinee.fr/feed/"
+    ],
+    "aliases": ["Revue Dessinée", "LaRevueDessinee"]
+  },
+  {
+    "id": 328,
+    "name": "La Déferlante",
+    "slug": "la-deferlante",
+    "urls": [
+      "https://www.revueladeferlante.fr/",
+      "https://www.revueladeferlante.fr/articles/",
+      "https://www.revueladeferlante.fr/dossiers/",
+      "https://www.revueladeferlante.fr/numeros/",
+      "https://www.revueladeferlante.fr/auteurs/",
+      "https://www.revueladeferlante.fr/abonnement/",
+      "https://www.revueladeferlante.fr/a-propos/",
+      "https://www.revueladeferlante.fr/newsletter/",
+      "https://www.revueladeferlante.fr/?s=",
+      "https://www.revueladeferlante.fr/feed/"
+    ],
+    "aliases": ["La Deferlante", "Revue La Déferlante"]
+  },
+  {
+    "id": 329,
+    "name": "Le Drenche",
+    "slug": "le-drenche",
+    "urls": [
+      "https://ledrenche.fr/",
+      "https://ledrenche.fr/sujets/",
+      "https://ledrenche.fr/debats/",
+      "https://ledrenche.fr/tribunes/",
+      "https://ledrenche.fr/auteurs/",
+      "https://ledrenche.fr/a-propos/",
+      "https://ledrenche.fr/partenaires/",
+      "https://ledrenche.fr/?s=",
+      "https://ledrenche.fr/newsletter/",
+      "https://ledrenche.fr/feed/"
+    ],
+    "aliases": ["LeDrenche", "ledrenche"]
+  },
+  {
+    "id": 400,
+    "name": "Emmanuel Macron",
+    "slug": "emmanuel-macron",
+    "urls": [
+      "https://www.elysee.fr/emmanuel-macron",
+      "https://www.elysee.fr/emmanuel-macron/2017/06/29/portrait-officiel-du-president-de-la-republique",
+      "https://x.com/EmmanuelMacron",
+      "https://x.com/EmmanuelMacron/with_replies",
+      "https://x.com/EmmanuelMacron/media",
+      "https://x.com/EmmanuelMacron/likes",
+      "https://www.instagram.com/emmanuelmacron/",
+      "https://fr.wikipedia.org/wiki/Emmanuel_Macron",
+      "https://www.elysee.fr/",
+      "https://www.elysee.fr/agenda"
+    ],
+    "aliases": ["@EmmanuelMacron", "EmmanuelMacron"],
+    "profiles": {
+      "x": ["https://x.com/EmmanuelMacron"],
+      "instagram": ["https://www.instagram.com/emmanuelmacron/"]
+    }
+  },
+  {
+    "id": 401,
+    "name": "Gabriel Attal",
+    "slug": "gabriel-attal",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722190",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722190/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722190/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722190/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722190/seance-publique",
+      "https://x.com/GabrielAttal",
+      "https://x.com/GabrielAttal/with_replies",
+      "https://x.com/GabrielAttal/media",
+      "https://x.com/GabrielAttal/likes",
+      "https://fr.wikipedia.org/wiki/Gabriel_Attal"
+    ],
+    "aliases": ["@GabrielAttal", "GabrielAttal"],
+    "profiles": { "x": ["https://x.com/GabrielAttal"] }
+  },
+  {
+    "id": 402,
+    "name": "Gérald Darmanin",
+    "slug": "gerald-darmanin",
+    "urls": [
+      "https://www.info.gouv.fr/personnalite/gerald-darmanin",
+      "https://x.com/GDarmanin",
+      "https://x.com/GDarmanin/with_replies",
+      "https://x.com/GDarmanin/media",
+      "https://x.com/GDarmanin/likes",
+      "https://fr.wikipedia.org/wiki/G%C3%A9rald_Darmanin",
+      "https://www.interieur.gouv.fr/",
+      "https://www.justice.gouv.fr/",
+      "https://www.info.gouv.fr/gouvernement",
+      "https://www.info.gouv.fr/"
+    ],
+    "aliases": ["@GDarmanin", "Gerald Darmanin"],
+    "profiles": { "x": ["https://x.com/GDarmanin"] }
+  },
+  {
+    "id": 403,
+    "name": "Élisabeth Borne",
+    "slug": "elisabeth-borne",
+    "urls": [
+      "https://www.info.gouv.fr/personnalite/elisabeth-borne",
+      "https://x.com/Elisabeth_Borne",
+      "https://x.com/Elisabeth_Borne/with_replies",
+      "https://x.com/Elisabeth_Borne/media",
+      "https://x.com/Elisabeth_Borne/likes",
+      "https://fr.wikipedia.org/wiki/%C3%89lisabeth_Borne",
+      "https://www.info.gouv.fr/gouvernement",
+      "https://www.info.gouv.fr/",
+      "https://www.education.gouv.fr/",
+      "https://www.enseignementsup-recherche.gouv.fr/"
+    ],
+    "aliases": ["@Elisabeth_Borne", "Elisabeth Borne"],
+    "profiles": { "x": ["https://x.com/Elisabeth_Borne"] }
+  },
+  {
+    "id": 404,
+    "name": "Édouard Philippe",
+    "slug": "edouard-philippe",
+    "urls": [
+      "https://x.com/EPhilippe_LH",
+      "https://x.com/EPhilippe_LH/with_replies",
+      "https://x.com/EPhilippe_LH/media",
+      "https://x.com/EPhilippe_LH/likes",
+      "https://fr.wikipedia.org/wiki/%C3%89douard_Philippe",
+      "https://horizonsleparti.fr/",
+      "https://horizonsleparti.fr/actualites/",
+      "https://horizonsleparti.fr/communiques/",
+      "https://horizonsleparti.fr/?s=",
+      "https://horizonsleparti.fr/contact/"
+    ],
+    "aliases": ["@EPhilippe_LH", "Edouard Philippe"],
+    "profiles": { "x": ["https://x.com/EPhilippe_LH"] }
+  },
+  {
+    "id": 405,
+    "name": "François Bayrou",
+    "slug": "francois-bayrou",
+    "urls": [
+      "https://x.com/bayrou",
+      "https://x.com/bayrou/with_replies",
+      "https://x.com/bayrou/media",
+      "https://x.com/bayrou/likes",
+      "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Bayrou",
+      "https://www.mouvementdemocrate.fr/",
+      "https://www.mouvementdemocrate.fr/actualites",
+      "https://www.mouvementdemocrate.fr/communiques",
+      "https://www.mouvementdemocrate.fr/?s=",
+      "https://www.mouvementdemocrate.fr/contact"
+    ],
+    "aliases": ["@bayrou", "Francois Bayrou"],
+    "profiles": { "x": ["https://x.com/bayrou"] }
+  },
+  {
+    "id": 406,
+    "name": "Bruno Le Maire",
+    "slug": "bruno-le-maire",
+    "urls": [
+      "https://x.com/BrunoLeMaire",
+      "https://x.com/BrunoLeMaire/with_replies",
+      "https://x.com/BrunoLeMaire/media",
+      "https://x.com/BrunoLeMaire/likes",
+      "https://fr.wikipedia.org/wiki/Bruno_Le_Maire",
+      "https://www.economie.gouv.fr/",
+      "https://www.gouvernement.fr/",
+      "https://www.info.gouv.fr/gouvernement",
+      "https://www.elysee.fr/",
+      "https://www.senat.fr/"
+    ],
+    "aliases": ["@BrunoLeMaire", "BrunoLeMaire"],
+    "profiles": { "x": ["https://x.com/BrunoLeMaire"] }
+  },
+  {
+    "id": 407,
+    "name": "Yaël Braun-Pivet",
+    "slug": "yael-braun-pivet",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA721908",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA721908/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA721908/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA721908/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA721908/seance-publique",
+      "https://x.com/YaelBRAUNPIVET",
+      "https://x.com/YaelBRAUNPIVET/with_replies",
+      "https://x.com/YaelBRAUNPIVET/media",
+      "https://x.com/YaelBRAUNPIVET/likes",
+      "https://fr.wikipedia.org/wiki/Ya%C3%ABl_Braun-Pivet"
+    ],
+    "aliases": ["@YaelBRAUNPIVET", "Yael Braun-Pivet"],
+    "profiles": { "x": ["https://x.com/YaelBRAUNPIVET"] }
+  },
+  {
+    "id": 408,
+    "name": "Aurore Bergé",
+    "slug": "aurore-berge",
+    "urls": [
+      "https://x.com/auroreberge",
+      "https://x.com/auroreberge/with_replies",
+      "https://x.com/auroreberge/media",
+      "https://x.com/auroreberge/likes",
+      "https://fr.wikipedia.org/wiki/Aurore_Berg%C3%A9",
+      "https://www.info.gouv.fr/gouvernement",
+      "https://www.gouvernement.fr/",
+      "https://www.assemblee-nationale.fr/",
+      "https://www.service-public.fr/",
+      "https://www.elysee.fr/"
+    ],
+    "aliases": ["@auroreberge", "Aurore Berge"],
+    "profiles": { "x": ["https://x.com/auroreberge"] }
+  },
+  {
+    "id": 409,
+    "name": "Raphaël Glucksmann",
+    "slug": "raphael-glucksmann",
+    "urls": [
+      "https://www.europarl.europa.eu/meps/en/197694/RAPHAEL_GLUCKSMANN/home",
+      "https://www.europarl.europa.eu/meps/en/197694/RAPHAEL_GLUCKSMANN/history/9",
+      "https://www.europarl.europa.eu/meps/en/197694/RAPHAEL_GLUCKSMANN/main-activities",
+      "https://www.europarl.europa.eu/meps/en/197694/RAPHAEL_GLUCKSMANN/declarations",
+      "https://x.com/rglucks1",
+      "https://x.com/rglucks1/with_replies",
+      "https://x.com/rglucks1/media",
+      "https://x.com/rglucks1/likes",
+      "https://fr.wikipedia.org/wiki/Rapha%C3%ABl_Glucksmann",
+      "https://www.linkedin.com/in/raphaelglucksmann/"
+    ],
+    "aliases": ["@rglucks1", "Raphael Glucksmann"],
+    "profiles": { "x": ["https://x.com/rglucks1"] }
+  },
+  {
+    "id": 410,
+    "name": "Olivier Faure",
+    "slug": "olivier-faure",
+    "urls": [
+      "https://x.com/faureolivier",
+      "https://x.com/faureolivier/with_replies",
+      "https://x.com/faureolivier/media",
+      "https://x.com/faureolivier/likes",
+      "https://fr.wikipedia.org/wiki/Olivier_Faure",
+      "https://www.parti-socialiste.fr/",
+      "https://www.parti-socialiste.fr/l_actu_en_bref",
+      "https://www.parti-socialiste.fr/communiques_de_presse",
+      "https://www.parti-socialiste.fr/?s=",
+      "https://www.assemblee-nationale.fr/"
+    ],
+    "aliases": ["@faureolivier", "OlivierFaure"],
+    "profiles": { "x": ["https://x.com/faureolivier"] }
+  },
+  {
+    "id": 411,
+    "name": "Marine Tondelier",
+    "slug": "marine-tondelier",
+    "urls": [
+      "https://x.com/marinetondelier",
+      "https://x.com/marinetondelier/with_replies",
+      "https://x.com/marinetondelier/media",
+      "https://x.com/marinetondelier/likes",
+      "https://fr.wikipedia.org/wiki/Marine_Tondelier",
+      "https://lesecologistes.fr/",
+      "https://lesecologistes.fr/actualites/",
+      "https://lesecologistes.fr/communiques/",
+      "https://lesecologistes.fr/?s=",
+      "https://x.com/EELV"
+    ],
+    "aliases": ["@marinetondelier", "MarineTondelier"],
+    "profiles": { "x": ["https://x.com/marinetondelier"] }
+  },
+  {
+    "id": 412,
+    "name": "Fabien Roussel",
+    "slug": "fabien-roussel",
+    "urls": [
+      "https://x.com/Fabien_Roussel",
+      "https://x.com/Fabien_Roussel/with_replies",
+      "https://x.com/Fabien_Roussel/media",
+      "https://x.com/Fabien_Roussel/likes",
+      "https://fr.wikipedia.org/wiki/Fabien_Roussel",
+      "https://www.pcf.fr/",
+      "https://www.pcf.fr/actualites",
+      "https://www.pcf.fr/communiques",
+      "https://www.pcf.fr/?s=",
+      "https://www.pcf.fr/contact"
+    ],
+    "aliases": ["@Fabien_Roussel", "FabienRoussel"],
+    "profiles": { "x": ["https://x.com/Fabien_Roussel"] }
+  },
+  {
+    "id": 413,
+    "name": "Jean-Luc Mélenchon",
+    "slug": "jean-luc-melenchon",
+    "urls": [
+      "https://melenchon.fr/",
+      "https://lafranceinsoumise.fr/les-parlementaires-de-la-france-insoumise/jeanlucmelenchon/",
+      "https://x.com/JLMelenchon",
+      "https://x.com/JLMelenchon/with_replies",
+      "https://x.com/JLMelenchon/media",
+      "https://x.com/JLMelenchon/likes",
+      "https://fr.wikipedia.org/wiki/Jean-Luc_M%C3%A9lenchon",
+      "https://lafranceinsoumise.fr/",
+      "https://lafranceinsoumise.fr/actualites/",
+      "https://lafranceinsoumise.fr/?s="
+    ],
+    "aliases": ["@JLMelenchon", "JLMelenchon", "Jean Luc Melenchon"],
+    "profiles": { "x": ["https://x.com/JLMelenchon"] }
+  },
+  {
+    "id": 414,
+    "name": "Manuel Bompard",
+    "slug": "manuel-bompard",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA793444",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA793444/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA793444/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA793444/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA793444/seance-publique",
+      "https://x.com/mbompard",
+      "https://x.com/mbompard/with_replies",
+      "https://x.com/mbompard/media",
+      "https://x.com/mbompard/likes",
+      "https://fr.wikipedia.org/wiki/Manuel_Bompard"
+    ],
+    "aliases": ["@mbompard", "ManuelBompard"],
+    "profiles": { "x": ["https://x.com/mbompard"] }
+  },
+  {
+    "id": 415,
+    "name": "Mathilde Panot",
+    "slug": "mathilde-panot",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720892",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720892/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720892/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720892/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720892/seance-publique",
+      "https://x.com/MathildePanot",
+      "https://x.com/MathildePanot/with_replies",
+      "https://x.com/MathildePanot/media",
+      "https://x.com/MathildePanot/likes",
+      "https://fr.wikipedia.org/wiki/Mathilde_Panot"
+    ],
+    "aliases": ["@MathildePanot", "MathildePanot"],
+    "profiles": { "x": ["https://x.com/MathildePanot"] }
+  },
+  {
+    "id": 416,
+    "name": "François Ruffin",
+    "slug": "francois-ruffin",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722142",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722142/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722142/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722142/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA722142/seance-publique",
+      "https://x.com/Francois_Ruffin",
+      "https://x.com/Francois_Ruffin/with_replies",
+      "https://x.com/Francois_Ruffin/media",
+      "https://x.com/Francois_Ruffin/likes",
+      "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Ruffin"
+    ],
+    "aliases": ["@Francois_Ruffin", "Francois Ruffin"],
+    "profiles": { "x": ["https://x.com/Francois_Ruffin"] }
+  },
+  {
+    "id": 417,
+    "name": "Sandrine Rousseau",
+    "slug": "sandrine-rousseau",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA795076",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA795076/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA795076/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA795076/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA795076/seance-publique",
+      "https://x.com/sandrousseau",
+      "https://x.com/sandrousseau/with_replies",
+      "https://x.com/sandrousseau/media",
+      "https://x.com/sandrousseau/likes",
+      "https://fr.wikipedia.org/wiki/Sandrine_Rousseau"
+    ],
+    "aliases": ["@sandrousseau", "SandrineRousseau"],
+    "profiles": { "x": ["https://x.com/sandrousseau"] }
+  },
+  {
+    "id": 418,
+    "name": "Anne Hidalgo",
+    "slug": "anne-hidalgo",
+    "urls": [
+      "https://x.com/Anne_Hidalgo",
+      "https://x.com/Anne_Hidalgo/with_replies",
+      "https://x.com/Anne_Hidalgo/media",
+      "https://x.com/Anne_Hidalgo/likes",
+      "https://fr.wikipedia.org/wiki/Anne_Hidalgo",
+      "https://www.paris.fr/",
+      "https://www.paris.fr/actualites",
+      "https://www.paris.fr/pages/la-maire-de-paris-4",
+      "https://www.paris.fr/pages/agenda-1",
+      "https://www.paris.fr/?q="
+    ],
+    "aliases": ["@Anne_Hidalgo", "AnneHidalgo"],
+    "profiles": { "x": ["https://x.com/Anne_Hidalgo"] }
+  },
+  {
+    "id": 419,
+    "name": "Valérie Pécresse",
+    "slug": "valerie-pecresse",
+    "urls": [
+      "https://x.com/vpecresse",
+      "https://x.com/vpecresse/with_replies",
+      "https://x.com/vpecresse/media",
+      "https://x.com/vpecresse/likes",
+      "https://fr.wikipedia.org/wiki/Val%C3%A9rie_P%C3%A9cresse",
+      "https://www.iledefrance.fr/",
+      "https://www.iledefrance.fr/toutes-les-actualites",
+      "https://www.iledefrance.fr/agenda",
+      "https://www.iledefrance.fr/communiques-de-presse",
+      "https://www.iledefrance.fr/recherche"
+    ],
+    "aliases": ["@vpecresse", "Valerie Pecresse"],
+    "profiles": { "x": ["https://x.com/vpecresse"] }
+  },
+  {
+    "id": 420,
+    "name": "Laurent Wauquiez",
+    "slug": "laurent-wauquiez",
+    "urls": [
+      "https://x.com/laurentwauquiez",
+      "https://x.com/laurentwauquiez/with_replies",
+      "https://x.com/laurentwauquiez/media",
+      "https://x.com/laurentwauquiez/likes",
+      "https://fr.wikipedia.org/wiki/Laurent_Wauquiez",
+      "https://www.auvergnerhonealpes.fr/",
+      "https://www.auvergnerhonealpes.fr/actualites",
+      "https://www.auvergnerhonealpes.fr/agenda",
+      "https://www.auvergnerhonealpes.fr/communiques-de-presse",
+      "https://www.auvergnerhonealpes.fr/recherche"
+    ],
+    "aliases": ["@laurentwauquiez", "LaurentWauquiez"],
+    "profiles": { "x": ["https://x.com/laurentwauquiez"] }
+  },
+  {
+    "id": 421,
+    "name": "Bruno Retailleau",
+    "slug": "bruno-retailleau",
+    "urls": [
+      "https://x.com/BrunoRetailleau",
+      "https://x.com/BrunoRetailleau/with_replies",
+      "https://x.com/BrunoRetailleau/media",
+      "https://x.com/BrunoRetailleau/likes",
+      "https://fr.wikipedia.org/wiki/Bruno_Retailleau",
+      "https://www.senat.fr/",
+      "https://republicains.fr/",
+      "https://republicains.fr/actualites/",
+      "https://republicains.fr/communiques/",
+      "https://republicains.fr/?s="
+    ],
+    "aliases": ["@BrunoRetailleau", "BrunoRetailleau"],
+    "profiles": { "x": ["https://x.com/BrunoRetailleau"] }
+  },
+  {
+    "id": 422,
+    "name": "Éric Ciotti",
+    "slug": "eric-ciotti",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA330240",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA330240/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA330240/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA330240/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA330240/seance-publique",
+      "https://x.com/eciotti",
+      "https://x.com/eciotti/with_replies",
+      "https://x.com/eciotti/media",
+      "https://x.com/eciotti/likes",
+      "https://fr.wikipedia.org/wiki/%C3%89ric_Ciotti"
+    ],
+    "aliases": ["@eciotti", "Eric Ciotti"],
+    "profiles": { "x": ["https://x.com/eciotti"] }
+  },
+  {
+    "id": 423,
+    "name": "Marine Le Pen",
+    "slug": "marine-le-pen",
+    "urls": [
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720614",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720614/interventions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720614/questions",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720614/positions-de-vote",
+      "https://www.assemblee-nationale.fr/dyn/deputes/PA720614/seance-publique",
+      "https://x.com/MLP_officiel",
+      "https://x.com/MLP_officiel/with_replies",
+      "https://x.com/MLP_officiel/media",
+      "https://x.com/MLP_officiel/likes",
+      "https://fr.wikipedia.org/wiki/Marine_Le_Pen"
+    ],
+    "aliases": ["@MLP_officiel", "MarineLePen"],
+    "profiles": { "x": ["https://x.com/MLP_officiel"] }
+  },
+  {
+    "id": 424,
+    "name": "Jordan Bardella",
+    "slug": "jordan-bardella",
+    "urls": [
+      "https://www.europarl.europa.eu/meps/en/131580/JORDAN_BARDELLA/home",
+      "https://www.europarl.europa.eu/meps/en/131580/JORDAN_BARDELLA/main-activities",
+      "https://www.europarl.europa.eu/meps/en/131580/JORDAN_BARDELLA/declarations",
+      "https://rassemblementnational.fr/membre/jordan-bardella",
+      "https://rassemblementnational.fr/",
+      "https://x.com/J_Bardella",
+      "https://x.com/J_Bardella/with_replies",
+      "https://x.com/J_Bardella/media",
+      "https://x.com/J_Bardella/likes",
+      "https://www.instagram.com/jordanbardella/"
+    ],
+    "aliases": ["@J_Bardella", "JordanBardella"],
+    "profiles": { "x": ["https://x.com/J_Bardella"] }
+  },
+  {
+    "id": 425,
+    "name": "Éric Zemmour",
+    "slug": "eric-zemmour",
+    "urls": [
+      "https://x.com/ZemmourEric",
+      "https://x.com/ZemmourEric/with_replies",
+      "https://x.com/ZemmourEric/media",
+      "https://x.com/ZemmourEric/likes",
+      "https://fr.wikipedia.org/wiki/%C3%89ric_Zemmour",
+      "https://www.parti-reconquete.fr/",
+      "https://www.parti-reconquete.fr/actualites",
+      "https://www.parti-reconquete.fr/communiques",
+      "https://www.parti-reconquete.fr/?s=",
+      "https://www.parti-reconquete.fr/contact"
+    ],
+    "aliases": ["@ZemmourEric", "Eric Zemmour"],
+    "profiles": { "x": ["https://x.com/ZemmourEric"] }
+  },
+  {
+    "id": 426,
+    "name": "Marion Maréchal",
+    "slug": "marion-marechal",
+    "urls": [
+      "https://www.europarl.europa.eu/meps/en/256922/MARION_MARECHAL/home",
+      "https://www.europarl.europa.eu/meps/en/256922/MARION_MARECHAL/main-activities",
+      "https://www.europarl.europa.eu/meps/en/256922/MARION_MARECHAL/declarations",
+      "https://www.europarl.europa.eu/meps/en/256922/MARION_MARECHAL/cv",
+      "https://x.com/MarionMarechal",
+      "https://x.com/MarionMarechal/with_replies",
+      "https://x.com/MarionMarechal/media",
+      "https://x.com/MarionMarechal/likes",
+      "https://fr.wikipedia.org/wiki/Marion_Mar%C3%A9chal",
+      "https://www.parti-reconquete.fr/"
+    ],
+    "aliases": ["@MarionMarechal", "Marion Marechal"],
+    "profiles": { "x": ["https://x.com/MarionMarechal"] }
+  },
+  {
+    "id": 427,
+    "name": "Nicolas Dupont-Aignan",
+    "slug": "nicolas-dupont-aignan",
+    "urls": [
+      "https://x.com/dupontaignan",
+      "https://x.com/dupontaignan/with_replies",
+      "https://x.com/dupontaignan/media",
+      "https://x.com/dupontaignan/likes",
+      "https://fr.wikipedia.org/wiki/Nicolas_Dupont-Aignan",
+      "https://www.debout-la-france.fr/",
+      "https://www.debout-la-france.fr/actualites/",
+      "https://www.debout-la-france.fr/boutique/",
+      "https://www.debout-la-france.fr/?s=",
+      "https://x.com/DLF_Officiel"
+    ],
+    "aliases": ["@dupontaignan", "Dupont-Aignan", "NDA"],
+    "profiles": { "x": ["https://x.com/dupontaignan"] }
+  },
+  {
+    "id": 428,
+    "name": "François Hollande",
+    "slug": "francois-hollande",
+    "urls": [
+      "https://x.com/fhollande",
+      "https://x.com/fhollande/with_replies",
+      "https://x.com/fhollande/media",
+      "https://x.com/fhollande/likes",
+      "https://fr.wikipedia.org/wiki/Fran%C3%A7ois_Hollande",
+      "https://www.parti-socialiste.fr/",
+      "https://www.parti-socialiste.fr/communiques_de_presse",
+      "https://www.parti-socialiste.fr/l_actu_en_bref",
+      "https://www.parti-socialiste.fr/?s=",
+      "https://www.elysee.fr/"
+    ],
+    "aliases": ["@fhollande", "Francois Hollande"],
+    "profiles": { "x": ["https://x.com/fhollande"] }
+  },
+  {
+    "id": 429,
+    "name": "François-Xavier Bellamy",
+    "slug": "francois-xavier-bellamy",
+    "urls": [
+      "https://www.europarl.europa.eu/meps/en/197534/FRANCOIS-XAVIER_BELLAMY/home",
+      "https://www.europarl.europa.eu/meps/en/197534/FRANCOIS-XAVIER_BELLAMY/main-activities",
+      "https://www.europarl.europa.eu/meps/en/197534/FRANCOIS-XAVIER_BELLAMY/declarations",
+      "https://www.europarl.europa.eu/meps/en/197534/FRANCOIS-XAVIER_BELLAMY/cv",
+      "https://x.com/fxbellamy",
+      "https://x.com/fxbellamy/with_replies",
+      "https://x.com/fxbellamy/media",
+      "https://x.com/fxbellamy/likes",
+      "https://fr.wikipedia.org/wiki/Fran%C3%A7ois-Xavier_Bellamy",
+      "https://republicains.fr/"
+    ],
+    "aliases": ["@fxbellamy", "FX Bellamy", "Francois Xavier Bellamy"],
+    "profiles": { "x": ["https://x.com/fxbellamy"] }
+  }
+]
+
