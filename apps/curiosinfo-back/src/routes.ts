@@ -23,6 +23,9 @@ export async function registerRoutes(
 ): Promise<Server> {
   
   // === PUBLIC ROUTES ===
+  app.get("/api/health", (_req, res) => {
+    res.status(200).json({ ok: true });
+  });
 
   // List Topics
   app.get(api.topics.list.path, async (req, res) => {
