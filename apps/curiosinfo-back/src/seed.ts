@@ -155,9 +155,25 @@ async function main() {
     `);
   }
 
-  // 3) ARTICLES (FK -> topics.id et actor.id)
+  // 3) ARTICLES (dédoublonnage intra-batch pour éviter "cannot affect row a second time")
   if (articles.length) {
-    const values = articles.map((a) => sql`(
+    // 1) Dedup par URL (dernière occurrence gagne)
+    const byUrl = new Map<string, ArticleJson>();
+    for (const a of articles) {
+      if (!a.url) continue;
+      byUrl.set(a.url, a);
+    }
+
+    // 2) Dedup par urlHash (si deux URLs ont le même hash, dernière occurrence gagne)
+    const byHash = new Map<string, ArticleJson>();
+    for (const a of byUrl.values()) {
+      if (!a.urlHash) continue;
+      byHash.set(a.urlHash, a);
+    }
+
+    const unique = Array.from(byHash.values());
+
+    const values = unique.map((a) => sql`(
       ${a.topicId},
       ${a.actorId},
       ${a.url},
