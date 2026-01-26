@@ -169,7 +169,7 @@ async function main() {
     )`);
 
     await db.execute(sql`
-      INSERT INTO articles (id, topic_id, actor_id, url, url_hash, title, excerpt, published_at, created_at)
+      INSERT INTO articles (topic_id, actor_id, url, url_hash, title, excerpt, published_at, created_at)
       VALUES ${sql.join(values, sql`, `)}
       ON CONFLICT (url) DO UPDATE SET
         topic_id = EXCLUDED.topic_id,
