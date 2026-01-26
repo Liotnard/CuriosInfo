@@ -158,7 +158,6 @@ async function main() {
   // 3) ARTICLES (FK -> topics.id et actor.id)
   if (articles.length) {
     const values = articles.map((a) => sql`(
-      ${a.id},
       ${a.topicId},
       ${a.actorId},
       ${a.url},
@@ -172,10 +171,9 @@ async function main() {
     await db.execute(sql`
       INSERT INTO articles (id, topic_id, actor_id, url, url_hash, title, excerpt, published_at, created_at)
       VALUES ${sql.join(values, sql`, `)}
-      ON CONFLICT (id) DO UPDATE SET
+      ON CONFLICT (url) DO UPDATE SET
         topic_id = EXCLUDED.topic_id,
         actor_id = EXCLUDED.actor_id,
-        url = EXCLUDED.url,
         url_hash = EXCLUDED.url_hash,
         title = EXCLUDED.title,
         excerpt = EXCLUDED.excerpt,
