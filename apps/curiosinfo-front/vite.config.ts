@@ -26,6 +26,7 @@ export default defineConfig({
       deny: ["**/.*"],
     },
     host: true,
+    allowedHosts: ["nicolas-garciaforest.net"],
     hmr: {
       host: "localhost",
       protocol: "ws",
