@@ -28,7 +28,7 @@ export default defineConfig({
     host: true,
     allowedHosts: ["nicolas-garciaforest.net"],
     hmr: {
-      host: "localhost",
+      host: "nicolas-garciaforest.net",
       protocol: "ws",
       port: 5173,
     },
