@@ -1,0 +1,25 @@
+name: curiosinfo-static
+services:
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - "${HTTP_BIND:-127.0.0.1}:${HTTP_PORT:-8080}:80"
+    volumes:
+      - published:/usr/share/nginx/html/data:ro
+    restart: unless-stopped
+  publish:
+    profiles: [tools]
+    build:
+      context: .
+      target: tools
+    environment:
+      JSON_DB_DIR: /source
+      PUBLIC_DATA_DIR: /published
+    volumes:
+      - "${SOURCE_DATA_DIR:-./data}:/source:ro"
+      - published:/published
+    command: ["npm", "run", "publish:data"]
+volumes:
+  published:
