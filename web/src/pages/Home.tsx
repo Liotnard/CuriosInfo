@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background">
       <Header />
-      
+
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-display font-black text-primary mb-6">

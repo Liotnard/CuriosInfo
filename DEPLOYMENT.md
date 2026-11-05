@@ -82,4 +82,3 @@ Les JSON publiés sont publics, y compris les anciennes versions. Ne jamais plac
 ## Vérifications
 
 `npm run check`, `npm test`, `npm run publish:data`, `npm run build`. Les tests de publication vérifient notamment qu’un échec conserve le manifeste actif et que deux versions restent cohérentes. Une validation Docker réelle nécessite un moteur Docker disponible ; ne pas confondre compilation locale et validation du conteneur Linux.
-
