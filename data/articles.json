@@ -867,7 +867,7 @@
     "excerpt": null,
     "published_at": "2025-10-08T00:00:00.000Z",
     "created_at": "2025-12-26T16:47:01.744Z"
-  },  
+  },
   {
     "id": 80,
     "topicId": 2,
@@ -1262,5 +1262,77 @@
     "published_at": "2026-01-11T00:00:00.000Z",
     "created_at": "2026-01-12T12:00:00.000Z",
     "confidence": 0.74
+  },
+  {
+    "id": 132,
+    "topicId": 5,
+    "actorId": 114,
+    "url": "https://www.franceinfo.fr/politique/direct-politique-je-n-attends-plus-grand-chose-de-ce-gouvernement-a-part-de-le-remplacer-par-nous-memes-tacle-le-depute-lfi-antoine-leaument_8273093.html",
+    "urlHash": "15b61b98f589d86a140d1f7f35e1fd5baf3fc6b261455eeabbfc7ecd95cdd21d",
+    "title": "Politique : Jean-Luc Mélenchon \"s'est fait le porte-parole du Kremlin\", critique le ministre des Affaires étrangères",
+    "excerpt": "Franceinfo relaie, dans son suivi politique du 8 novembre, la réaction ministérielle à la proposition de consultation du Donbass.",
+    "published_at": "2026-11-08T12:22:15.000Z",
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-donbass-melenchon-reaction-barrot-novembre-2026-1"
+  },
+  {
+    "id": 133,
+    "topicId": 5,
+    "actorId": 2,
+    "url": "https://www.lefigaro.fr/international/guerre-en-ukraine-jean-luc-melenchon-s-est-fait-porte-parole-du-kremlin-sur-le-donbass-denonce-jean-noel-barrot-20261108",
+    "urlHash": "28e77e1849f01cbc265c853365c9faeae116ffd3a5b75fab9782790cc0b4f918",
+    "title": "Guerre en Ukraine : «Jean-Luc Mélenchon s'est fait porte-parole du Kremlin» sur le Donbass, dénonce Jean-Noël Barrot",
+    "excerpt": "Le journal détaille les critiques du chef de la diplomatie et rapporte la réponse du dirigeant insoumis.",
+    "published_at": "2026-11-08T12:20:53.000Z",
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-donbass-melenchon-reaction-barrot-novembre-2026-1"
+  },
+  {
+    "id": 134,
+    "topicId": 6,
+    "actorId": 2,
+    "url": "https://www.lefigaro.fr/international/fusillade-en-pologne-le-parquet-annonce-ouvrir-une-enquete-pour-terrorisme-20261108",
+    "urlHash": "d5780a8e5358d1d26e31b926cc1e3161be58f22e77cd5caa1bffc95ad4f9909a",
+    "title": "Fusillade en Pologne : le parquet annonce ouvrir une enquête pour «terrorisme»",
+    "excerpt": "Le parquet engage des investigations sous une qualification terroriste après les tirs survenus dans le centre de Cracovie.",
+    "published_at": "2026-11-08T11:33:25.000Z",
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-fusillade-cracovie-novembre-2026-2"
+  },
+  {
+    "id": 135,
+    "topicId": 6,
+    "actorId": 4,
+    "url": "https://www.la-croix.com/international/la-pologne-sous-le-choc-apres-l-attentat-de-cracovie-20261108",
+    "urlHash": "1912fadb51394f0d3df5e315014fb13eb193acf3c39df58188acf1b81a50ce4c",
+    "title": "La Pologne sous le choc après l’attentat de Cracovie",
+    "excerpt": "Les éléments publics de ce reportage décrivent le deuil et la sidération en Pologne ; le texte intégral requiert un abonnement.",
+    "published_at": "2026-11-08T11:25:38.000Z",
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-fusillade-cracovie-novembre-2026-2"
+  },
+  {
+    "id": 136,
+    "topicId": 7,
+    "actorId": 2,
+    "url": "https://www.lefigaro.fr/faits-divers/le-domicile-d-un-policier-incendie-dans-le-gers-laurent-nunez-denonce-un-acte-criminel-intolerable-20261108",
+    "urlHash": "32b00f07784a298622fafb518004c2798e69794662af6c45197905ccdd838296",
+    "title": "Le domicile d'un policier incendié dans le Gers, Laurent Nuñez dénonce un «acte criminel intolérable»",
+    "excerpt": "L’article revient sur le soutien ministériel au policier et les premiers éléments d’enquête concernant l’incendie de son habitation.",
+    "published_at": "2026-11-08T11:15:23.000Z",
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-incendie-domicile-policier-auch-novembre-2026-3"
+  },
+  {
+    "id": 137,
+    "topicId": 7,
+    "actorId": 114,
+    "url": "https://france3-regions.franceinfo.fr/occitanie/gers/auch/un-acte-criminel-le-domicile-d-un-policier-incendie-en-raison-de-sa-profession-selon-le-ministre-de-l-interieur-laurent-nunez-3446172.html",
+    "urlHash": "259b7334c832810b09b0149f4cbb7c4fcba14d2941a0da51b02cdaec386e036b",
+    "title": "\"Un acte criminel\": le domicile d'un policier incendié en raison de sa profession selon le ministre de l'intérieur Laurent Nuñez",
+    "excerpt": "Le récit régional décrit l’intervention des secours et replace l’incendie dans son contexte local, en attribuant les soupçons aux sources citées.",
+    "published_at": "2026-11-08T11:08:43.000Z",
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-incendie-domicile-policier-auch-novembre-2026-3"
   }
 ]

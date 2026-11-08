@@ -1,6 +1,27 @@
-[{"id":1,"slug":"reforme-retraites-2025","title":"Réforme des retraites 2025","summary":"Le gouvernement lance une nouvelle consultation sur l'avenir du système par répartition.","angle_note":"Traitement très clivé : la presse économique salue la responsabilité, la presse de gauche dénonce une injustice.","start_at":"2025-01-01T00:00:00.000Z","end_at":"2025-12-31T00:00:00.000Z","created_at":"2025-12-26T15:10:06.279Z","updated_at":"2025-12-26T15:10:06.279Z"},
-{"id":2,"slug":"elections-municipales-2026","title":"Élections municipales 2026","summary":"Les élections municipales de 2026 voient une montée des partis écologistes dans les grandes villes.","angle_note":"Couverture variée : certains médias mettent en avant l'importance de l'écologie, d'autres soulignent les défis à venir.","start_at":"2026-03-01T00:00:00.000Z","end_at":"2026-03-31T00:00:00.000Z","created_at":"2025-12-26T15:10:06.279Z","updated_at":"2025-12-26T15:10:06.279Z"},
-{
+[
+  {
+    "id": 1,
+    "slug": "reforme-retraites-2025",
+    "title": "Réforme des retraites 2025",
+    "summary": "Le gouvernement lance une nouvelle consultation sur l'avenir du système par répartition.",
+    "angle_note": "Traitement très clivé : la presse économique salue la responsabilité, la presse de gauche dénonce une injustice.",
+    "start_at": "2025-01-01T00:00:00.000Z",
+    "end_at": "2025-12-31T00:00:00.000Z",
+    "created_at": "2025-12-26T15:10:06.279Z",
+    "updated_at": "2025-12-26T15:10:06.279Z"
+  },
+  {
+    "id": 2,
+    "slug": "elections-municipales-2026",
+    "title": "Élections municipales 2026",
+    "summary": "Les élections municipales de 2026 voient une montée des partis écologistes dans les grandes villes.",
+    "angle_note": "Couverture variée : certains médias mettent en avant l'importance de l'écologie, d'autres soulignent les défis à venir.",
+    "start_at": "2026-03-01T00:00:00.000Z",
+    "end_at": "2026-03-31T00:00:00.000Z",
+    "created_at": "2025-12-26T15:10:06.279Z",
+    "updated_at": "2025-12-26T15:10:06.279Z"
+  },
+  {
     "id": 3,
     "slug": "mobilisation-agricole-mercosur-janvier-2026",
     "title": "Mobilisation agricole contre l’accord UE–Mercosur (janvier 2026)",
@@ -12,13 +33,39 @@
     "updated_at": "2026-01-10T12:00:00.000Z"
   },
   {
-    "id": 4,
-    "slug": "to-delete-afterward",
-    "title": "To delete afterward",
-    "summary": "Début janvier 2026, des organisations agricoles et des agriculteurs se mobilisent en France (blocages, convois de tracteurs, actions à Paris et en régions) contre la finalisation de l’accord de libre-échange UE–Mercosur, qu’ils jugent défavorable à la compétitivité et aux normes de production européennes. La séquence est aussi alimentée par des revendications nationales, notamment sur la gestion de la dermatose nodulaire bovine, les revenus et la charge réglementaire. Malgré l’annonce d’un vote français contre, une majorité qualifiée d’États membres de l’UE valide l’accord le 9 janvier, ouvrant une nouvelle phase (signature, puis approbation par le Parlement européen).",
-    "angle_note": "Clivage élevé. Les médias généralistes décrivent surtout la chronologie (actions, circulation, annonces gouvernementales) et le rapport de force européen. Les médias et éditorialistes plus souverainistes insistent sur la notion de « passage en force » de Bruxelles et la critique des élites. Les titres écologistes et une partie de la presse de gauche mettent l’accent sur les impacts climatiques (déforestation, pesticides, élevage intensif) et sur la cohérence des normes. Les acteurs orientés “économie/international” cadrent davantage l’accord comme un arbitrage stratégique (accès à marchés, matières premières, compétition avec la Chine) au prix de tensions agricoles.",
-    "start_at": "2026-01-05T00:00:00.000Z",
-    "end_at": "2026-01-20T00:00:00.000Z",
-    "created_at": "2026-01-10T12:00:00.000Z",
-    "updated_at": "2026-01-10T12:00:00.000Z"
-  }]
+    "title": "Donbass : position de Jean-Luc Mélenchon et réaction de Jean-Noël Barrot",
+    "slug": "donbass-melenchon-reaction-barrot-novembre-2026",
+    "summary": "Le 7 novembre 2026 au Bourget, Jean-Luc Mélenchon défend une consultation des populations concernées en cas de modification territoriale pour régler la guerre en Ukraine. Le lendemain, Jean-Noël Barrot critique cette proposition sur RTL/Public Sénat. Le Figaro rapporte aussi la réponse de Mélenchon, qui conteste l’interprétation du ministre. Les accusations et réponses sont présentées ici comme les positions de leurs auteurs.",
+    "angleNote": "Les deux contenus mettent en avant la réaction ministérielle. Le Figaro développe la controverse dans un article dédié ; Franceinfo la traite au sein d’un direct politique dont le titre évolue. Ce contraste de format ne suffit pas à établir une divergence éditoriale générale. Le passage concerné du direct a été vérifié au-delà de son titre actuel.",
+    "id": 5,
+    "startAt": "2026-11-07T00:00:00.000Z",
+    "endAt": null,
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "updatedAt": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-donbass-melenchon-reaction-barrot-novembre-2026-1"
+  },
+  {
+    "title": "Fusillade de Cracovie : enquête et réactions",
+    "slug": "fusillade-cracovie-novembre-2026",
+    "summary": "Une fusillade survient le 7 novembre 2026 dans le centre de Cracovie, en Pologne, et fait six morts ainsi que plusieurs blessés. Le suspect est interpellé après l’intervention de la police. Le parquet annonce le lendemain une enquête pour un acte à caractère terroriste. Trois corps sont également retrouvés au domicile familial du suspect. Deux jours de deuil national sont annoncés. Les circonstances et les motivations restent soumises à l’enquête ; les bilans de blessés diffèrent selon les mises à jour des sources consultées.",
+    "angleNote": "Le titre du Figaro met en avant l’ouverture de l’enquête et sa qualification terroriste, même si l’article traite aussi du deuil et des circonstances. Le titre et le chapeau publics de La Croix insistent sur le choc collectif en Pologne. L’article de La Croix étant réservé aux abonnés, cette comparaison ne porte pas sur son texte intégral. Deux articles et leurs éléments accessibles ne permettent pas de déduire une ligne éditoriale générale.",
+    "id": 6,
+    "startAt": "2026-11-07T00:00:00.000Z",
+    "endAt": null,
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "updatedAt": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-fusillade-cracovie-novembre-2026-2"
+  },
+  {
+    "title": "Incendie du domicile d’un policier à Auch",
+    "slug": "incendie-domicile-policier-auch-novembre-2026",
+    "summary": "Un incendie détruit le domicile d’un policier à Auch au matin du 7 novembre 2026, sans faire de blessé selon les articles consultés. La piste criminelle est privilégiée. Laurent Nuñez estime que le fonctionnaire a été ciblé en raison de sa profession ; France 3 rapporte aussi des menaces antérieures présumées. L’enquête doit établir les circonstances et les responsabilités : les soupçons rapportés ne constituent pas une conclusion judiciaire.",
+    "angleNote": "Les deux titres privilégient la réaction du ministre. Le Figaro développe cette déclaration et les premiers éléments policiers ; France 3 ajoute des précisions sur les secours, les menaces alléguées et les réactions locales. La différence observée concerne surtout le détail et l’ancrage territorial, plutôt qu’un désaccord sur les faits établis.",
+    "id": 7,
+    "startAt": "2026-11-07T00:00:00.000Z",
+    "endAt": null,
+    "created_at": "2026-11-08T23:03:41.022Z",
+    "updatedAt": "2026-11-08T23:03:41.022Z",
+    "review_import_id": "review-incendie-domicile-policier-auch-novembre-2026-3"
+  }
+]
