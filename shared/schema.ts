@@ -3,7 +3,7 @@ const id = z.number().int().positive();
 const slug = z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
 const date = z.string().refine(s => Number.isFinite(Date.parse(s)), "Invalid date");
 export const TopicSchema = z.object({ id, slug, title: z.string().trim().min(1), summary: z.string().nullable(), angleNote: z.string().nullable(), startAt: date.nullable(), endAt: date.nullable(), created_at: date, updatedAt: date });
-export const ActorSchema = z.object({ id, slug, name: z.string().min(1), actor_type: z.string().min(1), feed_url: z.string(), libAutor: z.number().min(-10).max(10), indivCol: z.number().min(-10).max(10), natioMon: z.number().min(-10).max(10), progCons: z.number().min(-10).max(10), created_at: date, updatedAt: date });
+export const ActorSchema = z.object({ id, slug, name: z.string().min(1), actor_type: z.string().min(1), feed_url: z.string(), website_url: z.string().url().optional(), additional_urls: z.array(z.string().url()).optional(), libAutor: z.number().min(-10).max(10), indivCol: z.number().min(-10).max(10), natioMon: z.number().min(-10).max(10), progCons: z.number().min(-10).max(10), created_at: date, updatedAt: date });
 export const ArticleSchema = z.object({id, topicId: id.nullable(), actorId: id, url: z.string().url().refine(s => /^https?:/.test(s)), title: z.string().min(1), excerpt: z.string().nullable(), published_at: date, created_at: date});
 export const ArticleWithActorSchema = ArticleSchema.extend({actor:ActorSchema});
 export const TopicWithDetailsSchema = TopicSchema.extend({articles:ArticleWithActorSchema.array(),actorInTopic:ActorSchema.array()});

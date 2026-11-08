@@ -1,5 +1,7 @@
 # Site statique : fichiers et publication
 
+Pour toutes les opérations courantes, consulter [COMMANDS.md](COMMANDS.md), référence actualisée des commandes. Configuration actuelle : SSH 2222, site public HTTP 5173, données externes dans `/srv/docker/val/curiosinfo-content`.
+
 Le site public est une application React compilée servie par Nginx. Il charge uniquement des JSON statiques. Il n’utilise ni Express, ni PostgreSQL, ni interface d’administration. Les anciens outils Express/PostgreSQL restent disponibles dans l’historique et les sauvegardes, mais sont retirés du dépôt statique.
 
 ## Travailler en local
@@ -20,21 +22,21 @@ Ces commandes se lancent à la racine du clone contenant le nouveau `compose.yam
 Préparer les données hors du clone pour éviter qu’un git pull ou une reconstruction ne remplace les modifications éditoriales. Exemple à adapter :
 
 ```sh
-mkdir -p /srv/docker/val/curiosinfo/content
-cp -n "data/actors.json" /srv/docker/val/curiosinfo/content/
-cp -n "data/topics.json" /srv/docker/val/curiosinfo/content/
-cp -n "data/articles.json" /srv/docker/val/curiosinfo/content/
+mkdir -p /srv/docker/val/curiosinfo-content
+cp -n "data/actors.json" /srv/docker/val/curiosinfo-content/
+cp -n "data/topics.json" /srv/docker/val/curiosinfo-content/
+cp -n "data/articles.json" /srv/docker/val/curiosinfo-content/
 ```
 
 Créer un `.env` à la racine du dépôt, destiné à Docker Compose :
 
 ```dotenv
-SOURCE_DATA_DIR=/srv/docker/val/curiosinfo/content
-HTTP_BIND=127.0.0.1
-HTTP_PORT=8080
+SOURCE_DATA_DIR=/srv/docker/val/curiosinfo-content
+HTTP_BIND=0.0.0.0
+HTTP_PORT=5173
 ```
 
-Aucune clé administrateur n’est nécessaire dans cette version statique. Le port SSH 5000 n’est pas un port HTTP. Choisir un HTTP_PORT libre.
+Aucune clé administrateur n’est nécessaire dans cette version statique. Le port SSH 2222 n’est pas un port HTTP. Choisir un HTTP_PORT libre.
 
 ```sh
 docker compose build web publish
@@ -43,13 +45,13 @@ docker compose up -d web
 docker compose logs --tail=50 web
 ```
 
-Le serveur écoute par défaut uniquement sur localhost. Depuis PowerShell, un tunnel permet de le tester (remplacer les identifiants) :
+Le Compose écoute par défaut uniquement sur localhost:8080 si le `.env` ne précise rien. Notre `.env` de production configure désormais 0.0.0.0:5173 pour réutiliser le port dédié. Le site public actuel est http://nicolas-garciaforest.net:5173. Depuis PowerShell, un tunnel facultatif permet aussi de le tester :
 
 ```powershell
-ssh -p 5000 -L 8080:127.0.0.1:8080 session@hebergeur.net
+ssh -p 2222 -L 18080:127.0.0.1:5173 val@nicolas-garciaforest.net
 ```
 
-Puis ouvrir http://localhost:8080. Pour un accès public, raccorder le service au reverse proxy HTTPS du serveur. Si ce proxy est lui-même dans Docker, il doit partager un réseau avec `web`, ou disposer d’un accès adapté au port de l’hôte ; son localhost n’est pas celui du serveur. L’adresse publique et le proxy restent à configurer selon l’hébergement réel. `HTTP_BIND=0.0.0.0` exposerait directement le port sur les interfaces du serveur : ce n’est pas nécessaire pour un tunnel SSH.
+Puis ouvrir http://localhost:18080. Pour une adresse publique HTTPS, raccorder ultérieurement le service au reverse proxy du serveur. Si ce proxy est lui-même dans Docker, il doit partager un réseau avec `web`, ou disposer d’un accès adapté au port de l’hôte ; son localhost n’est pas celui du serveur. L’adresse publique et le proxy restent à configurer selon l’hébergement réel. `HTTP_BIND=0.0.0.0` exposerait directement le port sur les interfaces du serveur : ce n’est pas nécessaire pour un tunnel SSH.
 
 Ne pas supprimer l’ancien volume PostgreSQL ni utiliser `docker compose down -v` pour migrer. Le nouveau projet Compose s’appelle `curiosinfo-static` et utilise un volume distinct. Les éventuelles données présentes uniquement dans l’ancienne base PostgreSQL nécessitent un export séparé avant abandon de l’ancien système.
 
