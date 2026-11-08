@@ -1,0 +1,80 @@
+{
+  "1": [
+    "https://www.lemonde.fr/rss/une.xml"
+  ],
+  "2": [
+    "https://www.lefigaro.fr/rss/figaro_actualites.xml"
+  ],
+  "3": [
+    "https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml"
+  ],
+  "4": [
+    "https://www.la-croix.com/RSS/UNIVERS"
+  ],
+  "6": [
+    "https://www.leparisien.fr/arc/outboundfeeds/rss/?outputType=xml"
+  ],
+  "7": [
+    "https://services.lesechos.fr/rss/les-echos-une.xml"
+  ],
+  "8": [
+    "https://www.lopinion.fr/rss.xml"
+  ],
+  "9": [
+    "https://www.latribune.fr/feed.xml"
+  ],
+  "13": [
+    "https://www.lepoint.fr/rss.xml"
+  ],
+  "14": [
+    "https://www.nouvelobs.com/a-la-une/rss.xml"
+  ],
+  "15": [
+    "https://www.lexpress.fr/arc/outboundfeeds/rss/?outputType=xml"
+  ],
+  "18": [
+    "https://www.monde-diplomatique.fr/recents.xml"
+  ],
+  "19": [
+    "https://www.courrierinternational.com/feed/all/rss.xml"
+  ],
+  "27": [
+    "https://www.mediapart.fr/articles/feed"
+  ],
+  "37": [
+    "https://reporterre.net/spip.php?page=backend"
+  ],
+  "39": [
+    "https://theconversation.com/fr/articles.atom"
+  ],
+  "40": [
+    "https://www.slate.fr/rss.xml"
+  ],
+  "41": [
+    "https://www.huffingtonpost.fr/feeds/index.xml"
+  ],
+  "103": [
+    "https://www.france24.com/fr/rss"
+  ],
+  "104": [
+    "https://www.rfi.fr/fr/rss"
+  ],
+  "114": [
+    "https://www.franceinfo.fr/titres.rss"
+  ],
+  "300": [
+    "https://www.acrimed.org/spip.php?page=backend"
+  ],
+  "301": [
+    "https://lundi.am/spip.php?page=backend"
+  ],
+  "311": [
+    "https://reflets.info/feeds/public"
+  ],
+  "319": [
+    "https://orientxxi.info/spip.php?page=backend"
+  ],
+  "323": [
+    "https://www.revolutionpermanente.fr/spip.php?page=backend"
+  ]
+}

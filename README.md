@@ -19,7 +19,7 @@ npm start
 
 La publication valide les données, retire les champs hors contrat et active un ensemble complet de fichiers. Une erreur conserve la publication précédente. Les anciens exports restent disponibles pour les pages déjà ouvertes.
 
-Voir [DEPLOYMENT.md](DEPLOYMENT.md) pour Docker et le tunnel SSH. Le site public ne nécessite ni backend Express, ni PostgreSQL, ni administration. Ne jamais publier de secrets dans les données. Les articles de démonstration et le sujet « To delete afterward » sont conservés pour examen éditorial.
+Voir [COMMANDS.md](COMMANDS.md) pour la référence complète des commandes, et [DEPLOYMENT.md](DEPLOYMENT.md) pour Docker et le tunnel SSH. Le site public ne nécessite ni backend Express, ni PostgreSQL, ni administration. Ne jamais publier de secrets dans les données. Les articles de démonstration et le sujet « To delete afterward » sont conservés pour examen éditorial.
 
 ## Organisation
 
@@ -31,3 +31,5 @@ Voir [DEPLOYMENT.md](DEPLOYMENT.md) pour Docker et le tunnel SSH. Le site public
 - `deploy/`, `Dockerfile`, `compose.yaml` : déploiement statique.
 
 En production, utiliser un dossier de contenu externe au clone Git et le monter dans le conteneur ponctuel de publication. Le conteneur Nginx voit uniquement les exports publics en lecture seule. La configuration Git est un dépôt unique, sans sous-module.
+
+Collecte manuelle et préparation de revue : voir [COLLECTION.md](COLLECTION.md). Les candidats restent privés et ne sont pas publiés automatiquement.

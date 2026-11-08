@@ -7,3 +7,5 @@ web/public/data/
 *.tmp
 
 .migration-archive/
+
+collection/

@@ -1,0 +1,3559 @@
+{
+  "checked_at": "2026-11-08T12:09:37.102Z",
+  "applied": true,
+  "summary": {
+    "feed_verified": 62,
+    "unreachable": 7,
+    "website_only": 23,
+    "access_restricted": 3,
+    "feed_empty": 3,
+    "scope_review_required": 2,
+    "platform_requires_connector": 49
+  },
+  "actors": [
+    {
+      "actor_id": 1,
+      "name": "Le Monde",
+      "original_url": "https://www.lemonde.fr/actualite-en-continu/",
+      "input_url": "https://www.lemonde.fr/rss/une.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lemonde.fr/rss/une.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.lemonde.fr/rss/une.xml",
+          "content_type": "application/xml; charset=UTF-8",
+          "feed_title": "Le Monde.fr - Actualités et Infos en France et dans le monde",
+          "entries": 16
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.lemonde.fr/rss/une.xml",
+      "format": "rss",
+      "entries": 16,
+      "reference_url": "https://www.lemonde.fr/"
+    },
+    {
+      "actor_id": 2,
+      "name": "Le Figaro",
+      "original_url": "https://www.lefigaro.fr",
+      "input_url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+          "content_type": "application/xml",
+          "feed_title": "Le Figaro - Actualité en direct et informations en continu",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.lefigaro.fr/"
+    },
+    {
+      "actor_id": 3,
+      "name": "Libération",
+      "original_url": "https://example.com/liberation/feed",
+      "input_url": "https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml",
+          "content_type": "application/xml; charset=utf-8",
+          "feed_title": "Libération",
+          "entries": 50
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://www.liberation.fr/"
+    },
+    {
+      "actor_id": 4,
+      "name": "La Croix",
+      "original_url": "https://example.com/la-croix/feed",
+      "input_url": "https://www.la-croix.com/RSS/UNIVERS",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.la-croix.com/RSS/UNIVERS",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.la-croix.com/feeds/rss/site.xml",
+          "content_type": "text/xml",
+          "feed_title": "La Croix.com - Les derniers articles : La Croix",
+          "entries": 50
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.la-croix.com/RSS/UNIVERS",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://www.la-croix.com/"
+    },
+    {
+      "actor_id": 5,
+      "name": "L’Humanité",
+      "original_url": "https://example.com/l-humanite/feed",
+      "input_url": "https://www.humanite.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.humanite.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.humanite.fr/feed",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "L&#039;Humanité",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.humanite.fr/feed/",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.humanite.fr/"
+    },
+    {
+      "actor_id": 6,
+      "name": "Le Parisien / Aujourd’hui en France",
+      "original_url": "https://example.com/le-parisien/feed",
+      "input_url": "https://example.com/le-parisien/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.leparisien.fr/",
+          "kind": "unreachable",
+          "http_status": 200,
+          "final_url": "https://www.leparisien.fr/",
+          "content_type": "text/html; charset=utf-8",
+          "error": "Response exceeds 2 MB"
+        },
+        {
+          "url": "https://www.leparisien.fr/arc/outboundfeeds/rss/?outputType=xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.leparisien.fr/arc/outboundfeeds/rss/?outputType=xml",
+          "content_type": "text/plain; charset=utf-8"
+        },
+        {
+          "url": "https://www.leparisien.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.leparisien.fr/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.leparisien.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.leparisien.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.leparisien.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.leparisien.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://www.leparisien.fr/"
+    },
+    {
+      "actor_id": 7,
+      "name": "Les Échos",
+      "original_url": "https://example.com/les-echos/feed",
+      "input_url": "https://example.com/les-echos/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lesechos.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lesechos.fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lesechos.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lesechos.fr/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lesechos.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lesechos.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lesechos.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 410,
+          "final_url": "https://www.lesechos.fr/spip.php?page=backend",
+          "content_type": "text/html"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.lesechos.fr/"
+    },
+    {
+      "actor_id": 8,
+      "name": "L’Opinion",
+      "original_url": "https://example.com/lopinion/feed",
+      "input_url": "https://example.com/lopinion/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lopinion.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lopinion.fr/",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.lopinion.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lopinion.fr/rss.xml",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.lopinion.fr/index.rss",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.lopinion.fr/index.rss",
+          "content_type": "application/xml;charset=UTF-8",
+          "feed_title": "Actualité économique, politique et internationale",
+          "entries": 250
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.lopinion.fr/index.rss",
+      "format": "rss",
+      "entries": 250,
+      "reference_url": "https://www.lopinion.fr/"
+    },
+    {
+      "actor_id": 9,
+      "name": "La Tribune",
+      "original_url": "https://example.com/la-tribune/feed",
+      "input_url": "https://www.latribune.fr/feed.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.latribune.fr/feed.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.latribune.fr/rss/homepage",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "La Tribune - Actualités",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.latribune.fr/feed.xml",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.latribune.fr/"
+    },
+    {
+      "actor_id": 10,
+      "name": "L’Agefi",
+      "original_url": "https://example.com/lagefi/feed",
+      "input_url": "https://example.com/lagefi/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.agefi.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.agefi.fr/",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.agefi.fr/index.rss",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.agefi.fr/index.rss",
+          "content_type": "application/xml;charset=UTF-8",
+          "feed_title": "Actualité financière et économique - Information finance avec l'AGEFI",
+          "entries": 250
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.agefi.fr/index.rss",
+      "format": "rss",
+      "entries": 250,
+      "reference_url": "https://www.agefi.fr/"
+    },
+    {
+      "actor_id": 11,
+      "name": "Le Canard enchaîné",
+      "original_url": "https://example.com/le-canard-enchaine/feed",
+      "input_url": "https://example.com/le-canard-enchaine/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lecanardenchaine.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lecanardenchaine.fr/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.lecanardenchaine.fr/rss/index.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.lecanardenchaine.fr/rss/index.xml",
+          "content_type": "application/xml",
+          "feed_title": "Le Canard enchaîné : Journal satirique paraissant le mercredi",
+          "entries": 75
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.lecanardenchaine.fr/rss/index.xml",
+      "format": "rss",
+      "entries": 75,
+      "reference_url": "https://www.lecanardenchaine.fr/"
+    },
+    {
+      "actor_id": 12,
+      "name": "Charlie Hebdo",
+      "original_url": "https://example.com/charlie-hebdo/feed",
+      "input_url": "https://charliehebdo.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://charliehebdo.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://charliehebdo.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Charlie Hebdo",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://charliehebdo.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://charliehebdo.fr/"
+    },
+    {
+      "actor_id": 13,
+      "name": "Le Point",
+      "original_url": "https://example.com/le-point/feed",
+      "input_url": "https://example.com/le-point/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lepoint.fr/",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.lepoint.fr/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.lepoint.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lepoint.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lepoint.fr/feed/",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.lepoint.fr/feed/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.lepoint.fr/spip.php?page=backend",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.lepoint.fr/spip.php?page=backend",
+          "content_type": "text/html;charset=utf-8"
+        }
+      ],
+      "status": "access_restricted",
+      "method": "network",
+      "reference_url": "https://www.lepoint.fr/"
+    },
+    {
+      "actor_id": 14,
+      "name": "L’Obs",
+      "original_url": "https://example.com/lobs/feed",
+      "input_url": "https://www.nouvelobs.com/a-la-une/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.nouvelobs.com/a-la-une/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.nouvelobs.com/a-la-une/rss.xml",
+          "content_type": "text/xml",
+          "feed_title": "Le Nouvel Obs",
+          "entries": 288
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.nouvelobs.com/a-la-une/rss.xml",
+      "format": "rss",
+      "entries": 288,
+      "reference_url": "https://www.nouvelobs.com/"
+    },
+    {
+      "actor_id": 15,
+      "name": "L’Express",
+      "original_url": "https://example.com/lexpress/feed",
+      "input_url": "https://example.com/lexpress/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lexpress.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lexpress.fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lexpress.fr/arc/outboundfeeds/rss/?outputType=xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lexpress.fr/arc/outboundfeeds/rss/?outputType=xml",
+          "content_type": "text/plain; charset=utf-8"
+        },
+        {
+          "url": "https://www.lexpress.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lexpress.fr/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lexpress.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lexpress.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lexpress.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lexpress.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.lexpress.fr/"
+    },
+    {
+      "actor_id": 16,
+      "name": "Marianne",
+      "original_url": "https://example.com/marianne/feed",
+      "input_url": "https://example.com/marianne/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.marianne.net/",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.marianne.net/",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.marianne.net/feed/",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.marianne.net/feed/",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.marianne.net/rss.xml",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.marianne.net/rss.xml",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.marianne.net/spip.php?page=backend",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.marianne.net/spip.php?page=backend",
+          "content_type": "text/html;charset=UTF-8"
+        }
+      ],
+      "status": "access_restricted",
+      "method": "network",
+      "reference_url": "https://www.marianne.net/"
+    },
+    {
+      "actor_id": 17,
+      "name": "Valeurs actuelles",
+      "original_url": "https://example.com/valeurs-actuelles/feed",
+      "input_url": "https://www.valeursactuelles.com/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.valeursactuelles.com/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.valeursactuelles.com/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Valeurs actuelles",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.valeursactuelles.com/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.valeursactuelles.com/"
+    },
+    {
+      "actor_id": 18,
+      "name": "Le Monde diplomatique",
+      "original_url": "https://example.com/le-monde-diplomatique/feed",
+      "input_url": "https://www.monde-diplomatique.fr/recents.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.monde-diplomatique.fr/recents.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.monde-diplomatique.fr/recents.xml",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "Le Monde diplomatique",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.monde-diplomatique.fr/recents.xml",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.monde-diplomatique.fr/"
+    },
+    {
+      "actor_id": 19,
+      "name": "Courrier international",
+      "original_url": "https://example.com/courrier-international/feed",
+      "input_url": "https://www.courrierinternational.com/feed/all/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.courrierinternational.com/feed/all/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.courrierinternational.com/feed/all/rss.xml",
+          "content_type": "application/xml; charset=UTF-8",
+          "feed_title": "Courrier international - Actualités France et Monde, vidéos, infographies",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.courrierinternational.com/feed/all/rss.xml",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.courrierinternational.com/"
+    },
+    {
+      "actor_id": 20,
+      "name": "Alternatives Économiques",
+      "original_url": "https://example.com/alternatives-economiques/feed",
+      "input_url": "https://www.alternatives-economiques.fr/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.alternatives-economiques.fr/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.alternatives-economiques.fr/rss.xml",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "Alternatives économiques",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.alternatives-economiques.fr/rss.xml",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.alternatives-economiques.fr/"
+    },
+    {
+      "actor_id": 21,
+      "name": "Politis",
+      "original_url": "https://example.com/politis/feed",
+      "input_url": "https://example.com/politis/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.politis.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.politis.fr/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.politis.fr/feed/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.politis.fr/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.politis.fr/rss.xml",
+          "kind": "other",
+          "http_status": 200,
+          "final_url": "https://www.politis.fr/rss.xml",
+          "content_type": "application/xml"
+        },
+        {
+          "url": "https://www.politis.fr/spip.php?page=backend",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.politis.fr/",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.politis.fr/"
+    },
+    {
+      "actor_id": 22,
+      "name": "Regards",
+      "original_url": "https://example.com/regards/feed",
+      "input_url": "https://regards.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://regards.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://regards.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Regards.fr",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://regards.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://regards.fr/"
+    },
+    {
+      "actor_id": 23,
+      "name": "Socialter",
+      "original_url": "https://example.com/socialter/feed",
+      "input_url": "https://example.com/socialter/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.socialter.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.socialter.fr/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.socialter.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.socialter.fr/feed/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.socialter.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.socialter.fr/rss.xml",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.socialter.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.socialter.fr/spip.php?page=backend",
+          "content_type": "text/html;charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.socialter.fr/"
+    },
+    {
+      "actor_id": 24,
+      "name": "Fakir",
+      "original_url": "https://example.com/fakir/feed",
+      "input_url": "https://fakirpresse.info/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://fakirpresse.info/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://fakirpresse.info/feed/",
+          "content_type": "text/xml;charset=UTF-8",
+          "feed_title": "fakirpresse.info",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://fakirpresse.info/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://fakirpresse.info/"
+    },
+    {
+      "actor_id": 25,
+      "name": "La Vie",
+      "original_url": "https://example.com/la-vie/feed",
+      "input_url": "https://example.com/la-vie/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lavie.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lavie.fr/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.lavie.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lavie.fr/feed/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.lavie.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lavie.fr/rss.xml",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.lavie.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.lavie.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.lavie.fr/"
+    },
+    {
+      "actor_id": 26,
+      "name": "Famille Chrétienne",
+      "original_url": "https://example.com/famille-chretienne/feed",
+      "input_url": "https://example.com/famille-chretienne/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.famillechretienne.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.famillechretienne.fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.famillechretienne.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.famillechretienne.fr/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.famillechretienne.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.famillechretienne.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.famillechretienne.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.famillechretienne.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.famillechretienne.fr/"
+    },
+    {
+      "actor_id": 27,
+      "name": "Mediapart",
+      "original_url": "https://example.com/mediapart/feed",
+      "input_url": "https://www.mediapart.fr/articles/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.mediapart.fr/articles/feed",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.mediapart.fr/articles/feed",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "Mediapart",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.mediapart.fr/articles/feed",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.mediapart.fr/"
+    },
+    {
+      "actor_id": 28,
+      "name": "Arrêt sur images",
+      "original_url": "https://example.com/arret-sur-images/feed",
+      "input_url": "https://example.com/arret-sur-images/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.arretsurimages.net/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.arretsurimages.net/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.arretsurimages.net/feed/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.arretsurimages.net/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.arretsurimages.net/rss.xml",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.arretsurimages.net/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.arretsurimages.net/spip.php?page=backend",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.arretsurimages.net/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.arretsurimages.net/"
+    },
+    {
+      "actor_id": 29,
+      "name": "Disclose",
+      "original_url": "https://example.com/disclose/feed",
+      "input_url": "https://disclose.ngo/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://disclose.ngo/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://disclose.ngo/feed/",
+          "content_type": "text/xml",
+          "feed_title": "Disclose.ngo",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://disclose.ngo/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://disclose.ngo/"
+    },
+    {
+      "actor_id": 30,
+      "name": "StreetPress",
+      "original_url": "https://example.com/streetpress/feed",
+      "input_url": "https://www.streetpress.com/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.streetpress.com/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.streetpress.com/rss.xml",
+          "content_type": "text/xml",
+          "feed_title": "StreetPress | Le magazine urbain",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.streetpress.com/rss.xml",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.streetpress.com/"
+    },
+    {
+      "actor_id": 31,
+      "name": "Les Jours",
+      "original_url": "https://example.com/les-jours/feed",
+      "input_url": "https://lesjours.fr/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://lesjours.fr/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://lesjours.fr/rss.xml",
+          "content_type": "text/xml",
+          "feed_title": "Les Jours",
+          "entries": 9
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://lesjours.fr/rss.xml",
+      "format": "rss",
+      "entries": 9,
+      "reference_url": "https://lesjours.fr/"
+    },
+    {
+      "actor_id": 32,
+      "name": "Blast",
+      "original_url": "https://example.com/blast/feed",
+      "input_url": "https://example.com/blast/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.blast-info.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.blast-info.fr/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.blast-info.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.blast-info.fr/feed/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.blast-info.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.blast-info.fr/rss.xml",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.blast-info.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.blast-info.fr/spip.php?page=backend",
+          "content_type": "text/html;charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.blast-info.fr/"
+    },
+    {
+      "actor_id": 33,
+      "name": "Off Investigation",
+      "original_url": "https://example.com/off-investigation/feed",
+      "input_url": "https://www.off-investigation.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.off-investigation.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.off-investigation.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Investigation",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.off-investigation.fr/feed/",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.off-investigation.fr/"
+    },
+    {
+      "actor_id": 34,
+      "name": "Médiacités",
+      "original_url": "https://example.com/mediacites/feed",
+      "input_url": "https://www.mediacites.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.mediacites.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.mediacites.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Mediacités",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.mediacites.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.mediacites.fr/"
+    },
+    {
+      "actor_id": 35,
+      "name": "Contexte",
+      "original_url": "https://example.com/contexte/feed",
+      "input_url": "https://example.com/contexte/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://about.contexte.com/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://about.contexte.com/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://about.contexte.com/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://about.contexte.com/feed",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://about.contexte.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://about.contexte.com/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://about.contexte.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://about.contexte.com/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://about.contexte.com/"
+    },
+    {
+      "actor_id": 36,
+      "name": "Basta!",
+      "original_url": "https://example.com/basta/feed",
+      "input_url": "https://basta.media/spip.php?page=backend",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://basta.media/spip.php?page=backend",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://basta.media/spip.php?page=backend",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "Basta!",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://basta.media/spip.php?page=backend",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://basta.media/"
+    },
+    {
+      "actor_id": 37,
+      "name": "Reporterre",
+      "original_url": "https://example.com/reporterre/feed",
+      "input_url": "https://reporterre.net/spip.php?page=backend",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://reporterre.net/spip.php?page=backend",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://reporterre.net/spip.php?page=backend",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "Reporterre, le m&#233;dia de l'&#233;cologie - Ind&#233;pendant et en acc&#232;s libre",
+          "entries": 60
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://reporterre.net/spip.php?page=backend",
+      "format": "rss",
+      "entries": 60,
+      "reference_url": "https://reporterre.net/"
+    },
+    {
+      "actor_id": 38,
+      "name": "Vert",
+      "original_url": "https://example.com/vert/feed",
+      "input_url": "https://vert.eco/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://vert.eco/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://vert.eco/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Vert",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://vert.eco/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://vert.eco/"
+    },
+    {
+      "actor_id": 39,
+      "name": "The Conversation France",
+      "original_url": "https://example.com/the-conversation-france/feed",
+      "input_url": "https://theconversation.com/fr/articles.atom",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://theconversation.com/fr/articles.atom",
+          "kind": "atom",
+          "http_status": 200,
+          "final_url": "https://theconversation.com/fr/articles.atom",
+          "content_type": "application/atom+xml; charset=utf-8",
+          "feed_title": "The Conversation – Articles (FR)",
+          "entries": 50
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://theconversation.com/fr/articles.atom",
+      "format": "atom",
+      "entries": 50,
+      "reference_url": "https://theconversation.com/"
+    },
+    {
+      "actor_id": 40,
+      "name": "Slate.fr",
+      "original_url": "https://example.com/slate-fr/feed",
+      "input_url": "https://www.slate.fr/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.slate.fr/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.slate.fr/rss.xml",
+          "content_type": "application/xml; charset=utf-8",
+          "feed_title": "Slate.fr - RSS",
+          "entries": 22
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.slate.fr/rss.xml",
+      "format": "rss",
+      "entries": 22,
+      "reference_url": "https://www.slate.fr/"
+    },
+    {
+      "actor_id": 41,
+      "name": "HuffPost France",
+      "original_url": "https://example.com/huffpost-france/feed",
+      "input_url": "https://www.huffingtonpost.fr/feeds/index.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.huffingtonpost.fr/feeds/index.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.huffingtonpost.fr/rss/all_headline.xml",
+          "content_type": "application/xml; charset=UTF-8",
+          "feed_title": "Le HuffPost : actualités et infos décalées en continu, en France et dans le monde",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.huffingtonpost.fr/feeds/index.xml",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.huffingtonpost.fr/"
+    },
+    {
+      "actor_id": 42,
+      "name": "Toute l'Europe",
+      "original_url": "https://www.touteleurope.eu",
+      "input_url": "https://www.touteleurope.eu",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.touteleurope.eu",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.touteleurope.eu/",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://www.touteleurope.eu/feed/",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.touteleurope.eu/feed/",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://www.touteleurope.eu/rss.xml",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.touteleurope.eu/rss.xml",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://www.touteleurope.eu/spip.php?page=backend",
+          "kind": "access_restricted",
+          "http_status": 403,
+          "final_url": "https://www.touteleurope.eu/spip.php?page=backend",
+          "content_type": "text/html; charset=iso-8859-1"
+        }
+      ],
+      "status": "access_restricted",
+      "method": "network",
+      "reference_url": "https://www.touteleurope.eu"
+    },
+    {
+      "actor_id": 43,
+      "name": "Euronews",
+      "original_url": "https://fr.euronews.com",
+      "input_url": "https://fr.euronews.com",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://fr.euronews.com",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://fr.euronews.com/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://fr.euronews.com/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://fr.euronews.com/feed/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://fr.euronews.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://fr.euronews.com/rss.xml",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://fr.euronews.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://fr.euronews.com/spip.php?page=backend",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://fr.euronews.com"
+    },
+    {
+      "actor_id": 44,
+      "name": "Pravda FR",
+      "original_url": "https://france.news-pravda.com",
+      "input_url": "https://france.news-pravda.com/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://france.news-pravda.com/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://france.news-pravda.com/rss.xml",
+          "content_type": "application/xml",
+          "feed_title": "Pravda France",
+          "entries": 50
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://france.news-pravda.com/rss.xml",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://france.news-pravda.com"
+    },
+    {
+      "actor_id": 45,
+      "name": "Connexion France",
+      "original_url": "https://www.connexionfrance.com",
+      "input_url": "https://www.connexionfrance.com",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.connexionfrance.com",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.connexionfrance.com/feed/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.connexionfrance.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.connexionfrance.com/rss.xml",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.connexionfrance.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.connexionfrance.com/spip.php?page=backend",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://www.connexionfrance.com"
+    },
+    {
+      "actor_id": 46,
+      "name": "Jean-Marc Morandini",
+      "original_url": "https://www.jeanmarcmorandini.com",
+      "input_url": "https://www.jeanmarcmorandini.com/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.jeanmarcmorandini.com/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.jeanmarcmorandini.com/rss.xml",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "Jean-Marc Morandini",
+          "entries": 0
+        }
+      ],
+      "status": "feed_empty",
+      "method": "network",
+      "selected_url": "https://www.jeanmarcmorandini.com/rss.xml",
+      "format": "rss",
+      "entries": 0,
+      "reference_url": "https://www.jeanmarcmorandini.com"
+    },
+    {
+      "actor_id": 100,
+      "name": "BFM TV",
+      "original_url": "https://example.com/bfm-tv/feed",
+      "input_url": "https://example.com/bfm-tv/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.bfmtv.com/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.bfmtv.com/feed/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.bfmtv.com/rss.xml",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.bfmtv.com/spip.php?page=backend",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://www.bfmtv.com/"
+    },
+    {
+      "actor_id": 101,
+      "name": "CNews",
+      "original_url": "https://example.com/cnews/feed",
+      "input_url": "https://www.cnews.fr/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.cnews.fr/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.cnews.fr/rss.xml",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "CNEWS",
+          "entries": 100
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.cnews.fr/rss.xml",
+      "format": "rss",
+      "entries": 100,
+      "reference_url": "https://www.cnews.fr/"
+    },
+    {
+      "actor_id": 102,
+      "name": "LCI",
+      "original_url": "https://example.com/lci/feed",
+      "input_url": "https://example.com/lci/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.tf1info.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.tf1info.fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.tf1info.fr/feeds/rss-une.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.tf1info.fr/feeds/rss-une.xml",
+          "content_type": "application/xml",
+          "feed_title": "TF1 INFO - L&apos;info pour tous et pour chacun",
+          "entries": 100
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.tf1info.fr/feeds/rss-une.xml",
+      "format": "rss",
+      "entries": 100,
+      "reference_url": "https://www.tf1info.fr/"
+    },
+    {
+      "actor_id": 103,
+      "name": "France 24",
+      "original_url": "https://example.com/france-24/feed",
+      "input_url": "https://www.france24.com/fr/rss",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.france24.com/fr/rss",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.france24.com/fr/rss",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "France 24 - Infos, news & actualités - L'information internationale en direct",
+          "entries": 24
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.france24.com/fr/rss",
+      "format": "rss",
+      "entries": 24,
+      "reference_url": "https://www.france24.com/fr/"
+    },
+    {
+      "actor_id": 104,
+      "name": "RFI",
+      "original_url": "https://example.com/rfi/feed",
+      "input_url": "https://www.rfi.fr/fr/rss",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.rfi.fr/fr/rss",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.rfi.fr/fr/rss",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "RFI - Actualités, info, news en direct - Radio France Internationale",
+          "entries": 23
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.rfi.fr/fr/rss",
+      "format": "rss",
+      "entries": 23,
+      "reference_url": "https://www.rfi.fr/fr/"
+    },
+    {
+      "actor_id": 105,
+      "name": "France Inter",
+      "original_url": "https://example.com/france-inter/feed",
+      "input_url": "https://example.com/france-inter/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.franceinter.fr/",
+          "kind": "unreachable",
+          "http_status": 200,
+          "final_url": "https://www.radiofrance.fr/franceinter",
+          "content_type": "text/html",
+          "error": "Response exceeds 2 MB"
+        },
+        {
+          "url": "https://www.franceinter.fr/feed/",
+          "kind": "unreachable",
+          "http_status": 200,
+          "final_url": "https://www.radiofrance.fr/",
+          "content_type": "text/html",
+          "error": "Response exceeds 2 MB"
+        },
+        {
+          "url": "https://www.franceinter.fr/rss.xml",
+          "kind": "unreachable",
+          "http_status": 200,
+          "final_url": "https://www.radiofrance.fr/franceinter",
+          "content_type": "text/html",
+          "error": "Response exceeds 2 MB"
+        },
+        {
+          "url": "https://www.franceinter.fr/spip.php?page=backend",
+          "kind": "unreachable",
+          "http_status": 200,
+          "final_url": "https://www.radiofrance.fr/franceinter?page=backend",
+          "content_type": "text/html",
+          "error": "Response exceeds 2 MB"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://www.franceinter.fr/"
+    },
+    {
+      "actor_id": 106,
+      "name": "Europe 1",
+      "original_url": "https://example.com/europe-1/feed",
+      "input_url": "https://www.europe1.fr/rss.xml",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.europe1.fr/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.europe1.fr/rss.xml",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "Flux RSS global",
+          "entries": 50
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.europe1.fr/rss.xml",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://www.europe1.fr/"
+    },
+    {
+      "actor_id": 107,
+      "name": "RTL",
+      "original_url": "https://example.com/rtl/feed",
+      "input_url": "https://example.com/rtl/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.rtl.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.rtl.fr/",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.rtl.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.rtl.fr/feed/",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.rtl.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.rtl.fr/rss.xml",
+          "content_type": "text/html;charset=UTF-8"
+        },
+        {
+          "url": "https://www.rtl.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.rtl.fr/spip.php?page=backend",
+          "content_type": "text/html;charset=UTF-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.rtl.fr/"
+    },
+    {
+      "actor_id": 108,
+      "name": "RMC",
+      "original_url": "https://example.com/rmc/feed",
+      "input_url": "https://example.com/rmc/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://rmc.bfmtv.com/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://rmc.bfmtv.com/feed/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://rmc.bfmtv.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 400,
+          "final_url": "https://rmc.bfmtv.com/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://rmc.bfmtv.com/spip.php?page=backend",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://rmc.bfmtv.com/"
+    },
+    {
+      "actor_id": 109,
+      "name": "TF1",
+      "original_url": "https://example.com/tf1/feed",
+      "input_url": "https://example.com/tf1/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.tf1.fr/",
+          "kind": "unreachable",
+          "http_status": 200,
+          "final_url": "https://www.tf1.fr/",
+          "content_type": "text/html; charset=utf-8",
+          "error": "Response exceeds 2 MB"
+        },
+        {
+          "url": "https://www.tf1.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.tf1.fr/feed",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.tf1.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.tf1.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.tf1.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.tf1.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://www.tf1.fr/"
+    },
+    {
+      "actor_id": 110,
+      "name": "France 2",
+      "original_url": "https://example.com/france-2/feed",
+      "input_url": "https://example.com/france-2/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.france.tv/france-2/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.france.tv/france-2/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.france.tv/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.france.tv/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.france.tv/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.france.tv/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.france.tv/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.france.tv/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.france.tv/france-2/"
+    },
+    {
+      "actor_id": 111,
+      "name": "France 3",
+      "original_url": "https://example.com/france-3/feed",
+      "input_url": "https://example.com/france-3/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.france.tv/france-3/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.france.tv/france-3/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.france.tv/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.france.tv/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.france.tv/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.france.tv/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.france.tv/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.france.tv/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.france.tv/france-3/"
+    },
+    {
+      "actor_id": 112,
+      "name": "M6",
+      "original_url": "https://example.com/m6/feed",
+      "input_url": "https://example.com/m6/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.m6.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.m6.fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.m6.fr/feed/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://www.m6.fr/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.m6.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.m6.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.m6.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.m6.fr/"
+    },
+    {
+      "actor_id": 113,
+      "name": "Arte",
+      "original_url": "https://example.com/arte/feed",
+      "input_url": "https://example.com/arte/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.arte.tv/fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.arte.tv/fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.arte.tv/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.arte.tv/feed/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.arte.tv/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.arte.tv/rss.xml",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://www.arte.tv/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.arte.tv/spip.php?page=backend",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.arte.tv/fr/"
+    },
+    {
+      "actor_id": 114,
+      "name": "France Info",
+      "original_url": "https://example.com/france-info/feed",
+      "input_url": "https://www.franceinfo.fr/titres.rss",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.franceinfo.fr/titres.rss",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.franceinfo.fr/titres.rss",
+          "content_type": "text/xml; charset=UTF-8",
+          "feed_title": "franceinfo - Les Titres",
+          "entries": 31
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.franceinfo.fr/titres.rss",
+      "format": "rss",
+      "entries": 31,
+      "reference_url": "https://www.franceinfo.fr/"
+    },
+    {
+      "actor_id": 200,
+      "name": "HugoDécrypte",
+      "original_url": "https://example.com/hugodecrypte/feed",
+      "input_url": "https://example.com/hugodecrypte/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://hugodecrypte.com/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.youtube.com/@hugodecrypteactus?cbrd=1&ucbcb=1",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://hugodecrypte.com/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://hugodecrypte.com/not-found?c=not-found",
+          "content_type": ""
+        },
+        {
+          "url": "https://hugodecrypte.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://hugodecrypte.com/not-found?c=rss.xml",
+          "content_type": ""
+        },
+        {
+          "url": "https://hugodecrypte.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://hugodecrypte.com/not-found?c=not-found",
+          "content_type": ""
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://hugodecrypte.com/"
+    },
+    {
+      "actor_id": 201,
+      "name": "Sardoche",
+      "original_url": "https://example.com/sardoche/feed",
+      "input_url": "https://example.com/sardoche/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://sardoche.tv/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://sardoche.tv/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://sardoche.tv/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://sardoche.tv/feed",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://sardoche.tv/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://sardoche.tv/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://sardoche.tv/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://sardoche.tv/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://sardoche.tv/"
+    },
+    {
+      "actor_id": 202,
+      "name": "Thinkerview",
+      "original_url": "https://example.com/thinkerview/feed",
+      "input_url": "https://www.thinkerview.com/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.thinkerview.com/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.thinkerview.com/feed/",
+          "content_type": "application/rss+xml",
+          "feed_title": "Thinkerview",
+          "entries": 516
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.thinkerview.com/feed/",
+      "format": "rss",
+      "entries": 516,
+      "reference_url": "https://www.thinkerview.com/"
+    },
+    {
+      "actor_id": 203,
+      "name": "Clément Viktorovitch",
+      "original_url": "https://example.com/clement-viktorovitch/feed",
+      "input_url": "https://example.com/clement-viktorovitch/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://clemovitch.com/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://clemovitch.com/",
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://clemovitch.com/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://clemovitch.com/feed/",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://clemovitch.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://clemovitch.com/rss.xml",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://clemovitch.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://clemovitch.com/spip.php?page=backend",
+          "content_type": "text/html; charset=iso-8859-1"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://clemovitch.com/"
+    },
+    {
+      "actor_id": 204,
+      "name": "Pascal Boniface",
+      "original_url": "https://example.com/pascal-boniface/feed",
+      "input_url": "https://example.com/pascal-boniface/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.iris-france.org/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.iris-france.org/",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "scope_review_required",
+      "method": "network",
+      "note": "Shared institutional/author site: a global feed would include other authors.",
+      "reference_url": "https://www.iris-france.org/"
+    },
+    {
+      "actor_id": 205,
+      "name": "Tatiana Ventôse",
+      "original_url": "https://example.com/tatiana-ventose/feed",
+      "input_url": "https://example.com/tatiana-ventose/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/TatianaVentose"
+    },
+    {
+      "actor_id": 206,
+      "name": "Jean Massiet",
+      "original_url": "https://example.com/jean-massiet/feed",
+      "input_url": "https://example.com/jean-massiet/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.twitch.tv/jeanmassiet"
+    },
+    {
+      "actor_id": 207,
+      "name": "Usul",
+      "original_url": "https://example.com/usul/feed",
+      "input_url": "https://example.com/usul/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets",
+          "content_type": "text/html; charset=UTF-8"
+        }
+      ],
+      "status": "scope_review_required",
+      "method": "network",
+      "note": "Shared institutional/author site: a global feed would include other authors.",
+      "reference_url": "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets"
+    },
+    {
+      "actor_id": 208,
+      "name": "Hugo Clément",
+      "original_url": "https://example.com/hugo-clement/feed",
+      "input_url": "https://example.com/hugo-clement/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/hugoclement"
+    },
+    {
+      "actor_id": 209,
+      "name": "Johan Reboul",
+      "original_url": "https://example.com/johan-reboul/feed",
+      "input_url": "https://example.com/johan-reboul/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/lejeuneengage/"
+    },
+    {
+      "actor_id": 210,
+      "name": "Mister Geopolitix",
+      "original_url": "https://example.com/mister-geopolitix/feed",
+      "input_url": "https://example.com/mister-geopolitix/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/channel/UCX9lsdsTKfTi1eqoyL-RS-Q"
+    },
+    {
+      "actor_id": 211,
+      "name": "Osons Causer",
+      "original_url": "https://example.com/osons-causer/feed",
+      "input_url": "https://example.com/osons-causer/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/%40Osonscauser"
+    },
+    {
+      "actor_id": 212,
+      "name": "Linguisticae",
+      "original_url": "https://example.com/linguisticae/feed",
+      "input_url": "https://example.com/linguisticae/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/linguisticae"
+    },
+    {
+      "actor_id": 213,
+      "name": "Le Réveilleur",
+      "original_url": "https://example.com/le-reveilleur/feed",
+      "input_url": "https://example.com/le-reveilleur/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://lereveilleur.com/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://lereveilleur.com/",
+          "content_type": "text/html; charset=UTF-8"
+        },
+        {
+          "url": "https://lereveilleur.com/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://lereveilleur.com/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://lereveilleur.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://lereveilleur.com/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://lereveilleur.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://lereveilleur.com/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://lereveilleur.com/"
+    },
+    {
+      "actor_id": 214,
+      "name": "Heu?reka",
+      "original_url": "https://example.com/heureka/feed",
+      "input_url": "https://example.com/heureka/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ"
+    },
+    {
+      "actor_id": 215,
+      "name": "Stupid Economics",
+      "original_url": "https://example.com/stupid-economics/feed",
+      "input_url": "https://example.com/stupid-economics/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/%40StupidEco"
+    },
+    {
+      "actor_id": 216,
+      "name": "Le Raptor",
+      "original_url": "https://example.com/le-raptor/feed",
+      "input_url": "https://example.com/le-raptor/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/%40LeRaptor"
+    },
+    {
+      "actor_id": 217,
+      "name": "Bon Pote",
+      "original_url": "https://example.com/bon-pote/feed",
+      "input_url": "https://bonpote.com/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://bonpote.com/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://bonpote.com/feed/",
+          "content_type": "text/xml;charset=UTF-8",
+          "feed_title": "Bon Pote",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://bonpote.com/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://bonpote.com/"
+    },
+    {
+      "actor_id": 218,
+      "name": "Camille Étienne",
+      "original_url": "https://example.com/camille-etienne/feed",
+      "input_url": "https://example.com/camille-etienne/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/camilleetienne_/"
+    },
+    {
+      "actor_id": 219,
+      "name": "Girl go green",
+      "original_url": "https://example.com/girl-go-green/feed",
+      "input_url": "https://example.com/girl-go-green/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/girl_go_green/"
+    },
+    {
+      "actor_id": 220,
+      "name": "Rokhaya Diallo",
+      "original_url": "https://example.com/rokhaya-diallo/feed",
+      "input_url": "https://example.com/rokhaya-diallo/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://rokhayadiallo.com/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://rokhayadiallo.com/",
+          "content_type": "text/html"
+        },
+        {
+          "url": "https://rokhayadiallo.com/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://rokhayadiallo.com/feed/",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://rokhayadiallo.com/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://rokhayadiallo.com/rss.xml",
+          "content_type": "text/html; charset=iso-8859-1"
+        },
+        {
+          "url": "https://rokhayadiallo.com/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://rokhayadiallo.com/spip.php?page=backend",
+          "content_type": "text/html; charset=iso-8859-1"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://rokhayadiallo.com/"
+    },
+    {
+      "actor_id": 221,
+      "name": "Assa Traoré",
+      "original_url": "https://example.com/assa-traore/feed",
+      "input_url": "https://example.com/assa-traore/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/assa.traore_/"
+    },
+    {
+      "actor_id": 222,
+      "name": "Salomé Saqué",
+      "original_url": "https://example.com/salome-saque/feed",
+      "input_url": "https://example.com/salome-saque/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/salomesaque"
+    },
+    {
+      "actor_id": 223,
+      "name": "Caroline Fourest",
+      "original_url": "https://example.com/caroline-fourest/feed",
+      "input_url": "https://example.com/caroline-fourest/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/CarolineFourest"
+    },
+    {
+      "actor_id": 224,
+      "name": "Papacito",
+      "original_url": "https://example.com/papacito/feed",
+      "input_url": "https://example.com/papacito/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/ugogiljimenez/"
+    },
+    {
+      "actor_id": 225,
+      "name": "Thaïs d’Escufon",
+      "original_url": "https://example.com/thais-descufon/feed",
+      "input_url": "https://example.com/thais-descufon/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/ThaisEscufon"
+    },
+    {
+      "actor_id": 226,
+      "name": "Eugénie Bastié",
+      "original_url": "https://example.com/eugenie-bastie/feed",
+      "input_url": "https://example.com/eugenie-bastie/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/EugenieBastie"
+    },
+    {
+      "actor_id": 227,
+      "name": "Raphaël Enthoven",
+      "original_url": "https://example.com/raphael-enthoven/feed",
+      "input_url": "https://example.com/raphael-enthoven/feed",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/Enthoven_R"
+    },
+    {
+      "actor_id": 300,
+      "name": "Acrimed",
+      "original_url": "https://www.acrimed.org/",
+      "input_url": "https://www.acrimed.org/spip.php?page=backend",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.acrimed.org/spip.php?page=backend",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.acrimed.org/spip.php?page=backend",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "Acrimed | Action Critique M&#233;dias",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.acrimed.org/spip.php?page=backend",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.acrimed.org/"
+    },
+    {
+      "actor_id": 301,
+      "name": "Lundi matin",
+      "original_url": "https://lundi.am/",
+      "input_url": "https://lundi.am/spip.php?page=backend",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://lundi.am/spip.php?page=backend",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://lundi.am/spip.php?page=backend",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "lundimatin",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://lundi.am/spip.php?page=backend",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://lundi.am/"
+    },
+    {
+      "actor_id": 302,
+      "name": "Contrepoints",
+      "original_url": "https://www.contrepoints.org/",
+      "input_url": "https://www.contrepoints.org/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.contrepoints.org/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://contrepoints.org/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Contrepoints",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.contrepoints.org/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.contrepoints.org/"
+    },
+    {
+      "actor_id": 303,
+      "name": "Atlantico",
+      "original_url": "https://www.atlantico.fr/",
+      "input_url": "https://www.atlantico.fr/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.atlantico.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://atlantico.fr/",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.atlantico.fr/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://atlantico.fr/feed",
+          "content_type": "text/html;charset=utf-8"
+        },
+        {
+          "url": "https://www.atlantico.fr/rss.xml",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://rss.atlantico.fr/",
+          "content_type": "application/xml",
+          "feed_title": "Atlantico, êtes-vous prêt à changer d'avis ?",
+          "entries": 15
+        },
+        {
+          "url": "https://www.atlantico.fr/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://atlantico.fr/spip.php?page=backend",
+          "content_type": "text/html;charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://atlantico.fr/"
+    },
+    {
+      "actor_id": 304,
+      "name": "Causeur",
+      "original_url": "https://www.causeur.fr/",
+      "input_url": "https://www.causeur.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.causeur.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.causeur.fr/feed",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Causeur",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.causeur.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.causeur.fr/"
+    },
+    {
+      "actor_id": 305,
+      "name": "L'Incorrect",
+      "original_url": "https://lincorrect.org/",
+      "input_url": "https://lincorrect.org/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://lincorrect.org/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://lincorrect.org/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "L&#039;Incorrect",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://lincorrect.org/feed/",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://lincorrect.org/"
+    },
+    {
+      "actor_id": 306,
+      "name": "Le Média",
+      "original_url": "https://www.lemediatv.fr/",
+      "input_url": "https://www.lemediatv.fr/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.lemediatv.fr/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lemediatv.fr/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lemediatv.fr/feed/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lemediatv.fr/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lemediatv.fr/rss.xml",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lemediatv.fr/rss.xml",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.lemediatv.fr/spip.php?page=backend",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.lemediatv.fr/spip.php?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://www.lemediatv.fr/"
+    },
+    {
+      "actor_id": 307,
+      "name": "Frustration Magazine",
+      "original_url": "https://www.frustrationmagazine.fr/",
+      "input_url": "https://www.frustrationmagazine.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.frustrationmagazine.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://frustrationmagazine.fr/feed.xml",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "Frustration Magazine",
+          "entries": 25
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.frustrationmagazine.fr/feed/",
+      "format": "rss",
+      "entries": 25,
+      "reference_url": "https://www.frustrationmagazine.fr/"
+    },
+    {
+      "actor_id": 308,
+      "name": "Splann!",
+      "original_url": "https://splann.org/",
+      "input_url": "https://splann.org/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://splann.org/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://splann.org/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Splann ! | Premier média d&#039;enquête indépendant en Bretagne",
+          "entries": 20
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://splann.org/feed/",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://splann.org/"
+    },
+    {
+      "actor_id": 309,
+      "name": "Marsactu",
+      "original_url": "https://marsactu.fr/",
+      "input_url": "https://marsactu.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://marsactu.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://marsactu.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Marsactu",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://marsactu.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://marsactu.fr/"
+    },
+    {
+      "actor_id": 310,
+      "name": "Next.ink",
+      "original_url": "https://next.ink/",
+      "input_url": "https://next.ink/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://next.ink/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://next.ink/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Next - Flux Complet",
+          "entries": 50
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://next.ink/feed/",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://next.ink/"
+    },
+    {
+      "actor_id": 311,
+      "name": "Reflets.info",
+      "original_url": "https://reflets.info/",
+      "input_url": "https://reflets.info/feeds/public",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://reflets.info/feeds/public",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://reflets.info/feeds/public",
+          "content_type": "application/rss+xml",
+          "feed_title": "Reflets.info",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://reflets.info/feeds/public",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://reflets.info/"
+    },
+    {
+      "actor_id": 312,
+      "name": "Rue89 Bordeaux",
+      "original_url": "https://www.rue89bordeaux.com/",
+      "input_url": "https://www.rue89bordeaux.com/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.rue89bordeaux.com/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://rue89bordeaux.com/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Rue89Bordeaux",
+          "entries": 14
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.rue89bordeaux.com/feed/",
+      "format": "rss",
+      "entries": 14,
+      "reference_url": "https://rue89bordeaux.com/"
+    },
+    {
+      "actor_id": 313,
+      "name": "Rue89 Lyon",
+      "original_url": "https://www.rue89lyon.fr/",
+      "input_url": "https://www.rue89lyon.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.rue89lyon.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.rue89lyon.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Rue89 Lyon",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.rue89lyon.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.rue89lyon.fr/"
+    },
+    {
+      "actor_id": 314,
+      "name": "Rue89 Strasbourg",
+      "original_url": "https://www.rue89strasbourg.com/",
+      "input_url": "https://www.rue89strasbourg.com/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.rue89strasbourg.com/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.rue89strasbourg.com/feed",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Rue89 Strasbourg",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.rue89strasbourg.com/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.rue89strasbourg.com/"
+    },
+    {
+      "actor_id": 315,
+      "name": "AOC",
+      "original_url": "https://aoc.media/",
+      "input_url": "https://aoc.media/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://aoc.media/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://aoc.media/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "AOC media &#8211; Analyse Opinion Critique",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://aoc.media/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://aoc.media/"
+    },
+    {
+      "actor_id": 316,
+      "name": "Le Grand Continent",
+      "original_url": "https://legrandcontinent.eu/",
+      "input_url": "https://legrandcontinent.eu/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://legrandcontinent.eu/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://legrandcontinent.eu/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Le Grand Continent",
+          "entries": 0
+        }
+      ],
+      "status": "feed_empty",
+      "method": "network",
+      "selected_url": "https://legrandcontinent.eu/feed/",
+      "format": "rss",
+      "entries": 0,
+      "reference_url": "https://legrandcontinent.eu/fr/"
+    },
+    {
+      "actor_id": 317,
+      "name": "Brief.me",
+      "original_url": "https://www.brief.me/",
+      "input_url": "https://www.brief.me/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.brief.me/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.brief.me/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.brief.me/feed/",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.brief.me/feed/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.brief.me/rss.xml",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.brief.me/rss.xml/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.brief.me/spip.php?page=backend",
+          "kind": "http_error",
+          "http_status": 404,
+          "final_url": "https://www.brief.me/spip.php/?page=backend",
+          "content_type": "text/html; charset=utf-8"
+        }
+      ],
+      "status": "website_only",
+      "method": "network",
+      "reference_url": "https://brief.me/"
+    },
+    {
+      "actor_id": 318,
+      "name": "XXI",
+      "original_url": "https://www.revue21.fr/xxi/",
+      "input_url": "https://www.revue21.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.revue21.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://revue21.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Revue21.fr",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.revue21.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.revue21.fr/"
+    },
+    {
+      "actor_id": 319,
+      "name": "Orient XXI",
+      "original_url": "https://orientxxi.info/",
+      "input_url": "https://orientxxi.info/spip.php?page=backend",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://orientxxi.info/spip.php?page=backend",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://orientxxi.info/spip.php?page=backend",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "Orient XXI",
+          "entries": 0
+        }
+      ],
+      "status": "feed_empty",
+      "method": "network",
+      "selected_url": "https://orientxxi.info/spip.php?page=backend",
+      "format": "rss",
+      "entries": 0,
+      "reference_url": "https://orientxxi.info/"
+    },
+    {
+      "actor_id": 320,
+      "name": "Les Surligneurs",
+      "original_url": "https://lessurligneurs.eu/",
+      "input_url": "https://lessurligneurs.eu/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://lessurligneurs.eu/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://lessurligneurs.eu/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Les Surligneurs",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://lessurligneurs.eu/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://lessurligneurs.eu/"
+    },
+    {
+      "actor_id": 321,
+      "name": "Conspiracy Watch",
+      "original_url": "https://www.conspiracywatch.info/",
+      "input_url": "https://www.conspiracywatch.info/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.conspiracywatch.info/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.conspiracywatch.info/feed",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Conspiracy Watch",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.conspiracywatch.info/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.conspiracywatch.info/"
+    },
+    {
+      "actor_id": 322,
+      "name": "Le Vent Se Lève (LVSL)",
+      "original_url": "https://lvsl.fr/",
+      "input_url": "https://lvsl.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://lvsl.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://lvsl.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "lvsl.fr &#8211; Le Vent Se Lève",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://lvsl.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://lvsl.fr/"
+    },
+    {
+      "actor_id": 323,
+      "name": "Révolution Permanente",
+      "original_url": "https://www.revolutionpermanente.fr/",
+      "input_url": "https://www.revolutionpermanente.fr/spip.php?page=backend",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.revolutionpermanente.fr/spip.php?page=backend",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.revolutionpermanente.fr/spip.php?page=backend",
+          "content_type": "text/xml; charset=utf-8",
+          "feed_title": "R&#233;volution Permanente",
+          "entries": 30
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.revolutionpermanente.fr/spip.php?page=backend",
+      "format": "rss",
+      "entries": 30,
+      "reference_url": "https://www.revolutionpermanente.fr/"
+    },
+    {
+      "actor_id": 324,
+      "name": "Terrestres",
+      "original_url": "https://www.terrestres.org/",
+      "input_url": "https://www.terrestres.org/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.terrestres.org/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.terrestres.org/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "Terrestres",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.terrestres.org/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.terrestres.org/"
+    },
+    {
+      "actor_id": 325,
+      "name": "Mediabask",
+      "original_url": "https://www.mediabask.eus/",
+      "input_url": "https://www.mediabask.eus/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.mediabask.eus/",
+          "kind": "html",
+          "http_status": 200,
+          "final_url": "https://www.mediabask.eus/",
+          "content_type": "text/html; charset=utf-8"
+        },
+        {
+          "url": "https://www.mediabask.eus/eu/rss/sections/mediabask.rss",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.mediabask.eus/eu/rss/sections/mediabask.rss",
+          "content_type": "application/rss+xml; charset=utf-8",
+          "feed_title": "MEDIABASK | naiz.eus",
+          "entries": 30
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.mediabask.eus/eu/rss/sections/mediabask.rss",
+      "format": "rss",
+      "entries": 30,
+      "reference_url": "https://mediabask.eus/"
+    },
+    {
+      "actor_id": 326,
+      "name": "Le Ravi",
+      "original_url": "https://www.leravi.fr/",
+      "input_url": "https://www.leravi.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.leravi.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.leravi.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "le Ravi",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.leravi.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://leravi.fr/"
+    },
+    {
+      "actor_id": 327,
+      "name": "La Revue Dessinée",
+      "original_url": "https://www.larevuedessinee.fr/",
+      "input_url": "https://www.larevuedessinee.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://www.larevuedessinee.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://www.larevuedessinee.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "La Revue Dessinée",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://www.larevuedessinee.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.larevuedessinee.fr/"
+    },
+    {
+      "actor_id": 328,
+      "name": "La Déferlante",
+      "original_url": "https://revueladeferlante.fr/",
+      "input_url": "https://revueladeferlante.fr/feed/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://revueladeferlante.fr/feed/",
+          "kind": "rss",
+          "http_status": 200,
+          "final_url": "https://revueladeferlante.fr/feed/",
+          "content_type": "application/rss+xml; charset=UTF-8",
+          "feed_title": "La Déferlante",
+          "entries": 10
+        }
+      ],
+      "status": "feed_verified",
+      "method": "network",
+      "selected_url": "https://revueladeferlante.fr/feed/",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.revueladeferlante.fr/"
+    },
+    {
+      "actor_id": 329,
+      "name": "Le Drenche",
+      "original_url": "https://ledrenche.fr/",
+      "input_url": "https://ledrenche.fr/",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [
+        {
+          "url": "https://ledrenche.fr/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://ledrenche.fr/feed/",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://ledrenche.fr/rss.xml",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        },
+        {
+          "url": "https://ledrenche.fr/spip.php?page=backend",
+          "kind": "unreachable",
+          "error": "fetch failed"
+        }
+      ],
+      "status": "unreachable",
+      "method": "network",
+      "reference_url": "https://ledrenche.fr/"
+    },
+    {
+      "actor_id": 400,
+      "name": "Emmanuel Macron",
+      "original_url": "https://x.com/EmmanuelMacron",
+      "input_url": "https://x.com/EmmanuelMacron",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.elysee.fr/emmanuel-macron"
+    },
+    {
+      "actor_id": 401,
+      "name": "Gabriel Attal",
+      "original_url": "https://x.com/GabrielAttal",
+      "input_url": "https://x.com/GabrielAttal",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722190"
+    },
+    {
+      "actor_id": 402,
+      "name": "Gérald Darmanin",
+      "original_url": "https://x.com/GDarmanin",
+      "input_url": "https://x.com/GDarmanin",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.info.gouv.fr/personnalite/gerald-darmanin"
+    },
+    {
+      "actor_id": 403,
+      "name": "Élisabeth Borne",
+      "original_url": "https://x.com/Elisabeth_Borne",
+      "input_url": "https://x.com/Elisabeth_Borne",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.info.gouv.fr/personnalite/elisabeth-borne"
+    },
+    {
+      "actor_id": 404,
+      "name": "Édouard Philippe",
+      "original_url": "https://x.com/EPhilippe_LH",
+      "input_url": "https://x.com/EPhilippe_LH",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/EPhilippe_LH"
+    },
+    {
+      "actor_id": 405,
+      "name": "François Bayrou",
+      "original_url": "https://x.com/bayrou",
+      "input_url": "https://x.com/bayrou",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/bayrou"
+    },
+    {
+      "actor_id": 406,
+      "name": "Bruno Le Maire",
+      "original_url": "https://x.com/BrunoLeMaire",
+      "input_url": "https://x.com/BrunoLeMaire",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/BrunoLeMaire"
+    },
+    {
+      "actor_id": 407,
+      "name": "Yaël Braun-Pivet",
+      "original_url": "https://x.com/YaelBRAUNPIVET",
+      "input_url": "https://x.com/YaelBRAUNPIVET",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721908"
+    },
+    {
+      "actor_id": 408,
+      "name": "Aurore Bergé",
+      "original_url": "https://x.com/auroreberge",
+      "input_url": "https://x.com/auroreberge",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/auroreberge"
+    },
+    {
+      "actor_id": 409,
+      "name": "Raphaël Glucksmann",
+      "original_url": "https://x.com/rglucks1",
+      "input_url": "https://x.com/rglucks1",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/197694/RAPHAEL_GLUCKSMANN/home"
+    },
+    {
+      "actor_id": 410,
+      "name": "Olivier Faure",
+      "original_url": "https://x.com/faureolivier",
+      "input_url": "https://x.com/faureolivier",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/faureolivier"
+    },
+    {
+      "actor_id": 411,
+      "name": "Marine Tondelier",
+      "original_url": "https://x.com/marinetondelier",
+      "input_url": "https://x.com/marinetondelier",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/marinetondelier"
+    },
+    {
+      "actor_id": 412,
+      "name": "Fabien Roussel",
+      "original_url": "https://x.com/Fabien_Roussel",
+      "input_url": "https://x.com/Fabien_Roussel",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/Fabien_Roussel"
+    },
+    {
+      "actor_id": 413,
+      "name": "Jean-Luc Mélenchon",
+      "original_url": "https://x.com/JLMelenchon",
+      "input_url": "https://x.com/JLMelenchon",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://melenchon.fr/"
+    },
+    {
+      "actor_id": 414,
+      "name": "Manuel Bompard",
+      "original_url": "https://x.com/mbompard",
+      "input_url": "https://x.com/mbompard",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793444"
+    },
+    {
+      "actor_id": 415,
+      "name": "Mathilde Panot",
+      "original_url": "https://x.com/MathildePanot",
+      "input_url": "https://x.com/MathildePanot",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720892"
+    },
+    {
+      "actor_id": 416,
+      "name": "François Ruffin",
+      "original_url": "https://x.com/Francois_Ruffin",
+      "input_url": "https://x.com/Francois_Ruffin",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722142"
+    },
+    {
+      "actor_id": 417,
+      "name": "Sandrine Rousseau",
+      "original_url": "https://x.com/sandrousseau",
+      "input_url": "https://x.com/sandrousseau",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795076"
+    },
+    {
+      "actor_id": 418,
+      "name": "Anne Hidalgo",
+      "original_url": "https://x.com/Anne_Hidalgo",
+      "input_url": "https://x.com/Anne_Hidalgo",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/Anne_Hidalgo"
+    },
+    {
+      "actor_id": 419,
+      "name": "Valérie Pécresse",
+      "original_url": "https://x.com/vpecresse",
+      "input_url": "https://x.com/vpecresse",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/vpecresse"
+    },
+    {
+      "actor_id": 420,
+      "name": "Laurent Wauquiez",
+      "original_url": "https://x.com/laurentwauquiez",
+      "input_url": "https://x.com/laurentwauquiez",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/laurentwauquiez"
+    },
+    {
+      "actor_id": 421,
+      "name": "Bruno Retailleau",
+      "original_url": "https://x.com/BrunoRetailleau",
+      "input_url": "https://x.com/BrunoRetailleau",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/BrunoRetailleau"
+    },
+    {
+      "actor_id": 422,
+      "name": "Éric Ciotti",
+      "original_url": "https://x.com/eciotti",
+      "input_url": "https://x.com/eciotti",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA330240"
+    },
+    {
+      "actor_id": 423,
+      "name": "Marine Le Pen",
+      "original_url": "https://x.com/MLP_officiel",
+      "input_url": "https://x.com/MLP_officiel",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720614"
+    },
+    {
+      "actor_id": 424,
+      "name": "Jordan Bardella",
+      "original_url": "https://x.com/J_Bardella",
+      "input_url": "https://x.com/J_Bardella",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/131580/JORDAN_BARDELLA/home"
+    },
+    {
+      "actor_id": 425,
+      "name": "Éric Zemmour",
+      "original_url": "https://x.com/ZemmourEric",
+      "input_url": "https://x.com/ZemmourEric",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/ZemmourEric"
+    },
+    {
+      "actor_id": 426,
+      "name": "Marion Maréchal",
+      "original_url": "https://x.com/MarionMarechal",
+      "input_url": "https://x.com/MarionMarechal",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/256922/MARION_MARECHAL/home"
+    },
+    {
+      "actor_id": 427,
+      "name": "Nicolas Dupont-Aignan",
+      "original_url": "https://x.com/dupontaignan",
+      "input_url": "https://x.com/dupontaignan",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/dupontaignan"
+    },
+    {
+      "actor_id": 428,
+      "name": "François Hollande",
+      "original_url": "https://x.com/fhollande",
+      "input_url": "https://x.com/fhollande",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/fhollande"
+    },
+    {
+      "actor_id": 429,
+      "name": "François-Xavier Bellamy",
+      "original_url": "https://x.com/fxbellamy",
+      "input_url": "https://x.com/fxbellamy",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "checks": [],
+      "status": "platform_requires_connector",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/197534/FRANCOIS-XAVIER_BELLAMY/home"
+    }
+  ]
+}

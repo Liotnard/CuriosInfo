@@ -5,3 +5,5 @@ dist
 .env.*
 web/public/data
 data
+
+collection

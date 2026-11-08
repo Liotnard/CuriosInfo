@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Le Monde",
     "slug": "le-monde",
-    "feed_url": "https://www.lemonde.fr/actualite-en-continu/",
+    "feed_url": "https://www.lemonde.fr/rss/une.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -1.5,
@@ -11,27 +11,51 @@
     "natio_mon": 8.5,
     "prog_cons": -3.5,
     "actor_type": "presse",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "additional_urls": [
+      "https://www.lemonde.fr/actualite-en-continu/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.lemonde.fr/actualite-en-continu/",
+      "method": "network",
+      "format": "rss",
+      "entries": 16,
+      "reference_url": "https://www.lemonde.fr/"
+    }
   },
   {
     "id": 2,
     "name": "Le Figaro",
     "slug": "le-figaro",
-    "feed_url": "https://www.lefigaro.fr",
+    "feed_url": "https://www.lefigaro.fr/rss/figaro_actualites.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 2.0,
+    "lib_autor": 2,
     "indiv_col": -7.5,
-    "natio_mon": 2.0,
+    "natio_mon": 2,
     "prog_cons": 4.5,
     "actor_type": "presse",
-    "confidence": 0.9
+    "confidence": 0.9,
+    "additional_urls": [
+      "https://www.lefigaro.fr"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.lefigaro.fr",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.lefigaro.fr/"
+    }
   },
   {
     "id": 3,
     "name": "Libération",
     "slug": "liberation",
-    "feed_url": "https://example.com/liberation/feed",
+    "feed_url": "https://www.liberation.fr/arc/outboundfeeds/rss/?outputType=xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -4.5,
@@ -39,35 +63,71 @@
     "natio_mon": 7.5,
     "prog_cons": -7.5,
     "actor_type": "presse",
-    "confidence": 0.9
+    "confidence": 0.9,
+    "additional_urls": [
+      "https://example.com/liberation/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/liberation/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://www.liberation.fr/"
+    }
   },
   {
     "id": 4,
     "name": "La Croix",
     "slug": "la-croix",
-    "feed_url": "https://example.com/la-croix/feed",
+    "feed_url": "https://www.la-croix.com/RSS/UNIVERS",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.5,
     "indiv_col": 1.5,
-    "natio_mon": 7.0,
-    "prog_cons": 0.0,
+    "natio_mon": 7,
+    "prog_cons": 0,
     "actor_type": "presse",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "additional_urls": [
+      "https://example.com/la-croix/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/la-croix/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://www.la-croix.com/"
+    }
   },
   {
     "id": 5,
     "name": "L’Humanité",
     "slug": "l-humanite",
-    "feed_url": "https://example.com/l-humanite/feed",
+    "feed_url": "https://www.humanite.fr/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 8.8,
     "indiv_col": 10,
-    "natio_mon": 2.0,
-    "prog_cons": -7.0,
+    "natio_mon": 2,
+    "prog_cons": -7,
     "actor_type": "presse",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "additional_urls": [
+      "https://example.com/l-humanite/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/l-humanite/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.humanite.fr/"
+    }
   },
   {
     "id": 6,
@@ -78,10 +138,17 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.5,
     "indiv_col": -6,
-    "natio_mon": 3.0,
+    "natio_mon": 3,
     "prog_cons": 1.5,
     "actor_type": "presse",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/le-parisien/feed",
+      "method": "network",
+      "reference_url": "https://www.leparisien.fr/"
+    }
   },
   {
     "id": 7,
@@ -90,46 +157,83 @@
     "feed_url": "https://example.com/les-echos/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -3.0,
-    "indiv_col": -9.0,
-    "natio_mon": 8.0,
+    "lib_autor": -3,
+    "indiv_col": -9,
+    "natio_mon": 8,
     "prog_cons": 2.5,
     "actor_type": "presse",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/les-echos/feed",
+      "method": "network",
+      "reference_url": "https://www.lesechos.fr/"
+    },
+    "website_url": "https://www.lesechos.fr/",
+    "additional_urls": [
+      "https://www.lesechos.fr/"
+    ]
   },
   {
     "id": 8,
     "name": "L’Opinion",
     "slug": "lopinion",
-    "feed_url": "https://example.com/lopinion/feed",
+    "feed_url": "https://www.lopinion.fr/index.rss",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -0.5,
     "indiv_col": -8.5,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": 2.9,
     "actor_type": "presse",
-    "confidence": 0.88
+    "confidence": 0.88,
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/lopinion/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 250,
+      "reference_url": "https://www.lopinion.fr/"
+    },
+    "website_url": "https://www.lopinion.fr/",
+    "additional_urls": [
+      "https://example.com/lopinion/feed",
+      "https://www.lopinion.fr/"
+    ]
   },
   {
     "id": 9,
     "name": "La Tribune",
     "slug": "la-tribune",
-    "feed_url": "https://example.com/la-tribune/feed",
+    "feed_url": "https://www.latribune.fr/feed.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -2.0,
+    "lib_autor": -2,
     "indiv_col": -7.5,
-    "natio_mon": 6.0,
-    "prog_cons": 0.0,
+    "natio_mon": 6,
+    "prog_cons": 0,
     "actor_type": "presse",
-    "confidence": 0.85
+    "confidence": 0.85,
+    "additional_urls": [
+      "https://example.com/la-tribune/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/la-tribune/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.latribune.fr/"
+    }
   },
   {
     "id": 10,
     "name": "L’Agefi",
     "slug": "lagefi",
-    "feed_url": "https://example.com/lagefi/feed",
+    "feed_url": "https://www.agefi.fr/index.rss",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -1.2,
@@ -137,35 +241,75 @@
     "natio_mon": 7.3,
     "prog_cons": 1.5,
     "actor_type": "presse",
-    "confidence": 0.7
+    "confidence": 0.7,
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/lagefi/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 250,
+      "reference_url": "https://www.agefi.fr/"
+    },
+    "website_url": "https://www.agefi.fr/",
+    "additional_urls": [
+      "https://example.com/lagefi/feed",
+      "https://www.agefi.fr/"
+    ]
   },
   {
     "id": 11,
     "name": "Le Canard enchaîné",
     "slug": "le-canard-enchaine",
-    "feed_url": "https://example.com/le-canard-enchaine/feed",
+    "feed_url": "https://www.lecanardenchaine.fr/rss/index.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -9.0,
-    "indiv_col": -3.0,
-    "natio_mon": 4.0,
+    "lib_autor": -9,
+    "indiv_col": -3,
+    "natio_mon": 4,
     "prog_cons": -3.7,
     "actor_type": "presse",
-    "confidence": 0.85
+    "confidence": 0.85,
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/le-canard-enchaine/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 75,
+      "reference_url": "https://www.lecanardenchaine.fr/"
+    },
+    "website_url": "https://www.lecanardenchaine.fr/",
+    "additional_urls": [
+      "https://example.com/le-canard-enchaine/feed",
+      "https://www.lecanardenchaine.fr/"
+    ]
   },
   {
     "id": 12,
     "name": "Charlie Hebdo",
     "slug": "charlie-hebdo",
-    "feed_url": "https://example.com/charlie-hebdo/feed",
+    "feed_url": "https://charliehebdo.fr/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -10.0,
-    "indiv_col": -7.0,
-    "natio_mon": 6.0,
-    "prog_cons": -5.0,
+    "lib_autor": -10,
+    "indiv_col": -7,
+    "natio_mon": 6,
+    "prog_cons": -5,
     "actor_type": "presse",
-    "confidence": 0.93
+    "confidence": 0.93,
+    "additional_urls": [
+      "https://example.com/charlie-hebdo/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/charlie-hebdo/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://charliehebdo.fr/"
+    }
   },
   {
     "id": 13,
@@ -174,26 +318,45 @@
     "feed_url": "https://example.com/le-point/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 3.0,
-    "indiv_col": -6.0,
+    "lib_autor": 3,
+    "indiv_col": -6,
     "natio_mon": 1.5,
-    "prog_cons": 6.0,
+    "prog_cons": 6,
     "actor_type": "presse",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "source_qualification": {
+      "status": "access_restricted",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/le-point/feed",
+      "method": "network",
+      "reference_url": "https://www.lepoint.fr/"
+    }
   },
   {
     "id": 14,
     "name": "L’Obs",
     "slug": "lobs",
-    "feed_url": "https://example.com/lobs/feed",
+    "feed_url": "https://www.nouvelobs.com/a-la-une/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -2.5,
-    "indiv_col": -3.0,
+    "indiv_col": -3,
     "natio_mon": 7.5,
     "prog_cons": -2.3,
     "actor_type": "presse",
-    "confidence": 0.88
+    "confidence": 0.88,
+    "additional_urls": [
+      "https://example.com/lobs/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/lobs/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 288,
+      "reference_url": "https://www.nouvelobs.com/"
+    }
   },
   {
     "id": 15,
@@ -207,7 +370,18 @@
     "natio_mon": 4.5,
     "prog_cons": 3.5,
     "actor_type": "presse",
-    "confidence": 0.9
+    "confidence": 0.9,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/lexpress/feed",
+      "method": "network",
+      "reference_url": "https://www.lexpress.fr/"
+    },
+    "website_url": "https://www.lexpress.fr/",
+    "additional_urls": [
+      "https://www.lexpress.fr/"
+    ]
   },
   {
     "id": 16,
@@ -216,60 +390,103 @@
     "feed_url": "https://example.com/marianne/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 0.0,
-    "indiv_col": -4.0,
+    "lib_autor": 0,
+    "indiv_col": -4,
     "natio_mon": -4.4,
-    "prog_cons": 4.0,
+    "prog_cons": 4,
     "actor_type": "presse",
-    "confidence": 0.85
+    "confidence": 0.85,
+    "source_qualification": {
+      "status": "access_restricted",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/marianne/feed",
+      "method": "network",
+      "reference_url": "https://www.marianne.net/"
+    }
   },
   {
     "id": 17,
     "name": "Valeurs actuelles",
     "slug": "valeurs-actuelles",
-    "feed_url": "https://example.com/valeurs-actuelles/feed",
+    "feed_url": "https://www.valeursactuelles.com/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 9.0,
-    "indiv_col": -10.0,
+    "lib_autor": 9,
+    "indiv_col": -10,
     "natio_mon": -10,
-    "prog_cons": 10.0,
+    "prog_cons": 10,
     "actor_type": "presse",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "additional_urls": [
+      "https://example.com/valeurs-actuelles/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/valeurs-actuelles/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.valeursactuelles.com/"
+    }
   },
   {
     "id": 18,
     "name": "Le Monde diplomatique",
     "slug": "le-monde-diplomatique",
-    "feed_url": "https://example.com/le-monde-diplomatique/feed",
+    "feed_url": "https://www.monde-diplomatique.fr/recents.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 5.0,
-    "indiv_col": 9.0,
-    "natio_mon": 9.0,
+    "lib_autor": 5,
+    "indiv_col": 9,
+    "natio_mon": 9,
     "prog_cons": -4.5,
     "actor_type": "presse",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "additional_urls": [
+      "https://example.com/le-monde-diplomatique/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/le-monde-diplomatique/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.monde-diplomatique.fr/"
+    }
   },
   {
     "id": 19,
     "name": "Courrier international",
     "slug": "courrier-international",
-    "feed_url": "https://example.com/courrier-international/feed",
+    "feed_url": "https://www.courrierinternational.com/feed/all/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -1.0,
-    "indiv_col": -2.0,
+    "lib_autor": -1,
+    "indiv_col": -2,
     "natio_mon": 9.5,
     "prog_cons": -1.5,
     "actor_type": "presse",
-    "confidence": 0.88
+    "confidence": 0.88,
+    "additional_urls": [
+      "https://example.com/courrier-international/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/courrier-international/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.courrierinternational.com/"
+    }
   },
   {
     "id": 20,
     "name": "Alternatives Économiques",
     "slug": "alternatives-economiques",
-    "feed_url": "https://example.com/alternatives-economiques/feed",
+    "feed_url": "https://www.alternatives-economiques.fr/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.9,
@@ -277,7 +494,19 @@
     "natio_mon": 7.5,
     "prog_cons": -3.5,
     "actor_type": "presse",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "additional_urls": [
+      "https://example.com/alternatives-economiques/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/alternatives-economiques/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.alternatives-economiques.fr/"
+    }
   },
   {
     "id": 21,
@@ -291,21 +520,44 @@
     "natio_mon": 5.2,
     "prog_cons": -6.5,
     "actor_type": "presse",
-    "confidence": 0.9
+    "confidence": 0.9,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/politis/feed",
+      "method": "network",
+      "reference_url": "https://www.politis.fr/"
+    },
+    "website_url": "https://www.politis.fr/",
+    "additional_urls": [
+      "https://www.politis.fr/"
+    ]
   },
   {
     "id": 22,
     "name": "Regards",
     "slug": "regards",
-    "feed_url": "https://example.com/regards/feed",
+    "feed_url": "https://regards.fr/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 0.0,
+    "lib_autor": 0,
     "indiv_col": 8.5,
     "natio_mon": 4.5,
-    "prog_cons": -7.0,
+    "prog_cons": -7,
     "actor_type": "presse",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "additional_urls": [
+      "https://example.com/regards/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/regards/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://regards.fr/"
+    }
   },
   {
     "id": 23,
@@ -314,26 +566,49 @@
     "feed_url": "https://example.com/socialter/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -2.0,
+    "lib_autor": -2,
     "indiv_col": 8.8,
     "natio_mon": 6.5,
-    "prog_cons": -5.0,
+    "prog_cons": -5,
     "actor_type": "presse",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/socialter/feed",
+      "method": "network",
+      "reference_url": "https://www.socialter.fr/"
+    },
+    "website_url": "https://www.socialter.fr/",
+    "additional_urls": [
+      "https://www.socialter.fr/"
+    ]
   },
   {
     "id": 24,
     "name": "Fakir",
     "slug": "fakir",
-    "feed_url": "https://example.com/fakir/feed",
+    "feed_url": "https://fakirpresse.info/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -6.0,
-    "indiv_col": 8.0,
+    "lib_autor": -6,
+    "indiv_col": 8,
     "natio_mon": 0.5,
     "prog_cons": -5.8,
     "actor_type": "presse",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "additional_urls": [
+      "https://example.com/fakir/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/fakir/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://fakirpresse.info/"
+    }
   },
   {
     "id": 25,
@@ -344,10 +619,21 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 3,
     "indiv_col": 4,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": 2.5,
     "actor_type": "presse",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/la-vie/feed",
+      "method": "network",
+      "reference_url": "https://www.lavie.fr/"
+    },
+    "website_url": "https://www.lavie.fr/",
+    "additional_urls": [
+      "https://www.lavie.fr/"
+    ]
   },
   {
     "id": 26,
@@ -356,26 +642,49 @@
     "feed_url": "https://example.com/famille-chretienne/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 7.0,
+    "lib_autor": 7,
     "indiv_col": -1.5,
-    "natio_mon": -4.0,
+    "natio_mon": -4,
     "prog_cons": 8.5,
     "actor_type": "presse",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/famille-chretienne/feed",
+      "method": "network",
+      "reference_url": "https://www.famillechretienne.fr/"
+    },
+    "website_url": "https://www.famillechretienne.fr/",
+    "additional_urls": [
+      "https://www.famillechretienne.fr/"
+    ]
   },
   {
     "id": 27,
     "name": "Mediapart",
     "slug": "mediapart",
-    "feed_url": "https://example.com/mediapart/feed",
+    "feed_url": "https://www.mediapart.fr/articles/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.5,
     "indiv_col": -1.5,
-    "natio_mon": 7.0,
-    "prog_cons": -5.0,
+    "natio_mon": 7,
+    "prog_cons": -5,
     "actor_type": "presse",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "additional_urls": [
+      "https://example.com/mediapart/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/mediapart/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.mediapart.fr/"
+    }
   },
   {
     "id": 28,
@@ -385,53 +694,100 @@
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -6.5,
-    "indiv_col": 0.0,
-    "natio_mon": 6.0,
+    "indiv_col": 0,
+    "natio_mon": 6,
     "prog_cons": -3.5,
     "actor_type": "presse",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/arret-sur-images/feed",
+      "method": "network",
+      "reference_url": "https://www.arretsurimages.net/"
+    },
+    "website_url": "https://www.arretsurimages.net/",
+    "additional_urls": [
+      "https://www.arretsurimages.net/"
+    ]
   },
   {
     "id": 29,
     "name": "Disclose",
     "slug": "disclose",
-    "feed_url": "https://example.com/disclose/feed",
+    "feed_url": "https://disclose.ngo/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -5.0,
-    "indiv_col": -1.0,
-    "natio_mon": 6.0,
-    "prog_cons": -3.0,
+    "lib_autor": -5,
+    "indiv_col": -1,
+    "natio_mon": 6,
+    "prog_cons": -3,
     "actor_type": "presse",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "additional_urls": [
+      "https://example.com/disclose/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/disclose/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://disclose.ngo/"
+    }
   },
   {
     "id": 30,
     "name": "StreetPress",
     "slug": "streetpress",
-    "feed_url": "https://example.com/streetpress/feed",
+    "feed_url": "https://www.streetpress.com/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.5,
     "indiv_col": -1.5,
     "natio_mon": 5.5,
-    "prog_cons": -5.0,
+    "prog_cons": -5,
     "actor_type": "presse",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://example.com/streetpress/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/streetpress/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.streetpress.com/"
+    }
   },
   {
     "id": 31,
     "name": "Les Jours",
     "slug": "les-jours",
-    "feed_url": "https://example.com/les-jours/feed",
+    "feed_url": "https://lesjours.fr/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -5.5,
     "indiv_col": -1.5,
-    "natio_mon": 6.0,
-    "prog_cons": -4.0,
+    "natio_mon": 6,
+    "prog_cons": -4,
     "actor_type": "presse",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "additional_urls": [
+      "https://example.com/les-jours/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/les-jours/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 9,
+      "reference_url": "https://lesjours.fr/"
+    }
   },
   {
     "id": 32,
@@ -442,38 +798,73 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -5.5,
     "indiv_col": 3.7,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -5.5,
     "actor_type": "presse",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/blast/feed",
+      "method": "network",
+      "reference_url": "https://www.blast-info.fr/"
+    },
+    "website_url": "https://www.blast-info.fr/",
+    "additional_urls": [
+      "https://www.blast-info.fr/"
+    ]
   },
   {
     "id": 33,
     "name": "Off Investigation",
     "slug": "off-investigation",
-    "feed_url": "https://example.com/off-investigation/feed",
+    "feed_url": "https://www.off-investigation.fr/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -4.5,
     "indiv_col": -0.5,
     "natio_mon": 5.5,
-    "prog_cons": -3.0,
+    "prog_cons": -3,
     "actor_type": "presse",
-    "confidence": 0.73
+    "confidence": 0.73,
+    "additional_urls": [
+      "https://example.com/off-investigation/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/off-investigation/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.off-investigation.fr/"
+    }
   },
   {
     "id": 34,
     "name": "Médiacités",
     "slug": "mediacites",
-    "feed_url": "https://example.com/mediacites/feed",
+    "feed_url": "https://www.mediacites.fr/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -4.2,
     "indiv_col": -1.4,
     "natio_mon": 4.5,
-    "prog_cons": -2.0,
+    "prog_cons": -2,
     "actor_type": "presse",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://example.com/mediacites/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/mediacites/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.mediacites.fr/"
+    }
   },
   {
     "id": 35,
@@ -484,30 +875,53 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -2.8,
     "indiv_col": -2.7,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -0.5,
     "actor_type": "presse",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/contexte/feed",
+      "method": "network",
+      "reference_url": "https://about.contexte.com/"
+    },
+    "website_url": "https://about.contexte.com/",
+    "additional_urls": [
+      "https://about.contexte.com/"
+    ]
   },
   {
     "id": 36,
     "name": "Basta!",
     "slug": "basta",
-    "feed_url": "https://example.com/basta/feed",
+    "feed_url": "https://basta.media/spip.php?page=backend",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -4.0,
+    "lib_autor": -4,
     "indiv_col": 6.6,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -6.3,
     "actor_type": "presse",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://example.com/basta/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/basta/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://basta.media/"
+    }
   },
   {
     "id": 37,
     "name": "Reporterre",
     "slug": "reporterre",
-    "feed_url": "https://example.com/reporterre/feed",
+    "feed_url": "https://reporterre.net/spip.php?page=backend",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.5,
@@ -515,63 +929,123 @@
     "natio_mon": 4.5,
     "prog_cons": -5.4,
     "actor_type": "presse",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "additional_urls": [
+      "https://example.com/reporterre/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/reporterre/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 60,
+      "reference_url": "https://reporterre.net/"
+    }
   },
   {
     "id": 38,
     "name": "Vert",
     "slug": "vert",
-    "feed_url": "https://example.com/vert/feed",
+    "feed_url": "https://vert.eco/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.9,
     "indiv_col": 4.5,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -5.5,
     "actor_type": "presse",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://example.com/vert/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/vert/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://vert.eco/"
+    }
   },
   {
     "id": 39,
     "name": "The Conversation France",
     "slug": "the-conversation-france",
-    "feed_url": "https://example.com/the-conversation-france/feed",
+    "feed_url": "https://theconversation.com/fr/articles.atom",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 0.0,
-    "indiv_col": 0.0,
-    "natio_mon": 8.0,
-    "prog_cons": -2.0,
+    "lib_autor": 0,
+    "indiv_col": 0,
+    "natio_mon": 8,
+    "prog_cons": -2,
     "actor_type": "presse",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://example.com/the-conversation-france/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/the-conversation-france/feed",
+      "method": "network",
+      "format": "atom",
+      "entries": 50,
+      "reference_url": "https://theconversation.com/"
+    }
   },
   {
     "id": 40,
     "name": "Slate.fr",
     "slug": "slate-fr",
-    "feed_url": "https://example.com/slate-fr/feed",
+    "feed_url": "https://www.slate.fr/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.6,
     "indiv_col": -4.8,
-    "natio_mon": 9.0,
+    "natio_mon": 9,
     "prog_cons": -4.2,
     "actor_type": "presse",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "additional_urls": [
+      "https://example.com/slate-fr/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/slate-fr/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 22,
+      "reference_url": "https://www.slate.fr/"
+    }
   },
   {
     "id": 41,
     "name": "HuffPost France",
     "slug": "huffpost-france",
-    "feed_url": "https://example.com/huffpost-france/feed",
+    "feed_url": "https://www.huffingtonpost.fr/feeds/index.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -2.5,
     "indiv_col": -0.5,
-    "natio_mon": 8.0,
+    "natio_mon": 8,
     "prog_cons": -3.1,
     "actor_type": "presse",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "additional_urls": [
+      "https://example.com/huffpost-france/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/huffpost-france/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://www.huffingtonpost.fr/"
+    }
   },
   {
     "id": 100,
@@ -583,15 +1057,22 @@
     "lib_autor": -1.5,
     "indiv_col": -4.5,
     "natio_mon": 3.7,
-    "prog_cons": 2.0,
+    "prog_cons": 2,
     "actor_type": "audiovisuel",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/bfm-tv/feed",
+      "method": "network",
+      "reference_url": "https://www.bfmtv.com/"
+    }
   },
   {
     "id": 101,
     "name": "CNews",
     "slug": "cnews",
-    "feed_url": "https://example.com/cnews/feed",
+    "feed_url": "https://www.cnews.fr/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 6.5,
@@ -599,117 +1080,203 @@
     "natio_mon": -5.5,
     "prog_cons": 7.5,
     "actor_type": "audiovisuel",
-    "confidence": 0.9
+    "confidence": 0.9,
+    "additional_urls": [
+      "https://example.com/cnews/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/cnews/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 100,
+      "reference_url": "https://www.cnews.fr/"
+    }
   },
-  
   {
-      "id": 42,
-      "name": "Toute l'Europe",
-      "slug": "touteleurope",
-      "feed_url": "https://www.touteleurope.eu",
-      "created_at": "2026-01-10T12:00:00.000Z",
-      "updated_at": "2026-01-10T12:00:00.000Z",
-      "lib_autor": 0.0,
-      "indiv_col": 0.0,
-      "natio_mon": 10.0,
-      "prog_cons": -1.0,
-      "actor_type": "presse",
-      "confidence": 0.85,
-      "note": "Site pédagogique institutionnel sur les questions européennes. Financé par UE. Pro-intégration européenne, neutre politiquement mais mondialiste/globaliste par nature."
+    "id": 42,
+    "name": "Toute l'Europe",
+    "slug": "touteleurope",
+    "feed_url": "https://www.touteleurope.eu",
+    "created_at": "2026-01-10T12:00:00.000Z",
+    "updated_at": "2026-01-10T12:00:00.000Z",
+    "lib_autor": 0,
+    "indiv_col": 0,
+    "natio_mon": 10,
+    "prog_cons": -1,
+    "actor_type": "presse",
+    "confidence": 0.85,
+    "note": "Site pédagogique institutionnel sur les questions européennes. Financé par UE. Pro-intégration européenne, neutre politiquement mais mondialiste/globaliste par nature.",
+    "source_qualification": {
+      "status": "access_restricted",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.touteleurope.eu",
+      "method": "network",
+      "reference_url": "https://www.touteleurope.eu"
+    }
+  },
+  {
+    "id": 43,
+    "name": "Euronews",
+    "slug": "euronews",
+    "feed_url": "https://fr.euronews.com",
+    "created_at": "2026-01-10T12:00:00.000Z",
+    "updated_at": "2026-01-10T12:00:00.000Z",
+    "lib_autor": 0.5,
+    "indiv_col": -2,
+    "natio_mon": 9.5,
+    "prog_cons": -0.5,
+    "actor_type": "audiovisuel",
+    "confidence": 0.78,
+    "note": "Chaîne paneuropéenne d'info en continu. Ligne éditoriale officiellement neutre/impartiale. Pro-européenne. Propriété majoritaire Naguib Sawiris (88%), controverses sur influence Orbán. Conseil éditorial indépendant.",
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://fr.euronews.com",
+      "method": "network",
+      "reference_url": "https://fr.euronews.com"
     },
-    {
-      "id": 43,
-      "name": "Euronews",
-      "slug": "euronews",
-      "feed_url": "https://fr.euronews.com",
-      "created_at": "2026-01-10T12:00:00.000Z",
-      "updated_at": "2026-01-10T12:00:00.000Z",
-      "lib_autor": 0.5,
-      "indiv_col": -2.0,
-      "natio_mon": 9.5,
-      "prog_cons": -0.5,
-      "actor_type": "audiovisuel",
-      "confidence": 0.78,
-      "note": "Chaîne paneuropéenne d'info en continu. Ligne éditoriale officiellement neutre/impartiale. Pro-européenne. Propriété majoritaire Naguib Sawiris (88%), controverses sur influence Orbán. Conseil éditorial indépendant."
-    },
-    {
-      "id": 44,
-      "name": "Pravda FR",
-      "slug": "pravda-fr",
-      "feed_url": "https://france.news-pravda.com",
-      "created_at": "2026-01-10T12:00:00.000Z",
-      "updated_at": "2026-01-10T12:00:00.000Z",
-      "lib_autor": -8.5,
-      "indiv_col": 5.0,
-      "natio_mon": -8.0,
-      "prog_cons": -6.0,
-      "actor_type": "presse",
-      "confidence": 0.65,
-      "note": "Pure-player militant très orienté. Tonalité anti-establishment, anti-Macron ('la Macronie', 'gestapo'), anti-UE ('dictature mondialiste'). Soutien inconditionnel mouvements sociaux."
-    },
-    {
-      "id": 45,
-      "name": "Connexion France",
-      "slug": "connexion-france",
-      "feed_url": "https://www.connexionfrance.com",
-      "created_at": "2026-01-10T12:00:00.000Z",
-      "updated_at": "2026-01-10T12:00:00.000Z",
-      "lib_autor": 0.0,
-      "indiv_col": -3.0,
-      "natio_mon": 8.0,
-      "prog_cons": 0.0,
-      "actor_type": "presse",
-      "confidence": 0.75,
-      "note": "Journal anglophone pour expatriés britanniques en France. Ton neutre, factuel, orientation centre/libérale modérée."
-    },
-    {
-      "id": 46,
-      "name": "Jean-Marc Morandini",
-      "slug": "jean-marc-morandini",
-      "feed_url": "https://www.jeanmarcmorandini.com",
-      "created_at": "2026-01-10T12:00:00.000Z",
-      "updated_at": "2026-01-10T12:00:00.000Z",
-      "lib_autor": 0.0,
-      "indiv_col": -5.0,
-      "natio_mon": 2.0,
-      "prog_cons": 1.0,
-      "actor_type": "presse",
-      "confidence": 0.7,
-      "note": "Site people/actu généraliste. Agrégateur d'infos médias. Peu d'angle éditorial politique marqué, plutôt centre-droit léger."
-    },
+    "website_url": "https://fr.euronews.com/",
+    "additional_urls": [
+      "https://fr.euronews.com/"
+    ]
+  },
+  {
+    "id": 44,
+    "name": "Pravda FR",
+    "slug": "pravda-fr",
+    "feed_url": "https://france.news-pravda.com/rss.xml",
+    "created_at": "2026-01-10T12:00:00.000Z",
+    "updated_at": "2026-01-10T12:00:00.000Z",
+    "lib_autor": -8.5,
+    "indiv_col": 5,
+    "natio_mon": -8,
+    "prog_cons": -6,
+    "actor_type": "presse",
+    "confidence": 0.65,
+    "note": "Pure-player militant très orienté. Tonalité anti-establishment, anti-Macron ('la Macronie', 'gestapo'), anti-UE ('dictature mondialiste'). Soutien inconditionnel mouvements sociaux.",
+    "additional_urls": [
+      "https://france.news-pravda.com"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://france.news-pravda.com",
+      "method": "network",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://france.news-pravda.com"
+    }
+  },
+  {
+    "id": 45,
+    "name": "Connexion France",
+    "slug": "connexion-france",
+    "feed_url": "https://www.connexionfrance.com",
+    "created_at": "2026-01-10T12:00:00.000Z",
+    "updated_at": "2026-01-10T12:00:00.000Z",
+    "lib_autor": 0,
+    "indiv_col": -3,
+    "natio_mon": 8,
+    "prog_cons": 0,
+    "actor_type": "presse",
+    "confidence": 0.75,
+    "note": "Journal anglophone pour expatriés britanniques en France. Ton neutre, factuel, orientation centre/libérale modérée.",
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.connexionfrance.com",
+      "method": "network",
+      "reference_url": "https://www.connexionfrance.com"
+    }
+  },
+  {
+    "id": 46,
+    "name": "Jean-Marc Morandini",
+    "slug": "jean-marc-morandini",
+    "feed_url": "https://www.jeanmarcmorandini.com/rss.xml",
+    "created_at": "2026-01-10T12:00:00.000Z",
+    "updated_at": "2026-01-10T12:00:00.000Z",
+    "lib_autor": 0,
+    "indiv_col": -5,
+    "natio_mon": 2,
+    "prog_cons": 1,
+    "actor_type": "presse",
+    "confidence": 0.7,
+    "note": "Site people/actu généraliste. Agrégateur d'infos médias. Peu d'angle éditorial politique marqué, plutôt centre-droit léger.",
+    "additional_urls": [
+      "https://www.jeanmarcmorandini.com"
+    ],
+    "source_qualification": {
+      "status": "feed_empty",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.jeanmarcmorandini.com",
+      "method": "network",
+      "format": "rss",
+      "entries": 0,
+      "reference_url": "https://www.jeanmarcmorandini.com"
+    }
+  },
   {
     "id": 102,
     "name": "LCI",
     "slug": "lci",
-    "feed_url": "https://example.com/lci/feed",
+    "feed_url": "https://www.tf1info.fr/feeds/rss-une.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.3,
     "indiv_col": -5.08,
     "natio_mon": 0.5,
-    "prog_cons": 4.0,
+    "prog_cons": 4,
     "actor_type": "audiovisuel",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/lci/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 100,
+      "reference_url": "https://www.tf1info.fr/"
+    },
+    "website_url": "https://www.tf1info.fr/",
+    "additional_urls": [
+      "https://example.com/lci/feed",
+      "https://www.tf1info.fr/"
+    ]
   },
   {
     "id": 103,
     "name": "France 24",
     "slug": "france-24",
-    "feed_url": "https://example.com/france-24/feed",
+    "feed_url": "https://www.france24.com/fr/rss",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.7,
     "indiv_col": 1.9,
-    "natio_mon": 10.0,
+    "natio_mon": 10,
     "prog_cons": -0.5,
     "actor_type": "audiovisuel",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "additional_urls": [
+      "https://example.com/france-24/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/france-24/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 24,
+      "reference_url": "https://www.france24.com/fr/"
+    }
   },
   {
     "id": 104,
     "name": "RFI",
     "slug": "rfi",
-    "feed_url": "https://example.com/rfi/feed",
+    "feed_url": "https://www.rfi.fr/fr/rss",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 0.5,
@@ -717,7 +1284,19 @@
     "natio_mon": 9.5,
     "prog_cons": -1.7,
     "actor_type": "audiovisuel",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "additional_urls": [
+      "https://example.com/rfi/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/rfi/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 23,
+      "reference_url": "https://www.rfi.fr/fr/"
+    }
   },
   {
     "id": 105,
@@ -731,21 +1310,40 @@
     "natio_mon": 6.5,
     "prog_cons": -4.9,
     "actor_type": "audiovisuel",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/france-inter/feed",
+      "method": "network",
+      "reference_url": "https://www.franceinter.fr/"
+    }
   },
   {
     "id": 106,
     "name": "Europe 1",
     "slug": "europe-1",
-    "feed_url": "https://example.com/europe-1/feed",
+    "feed_url": "https://www.europe1.fr/rss.xml",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -1.0,
+    "lib_autor": -1,
     "indiv_col": -4.5,
-    "natio_mon": -3.0,
-    "prog_cons": 0.0,
+    "natio_mon": -3,
+    "prog_cons": 0,
     "actor_type": "audiovisuel",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "additional_urls": [
+      "https://example.com/europe-1/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/europe-1/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://www.europe1.fr/"
+    }
   },
   {
     "id": 107,
@@ -756,10 +1354,21 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 0.5,
     "indiv_col": -3.5,
-    "natio_mon": 3.0,
-    "prog_cons": 1.0,
+    "natio_mon": 3,
+    "prog_cons": 1,
     "actor_type": "audiovisuel",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/rtl/feed",
+      "method": "network",
+      "reference_url": "https://www.rtl.fr/"
+    },
+    "website_url": "https://www.rtl.fr/",
+    "additional_urls": [
+      "https://www.rtl.fr/"
+    ]
   },
   {
     "id": 108,
@@ -769,11 +1378,18 @@
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.4,
-    "indiv_col": -7.0,
+    "indiv_col": -7,
     "natio_mon": 0.5,
-    "prog_cons": 2.0,
+    "prog_cons": 2,
     "actor_type": "audiovisuel",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/rmc/feed",
+      "method": "network",
+      "reference_url": "https://rmc.bfmtv.com/"
+    }
   },
   {
     "id": 109,
@@ -784,10 +1400,17 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 0.5,
     "indiv_col": -7.5,
-    "natio_mon": 1.0,
+    "natio_mon": 1,
     "prog_cons": 2.8,
     "actor_type": "audiovisuel",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/tf1/feed",
+      "method": "network",
+      "reference_url": "https://www.tf1.fr/"
+    }
   },
   {
     "id": 110,
@@ -798,10 +1421,21 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 0.6,
     "indiv_col": 0.4,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -0.5,
     "actor_type": "audiovisuel",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/france-2/feed",
+      "method": "network",
+      "reference_url": "https://www.france.tv/france-2/"
+    },
+    "website_url": "https://www.france.tv/france-2/",
+    "additional_urls": [
+      "https://www.france.tv/france-2/"
+    ]
   },
   {
     "id": 111,
@@ -813,9 +1447,20 @@
     "lib_autor": 0.5,
     "indiv_col": 1.5,
     "natio_mon": 3.1,
-    "prog_cons": 0.0,
+    "prog_cons": 0,
     "actor_type": "audiovisuel",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/france-3/feed",
+      "method": "network",
+      "reference_url": "https://www.france.tv/france-3/"
+    },
+    "website_url": "https://www.france.tv/france-3/",
+    "additional_urls": [
+      "https://www.france.tv/france-3/"
+    ]
   },
   {
     "id": 112,
@@ -826,10 +1471,21 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -0.9,
     "indiv_col": -5.6,
-    "natio_mon": 2.0,
-    "prog_cons": 1.0,
+    "natio_mon": 2,
+    "prog_cons": 1,
     "actor_type": "audiovisuel",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/m6/feed",
+      "method": "network",
+      "reference_url": "https://www.m6.fr/"
+    },
+    "website_url": "https://www.m6.fr/",
+    "additional_urls": [
+      "https://www.m6.fr/"
+    ]
   },
   {
     "id": 113,
@@ -840,24 +1496,47 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.8,
     "indiv_col": 2.5,
-    "natio_mon": 10.0,
+    "natio_mon": 10,
     "prog_cons": -6.1,
     "actor_type": "audiovisuel",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/arte/feed",
+      "method": "network",
+      "reference_url": "https://www.arte.tv/fr/"
+    },
+    "website_url": "https://www.arte.tv/fr/",
+    "additional_urls": [
+      "https://www.arte.tv/fr/"
+    ]
   },
   {
     "id": 114,
     "name": "France Info",
     "slug": "france-info",
-    "feed_url": "https://example.com/france-info/feed",
+    "feed_url": "https://www.franceinfo.fr/titres.rss",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 1.5,
     "indiv_col": 0.5,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -1.5,
     "actor_type": "audiovisuel",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://example.com/france-info/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/france-info/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 31,
+      "reference_url": "https://www.franceinfo.fr/"
+    }
   },
   {
     "id": 200,
@@ -866,12 +1545,19 @@
     "feed_url": "https://example.com/hugodecrypte/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 0.0,
-    "indiv_col": -3.0,
-    "natio_mon": 8.0,
-    "prog_cons": -2.0,
+    "lib_autor": 0,
+    "indiv_col": -3,
+    "natio_mon": 8,
+    "prog_cons": -2,
     "actor_type": "influenceur",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/hugodecrypte/feed",
+      "method": "network",
+      "reference_url": "https://hugodecrypte.com/"
+    }
   },
   {
     "id": 201,
@@ -882,24 +1568,47 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": 2.1,
     "indiv_col": -6.8,
-    "natio_mon": -4.0,
+    "natio_mon": -4,
     "prog_cons": 3.7,
     "actor_type": "influenceur",
-    "confidence": 0.7
+    "confidence": 0.7,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/sardoche/feed",
+      "method": "network",
+      "reference_url": "https://sardoche.tv/"
+    },
+    "website_url": "https://sardoche.tv/",
+    "additional_urls": [
+      "https://sardoche.tv/"
+    ]
   },
   {
     "id": 202,
     "name": "Thinkerview",
     "slug": "thinkerview",
-    "feed_url": "https://example.com/thinkerview/feed",
+    "feed_url": "https://www.thinkerview.com/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -3.8,
-    "indiv_col": 5.0,
+    "indiv_col": 5,
     "natio_mon": 5.2,
     "prog_cons": -4.8,
     "actor_type": "influenceur",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://example.com/thinkerview/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/thinkerview/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 516,
+      "reference_url": "https://www.thinkerview.com/"
+    }
   },
   {
     "id": 203,
@@ -908,12 +1617,23 @@
     "feed_url": "https://example.com/clement-viktorovitch/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 0.0,
+    "lib_autor": 0,
     "indiv_col": 0.5,
     "natio_mon": 5.7,
     "prog_cons": -1.4,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/clement-viktorovitch/feed",
+      "method": "network",
+      "reference_url": "https://clemovitch.com/"
+    },
+    "website_url": "https://clemovitch.com/",
+    "additional_urls": [
+      "https://clemovitch.com/"
+    ]
   },
   {
     "id": 204,
@@ -927,7 +1647,19 @@
     "natio_mon": 6.1,
     "prog_cons": -2.4,
     "actor_type": "influenceur",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "source_qualification": {
+      "status": "scope_review_required",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/pascal-boniface/feed",
+      "method": "network",
+      "note": "Shared institutional/author site: a global feed would include other authors.",
+      "reference_url": "https://www.iris-france.org/"
+    },
+    "website_url": "https://www.iris-france.org/",
+    "additional_urls": [
+      "https://www.iris-france.org/"
+    ]
   },
   {
     "id": 205,
@@ -941,7 +1673,15 @@
     "natio_mon": 4.7,
     "prog_cons": -6.6,
     "actor_type": "influenceur",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/tatiana-ventose/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/TatianaVentose"
+    }
   },
   {
     "id": 206,
@@ -950,12 +1690,20 @@
     "feed_url": "https://example.com/jean-massiet/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -5.0,
+    "lib_autor": -5,
     "indiv_col": 3.1,
     "natio_mon": 6.5,
     "prog_cons": -5.9,
     "actor_type": "influenceur",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/jean-massiet/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.twitch.tv/jeanmassiet"
+    }
   },
   {
     "id": 207,
@@ -969,7 +1717,19 @@
     "natio_mon": 4.6,
     "prog_cons": -7.7,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "scope_review_required",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/usul/feed",
+      "method": "network",
+      "note": "Shared institutional/author site: a global feed would include other authors.",
+      "reference_url": "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets"
+    },
+    "website_url": "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets",
+    "additional_urls": [
+      "https://www.mediapart.fr/studio/videos/emissions/ouvrez-les-guillemets"
+    ]
   },
   {
     "id": 208,
@@ -983,7 +1743,15 @@
     "natio_mon": 7.1,
     "prog_cons": -7.2,
     "actor_type": "influenceur",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/hugo-clement/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/hugoclement"
+    }
   },
   {
     "id": 209,
@@ -997,7 +1765,15 @@
     "natio_mon": 6.1,
     "prog_cons": -6.8,
     "actor_type": "influenceur",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/johan-reboul/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/lejeuneengage/"
+    }
   },
   {
     "id": 210,
@@ -1009,9 +1785,17 @@
     "lib_autor": -0.5,
     "indiv_col": -0.5,
     "natio_mon": 7.4,
-    "prog_cons": -1.0,
+    "prog_cons": -1,
     "actor_type": "influenceur",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/mister-geopolitix/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/channel/UCX9lsdsTKfTi1eqoyL-RS-Q"
+    }
   },
   {
     "id": 211,
@@ -1025,7 +1809,15 @@
     "natio_mon": 6.1,
     "prog_cons": -5.2,
     "actor_type": "influenceur",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/osons-causer/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/%40Osonscauser"
+    }
   },
   {
     "id": 212,
@@ -1039,7 +1831,15 @@
     "natio_mon": 6.2,
     "prog_cons": -3.8,
     "actor_type": "influenceur",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/linguisticae/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/linguisticae"
+    }
   },
   {
     "id": 213,
@@ -1050,10 +1850,21 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -1.5,
     "indiv_col": 4.2,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -5.5,
     "actor_type": "influenceur",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/le-reveilleur/feed",
+      "method": "network",
+      "reference_url": "https://lereveilleur.com/"
+    },
+    "website_url": "https://lereveilleur.com/",
+    "additional_urls": [
+      "https://lereveilleur.com/"
+    ]
   },
   {
     "id": 214,
@@ -1063,11 +1874,19 @@
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -1.9,
-    "indiv_col": 4.0,
+    "indiv_col": 4,
     "natio_mon": 6.2,
     "prog_cons": -4.5,
     "actor_type": "influenceur",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/heureka/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/channel/UC7sXGI8p8PvKosLWagkK9wQ"
+    }
   },
   {
     "id": 215,
@@ -1076,12 +1895,20 @@
     "feed_url": "https://example.com/stupid-economics/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -3.0,
+    "lib_autor": -3,
     "indiv_col": 2.5,
-    "natio_mon": 7.0,
+    "natio_mon": 7,
     "prog_cons": -4.9,
     "actor_type": "influenceur",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/stupid-economics/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/%40StupidEco"
+    }
   },
   {
     "id": 216,
@@ -1090,26 +1917,46 @@
     "feed_url": "https://example.com/le-raptor/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -2.0,
+    "lib_autor": -2,
     "indiv_col": -5.5,
     "natio_mon": -6.5,
     "prog_cons": 6.2,
     "actor_type": "influenceur",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/le-raptor/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.youtube.com/%40LeRaptor"
+    }
   },
   {
     "id": 217,
     "name": "Bon Pote",
     "slug": "bon-pote",
-    "feed_url": "https://example.com/bon-pote/feed",
+    "feed_url": "https://bonpote.com/feed/",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -2.0,
+    "lib_autor": -2,
     "indiv_col": 3.5,
     "natio_mon": 6.5,
     "prog_cons": -6.6,
     "actor_type": "influenceur",
-    "confidence": 0.76
+    "confidence": 0.76,
+    "additional_urls": [
+      "https://example.com/bon-pote/feed"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/bon-pote/feed",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://bonpote.com/"
+    }
   },
   {
     "id": 218,
@@ -1121,9 +1968,17 @@
     "lib_autor": -2.9,
     "indiv_col": 4.8,
     "natio_mon": 7.5,
-    "prog_cons": -8.0,
+    "prog_cons": -8,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/camille-etienne/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/camilleetienne_/"
+    }
   },
   {
     "id": 219,
@@ -1137,7 +1992,15 @@
     "natio_mon": 6.1,
     "prog_cons": -6.3,
     "actor_type": "influenceur",
-    "confidence": 0.7
+    "confidence": 0.7,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/girl-go-green/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/girl_go_green/"
+    }
   },
   {
     "id": 220,
@@ -1146,12 +2009,23 @@
     "feed_url": "https://example.com/rokhaya-diallo/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -5.0,
+    "lib_autor": -5,
     "indiv_col": 3.8,
     "natio_mon": 7.5,
-    "prog_cons": -8.0,
+    "prog_cons": -8,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/rokhaya-diallo/feed",
+      "method": "network",
+      "reference_url": "https://rokhayadiallo.com/"
+    },
+    "website_url": "https://rokhayadiallo.com/",
+    "additional_urls": [
+      "https://rokhayadiallo.com/"
+    ]
   },
   {
     "id": 221,
@@ -1163,9 +2037,17 @@
     "lib_autor": -7.5,
     "indiv_col": 6.8,
     "natio_mon": 2.9,
-    "prog_cons": -8.0,
+    "prog_cons": -8,
     "actor_type": "influenceur",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/assa-traore/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/assa.traore_/"
+    }
   },
   {
     "id": 222,
@@ -1176,10 +2058,18 @@
     "updated_at": "2026-01-09T00:00:00.000Z",
     "lib_autor": -2.9,
     "indiv_col": 4.5,
-    "natio_mon": 7.0,
+    "natio_mon": 7,
     "prog_cons": -6.9,
     "actor_type": "influenceur",
-    "confidence": 0.8
+    "confidence": 0.8,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/salome-saque/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/salomesaque"
+    }
   },
   {
     "id": 223,
@@ -1191,9 +2081,17 @@
     "lib_autor": -3.7,
     "indiv_col": -0.1,
     "natio_mon": 6.2,
-    "prog_cons": -5.0,
+    "prog_cons": -5,
     "actor_type": "influenceur",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/caroline-fourest/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/CarolineFourest"
+    }
   },
   {
     "id": 224,
@@ -1202,12 +2100,20 @@
     "feed_url": "https://example.com/papacito/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": 8.0,
+    "lib_autor": 8,
     "indiv_col": -3.5,
     "natio_mon": -6.5,
     "prog_cons": 7.2,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/papacito/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://www.instagram.com/ugogiljimenez/"
+    }
   },
   {
     "id": 225,
@@ -1221,7 +2127,15 @@
     "natio_mon": -7.5,
     "prog_cons": 8.4,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/thais-descufon/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/ThaisEscufon"
+    }
   },
   {
     "id": 226,
@@ -1235,7 +2149,15 @@
     "natio_mon": -5.5,
     "prog_cons": 7.7,
     "actor_type": "influenceur",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/eugenie-bastie/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/EugenieBastie"
+    }
   },
   {
     "id": 227,
@@ -1244,18 +2166,26 @@
     "feed_url": "https://example.com/raphael-enthoven/feed",
     "created_at": "2025-12-26T16:47:01.359Z",
     "updated_at": "2026-01-09T00:00:00.000Z",
-    "lib_autor": -2.0,
+    "lib_autor": -2,
     "indiv_col": -3.9,
     "natio_mon": 5.7,
     "prog_cons": -1.2,
     "actor_type": "influenceur",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://example.com/raphael-enthoven/feed",
+      "method": "classification_only",
+      "note": "No directly testable website/feed in the primary references.",
+      "reference_url": "https://x.com/Enthoven_R"
+    }
   },
   {
     "id": 300,
     "name": "Acrimed",
     "slug": "acrimed",
-    "feed_url": "https://www.acrimed.org/",
+    "feed_url": "https://www.acrimed.org/spip.php?page=backend",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -4.2,
@@ -1263,27 +2193,51 @@
     "natio_mon": 5.2,
     "prog_cons": -6.1,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://www.acrimed.org/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.acrimed.org/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.acrimed.org/"
+    }
   },
   {
     "id": 301,
     "name": "Lundi matin",
     "slug": "lundi-matin",
-    "feed_url": "https://lundi.am/",
+    "feed_url": "https://lundi.am/spip.php?page=backend",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -8.3,
     "indiv_col": 7.4,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -8.4,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://lundi.am/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://lundi.am/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://lundi.am/"
+    }
   },
   {
     "id": 302,
     "name": "Contrepoints",
     "slug": "contrepoints",
-    "feed_url": "https://www.contrepoints.org/",
+    "feed_url": "https://www.contrepoints.org/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -6.6,
@@ -1291,7 +2245,19 @@
     "natio_mon": 6.3,
     "prog_cons": 3.9,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://www.contrepoints.org/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.contrepoints.org/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.contrepoints.org/"
+    }
   },
   {
     "id": 303,
@@ -1305,27 +2271,50 @@
     "natio_mon": -2.4,
     "prog_cons": 6.2,
     "actor_type": "independants",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.atlantico.fr/",
+      "method": "network",
+      "reference_url": "https://atlantico.fr/"
+    },
+    "website_url": "https://atlantico.fr/",
+    "additional_urls": [
+      "https://atlantico.fr/"
+    ]
   },
   {
     "id": 304,
     "name": "Causeur",
     "slug": "causeur",
-    "feed_url": "https://www.causeur.fr/",
+    "feed_url": "https://www.causeur.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 2.4,
     "indiv_col": -3.1,
-    "natio_mon": -4.0,
-    "prog_cons": 7.0,
+    "natio_mon": -4,
+    "prog_cons": 7,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://www.causeur.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.causeur.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.causeur.fr/"
+    }
   },
   {
     "id": 305,
     "name": "L'Incorrect",
     "slug": "lincorrect",
-    "feed_url": "https://lincorrect.org/",
+    "feed_url": "https://lincorrect.org/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 4.1,
@@ -1333,7 +2322,19 @@
     "natio_mon": -6.7,
     "prog_cons": 8.1,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://lincorrect.org/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://lincorrect.org/",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://lincorrect.org/"
+    }
   },
   {
     "id": 306,
@@ -1343,17 +2344,25 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -5.3,
-    "indiv_col": 6.0,
+    "indiv_col": 6,
     "natio_mon": 4.8,
     "prog_cons": -7.2,
     "actor_type": "independants",
-    "confidence": 0.73
+    "confidence": 0.73,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.lemediatv.fr/",
+      "method": "network",
+      "reference_url": "https://www.lemediatv.fr/"
+    },
+    "website_url": "https://www.lemediatv.fr/"
   },
   {
     "id": 307,
     "name": "Frustration Magazine",
     "slug": "frustration-magazine",
-    "feed_url": "https://www.frustrationmagazine.fr/",
+    "feed_url": "https://www.frustrationmagazine.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -6.1,
@@ -1361,13 +2370,25 @@
     "natio_mon": 4.2,
     "prog_cons": -7.4,
     "actor_type": "independants",
-    "confidence": 0.76
+    "confidence": 0.76,
+    "additional_urls": [
+      "https://www.frustrationmagazine.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.frustrationmagazine.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 25,
+      "reference_url": "https://www.frustrationmagazine.fr/"
+    }
   },
   {
     "id": 308,
     "name": "Splann!",
     "slug": "splann",
-    "feed_url": "https://splann.org/",
+    "feed_url": "https://splann.org/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -3.8,
@@ -1375,41 +2396,77 @@
     "natio_mon": 6.1,
     "prog_cons": -3.9,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://splann.org/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://splann.org/",
+      "method": "network",
+      "format": "rss",
+      "entries": 20,
+      "reference_url": "https://splann.org/"
+    }
   },
   {
     "id": 309,
     "name": "Marsactu",
     "slug": "marsactu",
-    "feed_url": "https://marsactu.fr/",
+    "feed_url": "https://marsactu.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -3.0,
+    "lib_autor": -3,
     "indiv_col": 2.1,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -2.3,
     "actor_type": "independants",
-    "confidence": 0.79
+    "confidence": 0.79,
+    "additional_urls": [
+      "https://marsactu.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://marsactu.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://marsactu.fr/"
+    }
   },
   {
     "id": 310,
     "name": "Next.ink",
     "slug": "next-ink",
-    "feed_url": "https://next.ink/",
+    "feed_url": "https://next.ink/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -2.0,
-    "indiv_col": -1.0,
+    "lib_autor": -2,
+    "indiv_col": -1,
     "natio_mon": 7.6,
     "prog_cons": -1.2,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://next.ink/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://next.ink/",
+      "method": "network",
+      "format": "rss",
+      "entries": 50,
+      "reference_url": "https://next.ink/"
+    }
   },
   {
     "id": 311,
     "name": "Reflets.info",
     "slug": "reflets",
-    "feed_url": "https://reflets.info/",
+    "feed_url": "https://reflets.info/feeds/public",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -7.3,
@@ -1417,55 +2474,103 @@
     "natio_mon": 6.2,
     "prog_cons": -4.3,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://reflets.info/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://reflets.info/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://reflets.info/"
+    }
   },
   {
     "id": 312,
     "name": "Rue89 Bordeaux",
     "slug": "rue89-bordeaux",
-    "feed_url": "https://www.rue89bordeaux.com/",
+    "feed_url": "https://www.rue89bordeaux.com/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -3.8,
     "indiv_col": 2.4,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -3.6,
     "actor_type": "independants",
-    "confidence": 0.75
+    "confidence": 0.75,
+    "additional_urls": [
+      "https://www.rue89bordeaux.com/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.rue89bordeaux.com/",
+      "method": "network",
+      "format": "rss",
+      "entries": 14,
+      "reference_url": "https://rue89bordeaux.com/"
+    }
   },
   {
     "id": 313,
     "name": "Rue89 Lyon",
     "slug": "rue89-lyon",
-    "feed_url": "https://www.rue89lyon.fr/",
+    "feed_url": "https://www.rue89lyon.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -3.8,
     "indiv_col": 2.4,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -3.6,
     "actor_type": "independants",
-    "confidence": 0.76
+    "confidence": 0.76,
+    "additional_urls": [
+      "https://www.rue89lyon.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.rue89lyon.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.rue89lyon.fr/"
+    }
   },
   {
     "id": 314,
     "name": "Rue89 Strasbourg",
     "slug": "rue89-strasbourg",
-    "feed_url": "https://www.rue89strasbourg.com/",
+    "feed_url": "https://www.rue89strasbourg.com/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -3.8,
     "indiv_col": 2.4,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -3.6,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://www.rue89strasbourg.com/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.rue89strasbourg.com/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.rue89strasbourg.com/"
+    }
   },
   {
     "id": 315,
     "name": "AOC",
     "slug": "aoc",
-    "feed_url": "https://aoc.media/",
+    "feed_url": "https://aoc.media/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -1.1,
@@ -1473,21 +2578,45 @@
     "natio_mon": 8.4,
     "prog_cons": -2.1,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://aoc.media/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://aoc.media/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://aoc.media/"
+    }
   },
   {
     "id": 316,
     "name": "Le Grand Continent",
     "slug": "le-grand-continent",
-    "feed_url": "https://legrandcontinent.eu/",
+    "feed_url": "https://legrandcontinent.eu/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -0.2,
-    "indiv_col": 2.0,
+    "indiv_col": 2,
     "natio_mon": 9.2,
-    "prog_cons": -1.0,
+    "prog_cons": -1,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://legrandcontinent.eu/"
+    ],
+    "source_qualification": {
+      "status": "feed_empty",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://legrandcontinent.eu/",
+      "method": "network",
+      "format": "rss",
+      "entries": 0,
+      "reference_url": "https://legrandcontinent.eu/fr/"
+    }
   },
   {
     "id": 317,
@@ -1496,18 +2625,26 @@
     "feed_url": "https://www.brief.me/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 0.0,
-    "indiv_col": 0.0,
-    "natio_mon": 7.0,
-    "prog_cons": 0.0,
+    "lib_autor": 0,
+    "indiv_col": 0,
+    "natio_mon": 7,
+    "prog_cons": 0,
     "actor_type": "independants",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "source_qualification": {
+      "status": "website_only",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.brief.me/",
+      "method": "network",
+      "reference_url": "https://brief.me/"
+    },
+    "website_url": "https://www.brief.me/"
   },
   {
     "id": 318,
     "name": "XXI",
     "slug": "xxi",
-    "feed_url": "https://www.revue21.fr/xxi/",
+    "feed_url": "https://www.revue21.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -1.2,
@@ -1515,55 +2652,103 @@
     "natio_mon": 7.1,
     "prog_cons": -2.2,
     "actor_type": "independants",
-    "confidence": 0.73
+    "confidence": 0.73,
+    "additional_urls": [
+      "https://www.revue21.fr/xxi/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.revue21.fr/xxi/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.revue21.fr/"
+    }
   },
   {
     "id": 319,
     "name": "Orient XXI",
     "slug": "orient-xxi",
-    "feed_url": "https://orientxxi.info/",
+    "feed_url": "https://orientxxi.info/spip.php?page=backend",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -1.1,
     "indiv_col": 2.2,
-    "natio_mon": 9.0,
-    "prog_cons": -2.0,
+    "natio_mon": 9,
+    "prog_cons": -2,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://orientxxi.info/"
+    ],
+    "source_qualification": {
+      "status": "feed_empty",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://orientxxi.info/",
+      "method": "network",
+      "format": "rss",
+      "entries": 0,
+      "reference_url": "https://orientxxi.info/"
+    }
   },
   {
     "id": 320,
     "name": "Les Surligneurs",
     "slug": "les-surligneurs",
-    "feed_url": "https://lessurligneurs.eu/",
+    "feed_url": "https://lessurligneurs.eu/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 0.0,
-    "indiv_col": 0.0,
+    "lib_autor": 0,
+    "indiv_col": 0,
     "natio_mon": 7.4,
-    "prog_cons": 0.0,
+    "prog_cons": 0,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://lessurligneurs.eu/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://lessurligneurs.eu/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://lessurligneurs.eu/"
+    }
   },
   {
     "id": 321,
     "name": "Conspiracy Watch",
     "slug": "conspiracy-watch",
-    "feed_url": "https://www.conspiracywatch.info/",
+    "feed_url": "https://www.conspiracywatch.info/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 1.0,
-    "indiv_col": -1.0,
+    "lib_autor": 1,
+    "indiv_col": -1,
     "natio_mon": 7.2,
     "prog_cons": 1.2,
     "actor_type": "independants",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "additional_urls": [
+      "https://www.conspiracywatch.info/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.conspiracywatch.info/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.conspiracywatch.info/"
+    }
   },
   {
     "id": 322,
     "name": "Le Vent Se Lève (LVSL)",
     "slug": "lvsl",
-    "feed_url": "https://lvsl.fr/",
+    "feed_url": "https://lvsl.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -2.4,
@@ -1571,91 +2756,176 @@
     "natio_mon": 7.1,
     "prog_cons": -4.2,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://lvsl.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://lvsl.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://lvsl.fr/"
+    }
   },
   {
     "id": 323,
     "name": "Révolution Permanente",
     "slug": "revolution-permanente",
-    "feed_url": "https://www.revolutionpermanente.fr/",
+    "feed_url": "https://www.revolutionpermanente.fr/spip.php?page=backend",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -7.6,
     "indiv_col": 9.2,
-    "natio_mon": 6.0,
+    "natio_mon": 6,
     "prog_cons": -9.1,
     "actor_type": "independants",
-    "confidence": 0.72
+    "confidence": 0.72,
+    "additional_urls": [
+      "https://www.revolutionpermanente.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.revolutionpermanente.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 30,
+      "reference_url": "https://www.revolutionpermanente.fr/"
+    }
   },
   {
     "id": 324,
     "name": "Terrestres",
     "slug": "terrestres",
-    "feed_url": "https://www.terrestres.org/",
+    "feed_url": "https://www.terrestres.org/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -6.0,
+    "lib_autor": -6,
     "indiv_col": 7.2,
     "natio_mon": 7.6,
     "prog_cons": -7.2,
     "actor_type": "independants",
-    "confidence": 0.79
+    "confidence": 0.79,
+    "additional_urls": [
+      "https://www.terrestres.org/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.terrestres.org/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.terrestres.org/"
+    }
   },
   {
     "id": 325,
     "name": "Mediabask",
     "slug": "mediabask",
-    "feed_url": "https://www.mediabask.eus/",
+    "feed_url": "https://www.mediabask.eus/eu/rss/sections/mediabask.rss",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -2.0,
+    "lib_autor": -2,
     "indiv_col": 1.2,
     "natio_mon": 5.6,
     "prog_cons": -2.1,
     "actor_type": "independants",
-    "confidence": 0.77
+    "confidence": 0.77,
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.mediabask.eus/",
+      "method": "network",
+      "format": "rss",
+      "entries": 30,
+      "reference_url": "https://mediabask.eus/"
+    },
+    "website_url": "https://www.mediabask.eus/",
+    "additional_urls": [
+      "https://www.mediabask.eus/"
+    ]
   },
   {
     "id": 326,
     "name": "Le Ravi",
     "slug": "le-ravi",
-    "feed_url": "https://www.leravi.fr/",
+    "feed_url": "https://www.leravi.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -7.0,
+    "lib_autor": -7,
     "indiv_col": 2.1,
     "natio_mon": 4.4,
-    "prog_cons": -6.0,
+    "prog_cons": -6,
     "actor_type": "independants",
-    "confidence": 0.74
+    "confidence": 0.74,
+    "additional_urls": [
+      "https://www.leravi.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.leravi.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://leravi.fr/"
+    }
   },
   {
     "id": 327,
     "name": "La Revue Dessinée",
     "slug": "la-revue-dessinee",
-    "feed_url": "https://www.larevuedessinee.fr/",
+    "feed_url": "https://www.larevuedessinee.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -2.1,
-    "indiv_col": 2.0,
-    "natio_mon": 7.0,
-    "prog_cons": -2.0,
+    "indiv_col": 2,
+    "natio_mon": 7,
+    "prog_cons": -2,
     "actor_type": "independants",
-    "confidence": 0.76
+    "confidence": 0.76,
+    "additional_urls": [
+      "https://www.larevuedessinee.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://www.larevuedessinee.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.larevuedessinee.fr/"
+    }
   },
   {
     "id": 328,
     "name": "La Déferlante",
     "slug": "la-deferlante",
-    "feed_url": "https://revueladeferlante.fr/",
+    "feed_url": "https://revueladeferlante.fr/feed/",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -4.0,
+    "lib_autor": -4,
     "indiv_col": 6.2,
     "natio_mon": 6.2,
     "prog_cons": -7.6,
     "actor_type": "independants",
-    "confidence": 0.78
+    "confidence": 0.78,
+    "additional_urls": [
+      "https://revueladeferlante.fr/"
+    ],
+    "source_qualification": {
+      "status": "feed_verified",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://revueladeferlante.fr/",
+      "method": "network",
+      "format": "rss",
+      "entries": 10,
+      "reference_url": "https://www.revueladeferlante.fr/"
+    }
   },
   {
     "id": 329,
@@ -1665,13 +2935,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -0.2,
-    "indiv_col": 0.0,
+    "indiv_col": 0,
     "natio_mon": 6.8,
-    "prog_cons": 0.0,
+    "prog_cons": 0,
     "actor_type": "independants",
-    "confidence": 0.77
+    "confidence": 0.77,
+    "source_qualification": {
+      "status": "unreachable",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://ledrenche.fr/",
+      "method": "network",
+      "reference_url": "https://ledrenche.fr/"
+    }
   },
-
   {
     "id": 400,
     "name": "Emmanuel Macron",
@@ -1684,7 +2960,15 @@
     "natio_mon": 8.2,
     "prog_cons": 1.2,
     "actor_type": "personnalite",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/EmmanuelMacron",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.elysee.fr/emmanuel-macron"
+    }
   },
   {
     "id": 401,
@@ -1694,11 +2978,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 2.4,
-    "indiv_col": -2.0,
+    "indiv_col": -2,
     "natio_mon": 7.6,
-    "prog_cons": 1.0,
+    "prog_cons": 1,
     "actor_type": "personnalite",
-    "confidence": 0.90
+    "confidence": 0.9,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/GabrielAttal",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722190"
+    }
   },
   {
     "id": 402,
@@ -1708,11 +3000,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 5.2,
-    "indiv_col": -3.0,
-    "natio_mon": 5.0,
-    "prog_cons": 3.0,
+    "indiv_col": -3,
+    "natio_mon": 5,
+    "prog_cons": 3,
     "actor_type": "personnalite",
-    "confidence": 0.88
+    "confidence": 0.88,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/GDarmanin",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.info.gouv.fr/personnalite/gerald-darmanin"
+    }
   },
   {
     "id": 403,
@@ -1721,12 +3021,20 @@
     "feed_url": "https://x.com/Elisabeth_Borne",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 2.0,
+    "lib_autor": 2,
     "indiv_col": -1.8,
-    "natio_mon": 7.0,
-    "prog_cons": 1.0,
+    "natio_mon": 7,
+    "prog_cons": 1,
     "actor_type": "personnalite",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/Elisabeth_Borne",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.info.gouv.fr/personnalite/elisabeth-borne"
+    }
   },
   {
     "id": 404,
@@ -1738,9 +3046,17 @@
     "lib_autor": 1.6,
     "indiv_col": -2.2,
     "natio_mon": 6.8,
-    "prog_cons": 2.0,
+    "prog_cons": 2,
     "actor_type": "personnalite",
-    "confidence": 0.85
+    "confidence": 0.85,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/EPhilippe_LH",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/EPhilippe_LH"
+    }
   },
   {
     "id": 405,
@@ -1749,12 +3065,20 @@
     "feed_url": "https://x.com/bayrou",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 1.0,
-    "indiv_col": -1.0,
-    "natio_mon": 6.0,
+    "lib_autor": 1,
+    "indiv_col": -1,
+    "natio_mon": 6,
     "prog_cons": 1.2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/bayrou",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/bayrou"
+    }
   },
   {
     "id": 406,
@@ -1763,12 +3087,20 @@
     "feed_url": "https://x.com/BrunoLeMaire",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 2.0,
+    "lib_autor": 2,
     "indiv_col": -3.8,
     "natio_mon": 6.4,
     "prog_cons": 2.2,
     "actor_type": "personnalite",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/BrunoLeMaire",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/BrunoLeMaire"
+    }
   },
   {
     "id": 407,
@@ -1777,12 +3109,20 @@
     "feed_url": "https://x.com/YaelBRAUNPIVET",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 2.0,
+    "lib_autor": 2,
     "indiv_col": -1.6,
     "natio_mon": 6.6,
-    "prog_cons": 1.0,
+    "prog_cons": 1,
     "actor_type": "personnalite",
-    "confidence": 0.83
+    "confidence": 0.83,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/YaelBRAUNPIVET",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA721908"
+    }
   },
   {
     "id": 408,
@@ -1793,10 +3133,18 @@
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 3.4,
     "indiv_col": -1.8,
-    "natio_mon": 6.0,
-    "prog_cons": 2.0,
+    "natio_mon": 6,
+    "prog_cons": 2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/auroreberge",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/auroreberge"
+    }
   },
   {
     "id": 409,
@@ -1807,10 +3155,18 @@
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 0.6,
     "indiv_col": 2.4,
-    "natio_mon": 8.0,
+    "natio_mon": 8,
     "prog_cons": -3.2,
     "actor_type": "personnalite",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/rglucks1",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/197694/RAPHAEL_GLUCKSMANN/home"
+    }
   },
   {
     "id": 410,
@@ -1824,7 +3180,15 @@
     "natio_mon": 7.2,
     "prog_cons": -2.6,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/faureolivier",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/faureolivier"
+    }
   },
   {
     "id": 411,
@@ -1838,7 +3202,15 @@
     "natio_mon": 7.8,
     "prog_cons": -6.6,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/marinetondelier",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/marinetondelier"
+    }
   },
   {
     "id": 412,
@@ -1852,7 +3224,15 @@
     "natio_mon": 2.2,
     "prog_cons": -4.2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/Fabien_Roussel",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/Fabien_Roussel"
+    }
   },
   {
     "id": 413,
@@ -1866,7 +3246,15 @@
     "natio_mon": 4.2,
     "prog_cons": -8.2,
     "actor_type": "personnalite",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/JLMelenchon",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://melenchon.fr/"
+    }
   },
   {
     "id": 414,
@@ -1875,12 +3263,20 @@
     "feed_url": "https://x.com/mbompard",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": -3.0,
+    "lib_autor": -3,
     "indiv_col": 6.8,
     "natio_mon": 5.2,
     "prog_cons": -7.2,
     "actor_type": "personnalite",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/mbompard",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA793444"
+    }
   },
   {
     "id": 415,
@@ -1891,10 +3287,18 @@
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -3.8,
     "indiv_col": 7.2,
-    "natio_mon": 5.0,
+    "natio_mon": 5,
     "prog_cons": -7.8,
     "actor_type": "personnalite",
-    "confidence": 0.82
+    "confidence": 0.82,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/MathildePanot",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720892"
+    }
   },
   {
     "id": 416,
@@ -1905,10 +3309,18 @@
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -3.6,
     "indiv_col": 7.4,
-    "natio_mon": 4.0,
-    "prog_cons": -7.0,
+    "natio_mon": 4,
+    "prog_cons": -7,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/Francois_Ruffin",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA722142"
+    }
   },
   {
     "id": 417,
@@ -1922,7 +3334,15 @@
     "natio_mon": 7.2,
     "prog_cons": -8.2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/sandrousseau",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA795076"
+    }
   },
   {
     "id": 418,
@@ -1933,10 +3353,18 @@
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": -1.4,
     "indiv_col": 4.6,
-    "natio_mon": 7.0,
+    "natio_mon": 7,
     "prog_cons": -3.6,
     "actor_type": "personnalite",
-    "confidence": 0.83
+    "confidence": 0.83,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/Anne_Hidalgo",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/Anne_Hidalgo"
+    }
   },
   {
     "id": 419,
@@ -1946,11 +3374,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 2.8,
-    "indiv_col": -4.0,
-    "natio_mon": 2.0,
+    "indiv_col": -4,
+    "natio_mon": 2,
     "prog_cons": 4.2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/vpecresse",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/vpecresse"
+    }
   },
   {
     "id": 420,
@@ -1964,7 +3400,15 @@
     "natio_mon": 0.8,
     "prog_cons": 5.4,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/laurentwauquiez",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/laurentwauquiez"
+    }
   },
   {
     "id": 421,
@@ -1974,11 +3418,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 4.6,
-    "indiv_col": -5.0,
-    "natio_mon": -1.0,
+    "indiv_col": -5,
+    "natio_mon": -1,
     "prog_cons": 6.6,
     "actor_type": "personnalite",
-    "confidence": 0.85
+    "confidence": 0.85,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/BrunoRetailleau",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/BrunoRetailleau"
+    }
   },
   {
     "id": 422,
@@ -1988,11 +3440,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 5.2,
-    "indiv_col": -6.0,
-    "natio_mon": -2.0,
+    "indiv_col": -6,
+    "natio_mon": -2,
     "prog_cons": 7.2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/eciotti",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA330240"
+    }
   },
   {
     "id": 423,
@@ -2006,7 +3466,15 @@
     "natio_mon": -8.2,
     "prog_cons": 7.2,
     "actor_type": "personnalite",
-    "confidence": 0.92
+    "confidence": 0.92,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/MLP_officiel",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.assemblee-nationale.fr/dyn/deputes/PA720614"
+    }
   },
   {
     "id": 424,
@@ -2015,12 +3483,20 @@
     "feed_url": "https://x.com/J_Bardella",
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
-    "lib_autor": 6.0,
+    "lib_autor": 6,
     "indiv_col": -4.4,
-    "natio_mon": -8.0,
+    "natio_mon": -8,
     "prog_cons": 7.4,
     "actor_type": "personnalite",
-    "confidence": 0.90
+    "confidence": 0.9,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/J_Bardella",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/131580/JORDAN_BARDELLA/home"
+    }
   },
   {
     "id": 425,
@@ -2031,10 +3507,18 @@
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 7.2,
     "indiv_col": -5.8,
-    "natio_mon": -9.0,
+    "natio_mon": -9,
     "prog_cons": 8.4,
     "actor_type": "personnalite",
-    "confidence": 0.88
+    "confidence": 0.88,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/ZemmourEric",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/ZemmourEric"
+    }
   },
   {
     "id": 426,
@@ -2048,7 +3532,15 @@
     "natio_mon": -8.4,
     "prog_cons": 8.6,
     "actor_type": "personnalite",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/MarionMarechal",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/256922/MARION_MARECHAL/home"
+    }
   },
   {
     "id": 427,
@@ -2062,7 +3554,15 @@
     "natio_mon": -6.2,
     "prog_cons": 5.6,
     "actor_type": "personnalite",
-    "confidence": 0.86
+    "confidence": 0.86,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/dupontaignan",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/dupontaignan"
+    }
   },
   {
     "id": 428,
@@ -2072,11 +3572,19 @@
     "created_at": "2026-01-11T00:00:00.000Z",
     "updated_at": "2026-01-11T00:00:00.000Z",
     "lib_autor": 0.8,
-    "indiv_col": 2.0,
-    "natio_mon": 6.0,
-    "prog_cons": -1.0,
+    "indiv_col": 2,
+    "natio_mon": 6,
+    "prog_cons": -1,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/fhollande",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://x.com/fhollande"
+    }
   },
   {
     "id": 429,
@@ -2090,7 +3598,14 @@
     "natio_mon": 0.6,
     "prog_cons": 7.2,
     "actor_type": "personnalite",
-    "confidence": 0.84
+    "confidence": 0.84,
+    "source_qualification": {
+      "status": "platform_requires_connector",
+      "checked_at": "2026-11-08T12:09:37.102Z",
+      "original_url": "https://x.com/fxbellamy",
+      "method": "classification_only",
+      "note": "Profile URL, not a generic RSS endpoint. Identity and account availability not checked.",
+      "reference_url": "https://www.europarl.europa.eu/meps/en/197534/FRANCOIS-XAVIER_BELLAMY/home"
+    }
   }
 ]
-
