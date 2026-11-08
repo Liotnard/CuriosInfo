@@ -33,3 +33,5 @@ Voir [COMMANDS.md](COMMANDS.md) pour la référence complète des commandes, et 
 En production, utiliser un dossier de contenu externe au clone Git et le monter dans le conteneur ponctuel de publication. Le conteneur Nginx voit uniquement les exports publics en lecture seule. La configuration Git est un dépôt unique, sans sous-module.
 
 Collecte manuelle et préparation de revue : voir [COLLECTION.md](COLLECTION.md). Les candidats restent privés et ne sont pas publiés automatiquement.
+
+Décisions éditoriales, simulation et import : voir [REVIEW.md](REVIEW.md).

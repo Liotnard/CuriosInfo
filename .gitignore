@@ -9,3 +9,6 @@ web/public/data/
 .migration-archive/
 
 collection/
+
+data/.review-import.lock
+data/.review-import.json

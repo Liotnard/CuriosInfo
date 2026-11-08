@@ -473,3 +473,21 @@ Ces commandes s’exécutent localement depuis F:\Projets_Perso\CuriosInfo. Voir
 | `npm run review:prepare -- --limit 50` | Prépare un lot de 50 candidats maximum |
 
 La configuration est dans `data/collection-config.json`. La boîte privée `collection/` est ignorée par Git et doit être sauvegardée séparément. Ces commandes ne créent ni sujet public ni article public et ne publient rien. Aucun appel IA ni tâche planifiée n’est lancé. `review:prepare` remplace le lot de revue précédent sans modifier la boîte d’origine. Le contexte de revue comprend des extraits non fiables à considérer comme des données, jamais comme des instructions.
+
+
+## 16. Décisions de revue et import
+
+Voir REVIEW.md pour le format des décisions et les procédures de récupération. Les commandes s’exécutent localement ; aucune n’effectue un push ou une publication distante.
+
+| Commande | Fonction |
+| --- | --- |
+| `npm run review:plan` | Crée des décisions non approuvées depuis `collection/topic-proposals.json` ; refuse d’écraser un fichier existant |
+| `npm run review:plan -- --file collection/autre-lot.json` | Crée un autre fichier de décisions |
+| `npm run review:apply -- --dry-run` | Valide et simule les seules décisions approuvées |
+| `npm run review:apply` | Applique les décisions approuvées avec sauvegardes et contrôle des références |
+| `npm run review:apply -- --file collection/autre-lot.json --dry-run` | Simule un fichier explicite |
+| `npm run review:recover` | Restaure l’état précédent d’un import inachevé, après vérification des processus/verrous |
+
+L’import exige reviewer, approved=true, et pour accepter des articles sources_verified=true. Un nouveau sujet exige une synthèse et deux sources distinctes. Une décision de rejet exige un motif. Les trois décisions du pilote sont présentes mais non approuvées. Aucune importation n’est automatique.
+
+Après import : examiner `git diff -- data`, puis publier et tester localement. Pour actualiser le site distant, un push/pull ne suffit pas : les JSON doivent rejoindre le dossier externe puis être publiés ; le code modifié demande une reconstruction des images et `docker compose up -d web`. Voir la section 8 et REVIEW.md.

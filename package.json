@@ -12,7 +12,10 @@
     "publish:data": "node --env-file-if-exists=.env --import tsx tools/publish-data.ts",
     "qualify:sources": "node --env-file-if-exists=.env --import tsx tools/qualify-sources.ts",
     "collect:news": "node --env-file-if-exists=.env --import tsx tools/collect-news.ts",
-    "review:prepare": "node --env-file-if-exists=.env --import tsx tools/prepare-review.ts"
+    "review:prepare": "node --env-file-if-exists=.env --import tsx tools/prepare-review.ts",
+    "review:plan": "node --env-file-if-exists=.env --import tsx tools/review-plan.ts",
+    "review:apply": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts",
+    "review:recover": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --recover"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

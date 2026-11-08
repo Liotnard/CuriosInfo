@@ -46,7 +46,7 @@ const CHARTS: ChartConfig[] = [
     title: 'Culture vs Ouverture',
     subtitle: 'Axe du patrimoine',
     xLabel: { left: 'Nationaliste', right: 'Mondialiste' },
-    yLabel: { top: 'Progressiste', bottom: 'Conservateur' },
+    yLabel: { top: 'Conservateur', bottom: 'Progressiste' },
     xKey: 'natioMon',
     yKey: 'progCons',
   },

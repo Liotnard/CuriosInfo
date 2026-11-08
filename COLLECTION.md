@@ -41,7 +41,7 @@ Le fichier review-batch.json contient uniquement des métadonnées sources à tr
 
 Un premier fichier collection/topic-proposals.json a été préparé lors de la collecte pilote : trois rapprochements entre deux sources, au statut needs_review. Il ne contient pas de synthèse inventée et n’est pas un résultat régénéré par review:prepare. Ce sont des pistes issues des métadonnées, pas des sujets publiés.
 
-À ce stade, aucun import automatique des décisions dans data/articles.json ou data/topics.json n’est fourni. Un statut accepted dans la boîte ne suffit pas à ajouter un article au site. L’import contrôlé et la validation des propositions constitueront l’étape suivante.
+L’import contrôlé est désormais disponible avec review:plan, review:apply et review:recover ; voir REVIEW.md. Les décisions sont non approuvées par défaut. Un changement manuel de statut accepted dans la boîte ne crée pas d’article : utiliser l’importeur après revue.
 
 ## Serveur et automatisation
 

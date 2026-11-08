@@ -10,6 +10,10 @@ function unique(rows: {id:number;slug?:string}[]) {
   }
 }
 export async function publishData(source: string, output: string) {
+  for(const name of [".review-import.lock", ".review-import.json"]){
+    try { await fs.access(path.join(source,name)); } catch(error:any) { if(error.code === "ENOENT")continue; throw error; }
+    throw new Error("Review import is active or unfinished; finish/recover it before publication");
+  }
   const read = async (name:string) => JSON.parse(await fs.readFile(path.join(source,name + ".json"),"utf8"));
   const actors = (await read("actors") as any[]).map(raw => ActorSchema.parse(normalizeActor(raw)));
   const topics = (await read("topics") as any[]).map(raw => TopicSchema.parse({...raw, angleNote:raw.angleNote ?? raw.angle_note ?? null,startAt:raw.startAt ?? raw.start_at ?? null,endAt:raw.endAt ?? raw.end_at ?? null, summary:raw.summary ?? null,updatedAt:raw.updatedAt ?? raw.updated_at}));
