@@ -97,12 +97,12 @@ export function CoverageHistogram({ allActors, articles }: CoverageHistogramProp
     >
       <div className="mb-4 flex items-center justify-between">
         <div>
-          <h2 className="text-2xl font-display font-bold">Couverture par type</h2>
+          <h2 className="text-2xl font-display font-bold">Sources documentées par type</h2>
           <p className="text-sm text-muted-foreground">
-            Part des acteurs (par catégorie) ayant publié au moins un article sur ce sujet.
+            Part des acteurs référencés pour lesquels un article figure dans ce dossier. Échantillon non exhaustif.
           </p>
         </div>
-        <Badge variant="secondary">sur {allActors.length} acteurs suivis</Badge>
+        <Badge variant="secondary">sur {allActors.length} acteurs référencés</Badge>
       </div>
 
       <div className="bg-card rounded-2xl border p-6 shadow-sm">
@@ -126,17 +126,17 @@ export function CoverageHistogram({ allActors, articles }: CoverageHistogramProp
                     <div className="bg-popover border border-border shadow-lg rounded-lg p-3 text-sm">
                       <p className="font-bold font-display">{label}</p>
                       <p className="text-muted-foreground">
-                        {p.covered} / {p.total} en parlent
+                        {p.covered} / {p.total} documentés
                       </p>
                       <p className="mt-1">
-                         Taux d'implication : <span className="font-medium">{p.coveragePct}%</span>
+                         Part documentée : <span className="font-medium">{p.coveragePct}%</span>
                       </p>
                     </div>
                   );
                 }}
               />
 
-              <Bar dataKey="coveragePct" name="Couverture" radius={[8, 8, 0, 0]}>
+              <Bar dataKey="coveragePct" name="Sources documentées" radius={[8, 8, 0, 0]}>
                 {data.map((entry, i) => (
                   <Cell key={`cell-${i}`} fill={typeColor(entry.typeRaw)} fillOpacity={0.85} />
                 ))}
@@ -146,7 +146,7 @@ export function CoverageHistogram({ allActors, articles }: CoverageHistogramProp
         </div>
 
         <p className="mt-4 text-xs text-muted-foreground">
-          Chaque barre correspond à une catégorie. La hauteur indique le pourcentage d’acteurs de cette catégorie ayant couvert le sujet.
+          Chaque barre représente les sources documentées dans une catégorie. Une absence dans ce dossier ne signifie pas qu’un acteur n’a pas traité le sujet.
         </p>
       </div>
     </motion.section>

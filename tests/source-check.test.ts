@@ -18,3 +18,7 @@ test("discovery accepts declared alternate feeds and classifies placeholders and
  assert.equal(platform('https://www.youtube.com/@handle'),true);
  assert.equal(platform('https://news.example.org/feed'),false);
 });
+
+test("an HTTP-success HTML challenge is not an accessible article or feed",()=>{
+ assert.equal(inspectBody('<!doctype html><html><head><title>Client Challenge</title></head><body>Please enable JavaScript</body></html>').kind,"access_restricted");
+});

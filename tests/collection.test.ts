@@ -3,7 +3,7 @@ import assert from "node:assert/strict";
 import {promises as fs} from "node:fs";
 import path from "node:path";
 import {tmpdir} from "node:os";
-import {parseFeed,canonicalUrl,collectNews} from "../tools/collection";
+import {parseFeed,canonicalUrl,collectNews,CandidateSchema} from "../tools/collection";
 const now=new Date("2026-11-08T12:00:00Z");
 const config={actorIds:[1,2],maxAgeDays:3,maxPerSource:20,maxNewItems:100,concurrency:2};
 const item=(url:string,date="2026-11-08T10:00:00Z")=>`<item><title>Title &amp; context</title><link>${url.replaceAll("&","&amp;")}</link><pubDate>${date}</pubDate><description><![CDATA[<b>Summary</b>]]></description></item>`;
@@ -48,4 +48,11 @@ test("caps leave articles recoverable in subsequent runs; dry-run and locking pr
  await assert.rejects(collectNews({...f,config:limited,now,download}),/locked/);
  assert.equal(await fs.readFile(path.join(f.collectionDir,"inbox.json"),"utf8"),before);
  }finally{await fs.rm(f.dir,{recursive:true,force:true});}
+});
+
+test("historical web research has explicit provenance and does not pretend to come from RSS",()=>{
+ const base={key:"a".repeat(64),urlHash:"a".repeat(64),actorId:1,actor_name:"Source",url:"https://example.org/article",title:"Test",excerpt:null,published_at:"2026-10-23T10:00:00.000Z",date_basis:"published",discovered_at:"2026-11-09T00:00:00.000Z",status:"pending"};
+ assert.equal(CandidateSchema.parse({...base,feed_url:"https://example.org/feed"}).origin,"rss");
+ const manual=CandidateSchema.parse({...base,feed_url:null,origin:"targeted_web_research"});assert.equal(manual.feed_url,null);assert.equal(manual.origin,"targeted_web_research");
+ assert.throws(()=>CandidateSchema.parse({...base,feed_url:null,origin:"automatically_verified"}));
 });

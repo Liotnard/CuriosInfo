@@ -3,7 +3,7 @@ export type Check = { url:string; final_url?:string; kind:string; http_status?:n
 export function placeholder(value:string) { try { const h=new URL(value).hostname; return h === "example.com" || h.endsWith(".example.com"); } catch { return false; } }
 export function platform(value:string) { try { return /(^|\.)(x\.com|twitter\.com|instagram\.com|twitch\.tv|facebook\.com|tiktok\.com|youtube\.com|youtu\.be)$/.test(new URL(value).hostname); } catch { return false; } }
 export function inspectBody(text:string):Pick<Check,"kind"|"feed_title"|"entries"> {
-  if (/^\s*(?:<\?xml[^>]*>\s*)?(?:<!doctype html\b|<html\b|<head\b|<body\b)/i.test(text)) return {kind: /<title>\s*(just a moment|access denied)|cf-chl-/i.test(text)?"access_restricted":"html"};
+  if (/^\s*(?:<\?xml[^>]*>\s*)?(?:<!doctype html\b|<html\b|<head\b|<body\b)/i.test(text)) return {kind: /<title>\s*(just a moment|access denied|client challenge)|cf-chl-/i.test(text)?"access_restricted":"html"};
   if (/<!DOCTYPE|<!ENTITY/i.test(text)) return {kind:"unsupported_xml"};
   if (XMLValidator.validate(text) === true) {
     try {

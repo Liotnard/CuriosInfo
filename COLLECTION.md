@@ -48,3 +48,14 @@ L’import contrôlé est désormais disponible avec review:plan, review:apply e
 Les commandes de collecte sont pour le moment exécutées localement. Le Compose actuel ne fournit pas de service de collecte avec un volume privé d’état ; le service publish ne peut pas servir à la collecte par défaut. La publication publique reste une étape distincte. Aucune modification sur le serveur, aucun push et aucune programmation quotidienne n’ont été effectués.
 
 Les tests utilisent des flux simulés : parsing RSS/Atom, dates, doublons, erreurs partielles, limites, simulation et verrouillage. Le pilote réel contrôle le fonctionnement réseau sur les dix sources, sans modifier les articles ou sujets publiés.
+
+
+## Test historique : Trappes / La Verrière, 23 octobre 2026
+
+Le passage du 9 novembre sur le pilote de dix flux a produit 100 nouveaux candidats, écarté 59 doublons et relevé zéro candidat Trappes dans la boîte obtenue. Ce constat est limité au pilote, à sa fenêtre de trois jours et à ses plafonds ; il ne mesure pas la couverture de tous les médias. Élargir simplement une fenêtre ne permet pas de restaurer des entrées déjà sorties des flux.
+
+Un complément a été constitué par recherche ciblée, séparément dans collection/trappes. Six articles ont été documentés et deux références exclues de l’analyse pour blocage ou challenge HTML. Les candidats portent origin=targeted_web_research et feed_url=null. Les futurs imports conservent discovery_origin dans les sources de travail. Les candidats RSS restent identifiés origin=rss. Cela ne constitue pas un moteur de recherche historique automatique.
+
+Le brouillon reste non approuvé. Pour examiner ce dossier avec les scripts existants, définir COLLECTION_DIR=collection/trappes avant review:prepare ou review:apply, puis retirer cette variable pour revenir à la boîte générale. Ne pas réexécuter review:plan pour écraser un fichier de décisions existant. Les fichiers publics restent inchangés tant qu’une décision n’est pas approuvée puis importée.
+
+Le test a aussi conduit à préciser les graphiques : ils montrent les acteurs documentés dans le dossier, pas une mesure exhaustive du nombre de médias qui ont traité le sujet. Aucun axe politique d’acteur n’a été modifié.
