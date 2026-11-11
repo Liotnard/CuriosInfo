@@ -55,7 +55,7 @@ export function planImport(input:{actors:any[];topics:any[];articles:any[];inbox
     if(existing.topicId!=null&&existing.topicId!==target.id)throw new Error("Article already belongs to another topic; refusing to move it");
     if(existing.topicId==null){existing.topicId=target.id;summary.linked_articles++;}else summary.already_applied++;
    }else{
-    existing={id:++articleId,topicId:target.id,actorId:c.actorId,url,urlHash:hash,title:c.title,excerpt:c.excerpt,published_at:date,created_at:now,review_import_id:d.id,discovery_origin:c.origin};articles.push(existing);summary.new_articles++;
+    existing={id:++articleId,topicId:target.id,actorId:c.actorId,url,urlHash:hash,title:c.title,excerpt:c.excerpt,published_at:date,created_at:now,review_import_id:d.id,discovery_origin:c.origin,...(c.source_platform?{source_platform:c.source_platform}:{}),...(c.source_profile?{source_profile:c.source_profile}:{}),...(c.content_kind?{content_kind:c.content_kind}:{}),...(c.evidence_checked_at?{evidence_checked_at:c.evidence_checked_at}:{})};articles.push(existing);summary.new_articles++;
    }
    Object.assign(inbox.entries.find((e:any)=>e.key===c.key),{status:"accepted",reviewed_at:now,article_id:existing.id,topic_id:target.id});
   }

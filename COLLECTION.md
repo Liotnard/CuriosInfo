@@ -21,7 +21,7 @@ npm run review:prepare -- --limit 50
 
 ## Paramètres
 
-Le pilote de data/collection-config.json sélectionne dix sources, trois jours d’historique, au maximum 20 nouveaux candidats par source et 100 par passage, avec trois téléchargements simultanés. JSON_DB_DIR permet de sélectionner les sources ; COLLECTION_DIR permet de déplacer la boîte de réception. Le fichier de configuration reste lu dans le dépôt. Utiliser un dossier privé hors de web/, dist/ et du dossier source de données.
+data/collection-config.json sélectionne dix sources par défaut, trois jours d’historique, au maximum 200 nouveaux candidats par source et 2 000 par passage, avec trois téléchargements simultanés. Le pilote initial utilisait 20 et 100 ; --all sélectionne tous les flux qualifiés. collect:all ajoute ensuite la collecte sociale décrite dans SOCIAL_COLLECTION.md. JSON_DB_DIR permet de sélectionner les sources ; COLLECTION_DIR permet de déplacer la boîte de réception. Le fichier de configuration reste lu dans le dépôt. Utiliser un dossier privé hors de web/, dist/ et du dossier source de données.
 
 Les téléchargements sont limités à 12 secondes et 2 Mo. L’outil ne visite pas les pages des articles, ne contourne pas les accès restreints et ne récupère pas les contenus payants. Le code conserve seulement titre, URL, source, date et un extrait RSS de 1 000 caractères maximum. Aucun modèle d’IA, clé API ou tâche planifiée n’est utilisé.
 
@@ -59,3 +59,8 @@ Un complément a été constitué par recherche ciblée, séparément dans colle
 Le brouillon reste non approuvé. Pour examiner ce dossier avec les scripts existants, définir COLLECTION_DIR=collection/trappes avant review:prepare ou review:apply, puis retirer cette variable pour revenir à la boîte générale. Ne pas réexécuter review:plan pour écraser un fichier de décisions existant. Les fichiers publics restent inchangés tant qu’une décision n’est pas approuvée puis importée.
 
 Le test a aussi conduit à préciser les graphiques : ils montrent les acteurs documentés dans le dossier, pas une mesure exhaustive du nombre de médias qui ont traité le sujet. Aucun axe politique d’acteur n’a été modifié.
+
+
+## Collecte des réseaux sociaux
+
+Voir [SOCIAL_COLLECTION.md](SOCIAL_COLLECTION.md) pour la surveillance des liens sociaux, les commandes collect:social et collect:all, les accès gratuits et les résultats réels sur Chelles. Les plafonds RSS actuels sont de 200 nouveaux candidats par source et 2 000 par passage ; les paragraphes du pilote historique décrivent les anciennes valeurs.

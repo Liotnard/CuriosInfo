@@ -491,3 +491,8 @@ Voir REVIEW.md pour le format des décisions et les procédures de récupératio
 L’import exige reviewer, approved=true, et pour accepter des articles sources_verified=true. Un nouveau sujet exige une synthèse et deux sources distinctes. Une décision de rejet exige un motif. Les trois décisions du pilote sont présentes mais non approuvées. Aucune importation n’est automatique.
 
 Après import : examiner `git diff -- data`, puis publier et tester localement. Pour actualiser le site distant, un push/pull ne suffit pas : les JSON doivent rejoindre le dossier externe puis être publiés ; le code modifié demande une reconstruction des images et `docker compose up -d web`. Voir la section 8 et REVIEW.md.
+
+
+## Collecte des réseaux sociaux
+
+Voir [SOCIAL_COLLECTION.md](SOCIAL_COLLECTION.md) pour la surveillance des liens sociaux, les commandes collect:social et collect:all, les accès gratuits et les résultats réels sur Chelles. Les plafonds RSS actuels sont de 200 nouveaux candidats par source et 2 000 par passage ; les paragraphes du pilote historique décrivent les anciennes valeurs.

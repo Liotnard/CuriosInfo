@@ -99,7 +99,7 @@ export function CoverageHistogram({ allActors, articles }: CoverageHistogramProp
         <div>
           <h2 className="text-2xl font-display font-bold">Sources documentées par type</h2>
           <p className="text-sm text-muted-foreground">
-            Part des acteurs référencés pour lesquels un article figure dans ce dossier. Échantillon non exhaustif.
+            Part des acteurs référencés pour lesquels une publication figure dans ce dossier. Échantillon non exhaustif.
           </p>
         </div>
         <Badge variant="secondary">sur {allActors.length} acteurs référencés</Badge>

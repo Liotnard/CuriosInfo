@@ -12,7 +12,7 @@
     114
   ],
   "maxAgeDays": 3,
-  "maxPerSource": 20,
-  "maxNewItems": 100,
+  "maxPerSource": 200,
+  "maxNewItems": 2000,
   "concurrency": 3
 }

@@ -5,7 +5,7 @@ import {XMLParser} from "fast-xml-parser";
 import {z} from "zod";
 import {inspectBody,placeholder,platform} from "./source-check";
 const httpUrl=z.string().url().refine(s=>/^https?:/.test(s));
-export const CandidateSchema=z.object({key:z.string(),actorId:z.number().int().positive(),actor_name:z.string(),feed_url:httpUrl.nullable(),origin:z.enum(["rss","targeted_web_research"]).default("rss"),url:httpUrl,urlHash:z.string(),title:z.string().min(1),excerpt:z.string().nullable(),published_at:z.string().datetime(),date_basis:z.enum(["published","updated"]),discovered_at:z.string().datetime(),status:z.enum(["pending","accepted","rejected"]).default("pending"),reviewed_at:z.string().datetime().optional(),article_id:z.number().int().positive().optional(),topic_id:z.number().int().positive().optional(),rejection_reason:z.string().optional()});
+export const CandidateSchema=z.object({key:z.string(),actorId:z.number().int().positive(),actor_name:z.string(),feed_url:httpUrl.nullable(),origin:z.enum(["rss","targeted_web_research","social_public_page","youtube_feed"]).default("rss"),url:httpUrl,urlHash:z.string(),title:z.string().min(1),excerpt:z.string().nullable(),published_at:z.string().datetime(),date_basis:z.enum(["published","updated"]),discovered_at:z.string().datetime(),status:z.enum(["pending","accepted","rejected"]).default("pending"),reviewed_at:z.string().datetime().optional(),article_id:z.number().int().positive().optional(),topic_id:z.number().int().positive().optional(),rejection_reason:z.string().optional(),source_profile:httpUrl.optional(),source_platform:z.string().optional(),content_kind:z.enum(["post","video","article"]).optional(),evidence_checked_at:z.string().datetime().optional()});
 export type Candidate=z.infer<typeof CandidateSchema>;
 export const ConfigSchema=z.object({actorIds:z.array(z.number().int().positive()).min(1),maxAgeDays:z.number().positive().max(365),maxPerSource:z.number().int().positive().max(200),maxNewItems:z.number().int().positive().max(2000),concurrency:z.number().int().positive().max(6)});
 const StateSchema=z.object({version:z.literal(1),entries:CandidateSchema.array(),last_run:z.unknown().optional()});
@@ -33,12 +33,12 @@ export function parseFeed(xml:string,base:string){
   let url:string|undefined;try{url=canonicalUrl(String(rawUrl ?? ""),base);}catch{}
   // A missing link must never resolve to the feed itself.
   if(!rawUrl)url=undefined;
-  return {url,title:text(item.title).slice(0,500),excerpt:text(item.description ?? item.summary ?? "").slice(0,1000)||null,published_at:String(rawDate ?? ""),date_basis:(item.pubDate||item.published||item.date?"published":"updated") as "published"|"updated"};
+  return {url,title:text(item.title).slice(0,500),excerpt:text(item.description ?? item.summary ?? item.group?.description ?? "").slice(0,1000)||null,published_at:String(rawDate ?? ""),date_basis:(item.pubDate||item.published||item.date?"published":"updated") as "published"|"updated"};
  });
 }
 export async function downloadFeed(url:string){
  const u=new URL(url);
- if(!/^https?:$/.test(u.protocol)||u.username||u.password||placeholder(url)||platform(url))throw new Error("Source is not a direct feed");
+ if(!/^https?:$/.test(u.protocol)||u.username||u.password||placeholder(url)||(platform(url)&&!(u.protocol==="https:"&&u.hostname==="www.youtube.com"&&/^\/(?:xml\/)?feeds\/videos\.xml$/.test(u.pathname)&&/^UC[\w-]{22}$/.test(u.searchParams.get("channel_id")??""))))throw new Error("Source is not a direct feed");
  const response=await fetch(url,{signal:AbortSignal.timeout(12000),headers:{"User-Agent":"CuriosInfo-Collector/1.0 (RSS metadata only)","Accept":"application/rss+xml, application/atom+xml, application/xml"}});
  if(!response.ok){await response.body?.cancel();throw new Error(`HTTP ${response.status}`);}
  const reader=response.body!.getReader();let size=0;const chunks:Uint8Array[]=[];

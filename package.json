@@ -15,7 +15,9 @@
     "review:prepare": "node --env-file-if-exists=.env --import tsx tools/prepare-review.ts",
     "review:plan": "node --env-file-if-exists=.env --import tsx tools/review-plan.ts",
     "review:apply": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts",
-    "review:recover": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --recover"
+    "review:recover": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --recover",
+    "collect:social": "node --env-file-if-exists=.env --import tsx tools/collect-social.ts",
+    "collect:all": "npm run collect:news -- --all && npm run collect:social"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
@@ -80,6 +82,7 @@
     "autoprefixer": "^10.4.20",
     "esbuild": "^0.25.0",
     "fast-xml-parser": "^5.12.0",
+    "playwright": "^1.65.0",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.17",
     "tsx": "^4.20.5",

@@ -56,7 +56,7 @@ export function ArticleCard({ article, actor }: ArticleCardProps) {
           rel="noreferrer"
           className="text-muted-foreground hover:text-primary transition-colors"
         >
-          Article lié au sujet
+          {article.content_kind === "post" ? "Voir la publication" : article.content_kind === "video" ? "Voir la vidéo" : "Lire la publication"}
         </a>
         </div>
       </div>

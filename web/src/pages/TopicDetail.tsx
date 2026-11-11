@@ -116,8 +116,8 @@ export default function TopicDetail() {
 
         <section>
           <div className="flex items-center justify-between mb-8">
-            <h2 className="text-3xl font-display font-bold">Articles Liés</h2>
-            <span className="text-muted-foreground">{topic.articles?.length || 0} articles</span>
+            <h2 className="text-3xl font-display font-bold">Publications liées</h2>
+            <span className="text-muted-foreground">{topic.articles?.length || 0} publications</span>
           </div>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
@@ -138,7 +138,7 @@ export default function TopicDetail() {
 
           {(!topic.articles || topic.articles.length === 0) && (
              <div className="text-center py-12 text-muted-foreground">
-               Aucun article lié pour le moment.
+               Aucune publication liée pour le moment.
              </div>
           )}
         </section>

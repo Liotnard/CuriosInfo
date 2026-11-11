@@ -35,3 +35,6 @@ En production, utiliser un dossier de contenu externe au clone Git et le monter 
 Collecte manuelle et préparation de revue : voir [COLLECTION.md](COLLECTION.md). Les candidats restent privés et ne sont pas publiés automatiquement.
 
 Décisions éditoriales, simulation et import : voir [REVIEW.md](REVIEW.md).
+
+
+Pour surveiller les comptes sociaux et les chaînes YouTube fournis, consulter [SOCIAL_COLLECTION.md](SOCIAL_COLLECTION.md). La collecte doit documenter les publications originales, pas seulement les mentions dans la presse.
