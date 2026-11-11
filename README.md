@@ -38,3 +38,8 @@ Décisions éditoriales, simulation et import : voir [REVIEW.md](REVIEW.md).
 
 
 Pour surveiller les comptes sociaux et les chaînes YouTube fournis, consulter [SOCIAL_COLLECTION.md](SOCIAL_COLLECTION.md). La collecte doit documenter les publications originales, pas seulement les mentions dans la presse.
+
+
+## Format des textes publics
+
+La synthèse et l’angle de traitement visent chacun 250 à 500 caractères. La synthèse donne les faits ; l’angle attribue les propos et résume la convergence ou divergence, son axe et son intensité. Voir [EDITORIAL.md](EDITORIAL.md). Les graphiques restent calculés à partir des publications liées.

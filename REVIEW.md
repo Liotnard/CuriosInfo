@@ -126,3 +126,8 @@ docker compose ps
 ```
 
 S’arrêter à la première erreur. Transférer aussi les nouvelles données si nécessaire, selon la procédure précédente, avant publication. En cas de changement futur de format incompatible, prévoir une migration spécifique plutôt que d’appliquer cette séquence aveuglément. Le serveur public ne nécessite pas les outils de revue ni leur boîte privée pour servir le site.
+
+
+## Format des textes publics
+
+La synthèse et l’angle de traitement visent chacun 250 à 500 caractères. La synthèse donne les faits ; l’angle attribue les propos et résume la convergence ou divergence, son axe et son intensité. Voir [EDITORIAL.md](EDITORIAL.md). Les graphiques restent calculés à partir des publications liées.
