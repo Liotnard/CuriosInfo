@@ -21,6 +21,7 @@ export function Header() {
     { href: "/independants", label: "Presse Indépendante" },
     { href: "/personnalites", label: "Personnalités" },
     { href: "/influenceurs", label: "Influenceurs" },
+    { href: "/faq", label: "FAQ" },
   ] as const;
 
   const linkClass = (href: string) =>
@@ -36,25 +37,27 @@ export function Header() {
             href="/"
             onClick={(e) => {
               // En mobile, on utilise CuriosInfo comme bouton de menu
-              if (window.matchMedia("(max-width: 767px)").matches) {
+              if (window.matchMedia("(max-width: 1279px)").matches) {
                 e.preventDefault();
                 setMobileOpen((v) => !v);
               }
             }}
             className="flex items-center gap-2 font-display text-2xl font-bold tracking-tight"
             aria-label="CuriosInfo"
+            aria-expanded={mobileOpen}
+            aria-controls="mobile-navigation"
           >
             <Newspaper className="h-6 w-6" />
             <span>CuriosInfo</span>
 
             {/* Icône burger visible uniquement en mobile */}
-            <span className="md:hidden ml-2 inline-flex items-center">
+            <span className="xl:hidden ml-2 inline-flex items-center">
               {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
             </span>
           </Link>
 
           {/* Nav desktop */}
-          <nav className="hidden md:flex items-center gap-6 text-sm font-medium text-muted-foreground">
+          <nav className="hidden xl:flex items-center gap-6 text-sm font-medium text-muted-foreground">
             {navLinks.map((l) => (
               <Link key={l.href} href={l.href} className={linkClass(l.href)}>
                 {l.label}
@@ -68,7 +71,7 @@ export function Header() {
 
       {/* Menu mobile (dropdown) */}
       {mobileOpen && (
-        <div className="md:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+        <div id="mobile-navigation" className="xl:hidden border-t bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
           <div className="container mx-auto px-4 py-3">
             <nav className="flex flex-col gap-2 text-sm font-medium text-muted-foreground">
               {navLinks.map((l) => (

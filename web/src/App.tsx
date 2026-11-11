@@ -8,6 +8,7 @@ import NotFound from "@/pages/not-found";
 
 // Public Pages
 import Home from "@/pages/Home";
+const FAQ = lazy(() => import("@/pages/FAQ"));
 const TopicDetail = lazy(() => import("@/pages/TopicDetail"));
 import ActorsList from "@/pages/MediaList";
 import PresseList from "@/pages/PresseList";
@@ -29,6 +30,7 @@ function Router() {
       <Route path="/influenceurs" component={InfluenceursList} />
       <Route path="/audiovisuel" component={AudiovisuelList} />
       <Route path="/independants" component={IndependantsList} />
+      <Route path="/faq" component={FAQ} />
       <Route path="/topics/:slug" component={TopicDetail} />
 
       {/* Admin Routes */}

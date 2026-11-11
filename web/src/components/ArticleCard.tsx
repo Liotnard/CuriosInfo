@@ -1,3 +1,4 @@
+import { actorCategory } from "@shared/actors";
 import { Article, Actor } from "@shared/schema";
 import { format } from "date-fns";
 import { fr } from "date-fns/locale";
@@ -12,19 +13,7 @@ interface ArticleCardProps {
 
 export function ArticleCard({ article, actor }: ArticleCardProps) {
 
-  const getActorTypeLabel = (type: string) => {
-    switch(type) {
-      case 'presse': return 'Presse';
-      case 'personnalite' : return 'Personnalité';
-      case 'personnalité': return 'Personnalité';
-      case 'influenceur': return 'Influenceur';
-      case 'presse éditoriale': return 'Presse éditoriale';
-      case 'audiovisuel': return 'TV & Radio';
-      case 'independant' : return 'Presse indépendante';
-      case 'indépendant': return 'Presse indépendante';
-      default: return 'inconnu';
-    }
-  };
+  const getActorTypeLabel = (type: string) => actorCategory(type).label;
 
   if (!article) return null;
   const date = new Date(article.published_at);

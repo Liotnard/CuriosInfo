@@ -1,3 +1,4 @@
+import { normalizeActorType, actorCategory } from "@shared/actors";
 import { useMemo } from "react";
 import {
   ResponsiveContainer,
@@ -19,34 +20,9 @@ interface CoverageHistogramProps {
   articles: TopicArticleData[]; // articles du topic
 }
 
-function normalizeType(t?: string | null) {
-  const s = (t || "presse").toLowerCase().trim();
-  if (s === "press") return "presse";
-  if (s === "audiovisual") return "audiovisuel";
-  if (s === "influencer") return "influenceur";
-  if (s === "personnalite") return "personnalité";
-  if (s === "indépendant") return "independant";
-  return s;
-}
-
-function typeLabel(t: string) {
-  if (t === "presse") return "Presse";
-  if (t === "audiovisuel") return "TV / Radio";
-  if (t === "independant") return "Indépendant";
-  if (t === "personnalité") return "Personnalités";
-  if (t === "influenceur") return "Influenceurs";
-  return t;
-}
-
-function typeColor(typeRaw: string) {
-  const t = normalizeType(typeRaw);
-  return (t === "influenceur") ? "hsl(103, 93%, 48%)"
-    : (t === "personnalité") ? "hsl(0, 80%, 50%)"
-      : (t === "audiovisuel") ? "hsl(197, 88%, 48%)"
-        : (t === "presse") ? "hsl(44, 79%, 46%)"
-          : (t === "independant") ? "hsl(300, 80%, 50%)"
-            : "hsl(210 8% 45%)";
-}
+const normalizeType = normalizeActorType;
+const typeLabel = (type: string) => actorCategory(type).label;
+const typeColor = (type: string) => actorCategory(type).color;
 
 export function CoverageHistogram({ allActors, articles }: CoverageHistogramProps) {
   const data = useMemo(() => {
@@ -95,7 +71,7 @@ export function CoverageHistogram({ allActors, articles }: CoverageHistogramProp
       animate={{ opacity: 1, scale: 1 }}
       transition={{ delay: 0.35 }}
     >
-      <div className="mb-4 flex items-center justify-between">
+      <div className="mb-4 flex flex-col items-start gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <h2 className="text-2xl font-display font-bold">Sources documentées par type</h2>
           <p className="text-sm text-muted-foreground">
