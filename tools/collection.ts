@@ -4,9 +4,9 @@ import crypto from "node:crypto";
 import {XMLParser} from "fast-xml-parser";
 import {z} from "zod";
 import {inspectBody,placeholder,platform} from "./source-check";
-const httpUrl=z.string().url().refine(s=>/^https?:/.test(s));
-export const CandidateSchema=z.object({key:z.string(),actorId:z.number().int().positive(),actor_name:z.string(),feed_url:httpUrl.nullable(),origin:z.enum(["rss","targeted_web_research","social_public_page","youtube_feed"]).default("rss"),url:httpUrl,urlHash:z.string(),title:z.string().min(1),excerpt:z.string().nullable(),published_at:z.string().datetime(),date_basis:z.enum(["published","updated"]),discovered_at:z.string().datetime(),status:z.enum(["pending","accepted","rejected"]).default("pending"),reviewed_at:z.string().datetime().optional(),article_id:z.number().int().positive().optional(),topic_id:z.number().int().positive().optional(),rejection_reason:z.string().optional(),source_profile:httpUrl.optional(),source_platform:z.string().optional(),content_kind:z.enum(["post","video","article"]).optional(),evidence_checked_at:z.string().datetime().optional()});
-export type Candidate=z.infer<typeof CandidateSchema>;
+import {CandidateSchema,type Candidate} from "./candidates";
+export {CandidateSchema,type Candidate} from "./candidates";
+import {readCollecting,readTopics,buildCollecting,writeCollecting} from "./collecting";
 export const ConfigSchema=z.object({actorIds:z.array(z.number().int().positive()).min(1),maxAgeDays:z.number().positive().max(365),maxPerSource:z.number().int().positive().max(200),maxNewItems:z.number().int().positive().max(2000),concurrency:z.number().int().positive().max(6)});
 const StateSchema=z.object({version:z.literal(1),entries:CandidateSchema.array(),last_run:z.unknown().optional()});
 export function canonicalUrl(value:string,base?:string){
@@ -55,6 +55,7 @@ export async function collectNews(options:{dataDir:string;collectionDir:string;c
  const lock=await fs.open(lockPath,"wx").catch(()=>{throw new Error("Collection is already locked. Check for another running collector before removing a stale lock.");});
  try{
   const file=path.join(options.collectionDir,"inbox.json");
+  const work=await readCollecting(options.collectionDir),topics=await readTopics(options.dataDir);
   let state:z.infer<typeof StateSchema>={version:1,entries:[]};
   try{state=StateSchema.parse(JSON.parse(await fs.readFile(file,"utf8")));}catch(e:any){if(e.code!=="ENOENT")throw e;}
   const known=new Set<string>();
@@ -86,7 +87,7 @@ export async function collectNews(options:{dataDir:string;collectionDir:string;c
   for(const item of candidates){if(known.has(item.url)){report.duplicates++;continue;}
 if(fresh.length>=config.maxNewItems){report.limited_items++;continue;}known.add(item.url);fresh.push(item);}
   report.new_items=fresh.length;report.pending_items=state.entries.filter(e=>e.status==="pending").length+fresh.length;report.sources.sort((a:any,b:any)=>a.actorId-b.actorId);
-  if(!options.dryRun){const tmp=file+".tmp";await fs.writeFile(tmp,JSON.stringify({version:1,entries:[...state.entries,...fresh],last_run:report},null,2)+"\n");await fs.rename(tmp,file);}
+  if(!options.dryRun){const next={version:1 as const,entries:[...state.entries,...fresh],last_run:report};const document=buildCollecting(next,topics,work.document);const tmp=file+".tmp";await fs.writeFile(tmp,JSON.stringify(next,null,2)+"\n");await fs.rename(tmp,file);await writeCollecting(options.collectionDir,work,document);}
   return report;
  }finally{await lock.close();await fs.rm(lockPath,{force:true});}
 }

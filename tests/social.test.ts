@@ -33,7 +33,7 @@ test("social evidence requires original author, date, content and known ownershi
 test("collection imports direct social evidence, preserves RSS state, keeps approval manual and deduplicates",async()=>{
  const f=await fixture();try{
  const first=await collectSocial({...f,now,pages:[page],terms:["chelles"]});assert.equal(first.new_items,1);assert.equal(first.incomplete,false);assert.equal(first.exhaustive,false);
- const before=await fs.readFile(path.join(f.collectionDir,"inbox.json"),"utf8");const inbox=JSON.parse(before);assert.equal(inbox.entries[0].status,"pending");
+ const before=await fs.readFile(path.join(f.collectionDir,"inbox.json"),"utf8");const inbox=JSON.parse(before);assert.equal(inbox.entries[0].status,"pending");const work=JSON.parse(await fs.readFile(path.join(f.collectionDir,"collecting.json"),"utf8"));assert.equal(work.candidates.length,1);assert.equal(work.candidates[0].origin,"social_public_page");
  const second=await collectSocial({...f,now,pages:[page],terms:["chelles"],dryRun:true});assert.equal(second.new_items,0);assert.equal(second.duplicates,1);assert.equal(await fs.readFile(path.join(f.collectionDir,"inbox.json"),"utf8"),before);
  const plan=planImport({actors:[{id:400}],topics:[{id:1,slug:"test",title:"Test",summary:"Test",angleNote:null,startAt:null,endAt:null,created_at:now.toISOString(),updatedAt:now.toISOString()}],articles:[],inbox,decisions:{version:1,reviewer:"Test",decisions:[{id:"link",action:"link_topic",topicId:1,approved:true,sources_verified:true,candidate_keys:[inbox.entries[0].key]}]}});
  assert.equal(plan.articles[0].source_platform,"x");assert.equal(plan.articles[0].content_kind,"post");

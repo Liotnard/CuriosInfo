@@ -43,3 +43,8 @@ Pour surveiller les comptes sociaux et les chaînes YouTube fournis, consulter [
 ## Format des textes publics
 
 La synthèse et l’angle de traitement visent chacun 250 à 500 caractères. La synthèse donne les faits ; l’angle attribue les propos et résume la convergence ou divergence, son axe et son intensité. Voir [EDITORIAL.md](EDITORIAL.md). Les graphiques restent calculés à partir des publications liées.
+
+
+## Collecte et tri dans un fichier unique
+
+Les collecteurs alimentent `collection/collecting.json`. L’opérateur y prépare les rattachements, créations et rejets, puis utilise `npm run collect:apply -- --dry-run` et `npm run collect:apply`. Les éléments traités sortent du fichier après succès, sans perdre l’historique. Voir [COLLECTING.md](COLLECTING.md).

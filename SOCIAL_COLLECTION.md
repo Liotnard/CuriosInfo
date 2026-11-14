@@ -1,5 +1,7 @@
 # Surveillance des publications sociales
 
+> Parcours de tri recommandé : **collection/collecting.json** est le fichier opérateur unique. `collect:prepare` reprend la file existante ; `collect:apply -- --dry-run` simule l’import ; `collect:apply` distribue puis retire les éléments traités. Voir [COLLECTING.md](COLLECTING.md). Les paragraphes sur les fichiers de revue séparés décrivent l’ancien parcours, conservé pour compatibilité.
+
 CuriosInfo doit rechercher qui publie sur un sujet, sans exiger une analyse des positions. La collecte RSS ne couvre pas ce besoin à elle seule. Le collecteur social lit aussi les liens d’actors.json, additional_urls et mapactors.json ; les adresses originales restent conservées.
 
 ## Commandes

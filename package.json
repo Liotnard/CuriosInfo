@@ -17,7 +17,9 @@
     "review:apply": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts",
     "review:recover": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --recover",
     "collect:social": "node --env-file-if-exists=.env --import tsx tools/collect-social.ts",
-    "collect:all": "npm run collect:news -- --all && npm run collect:social"
+    "collect:all": "npm run collect:news -- --all && npm run collect:social",
+    "collect:prepare": "node --env-file-if-exists=.env --import tsx tools/prepare-collecting.ts",
+    "collect:apply": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --collecting"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

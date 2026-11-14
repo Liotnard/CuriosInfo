@@ -1,5 +1,7 @@
 # CuriosInfo — Référence des commandes
 
+> Parcours de tri recommandé : **collection/collecting.json** est le fichier opérateur unique. `collect:prepare` reprend la file existante ; `collect:apply -- --dry-run` simule l’import ; `collect:apply` distribue puis retire les éléments traités. Voir [COLLECTING.md](COLLECTING.md). Les paragraphes sur les fichiers de revue séparés décrivent l’ancien parcours, conservé pour compatibilité.
+
 Dernière vérification : **8 novembre 2026**. Ce guide décrit les commandes réellement disponibles dans la version statique du projet. Les blocs **PowerShell / PC** s’exécutent sur Windows ; les blocs **Bash / serveur** dans la session SSH sur l’hôte Linux, pas dans un ancien conteneur.
 
 ## 1. Repères et configuration actuelle

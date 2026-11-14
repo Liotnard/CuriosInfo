@@ -1,3 +1,4 @@
+import {readCollecting,readTopics,buildCollecting,writeCollecting} from "./collecting";
 import {promises as fs} from "node:fs";
 import path from "node:path";
 import {randomUUID,createHash} from "node:crypto";
@@ -31,6 +32,7 @@ export async function collectSocial(options:SocialOptions){
  await fs.mkdir(options.collectionDir,{recursive:true});const lockPath=path.join(options.collectionDir,"collection.lock");
  const lock=await fs.open(lockPath,"wx").catch(()=>{throw new Error("Collection is already locked");});
  try{
+  const work=await readCollecting(options.collectionDir),topics=await readTopics(options.dataDir);
   const inboxPath=path.join(options.collectionDir,"inbox.json");let state:any={version:1,entries:[]};
   try{state=await read(inboxPath);}catch(e:any){if(e.code!=="ENOENT")throw e;}
   state.entries=CandidateSchema.array().parse(state.entries);
@@ -98,8 +100,8 @@ export async function collectSocial(options:SocialOptions){
   report.pending_items=state.entries.filter((x:any)=>x.status==="pending").length+pending.length;
   report.incomplete=report.unavailable>0||report.unverified>0||report.sources.some((r:any)=>r.limited_posts>0||r.status==="no_verified_recent_post");
   if(!options.dryRun){
-   const next={...state,entries:[...state.entries,...pending]};const tmp=inboxPath+".tmp";
-   await fs.writeFile(tmp,JSON.stringify(next,null,2)+"\n");await fs.rename(tmp,inboxPath);
+   const next={...state,entries:[...state.entries,...pending]};const document=buildCollecting(next,topics,work.document);const tmp=inboxPath+".tmp";
+   await fs.writeFile(tmp,JSON.stringify(next,null,2)+"\n");await fs.rename(tmp,inboxPath);await writeCollecting(options.collectionDir,work,document);
    const reports=path.join(options.collectionDir,"social-runs");await fs.mkdir(reports,{recursive:true});
    await fs.writeFile(path.join(reports,report.id+".json"),JSON.stringify(report,null,2)+"\n");
    await fs.writeFile(path.join(options.collectionDir,"social-last-run.json"),JSON.stringify(report,null,2)+"\n");

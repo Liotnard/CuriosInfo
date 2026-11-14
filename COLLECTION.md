@@ -1,5 +1,7 @@
 # Collecte des nouvelles — fonctionnement
 
+> Parcours de tri recommandé : **collection/collecting.json** est le fichier opérateur unique. `collect:prepare` reprend la file existante ; `collect:apply -- --dry-run` simule l’import ; `collect:apply` distribue puis retire les éléments traités. Voir [COLLECTING.md](COLLECTING.md). Les paragraphes sur les fichiers de revue séparés décrivent l’ancien parcours, conservé pour compatibilité.
+
 ## Commandes locales
 
 ```powershell

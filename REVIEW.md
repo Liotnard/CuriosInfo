@@ -1,5 +1,7 @@
 # Revue éditoriale et import contrôlé
 
+> Parcours de tri recommandé : **collection/collecting.json** est le fichier opérateur unique. `collect:prepare` reprend la file existante ; `collect:apply -- --dry-run` simule l’import ; `collect:apply` distribue puis retire les éléments traités. Voir [COLLECTING.md](COLLECTING.md). Les paragraphes sur les fichiers de revue séparés décrivent l’ancien parcours, conservé pour compatibilité.
+
 ## État actuel
 
 Les trois propositions du pilote sont préparées dans collection/review-decisions.json avec approved=false. Elles ne sont pas publiées. Les essais de création, liaison, rejet et récupération utilisent des données synthétiques dans des dossiers temporaires. Les fichiers data/articles.json et data/topics.json de travail n’ont pas été modifiés par ces essais.
