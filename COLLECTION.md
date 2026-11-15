@@ -25,7 +25,7 @@ npm run review:prepare -- --limit 50
 
 data/collection-config.json sélectionne dix sources par défaut, trois jours d’historique, au maximum 200 nouveaux candidats par source et 2 000 par passage, avec trois téléchargements simultanés. Le pilote initial utilisait 20 et 100 ; --all sélectionne tous les flux qualifiés. collect:all ajoute ensuite la collecte sociale décrite dans SOCIAL_COLLECTION.md. JSON_DB_DIR permet de sélectionner les sources ; COLLECTION_DIR permet de déplacer la boîte de réception. Le fichier de configuration reste lu dans le dépôt. Utiliser un dossier privé hors de web/, dist/ et du dossier source de données.
 
-Les téléchargements sont limités à 12 secondes et 2 Mo. L’outil ne visite pas les pages des articles, ne contourne pas les accès restreints et ne récupère pas les contenus payants. Le code conserve seulement titre, URL, source, date et un extrait RSS de 1 000 caractères maximum. Aucun modèle d’IA, clé API ou tâche planifiée n’est utilisé.
+Les téléchargements sont limités à 12 secondes et 2 Mo. L’outil ne visite pas les pages des articles, ne contourne pas les accès restreints et ne récupère pas les contenus payants. Le code conserve seulement titre, URL, source, date et un extrait RSS de 1 000 caractères maximum. Le collecteur RSS ne fait aucun appel IA et ne demande aucune clé API. Il peut être lancé par la tâche Windows décrite dans DAILY_COLLECTION.md.
 
 ## État et déduplication
 
@@ -47,7 +47,7 @@ L’import contrôlé est désormais disponible avec review:plan, review:apply e
 
 ## Serveur et automatisation
 
-Les commandes de collecte sont pour le moment exécutées localement. Le Compose actuel ne fournit pas de service de collecte avec un volume privé d’état ; le service publish ne peut pas servir à la collecte par défaut. La publication publique reste une étape distincte. Aucune modification sur le serveur, aucun push et aucune programmation quotidienne n’ont été effectués.
+Les commandes de collecte sont pour le moment exécutées localement. Le Compose actuel ne fournit pas de service de collecte avec un volume privé d’état ; le service publish ne peut pas servir à la collecte par défaut. La publication publique reste une étape distincte. La planification quotidienne est désormais locale au PC Windows à 21 h, avec rapports et reprises ciblées : voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md). Aucun collecteur n’est installé sur le serveur.
 
 Les tests utilisent des flux simulés : parsing RSS/Atom, dates, doublons, erreurs partielles, limites, simulation et verrouillage. Le pilote réel contrôle le fonctionnement réseau sur les dix sources, sans modifier les articles ou sujets publiés.
 
@@ -56,9 +56,9 @@ Les tests utilisent des flux simulés : parsing RSS/Atom, dates, doublons, erreu
 
 Le passage du 9 novembre sur le pilote de dix flux a produit 100 nouveaux candidats, écarté 59 doublons et relevé zéro candidat Trappes dans la boîte obtenue. Ce constat est limité au pilote, à sa fenêtre de trois jours et à ses plafonds ; il ne mesure pas la couverture de tous les médias. Élargir simplement une fenêtre ne permet pas de restaurer des entrées déjà sorties des flux.
 
-Un complément a été constitué par recherche ciblée, séparément dans collection/trappes. Six articles ont été documentés et deux références exclues de l’analyse pour blocage ou challenge HTML. Les candidats portent origin=targeted_web_research et feed_url=null. Les futurs imports conservent discovery_origin dans les sources de travail. Les candidats RSS restent identifiés origin=rss. Cela ne constitue pas un moteur de recherche historique automatique.
+Un complément a été constitué par recherche ciblée, séparément dans collection/2026-11-09-trappes. Six articles ont été documentés et deux références exclues de l’analyse pour blocage ou challenge HTML. Les candidats portent origin=targeted_web_research et feed_url=null. Les futurs imports conservent discovery_origin dans les sources de travail. Les candidats RSS restent identifiés origin=rss. Cela ne constitue pas un moteur de recherche historique automatique.
 
-Le brouillon reste non approuvé. Pour examiner ce dossier avec les scripts existants, définir COLLECTION_DIR=collection/trappes avant review:prepare ou review:apply, puis retirer cette variable pour revenir à la boîte générale. Ne pas réexécuter review:plan pour écraser un fichier de décisions existant. Les fichiers publics restent inchangés tant qu’une décision n’est pas approuvée puis importée.
+Le brouillon reste non approuvé. Pour examiner ce dossier avec les scripts existants, définir COLLECTION_DIR=collection/2026-11-09-trappes avant review:prepare ou review:apply, puis retirer cette variable pour revenir à la boîte générale. Ne pas réexécuter review:plan pour écraser un fichier de décisions existant. Les fichiers publics restent inchangés tant qu’une décision n’est pas approuvée puis importée.
 
 Le test a aussi conduit à préciser les graphiques : ils montrent les acteurs documentés dans le dossier, pas une mesure exhaustive du nombre de médias qui ont traité le sujet. Aucun axe politique d’acteur n’a été modifié.
 

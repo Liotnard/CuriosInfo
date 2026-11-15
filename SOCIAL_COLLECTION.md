@@ -11,7 +11,7 @@ Depuis F:/Projets_Perso/CuriosInfo :
 ```powershell
 npm run collect:social -- --inventory
 npm run collect:social -- --platforms youtube
-npm run collect:social -- --actors 400,419 --platforms x --terms "Chelles|Pascoa|Angela Avond" --evidence collection/social/browser-evidence.json
+npm run collect:social -- --actors 400,419 --platforms x --terms "Chelles|Pascoa|Angela Avond" --evidence collection/2026-11-10-chelles/reseaux-sociaux/browser-evidence.json
 ```
 
 L’inventaire compte actuellement 181 cibles associées à 63 acteurs : X 60, Instagram 30, Facebook 29, TikTok 19, Threads 13, YouTube 25, Twitch 4 et Telegram 1. Certaines adresses sont des variantes ou alias ; le nombre de cibles n’est pas une preuve de 181 comptes indépendants effectivement lus. Deux cibles sont communes à plusieurs acteurs et trois comptes alternatifs demandent une vérification d’attribution. Les comptes partagés et les comptes de parti supplémentaires ne sont pas attribués silencieusement à une personne.
@@ -50,7 +50,7 @@ Macron et Pécresse ont été vérifiés sur leurs pages de publication X par le
 
 La lecture répétée des deux publications politiques n’a créé aucun doublon. Les tests réels ont aussi montré des profils publics partiels, des délais dépassés et des réponses YouTube intermittentes. Un premier passage sur 25 cibles YouTube a échoué sur la plupart ; après corrections de la découverte et des formats d’identifiants, un passage sur trois chaînes (HugoDécrypte, Tatiana Ventôse, Heu?reka) a lu les trois flux et trouvé le lien d’HugoDécrypte. Ce résultat ne valide pas encore les 25 cibles YouTube ni les autres plateformes. Une absence de résultat n’est donc pas une mesure du silence d’un acteur.
 
-Les trois publications ont été approuvées à la demande de l’utilisateur et importées le 11 novembre 2026 dans le sujet existant de Chelles. collection/social/chelles-review-decisions.json conserve la décision d’import. Le dossier comprend désormais 15 publications : 8 médias, 2 personnalités politiques et 1 influenceur. Le push Git et la publication sur le serveur restent des opérations distinctes.
+Les trois publications ont été approuvées à la demande de l’utilisateur et importées le 11 novembre 2026 dans le sujet existant de Chelles. collection/2026-11-10-chelles/reseaux-sociaux/chelles-review-decisions.json conserve la décision d’import. Le dossier comprend désormais 15 publications : 8 médias, 2 personnalités politiques et 1 influenceur. Le push Git et la publication sur le serveur restent des opérations distinctes.
 
 ## Coûts et activation
 
@@ -68,4 +68,4 @@ Chaque exécution conserve son bilan dans collection/social-runs/ et social-last
 
 La page publique d’un profil peut montrer une sélection ou des éléments épinglés. Des posts contenant uniquement une image, une vidéo ou une prise de parole orale nécessitent une extraction OCR ou une transcription supplémentaire : cette étape n’est pas encore implémentée. Les stories, suppressions et publications non publiques ne deviennent pas accessibles par l’ajout d’un connecteur. Une surveillance exhaustive n’est pas démontrée par ces essais. Ces limites sont des travaux à résoudre et des échecs de contrôle à examiner, pas des motifs pour comptabiliser une absence de prise de parole.
 
-Le prochain essai à effectuer une fois la clé locale renseignée est un passage réel sur l’ensemble de l’inventaire, avec reprise des sources en échec, puis contrôle de la période effectivement parcourue. La planification régulière et le rattrapage entre deux passages ne sont pas installés. Les originaux restent dans la file de revue ; aucune interprétation de position politique n’est nécessaire à leur rattachement au sujet.
+Le prochain essai à effectuer une fois la clé locale renseignée est un passage réel sur l’ensemble de l’inventaire, avec reprise des sources en échec, puis contrôle de la période effectivement parcourue. La passe quotidienne Windows et les reprises ciblées d’erreurs temporaires sont décrites dans [DAILY_COLLECTION.md](DAILY_COLLECTION.md). Le rattrapage historique des publications sorties des flux ou absentes des pages accessibles reste non implémenté. Les originaux restent dans la file de revue ; aucune interprétation de position politique n’est nécessaire à leur rattachement au sujet.

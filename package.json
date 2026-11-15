@@ -19,7 +19,10 @@
     "collect:social": "node --env-file-if-exists=.env --import tsx tools/collect-social.ts",
     "collect:all": "npm run collect:news -- --all && npm run collect:social",
     "collect:prepare": "node --env-file-if-exists=.env --import tsx tools/prepare-collecting.ts",
-    "collect:apply": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --collecting"
+    "collect:apply": "node --env-file-if-exists=.env --import tsx tools/review-apply.ts --collecting",
+    "collect:daily": "node --env-file-if-exists=.env --import tsx tools/daily-collect.ts",
+    "collect:status": "node --env-file-if-exists=.env --import tsx tools/collection-status.ts",
+    "collect:cleanup": "node --env-file-if-exists=.env --import tsx tools/cleanup-collection.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",

@@ -97,3 +97,36 @@ Les anciennes sauvegardes à trois fichiers restent compatibles. Éviter de lanc
 `review:apply` choisit `collecting.json` par défaut lorsqu’il existe. L’ancien parcours reste disponible avec un fichier explicite : `review:apply -- --file CHEMIN`. `review:plan` et `review-batch.json` ne sont plus nécessaires au parcours de tri unique.
 
 `JSON_DB_DIR` et `COLLECTION_DIR` permettent un autre environnement. Le fichier de travail et ses sauvegardes doivent rester hors des dossiers de données publiques. Aucun import ni rejet réel n’a été fait lors de la migration de la file existante.
+
+
+## Organisation de collection/
+
+Le dossier contient le travail privé : il n’a pas besoin d’être poussé sur GitHub. En revanche, le sauvegarder séparément permet de préserver les candidats en attente, les décisions et l’historique après un changement de machine. Ne jamais le copier dans le répertoire servi par le site.
+
+Les dossiers thématiques suivent systématiquement **AAAA-MM-JJ-sujet** : date de création initiale du dossier du sujet dans collection/, en heure de Paris, puis un nom court en minuscules séparées par des tirets. Les mois et jours ont deux chiffres pour préserver le tri chronologique. La date n’est pas celle de l’événement ; elle ne change pas lors d’une mise à jour ou d’un déplacement du dossier.
+
+Exemples existants :
+
+```text
+collection/
+  collecting.json              ← fichier opérateur
+  2026-11-09-cnews-petition/
+  2026-11-09-trappes/
+  2026-11-10-chelles/
+    reseaux-sociaux/
+    tests-youtube/
+  inbox.json                   ← registre interne
+  import-backups/              ← sauvegardes de récupération
+  social-runs/                 ← rapports techniques
+```
+
+Les pièces d’un même sujet restent dans son dossier daté ; des sous-dossiers techniques peuvent y distinguer les preuves sociales, les tests ou les documents. Ne pas créer un nouveau dossier daté à chaque collecte du même sujet. Les dossiers partagés ou techniques (import-backups, editorial-backups, social-runs et source-evidence) ne sont pas des sujets : leurs noms stables sont conservés, notamment pour la récupération et la déduplication. Les anciens fichiers de revue présents à la racine restent des archives de compatibilité ; le tri courant se fait dans collecting.json.
+
+## Conservation des dossiers thématiques
+
+Les dossiers de sujets datés peuvent être supprimés après trois mois calendaires à compter de la date de création inscrite dans leur nom. Vérifier avant suppression qu’aucun travail non traité ni preuve encore nécessaire n’y reste ; reporter le nettoyage dans ce cas. Cette règle concerne uniquement ces archives de suivi : elle ne supprime ni les données publiques, ni collecting.json, ni le registre de déduplication inbox.json, ni les sauvegardes et rapports techniques. Les sauvegardes externes sont occasionnelles, indépendamment de la fréquence de collecte RSS. La passe quotidienne applique désormais le nettoyage aux seules archives clôturées et éligibles ; voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md).
+
+
+## Passage quotidien local
+
+Voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md) pour la tâche Windows à 21 h, les nouvelles tentatives, les rapports et la clôture des archives avant nettoyage. Commandes : `npm run collect:daily`, `npm run collect:status`, `npm run collect:cleanup` (simulation par défaut). La planification ne déclenche aucun import ni aucune publication.

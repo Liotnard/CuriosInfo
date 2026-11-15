@@ -438,7 +438,7 @@ Le Caddy de l’hôte est administré par le propriétaire du serveur. Un change
 - `git reset --hard`, `git clean -fd` ou une suppression récursive du dossier : risque de perte des changements non sauvegardés.
 - L’ajout à Git du `.env`, des sauvegardes privées ou de `.migration-archive`.
 
-Les anciennes publications sont conservées pour les pages déjà ouvertes. La collecte manuelle est décrite en section 15 ; aucune commande de purge automatique ni collecte planifiée n’est actuellement fournie. Le ménage des versions demandera une procédure spécifique conservant au minimum la version active.
+Les anciennes publications sont conservées pour les pages déjà ouvertes. La collecte manuelle est décrite en section 15 ; la collecte quotidienne locale et le nettoyage des archives de suivi sont décrits dans [DAILY_COLLECTION.md](DAILY_COLLECTION.md). Aucune purge des versions publiques n’est actuellement fournie. Le ménage des versions demandera une procédure spécifique conservant au minimum la version active.
 
 ## 14. Cycle quotidien minimal
 
@@ -498,3 +498,15 @@ Après import : examiner `git diff -- data`, puis publier et tester localement. 
 ## Collecte des réseaux sociaux
 
 Voir [SOCIAL_COLLECTION.md](SOCIAL_COLLECTION.md) pour la surveillance des liens sociaux, les commandes collect:social et collect:all, les accès gratuits et les résultats réels sur Chelles. Les plafonds RSS actuels sont de 200 nouveaux candidats par source et 2 000 par passage ; les paragraphes du pilote historique décrivent les anciennes valeurs.
+
+
+## Collecte quotidienne locale et maintenance
+
+Voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md) pour l’installation Windows, les horaires, les rapports, la désactivation et la désinstallation de la tâche.
+
+| Commande | Effet |
+|---|---|
+| `npm run collect:daily` | Collecte RSS puis sociale, reprises temporaires ciblées, rapport et nettoyage des archives clôturées éligibles ; aucun import ni publication |
+| `npm run collect:status` | Vérifie le dernier passage et signale un rapport absent, vieux de plus de 30 h, partiel ou interrompu |
+| `npm run collect:cleanup` | Simule le nettoyage des dossiers de sujets de plus de trois mois |
+| `npm run collect:cleanup -- --apply` | Supprime seulement les dossiers anciens clôturés et sans blocage détecté |
