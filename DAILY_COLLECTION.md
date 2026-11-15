@@ -93,3 +93,20 @@ npm run collect:cleanup -- --apply
 ```
 
 La passe quotidienne applique cette règle automatiquement. Aucun dossier existant n’a été marqué clôturé ou supprimé lors de sa mise en place. Les registres `inbox.json`, `collecting.json`, les sauvegardes techniques, les rapports et les données publiques sont exclus. Les dossiers sans nom thématique daté sont ignorés. La suppression d’une archive éligible est définitive ; les sauvegardes externes restent occasionnelles, à l’initiative de l’utilisateur.
+
+
+## Sauvegarde progressive et reprise ciblée
+
+Depuis le contrôle réel du 15 novembre, le collecteur social sauvegarde ses nouveaux candidats à chaque source terminée et tous les cinq nouveaux éléments au sein d’une source. Le rapport courant indique `completed_sources`, `active_source` et `persisted_items`. Une interruption peut encore perdre les quelques éléments depuis le dernier point, mais ne remet plus toute la passe en cause. La file technique durable peut être refusionnée avec `npm run collect:prepare` si une édition simultanée a empêché l’écriture du fichier opérateur ; celle-ci est préservée.
+
+Le rapport quotidien sauvegarde aussi chaque étape RSS/sociale terminée avant de lancer la suivante. Un statut `running` et une liste d’avertissements vide ne signifient pas que toutes les sources ont réussi. Après un arrêt brutal, vérifier la tâche et l’absence des processus avant de retirer un verrou résiduel ; aucune suppression aveugle des verrous n’a été automatisée.
+
+Pour vérifier quelques publications originales déjà identifiées, sans relire tous les profils :
+
+```powershell
+npm run collect:social -- --posts-file CHEMIN_VERS_URLS.json --max-pages 20
+```
+
+Le fichier est un tableau JSON d’URL originales. Chaque lien doit appartenir à un compte documenté et sélectionné ; les attributions ambiguës restent bloquées. Cette commande ne prétend pas avoir visité les profils. Elle partage le même compteur journalier de 800 tentatives et peut utiliser `--max-age-days` pour un suivi historique délimité.
+
+Le 15 novembre, la tâche s’est bien déclenchée à 21 h, puis Windows a enregistré une interruption `0xC000013A`. Sa cause n’a pas été déterminée. Les fichiers ont permis de retrouver 972 candidats RSS et 174 sociaux sauvegardés, malgré l’absence de bilan quotidien final. La vérification ciblée suivante a reconnu un doublon sans appel fournisseur. Les dossiers privés `interruption-recovery/` et `social-runs/` conservent les traces ; cette reprise ne doit pas être confondue avec une seconde exécution automatique complète.

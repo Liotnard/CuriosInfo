@@ -69,3 +69,8 @@ Chaque exécution conserve son bilan dans collection/social-runs/ et social-last
 La page publique d’un profil peut montrer une sélection ou des éléments épinglés. Des posts contenant uniquement une image, une vidéo ou une prise de parole orale nécessitent une extraction OCR ou une transcription supplémentaire : cette étape n’est pas encore implémentée. Les stories, suppressions et publications non publiques ne deviennent pas accessibles par l’ajout d’un connecteur. Une surveillance exhaustive n’est pas démontrée par ces essais. Ces limites sont des travaux à résoudre et des échecs de contrôle à examiner, pas des motifs pour comptabiliser une absence de prise de parole.
 
 Le prochain essai à effectuer une fois la clé locale renseignée est un passage réel sur l’ensemble de l’inventaire, avec reprise des sources en échec, puis contrôle de la période effectivement parcourue. La passe quotidienne Windows et les reprises ciblées d’erreurs temporaires sont décrites dans [DAILY_COLLECTION.md](DAILY_COLLECTION.md). Le rattrapage historique des publications sorties des flux ou absentes des pages accessibles reste non implémenté. Les originaux restent dans la file de revue ; aucune interprétation de position politique n’est nécessaire à leur rattachement au sujet.
+
+
+## Résilience et lecture de publications ciblées
+
+Le collecteur sauvegarde désormais la file et le rapport à chaque source, avec un point tous les cinq nouveaux candidats. `--posts-file CHEMIN.json` permet une vérification d’URL originales rattachées à des comptes connus, sans visite de profil fictive et sans modifier le plafond quotidien. Voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md) pour le contrôle réel du 15 novembre et la récupération d’une interruption.

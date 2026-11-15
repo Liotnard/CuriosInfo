@@ -4,7 +4,7 @@ import {parseArgs} from "node:util";
 import {buildSocialSources,PageSchema,tinyfishFetcher} from "./social-sources";
 import {localBrowserFetcher} from "./local-social-browser";
 import {collectSocial} from "./social-collection";
-const {values}=parseArgs({options:{actors:{type:"string"},platforms:{type:"string"},terms:{type:"string"},evidence:{type:"string"},inventory:{type:"boolean"},"live-browser":{type:"boolean"},"local-browser":{type:"boolean"},"max-pages":{type:"string",default:"800"},"max-age-days":{type:"string",default:"3"},"dry-run":{type:"boolean"},"allow-partial":{type:"boolean"}}});
+const {values}=parseArgs({options:{actors:{type:"string"},platforms:{type:"string"},terms:{type:"string"},evidence:{type:"string"},"posts-file":{type:"string"},inventory:{type:"boolean"},"live-browser":{type:"boolean"},"local-browser":{type:"boolean"},"max-pages":{type:"string",default:"800"},"max-age-days":{type:"string",default:"3"},"dry-run":{type:"boolean"},"allow-partial":{type:"boolean"}}});
 async function main(){
  const dataDir=path.resolve(process.env.JSON_DB_DIR||"data"),collectionDir=path.resolve(process.env.COLLECTION_DIR||"collection");
  if([dataDir,path.resolve("web"),path.resolve("dist")].some(root=>collectionDir===root||collectionDir.startsWith(root+path.sep)))throw new Error("Collection must remain private and outside sources/public files");
@@ -21,6 +21,8 @@ async function main(){
   console.log(JSON.stringify({...inventory,sources:undefined},null,2));return;
  }
  let pages,observedAt;
+ const postUrls=values["posts-file"]?JSON.parse(await fs.readFile(path.resolve(values["posts-file"]),"utf8")):undefined;
+ if(postUrls!==undefined&&(!Array.isArray(postUrls)||!postUrls.every((url:any)=>typeof url==="string")))throw new Error("Posts file must contain a JSON array of URLs");
  if(values.evidence){
   const snapshot=JSON.parse(await fs.readFile(path.resolve(values.evidence),"utf8"));
   observedAt=new Date(snapshot.fetched_at);if(!Number.isFinite(observedAt.getTime())||observedAt>new Date())throw new Error("Evidence needs a valid fetched_at timestamp");
@@ -31,8 +33,8 @@ async function main(){
  const remote=values["live-browser"]||(!values.evidence&&!local&&Boolean(process.env.TINYFISH_API_KEY));
  const fetchPages=local?.fetchPages??(remote?tinyfishFetcher(process.env.TINYFISH_API_KEY||""):undefined);
  try {
- const report=await collectSocial({dataDir,collectionDir,actorIds,platforms,terms:values.terms?.split("|").map(s=>s.trim()).filter(Boolean),pages,observedAt,fetchPages,maxPages,maxAgeDays,dryRun:values["dry-run"]});
- console.log(JSON.stringify({...report,sources:report.sources.map((s:any)=>({actorId:s.actorId,platform:s.platform,status:s.status,verified_posts:s.verified_posts,matching_posts:s.matching_posts,errors:s.errors}))},null,2));
+ const report=await collectSocial({dataDir,collectionDir,actorIds,platforms,terms:values.terms?.split("|").map(s=>s.trim()).filter(Boolean),pages,observedAt,postUrls,fetchPages,maxPages,maxAgeDays,dryRun:values["dry-run"]});
+ console.log(JSON.stringify({...report,sources:report.sources.map((s:any)=>({actorId:s.actorId,platform:s.platform,status:s.status,verified_posts:s.verified_posts,matching_posts:s.matching_posts,limited_posts:s.limited_posts,errors:s.errors}))},null,2));
  if(report.incomplete&&!values["allow-partial"])process.exitCode=2;
  } finally {await local?.close();}
 }

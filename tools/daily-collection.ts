@@ -21,24 +21,25 @@ export const executeStep:RunStep=(name,file,args)=>new Promise(resolve=>{
   resolve({name,code:code??1,report,error:message||(!report?"Collector returned no JSON report":undefined)});
  });
 });
-export async function runCollectors(run:RunStep=executeStep,pause=()=>new Promise<void>(resolve=>setTimeout(resolve,3000))) {
+export async function runCollectors(run:RunStep=executeStep,pause=()=>new Promise<void>(resolve=>setTimeout(resolve,3000)),onStep:(step:Step)=>Promise<void>=async()=>{}) {
  const steps:Step[]=[];
- const rss=await run("rss","tools/collect-news.ts",["--all"]);steps.push(rss);
+ const record=async(step:Step)=>{steps.push(step);await onStep(step);};
+ const rss=await run("rss","tools/collect-news.ts",["--all"]);await record(rss);
  let rssRemaining=rssFailures(rss.report);
  const retryIds=rssRemaining.filter(s=>transient(s.error)).map(s=>s.actorId);
  if(retryIds.length) {
   await pause();
-  const retry=await run("rss-retry","tools/collect-news.ts",["--actors",retryIds.join(",")]);steps.push(retry);
+  const retry=await run("rss-retry","tools/collect-news.ts",["--actors",retryIds.join(",")]);await record(retry);
   if(retry.report)rssRemaining=[...rssRemaining.filter(s=>!retryIds.includes(s.actorId)),...rssFailures(retry.report)];
  }
  // RSS failure must not prevent the independent social pass.
- const social=await run("social","tools/collect-social.ts",[]);steps.push(social);
+ const social=await run("social","tools/collect-social.ts",[]);await record(social);
  let socialRemaining=socialFailures(social.report);
  const platforms=[...new Set(socialRemaining.filter(s=>transient(s.errors)).map(s=>s.platform))];
  for(const platform of platforms) {
   const ids=[...new Set(socialRemaining.filter(s=>s.platform===platform&&transient(s.errors)).map(s=>s.actorId))];
   await pause();
-  const retry=await run("social-retry-"+platform,"tools/collect-social.ts",["--actors",ids.join(","),"--platforms",platform]);steps.push(retry);
+  const retry=await run("social-retry-"+platform,"tools/collect-social.ts",["--actors",ids.join(","),"--platforms",platform]);await record(retry);
   if(retry.report)socialRemaining=[...socialRemaining.filter(s=>!(s.platform===platform&&ids.includes(s.actorId))),...socialFailures(retry.report)];
  }
  const warnings:string[]=[];
@@ -61,7 +62,7 @@ export async function dailyCollection(dir:string,run:RunStep=executeStep,cleanup
  };
  try {
   await save();
-  Object.assign(report,await runCollectors(run));
+  Object.assign(report,await runCollectors(run,undefined,async(step)=>{report.steps??=[];report.steps.push(step);await save();}));
   try{report.cleanup=await cleanup(dir,{apply:true});}catch(error:any){report.warnings.push("Archive cleanup skipped: "+error.message);}
   report.status=report.warnings.length?"partial":"ok";
  }catch(error:any){report.status="failed";report.warnings.push(String(error.message).replaceAll(process.env.TINYFISH_API_KEY||"__NO_KEY__","[REDACTED]"));}

@@ -510,3 +510,6 @@ Voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md) pour l’installation Windows, l
 | `npm run collect:status` | Vérifie le dernier passage et signale un rapport absent, vieux de plus de 30 h, partiel ou interrompu |
 | `npm run collect:cleanup` | Simule le nettoyage des dossiers de sujets de plus de trois mois |
 | `npm run collect:cleanup -- --apply` | Supprime seulement les dossiers anciens clôturés et sans blocage détecté |
+
+
+Pour cibler des publications originales connues : `npm run collect:social -- --posts-file CHEMIN.json --max-pages 20`. Le fichier doit contenir un tableau d’URL de comptes documentés. Les rapports sociaux indiquent maintenant la progression et les résultats déjà sauvegardés ; voir DAILY_COLLECTION.md.
