@@ -130,3 +130,8 @@ Les dossiers de sujets datés peuvent être supprimés après trois mois calenda
 ## Passage quotidien local
 
 Voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md) pour la tâche Windows à 21 h, les nouvelles tentatives, les rapports et la clôture des archives avant nettoyage. Commandes : `npm run collect:daily`, `npm run collect:status`, `npm run collect:cleanup` (simulation par défaut). La planification ne déclenche aucun import ni aucune publication.
+
+
+## Catégorie et publication des sujets
+
+Choisir `topic.category` lors d’une création et conserver la portée politique définie dans EDITORIAL.md. Les valeurs sont politique, social, economie, international, environnement, justice, medias, societe. `topic.editorialStatus` vaut published ou archived. Un suivi peut modifier ces champs avec `topic_update`. L’ancien format sans ces champs reste lisible (societe/published par défaut), mais les nouveaux lots doivent être classés explicitement. La publication recalcule articleCount et filtre les archives ; la page d’accueil utilise ces données pour ses filtres et sa Une.

@@ -19,3 +19,12 @@ La cartographie et les sources documentées par type dérivent des publications 
 ## Patrimoine et rédaction future
 
 Les cinq dossiers sourcés présents au 11 novembre 2026 ont été harmonisés dans cette fourchette. Les anciennes fiches retraites/municipales sont des données de démonstration avec des liens example.com ; leurs textes ne sont pas étoffés avec des faits ou des opinions inventés. La règle s’applique aux nouvelles rédactions et révisions de dossiers sourcés.
+
+
+## Périmètre et classement
+
+Publier uniquement des sujets de société à portée politique : politiques publiques, institutions, droits, rapports sociaux, économie, environnement, justice, médias ou relations internationales. Une convergence d’avis est recevable ; ne pas inventer un clivage. Un résultat sportif, une prouesse technique ou un bulletin météo ne suffisent pas sans dimension politique documentée.
+
+Chaque sujet porte une `category` : `politique`, `social`, `economie`, `international`, `environnement`, `justice`, `medias` ou `societe`. Choisir le thème dominant ; conserver les autres dimensions dans les textes. `editorialStatus` vaut `published` ou `archived`. Une archive reste dans les JSON sources, mais ne figure ni dans l’index ni dans les fiches de la publication active. Pour la réactiver, documenter sa pertinence et passer explicitement à `published`. Les anciennes données de démonstration non sourcées restent archivées.
+
+`startAt` désigne le début du sujet (date de l’événement connue, sinon première publication liée). `created_at` sert de secours si cette date manque ; une simple révision ne rajeunit pas le dossier. La Une choisit, indépendamment des filtres de liste, le sujet publié de moins de sept jours ayant le plus de publications liées ; égalité départagée par la date de début puis l’identifiant. En l’absence de candidat, elle n’est pas affichée. Le compteur `articleCount` est calculé par la publication, jamais saisi manuellement.

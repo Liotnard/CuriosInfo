@@ -4,12 +4,12 @@ import crypto from "node:crypto";
 import {z} from "zod";
 import {CandidateSchema,canonicalUrl} from "./collection";
 import {readCollecting,buildCollecting,reviewedInbox,optionalText} from "./collecting";
-import {ArticleSchema,TopicSchema} from "../shared/schema";
+import {ArticleSchema,TopicSchema,TopicCategorySchema,EditorialStatusSchema} from "../shared/schema";
 const Keys=z.array(z.string().regex(/^[a-f0-9]{64}$/)).min(1);
 const Base={id:z.string().min(1),approved:z.boolean().default(false),sources_verified:z.boolean().default(false),candidate_keys:Keys,publication_dates:z.record(z.string().datetime()).default({})};
 export const DecisionsSchema=z.object({version:z.literal(1),reviewer:z.string(),decisions:z.array(z.discriminatedUnion("action",[
- z.object({...Base,action:z.literal("create_topic"),topic:z.object({title:z.string().trim().min(1),slug:z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),summary:z.string().nullable(),angleNote:z.string().nullable().default(null)})}),
- z.object({...Base,action:z.literal("link_topic"),topicId:z.number().int().positive(),topic_update:z.object({title:z.string().trim().min(1).optional(),summary:z.string().nullable().optional(),angleNote:z.string().nullable().optional()}).optional()}),
+ z.object({...Base,action:z.literal("create_topic"),topic:z.object({category:TopicCategorySchema.default("societe"),editorialStatus:EditorialStatusSchema.default("published"),title:z.string().trim().min(1),slug:z.string().regex(/^[a-z0-9]+(?:-[a-z0-9]+)*$/),summary:z.string().nullable(),angleNote:z.string().nullable().default(null)})}),
+ z.object({...Base,action:z.literal("link_topic"),topicId:z.number().int().positive(),topic_update:z.object({category:TopicCategorySchema.optional(),editorialStatus:EditorialStatusSchema.optional(),title:z.string().trim().min(1).optional(),summary:z.string().nullable().optional(),angleNote:z.string().nullable().optional()}).optional()}),
  z.object({...Base,action:z.literal("reject"),reason:z.string().default("")})
 ]))});
 const stringify=(value:unknown)=>JSON.stringify(value,null,2)+"\n";
@@ -41,10 +41,10 @@ export function planImport(input:{actors:any[];topics:any[];articles:any[];inbox
    if(new Set(selected.map(c=>c.actorId)).size<2)throw new Error("A new comparative topic requires two distinct sources");
    target=topics.find(t=>t.slug===d.topic.slug);
    if(target&&target.review_import_id!==d.id)throw new Error("Topic slug already exists; use link_topic");
-   if(target&&(target.title!==d.topic.title||target.summary!==d.topic.summary||target.angleNote!==d.topic.angleNote))throw new Error("An already imported decision was edited; update the topic separately");
+   if(target&&(target.title!==d.topic.title||target.summary!==d.topic.summary||target.angleNote!==d.topic.angleNote||(target.category??"societe")!==d.topic.category||(target.editorialStatus??"published")!==d.topic.editorialStatus))throw new Error("An already imported decision was edited; update the topic separately");
    if(!target){target={...d.topic,id:++topicId,startAt:null,endAt:null,created_at:now,updatedAt:now,review_import_id:d.id};topics.push(target);summary.new_topics++;}
   }else{target=topics.find(t=>t.id===d.topicId);if(!target)throw new Error("Topic not found");
-   if(d.topic_update){for(const field of ["title","summary","angleNote"] as const){const value=d.topic_update[field];if(value!==undefined&&target[field]!==value){target[field]=value;if(field==="angleNote"&&Object.hasOwn(target,"angle_note"))target.angle_note=value;textChanged=true;}}}
+   if(d.topic_update){for(const field of ["title","summary","angleNote","category","editorialStatus"] as const){const value=d.topic_update[field];if(value!==undefined&&target[field]!==value){target[field]=value;if(field==="angleNote"&&Object.hasOwn(target,"angle_note"))target.angle_note=value;textChanged=true;}}}
   }
   for(const c of selected){
    if(!actorIds.has(c.actorId))throw new Error("Candidate actor not found");

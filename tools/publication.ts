@@ -25,6 +25,9 @@ export async function publishData(source: string, output: string) {
     if (!actorById.has(a.actorId)) throw new Error(`Article ${a.id}: missing actor ${a.actorId}`);
     if (a.topicId !== null && !topicIds.has(a.topicId)) throw new Error(`Article ${a.id}: missing topic ${a.topicId}`);
   }
+  const visibleTopics=topics.filter(t=>t.editorialStatus==="published").map(t=>({...t,articleCount:articles.filter(a=>a.topicId===t.id).length}));
+  const visibleIds=new Set(visibleTopics.map(t=>t.id));
+  const publishedArticles=articles.filter(a=>a.topicId!==null&&visibleIds.has(a.topicId));
   // Immutable releases keep already-open browser sessions coherent across publications.
   const version = crypto.randomUUID();
   const release = path.join(output,"releases",version);
@@ -33,8 +36,8 @@ export async function publishData(source: string, output: string) {
   try {
     await fs.mkdir(path.join(release,"topics"));
     await write("actors.json",actors);
-    await write("index.json",topics);
-    for (const topic of topics) {
+    await write("index.json",visibleTopics);
+    for (const topic of visibleTopics) {
       const linked = articles.filter(a=>a.topicId === topic.id);
       const ids = new Set(linked.map(a=>a.actorId));
       await write(`topics/${topic.slug}.json`, {...topic,articles:linked.map(a=>({...a,actor:actorById.get(a.actorId)})),actorInTopic:actors.filter(a=>ids.has(a.id))});
@@ -42,6 +45,6 @@ export async function publishData(source: string, output: string) {
     const temporary = path.join(output, `manifest.${version}.tmp`);
     await fs.writeFile(temporary,JSON.stringify({version,publishedAt:new Date().toISOString()}));
     await fs.rename(temporary,path.join(output,"manifest.json"));
-    return {version,actors:actors.length,topics:topics.length,articles:articles.length};
+    return {version,actors:actors.length,topics:visibleTopics.length,articles:publishedArticles.length};
   } catch(error) { await fs.rm(release,{recursive:true,force:true}); throw error; }
 }

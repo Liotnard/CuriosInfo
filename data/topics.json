@@ -8,7 +8,10 @@
     "start_at": "2025-01-01T00:00:00.000Z",
     "end_at": "2025-12-31T00:00:00.000Z",
     "created_at": "2025-12-26T15:10:06.279Z",
-    "updated_at": "2025-12-26T15:10:06.279Z"
+    "updated_at": "2025-12-26T15:10:06.279Z",
+    "category": "social",
+    "editorialStatus": "archived",
+    "archive_reason": "Données de démonstration avec liens example.com, sans corpus journalistique vérifié."
   },
   {
     "id": 2,
@@ -19,7 +22,10 @@
     "start_at": "2026-03-01T00:00:00.000Z",
     "end_at": "2026-03-31T00:00:00.000Z",
     "created_at": "2025-12-26T15:10:06.279Z",
-    "updated_at": "2025-12-26T15:10:06.279Z"
+    "updated_at": "2025-12-26T15:10:06.279Z",
+    "category": "politique",
+    "editorialStatus": "archived",
+    "archive_reason": "Données de démonstration avec liens example.com, sans corpus journalistique vérifié."
   },
   {
     "id": 3,
@@ -30,7 +36,9 @@
     "start_at": "2026-01-05T00:00:00.000Z",
     "end_at": "2026-01-20T00:00:00.000Z",
     "created_at": "2026-01-10T12:00:00.000Z",
-    "updated_at": "2026-11-11T16:48:22.682Z"
+    "updated_at": "2026-11-11T16:48:22.682Z",
+    "category": "economie",
+    "editorialStatus": "published"
   },
   {
     "title": "Ukraine : les propositions de Mélenchon sur les frontières et la sécurité",
@@ -42,7 +50,9 @@
     "endAt": null,
     "created_at": "2026-11-08T23:03:41.022Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-donbass-melenchon-reaction-barrot-novembre-2026-1"
+    "review_import_id": "review-donbass-melenchon-reaction-barrot-novembre-2026-1",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "Fusillade de Cracovie : enquête et réactions",
@@ -54,7 +64,9 @@
     "endAt": null,
     "created_at": "2026-11-08T23:03:41.022Z",
     "updatedAt": "2026-11-11T16:48:22.682Z",
-    "review_import_id": "review-fusillade-cracovie-novembre-2026-2"
+    "review_import_id": "review-fusillade-cracovie-novembre-2026-2",
+    "category": "justice",
+    "editorialStatus": "published"
   },
   {
     "title": "Incendie du domicile d’un policier à Auch",
@@ -66,7 +78,9 @@
     "endAt": null,
     "created_at": "2026-11-08T23:03:41.022Z",
     "updatedAt": "2026-11-11T16:48:22.682Z",
-    "review_import_id": "review-incendie-domicile-policier-auch-novembre-2026-3"
+    "review_import_id": "review-incendie-domicile-policier-auch-novembre-2026-3",
+    "category": "justice",
+    "editorialStatus": "published"
   },
   {
     "title": "Agression d’Angela Pascoa Dos Santos à Chelles : faits, enquête et réactions",
@@ -74,11 +88,13 @@
     "summary": "Le 10 novembre 2026, Angela Pascoa Dos Santos, conseillère régionale et adjointe au maire de Chelles, reçoit une bouteille devant le lycée Gaston-Bachelard bloqué. Selon le parquet, du liquide sentant l’essence se répand sur elle. L’élue porte plainte et une enquête pour tentative d’homicide volontaire est ouverte. Les responsabilités restent à établir.",
     "angleNote": "Macron et Pécresse condamnent l’agression. CNews et Europe 1 insistent sur les violences et la fermeté ; Libération et France 24 la replacent dans la mobilisation lycéenne. L’Humanité souligne les incertitudes. Convergence sur la condamnation ; clivage de cadrage modéré entre ordre public et contexte social, sans opposition factuelle établie.",
     "id": 8,
-    "startAt": null,
+    "startAt": "2026-11-10T00:00:00.000Z",
     "endAt": null,
     "created_at": "2026-11-10T21:54:32.733Z",
     "updatedAt": "2026-11-11T16:48:22.682Z",
-    "review_import_id": "review-agression-angela-pascoa-dos-santos-chelles-10-novembre-2026-1"
+    "review_import_id": "review-agression-angela-pascoa-dos-santos-chelles-10-novembre-2026-1",
+    "category": "justice",
+    "editorialStatus": "published"
   },
   {
     "title": "Attentat de Trappes et La Verrière : hommages, menaces et responsabilités",
@@ -86,11 +102,13 @@
     "summary": "L’attaque raciste du 23 octobre à Trappes et La Verrière a fait un mort et plusieurs blessés. Les nouveaux articles portent sur une liste de personnalités retrouvée chez l’assaillant, les menaces dénoncées par Sandrine Rousseau et Assa Traoré, et la marche blanche du 15 novembre en hommage à Pengo Bossio Wangi.",
     "angleNote": "Rousseau et Traoré mettent en cause la banalisation des violences racistes et des discours politico-médiatiques. Acrimed critique LCI ; une tribune de Causeur conteste les responsabilités désignées par Le Monde. Franceinfo et Europe 1 couvrent aussi l’hommage. Clivage marqué sur les causes et les responsabilités politiques, au-delà du récit de l’attaque.",
     "id": 9,
-    "startAt": null,
+    "startAt": "2026-10-23T00:00:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-trappes"
+    "review_import_id": "review-2026-11-15-trappes",
+    "category": "justice",
+    "editorialStatus": "published"
   },
   {
     "title": "Pétition contre CNews : classement à l’Assemblée et débat sur le pluralisme",
@@ -98,11 +116,13 @@
     "summary": "Après avoir dépassé le million de signatures, la pétition demandant la suppression de CNews est classée le 10 novembre par la commission des affaires culturelles de l’Assemblée, par 28 voix contre 25. Aucun débat dans l’hémicycle n’est organisé. Cette décision suscite de nouvelles réactions sur la liberté d’expression et le pluralisme de l’information.",
     "angleNote": "Mediapart, L’Humanité et Vert dénoncent le refus d’un débat demandé par les signataires. CNews et Europe 1 relaient au contraire des accusations de censure et la défense de la chaîne ; Le Figaro rapporte les inquiétudes du secteur audiovisuel. Clivage fort entre contestation du pouvoir médiatique de Bolloré et défense de la liberté de diffusion.",
     "id": 10,
-    "startAt": null,
+    "startAt": "2026-11-08T00:00:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-cnews-petition"
+    "review_import_id": "review-2026-11-15-cnews-petition",
+    "category": "medias",
+    "editorialStatus": "published"
   },
   {
     "title": "Teddy Riner candidat à la présidentielle : popularité, programme et lien avec Macron",
@@ -110,11 +130,13 @@
     "summary": "Teddy Riner annonce le 9 novembre sa candidature à la présidentielle de 2027. Le judoka entame ses déplacements de campagne et présente ses premières orientations. Les félicitations d’Emmanuel Macron, les premiers sondages et la composition de son entourage alimentent les questions sur son positionnement et son expérience politique.",
     "angleNote": "L’Humanité, Frustration et Contrepoints rapprochent la candidature du macronisme, malgré leurs sensibilités différentes. Libération questionne le programme et l’expérience ; LCI et Le Figaro examinent notamment sondages et réseaux. Riner revendique son autonomie. Clivage marqué sur sa crédibilité et le renouvellement politique qu’il incarnerait.",
     "id": 11,
-    "startAt": null,
+    "startAt": "2026-11-09T00:00:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-riner-presidentielle"
+    "review_import_id": "review-2026-11-15-riner-presidentielle",
+    "category": "politique",
+    "editorialStatus": "published"
   },
   {
     "title": "Cyberattaque de Maileva : les données de 22 millions de personnes concernées",
@@ -122,11 +144,13 @@
     "summary": "Maileva, filiale du groupe La Poste spécialisée dans les courriers professionnels, reconnaît un vol de données d’identification concernant 22 millions de personnes. Révélée en novembre, l’attaque expose notamment des noms et adresses postales. Le parquet de Paris confie l’enquête à la brigade de lutte contre la cybercriminalité.",
     "angleNote": "Franceinfo et LCI détaillent l’enquête et les risques ; HuffPost propose des précautions. Dupont-Aignan dénonce le délai de révélation et critique l’extension des démarches et de l’identité numériques. Convergence sur la gravité du piratage, avec un contraste entre information pratique et mise en cause politique de la numérisation.",
     "id": 12,
-    "startAt": null,
+    "startAt": "2026-11-14T19:27:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-maileva"
+    "review_import_id": "review-2026-11-15-maileva",
+    "category": "societe",
+    "editorialStatus": "published"
   },
   {
     "title": "Mortiers d’artifice : incidents dans les lycées et interdiction de vente",
@@ -134,11 +158,13 @@
     "summary": "Le gouvernement interdit jusqu’au 27 novembre la vente de certains mortiers d’artifice, dans un contexte de tensions lors de manifestations et de blocages scolaires. Le décret publié le 15 novembre vise des artifices des catégories F2 et F3, avec une dérogation professionnelle. Des élus avaient auparavant alerté sur la sécurité des lycées.",
     "angleNote": "Retailleau réclame l’intervention de la police ; Bellamy réagit sous condition à une accusation de livraison de mortiers relayée par le Premier ministre. Franceinfo explique le motif préventif du décret, CNews privilégie les violences urbaines. Convergence sécuritaire dans ces réactions ; le corpus ne démontre pas de désaccord précis sur l’interdiction elle-même.",
     "id": 13,
-    "startAt": null,
+    "startAt": "2026-11-10T12:55:17.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-mortiers"
+    "review_import_id": "review-2026-11-15-mortiers",
+    "category": "justice",
+    "editorialStatus": "published"
   },
   {
     "title": "Lycée Paul-Éluard à Saint-Denis : départ du proviseur après la mobilisation",
@@ -146,11 +172,13 @@
     "summary": "Le départ du proviseur du lycée Paul-Éluard de Saint-Denis intervient après une mobilisation d’élèves et de personnels. Ceux-ci contestent notamment une intervention policière dans l’établissement et la gestion du mouvement lycéen. Les articles reviennent sur les rassemblements, les tensions et les circonstances de ce changement de direction.",
     "angleNote": "L’Humanité et Libération relient le départ à la mobilisation des élèves et des personnels. Le Parisien rapporte la mesure de protection présentée par l’administration et la victoire revendiquée par des enseignants. Le contraste porte sur le sens du départ et la gestion de la sécurité, avec des lectures opposées qui ne règlent pas toutes les responsabilités.",
     "id": 14,
-    "startAt": null,
+    "startAt": "2026-11-08T19:43:33.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-paul-eluard"
+    "review_import_id": "review-2026-11-15-paul-eluard",
+    "category": "social",
+    "editorialStatus": "published"
   },
   {
     "title": "Smic et bas salaires : revalorisations, pouvoir d’achat et coût pour l’État",
@@ -158,11 +186,13 @@
     "summary": "Face à la mobilisation sociale, le gouvernement annonce une hausse du Smic de 1,6 % au 1er décembre et une revalorisation des plus basses rémunérations publiques. Le 15 novembre, David Amiel chiffre l’ensemble à un peu plus d’un milliard d’euros pour les finances publiques. Syndicats, élus et employeurs discutent le montant et les effets de ces mesures.",
     "angleNote": "La CGT et des élus LFI jugent les hausses insuffisantes, positions relayées notamment par Franceinfo et Mediapart. Contrepoints critique au contraire leurs effets sur l’emploi et le coût du travail ; Europe 1 rapporte les inquiétudes d’employeurs. Clivage marqué sur la redistribution, l’efficacité du salaire minimum et le financement des revalorisations.",
     "id": 15,
-    "startAt": null,
+    "startAt": "2026-11-08T08:49:59.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-smic-fonction-publique"
+    "review_import_id": "review-2026-11-15-smic-fonction-publique",
+    "category": "social",
+    "editorialStatus": "published"
   },
   {
     "title": "Agression d’une équipe de BFMTV lors de la manifestation à Lyon",
@@ -170,11 +200,13 @@
     "summary": "Une équipe de BFMTV est agressée à Lyon en marge de la manifestation du 14 novembre. Plusieurs médias rendent compte des violences subies par les journalistes et des circonstances de l’incident. TF1 leur apporte son soutien. L’épisode s’inscrit dans la couverture des manifestations, tout en posant la question de la sécurité des équipes sur le terrain.",
     "angleNote": "HuffPost, Libération et L’Obs relatent l’agression ; Europe 1 la replace dans la manifestation. Le Figaro rapporte le soutien de TF1, et Braun-Pivet défend directement la liberté et la sécurité des journalistes. Forte convergence dans la condamnation, avec des cadrages différents entre violences, ordre public et protection de la presse.",
     "id": 16,
-    "startAt": null,
+    "startAt": "2026-11-14T21:16:20.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-bfmtv-lyon"
+    "review_import_id": "review-2026-11-15-bfmtv-lyon",
+    "category": "medias",
+    "editorialStatus": "published"
   },
   {
     "title": "Mobilisations de novembre : vie chère, mouvement lycéen et maintien de l’ordre",
@@ -182,11 +214,13 @@
     "summary": "L’acte V du mouvement contre la vie chère réunit le 14 novembre entre 106 000 et 200 000 personnes selon les estimations rapportées. Les cortèges portent aussi des revendications sociales, écologiques et liées aux droits des enfants. Des incidents et interpellations sont signalés. La CFDT annonce rejoindre la mobilisation prévue le 17 novembre.",
     "angleNote": "Attal et Maréchal dénoncent les violences et les blocages ; Bompard conteste des accusations du gouvernement contre un élu LFI. Borne reconnaît aussi les attentes de la jeunesse. L’Obs et Libération suivent les revendications, CNews et Europe 1 l’ordre public. Clivage marqué sur la réponse à la contestation, sans opposition uniforme entre médias.",
     "id": 17,
-    "startAt": null,
+    "startAt": "2026-11-08T08:37:24.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-mobilisation-novembre"
+    "review_import_id": "review-2026-11-15-mobilisation-novembre",
+    "category": "social",
+    "editorialStatus": "published"
   },
   {
     "title": "Présidentielle 2027 : Gérard Larcher tente de départager la droite et le centre",
@@ -194,11 +228,13 @@
     "summary": "Gérard Larcher propose de réunir les candidats de la droite et du centre pour convenir d’une méthode de départage avant la présidentielle de 2027. Édouard Philippe accepte une discussion mais refuse une primaire. D’autres responsables et élus défendent ce scrutin, dont les modalités et le calendrier restent disputés.",
     "angleNote": "Retailleau affirme vouloir gagner la primaire, tandis que Philippe refuse ce mode de sélection. HuffPost et La Tribune détaillent sa condition à la médiation de Larcher ; HugoDécrypte relaie la préparation du scrutin. Clivage marqué au sein de la droite et du centre sur la désignation du candidat, davantage que sur les programmes dans ce dossier.",
     "id": 18,
-    "startAt": null,
+    "startAt": "2026-11-08T11:50:37.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-primaire-droite-centre"
+    "review_import_id": "review-2026-11-15-primaire-droite-centre",
+    "category": "politique",
+    "editorialStatus": "published"
   },
   {
     "title": "Présidentielle 2027 : Édouard Philippe propose quatre millions de logements",
@@ -206,11 +242,13 @@
     "summary": "Édouard Philippe propose de construire quatre millions de logements supplémentaires en dix ans pour agir sur les prix et la crise de l’offre. Cet engagement s’inscrit dans sa campagne pour la présidentielle de 2027. Les articles recueillis présentent l’objectif chiffré et sa justification, centrée sur l’augmentation de la production de logements.",
     "angleNote": "Philippe défend directement ses propositions de logement comme un levier de pouvoir d’achat. Le Figaro souligne la baisse des prix recherchée ; Franceinfo et Libération reprennent l’objectif de construction. Convergence sur la présentation de l’annonce. Le corpus ne suffit pas à établir un débat contradictoire sur son financement ou sa faisabilité.",
     "id": 19,
-    "startAt": null,
+    "startAt": "2026-11-15T16:34:05.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-philippe-logement"
+    "review_import_id": "review-2026-11-15-philippe-logement",
+    "category": "social",
+    "editorialStatus": "published"
   },
   {
     "title": "Aide à l’Ukraine : Emmanuel Macron et Marine Le Pen s’affrontent",
@@ -218,11 +256,13 @@
     "summary": "Emmanuel Macron met en garde contre une réduction de l’aide à l’Ukraine et une paix imposée à Kyiv. Marine Le Pen prévoit de remettre en cause ce soutien si elle accède à l’Élysée en 2027 et doit rencontrer l’ambassadeur ukrainien le 16 novembre. Leurs déclarations relancent le débat sur les engagements français face à la Russie.",
     "angleNote": "Macron présente l’aide à Kyiv comme un enjeu de sécurité française et européenne ; Le Pen défend son interruption. Franceinfo et Libération détaillent l’affrontement, tandis que Mediapart et L’Opinion analysent le positionnement du RN. Clivage fort entre poursuite du soutien à l’Ukraine et changement de politique française envisagé pour 2027.",
     "id": 20,
-    "startAt": null,
+    "startAt": "2026-11-14T18:29:23.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-ukraine-aide-macron-lepen"
+    "review_import_id": "review-2026-11-15-ukraine-aide-macron-lepen",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "L’Estonie annonce la fermeture de sa frontière avec la Russie",
@@ -230,11 +270,13 @@
     "summary": "L’Estonie annonce fermer sa frontière avec la Russie à partir du 1er décembre, après une tentative de sabotage visant une usine de drones. Tallinn attribue l’opération aux services russes et dénonce une pression hybride contre le pays. Les médias suivent la décision et ses conséquences pour les points de passage entre les deux États.",
     "angleNote": "RFI et Franceinfo détaillent la tentative de sabotage invoquée ; LCI et France 24 mettent en avant la décision de Tallinn et l’accusation visant Moscou. L’Opinion explique les effets frontaliers. Convergence des récits autour de l’annonce estonienne, sans opposition éditoriale établie ; l’attribution du sabotage est présentée comme celle de Tallinn.",
     "id": 21,
-    "startAt": null,
+    "startAt": "2026-11-15T17:12:20.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-estonie-frontiere"
+    "review_import_id": "review-2026-11-15-estonie-frontiere",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "Bahreïn : attaques contre une base américaine revendiquées par l’Iran",
@@ -242,11 +284,13 @@
     "summary": "Les Gardiens de la révolution iraniens revendiquent une attaque de drones contre une installation militaire américaine à Bahreïn le 15 novembre. Les autorités bahreïnies disent avoir intercepté les appareils avant qu’ils n’atteignent leurs cibles. Les articles replacent cet épisode dans la confrontation régionale entre Téhéran et Washington.",
     "angleNote": "France 24 et Libération rapportent la revendication iranienne et la réponse bahreïnie ; CNews mentionne des explosions, tandis que La Croix contextualise les attaques. La divergence concerne surtout la portée de l’opération, entre objectifs annoncés par Téhéran et interceptions revendiquées par Manama, sans opposition éditoriale nette entre les médias.",
     "id": 22,
-    "startAt": null,
+    "startAt": "2026-11-15T07:01:40.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-iran-bahrein"
+    "review_import_id": "review-2026-11-15-iran-bahrein",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "Détroit d’Ormuz : deux pétroliers signalés en feu",
@@ -254,11 +298,13 @@
     "summary": "L’Iran annonce que deux pétroliers ont pris feu après avoir heurté des mines dans le détroit d’Ormuz. L’un des navires aurait coulé, selon les informations relayées par Franceinfo le 15 novembre. Les publications suivent cet incident dans un passage majeur du commerce pétrolier, sur fond de tensions militaires régionales.",
     "angleNote": "CNews relaie l’explication iranienne d’une collision avec des mines ; Franceinfo suit l’évolution de l’incident et la perte annoncée d’un navire. Les récits convergent mais reposent sur des annonces qu’il faut attribuer. Aucun clivage éditorial n’est établi par ces deux publications, ni vérification indépendante de tous les détails.",
     "id": 23,
-    "startAt": null,
+    "startAt": "2026-11-14T07:38:59.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-ormuz-petroliers"
+    "review_import_id": "review-2026-11-15-ormuz-petroliers",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "COP31 à Antalya : électrification, énergies fossiles et place des lobbies",
@@ -266,11 +312,13 @@
     "summary": "La COP31 se déroule du 9 au 20 novembre à Antalya, sous une organisation associant la Turquie et l’Australie. Les négociations portent notamment sur l’électrification, les financements et la réduction des émissions. La participation de représentants de TotalEnergies à la délégation française et les mobilisations citoyennes suscitent des critiques.",
     "angleNote": "Mediapart, Reporterre et Vert dénoncent l’influence des acteurs fossiles et les contradictions du sommet. Le Monde et L’Opinion examinent les négociations et l’électrification ; RFI relaie les demandes de justice climatique. Convergence sur l’urgence climatique, mais clivage marqué sur l’ambition du sommet et la place accordée aux industriels.",
     "id": 24,
-    "startAt": null,
+    "startAt": "2026-11-08T06:30:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-cop31"
+    "review_import_id": "review-2026-11-15-cop31",
+    "category": "environnement",
+    "editorialStatus": "published"
   },
   {
     "title": "Panne du trafic aérien américain : annulations et débat sur les responsabilités",
@@ -278,11 +326,13 @@
     "summary": "Une panne de télécommunications perturbe fortement l’aviation civile aux États-Unis, avec des suspensions de décollages et des milliers de vols annulés les 13 et 14 novembre. La reprise reste progressive durant le week-end. Les articles examinent l’infrastructure touchée, les opérations de maintenance et la gestion politique de l’incident.",
     "angleNote": "Libération et Courrier international expliquent les causes techniques évoquées, dont des câbles vétustes ou une maintenance. Le Monde et HuffPost rapportent aussi les accusations de l’administration Trump contre l’héritage Biden. Convergence sur la panne, avec une politisation des responsabilités distincte d’un désaccord établi entre médias.",
     "id": 25,
-    "startAt": null,
+    "startAt": "2026-11-14T07:17:14.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-vols-etats-unis"
+    "review_import_id": "review-2026-11-15-vols-etats-unis",
+    "category": "societe",
+    "editorialStatus": "published"
   },
   {
     "title": "Sommet de la Francophonie au Cambodge : succession et rivalité Rwanda–RDC",
@@ -290,11 +340,13 @@
     "summary": "Phnom Penh accueille le sommet de l’Organisation internationale de la francophonie jusqu’au 16 novembre. L’élection de sa direction est tendue par la rivalité entre le Rwanda et la République démocratique du Congo autour de la candidature de Louise Mushikiwabo. Les discussions concernent aussi la coopération et la place de la langue française.",
     "angleNote": "Macron défend une communauté de dialogue et de coopération ; Dupont-Aignan dénonce au contraire un abandon du français. Franceinfo et RFI suivent la rivalité diplomatique, Le Monde le recul linguistique, Causeur critique l’institution. Clivage sur le bilan et l’utilité de la Francophonie, entre ambition universaliste et défense de la langue.",
     "id": 26,
-    "startAt": null,
+    "startAt": "2026-11-08T08:11:28.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-francophonie-cambodge"
+    "review_import_id": "review-2026-11-15-francophonie-cambodge",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "Gironde : décès d’une femme brûlée par son conjoint",
@@ -302,11 +354,13 @@
     "summary": "Une femme grièvement brûlée par son conjoint près de Bordeaux meurt de ses blessures. Mère de trois enfants, elle avait été prise en charge après les faits. Les publications du 15 novembre rendent compte de son décès et de l’évolution de l’enquête, requalifiée en homicide, dans un contexte de violences conjugales.",
     "angleNote": "L’Humanité emploie le terme de féminicide, tandis que Franceinfo, LCI, CNews et Libération décrivent les violences, le décès et les suites judiciaires. Le contraste tient surtout au vocabulaire et à la mise en contexte. Les articles ne font pas apparaître de positions opposées sur les faits ; aucun clivage idéologique net n’est établi ici.",
     "id": 27,
-    "startAt": null,
+    "startAt": "2026-11-15T15:41:35.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-gironde-feminicide"
+    "review_import_id": "review-2026-11-15-gironde-feminicide",
+    "category": "societe",
+    "editorialStatus": "published"
   },
   {
     "title": "SpaceX réussit la récupération de l’étage supérieur de Starship",
@@ -314,11 +368,14 @@
     "summary": "SpaceX annonce avoir réussi à rattraper l’étage supérieur de sa fusée Starship après un vol, une première pour ce programme. Les publications du 15 novembre présentent cette récupération comme une étape technique importante. Les images du retour et les explications sur la réutilisation de la fusée occupent une place centrale dans la couverture.",
     "angleNote": "RFI, LCI et Europe 1 insistent sur la prouesse technique ; HuffPost met en avant les images, tandis que Libération relate la réussite du vol. Les angles convergent autour de cette étape de récupération. Le corpus ne documente pas de controverse entre acteurs : la variété des formats ne suffit pas à établir un clivage d’opinions.",
     "id": 28,
-    "startAt": null,
+    "startAt": "2026-11-14T21:25:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-starship"
+    "review_import_id": "review-2026-11-15-starship",
+    "category": "societe",
+    "editorialStatus": "archived",
+    "archive_reason": "Performance technique sans portée politique documentée dans le corpus actuel."
   },
   {
     "title": "Yémen : les Houthis menacent Aden, le gouvernement déploie des renforts",
@@ -326,11 +383,13 @@
     "summary": "Au Yémen, le camp gouvernemental rassemble des renforts autour d’Aden face à l’avancée des Houthis, signalés à environ 60 kilomètres de la ville. Les articles du 15 novembre décrivent l’évolution du front et les préparatifs militaires. Cette progression fait craindre un nouvel affrontement autour d’un centre politique majeur du pays.",
     "angleNote": "France 24, Franceinfo et Le Monde mettent en avant les renforts du camp gouvernemental ; Libération insiste sur la proximité des forces houthistes avec Aden. Ces cadrages décrivent les deux faces d’une même évolution militaire. Le corpus présente une forte convergence factuelle, sans confrontation d’opinions éditoriales démontrée.",
     "id": 29,
-    "startAt": null,
+    "startAt": "2026-11-07T16:39:08.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-yemen-aden"
+    "review_import_id": "review-2026-11-15-yemen-aden",
+    "category": "international",
+    "editorialStatus": "published"
   },
   {
     "title": "Intempéries dans l’Hérault : inondations, routes coupées et secours",
@@ -338,11 +397,14 @@
     "summary": "De fortes pluies provoquent des inondations dans l’Hérault durant le week-end des 14 et 15 novembre. Des routes sont submergées, des véhicules immobilisés et des habitants secourus. Une septuagénaire un temps portée disparue est retrouvée saine et sauve. Les publications suivent les dégâts, les témoignages et l’évolution des alertes météo.",
     "angleNote": "Franceinfo recueille les récits d’automobilistes piégés ; HuffPost et CNews privilégient les images des routes submergées. LCI et Europe 1 suivent les secours et les précipitations. Convergence sur les conséquences et l’urgence locale, avec des formats différents ; le corpus ne documente pas de débat contradictoire sur les responsabilités.",
     "id": 30,
-    "startAt": null,
+    "startAt": "2026-11-14T09:16:58.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-herault-inondations"
+    "review_import_id": "review-2026-11-15-herault-inondations",
+    "category": "environnement",
+    "editorialStatus": "archived",
+    "archive_reason": "Couverture météorologique et de secours sans débat de politique publique documenté."
   },
   {
     "title": "France–Turquie : qualification, retour de Mbappé et retrouvailles de Zidane avec Bordeaux",
@@ -350,11 +412,14 @@
     "summary": "La France affronte la Turquie à Bordeaux le 15 novembre pour une qualification en quarts de finale de la Ligue des nations. Les publications suivent la composition des Bleus, le retour de Kylian Mbappé et les retrouvailles de Zinédine Zidane avec la ville. Le dossier rassemble les analyses d’avant-match et les directs de la rencontre.",
     "angleNote": "Le Figaro, Franceinfo, Le Monde et France 24 proposent des directs ou suivent les choix sportifs. RFI explore la relation Mbappé–Zidane ; LCI et La Tribune insistent sur le retour de Zidane à Bordeaux. Forte convergence autour de l’enjeu de qualification, sans clivage politique établi : les différences relèvent surtout du récit sportif.",
     "id": 31,
-    "startAt": null,
+    "startAt": "2026-11-14T19:44:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-france-turquie"
+    "review_import_id": "review-2026-11-15-france-turquie",
+    "category": "societe",
+    "editorialStatus": "archived",
+    "archive_reason": "Couverture sportive sans portée politique documentée."
   },
   {
     "title": "UFC 334 : Ciryl Gane conserve sa ceinture face à Josh Hokit",
@@ -362,11 +427,14 @@
     "summary": "Ciryl Gane bat Josh Hokit et conserve son titre des poids lourds de l’UFC lors de l’UFC 334. Les publications recueillies couvrent la préparation, le déroulement et les réactions à cette défense de ceinture. Elles reviennent aussi sur la prestation du combattant français et sur ses propos après le combat.",
     "angleNote": "France 24, Europe 1 et CNews mettent en avant la victoire et le titre conservé ; HuffPost s’intéresse également à la réaction de Gane après le combat. Les récits convergent sur le résultat, avec des choix de format différents. Aucun désaccord de fond n’est documenté : cette couverture sportive ne révèle pas, à elle seule, un clivage d’opinions.",
     "id": 32,
-    "startAt": null,
+    "startAt": "2026-11-14T06:11:08.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-ciryl-gane"
+    "review_import_id": "review-2026-11-15-ciryl-gane",
+    "category": "societe",
+    "editorialStatus": "archived",
+    "archive_reason": "Résultat sportif sans portée politique documentée."
   },
   {
     "title": "À San Francisco, des manifestants demandent un traité sur l’intelligence artificielle",
@@ -374,11 +442,13 @@
     "summary": "Des manifestants se rassemblent à San Francisco pour réclamer un arrêt de la course à l’intelligence artificielle et un traité entre la Chine et les États-Unis. Les articles recueillis présentent les inquiétudes des participants et leur demande d’encadrement international face à la compétition entre puissances et entreprises technologiques.",
     "angleNote": "Europe 1 et La Tribune reprennent la demande des manifestants de freiner la course à l’IA et de négocier un traité sino-américain. Leur couverture converge et présente les arguments de ce mouvement. Le corpus ne contient pas de réponse contradictoire des entreprises ou gouvernements concernés ; il ne permet donc pas de cartographier tous les désaccords.",
     "id": 33,
-    "startAt": null,
+    "startAt": "2026-11-15T17:20:33.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-ia-san-francisco"
+    "review_import_id": "review-2026-11-15-ia-san-francisco",
+    "category": "societe",
+    "editorialStatus": "published"
   },
   {
     "title": "Nvidia : crise autour de Jensen Huang, chute boursière et enjeux géopolitiques",
@@ -386,11 +456,13 @@
     "summary": "Jensen Huang démissionne de la direction de Nvidia le 12 novembre, au cœur d’une crise mêlant accusations liées à la Chine et fortes répercussions boursières. Les articles suivent la chute du groupe sur les marchés, les soupçons d’espionnage évoqués et les conséquences politiques de l’affaire. Les allégations restent distinctes des faits établis.",
     "angleNote": "Le Monde et L’Agefi décrivent surtout les répercussions boursières ; Pierre Haski, dans L’Obs, et L’Opinion explorent les dimensions chinoise et politique de l’affaire. Ces priorités diffèrent sans établir deux camps éditoriaux opposés. Le dossier documente une crise financière et géopolitique, avec des accusations qui ne valent pas constat judiciaire.",
     "id": 34,
-    "startAt": null,
+    "startAt": "2026-11-09T08:12:23.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-nvidia-huang"
+    "review_import_id": "review-2026-11-15-nvidia-huang",
+    "category": "economie",
+    "editorialStatus": "published"
   },
   {
     "title": "À Prague, une mobilisation contre la réforme du financement des médias publics",
@@ -398,11 +470,13 @@
     "summary": "Une mobilisation importante se tient à Prague contre une réforme du financement des médias publics tchèques. Les manifestants dénoncent les risques qu’ils estiment peser sur leur indépendance. Les articles recueillis relatent le rassemblement et replacent cette contestation dans le débat national sur le rôle et les garanties du service public audiovisuel.",
     "angleNote": "Libération présente une mobilisation pour défendre les médias publics ; Franceinfo souligne la contestation de leur financement. Les deux récits convergent autour des préoccupations des manifestants. Le corpus ne développe pas suffisamment la réponse du gouvernement pour établir une comparaison complète des arguments sur la réforme.",
     "id": 35,
-    "startAt": null,
+    "startAt": "2026-11-15T17:54:41.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-tchequie-medias-publics"
+    "review_import_id": "review-2026-11-15-tchequie-medias-publics",
+    "category": "medias",
+    "editorialStatus": "published"
   },
   {
     "title": "Au Portugal, des manifestations contre la crise du logement et la vie chère",
@@ -410,11 +484,13 @@
     "summary": "Des milliers de personnes manifestent dans plusieurs villes portugaises contre la crise du logement et la vie chère. Elles dénoncent les difficultés à se loger et demandent des réponses aux dépenses qui pèsent sur les ménages. Les publications recueillies relatent cette mobilisation nationale, distincte des manifestations françaises du même week-end.",
     "angleNote": "RFI relie la mobilisation au logement et au coût de la vie ; Europe 1 met principalement en avant la crise du logement. Convergence sur les revendications et l’ampleur du rassemblement. Le corpus reste centré sur les manifestants et ne documente pas assez les réponses des autres acteurs pour établir un clivage politique complet.",
     "id": 36,
-    "startAt": null,
+    "startAt": "2026-11-14T20:09:00.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-portugal-logement"
+    "review_import_id": "review-2026-11-15-portugal-logement",
+    "category": "social",
+    "editorialStatus": "published"
   },
   {
     "title": "Onze ans après les attentats du 13 novembre : hommages et mémoire des victimes",
@@ -422,11 +498,13 @@
     "summary": "Le 13 novembre 2026 marque les onze ans des attentats de Paris et de Saint-Denis. Des responsables politiques et des créateurs de contenus publient des hommages aux victimes, aux survivants et à leurs proches. Les messages saluent aussi les secours et les forces de sécurité, et réaffirment la nécessité de préserver cette mémoire.",
     "angleNote": "Hollande et Roussel insistent sur l’unité et la fraternité ; Attal, Retailleau et Wauquiez soulignent aussi la lutte contre le terrorisme islamiste. Hugo Clément rappelle les noms de victimes. Forte convergence commémorative : ces accents différents ne suffisent pas à établir un clivage partisan, ni à déduire le silence des acteurs absents du corpus.",
     "id": 37,
-    "startAt": null,
+    "startAt": "2026-11-13T07:06:07.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-memoire-13-novembre"
+    "review_import_id": "review-2026-11-15-memoire-13-novembre",
+    "category": "societe",
+    "editorialStatus": "published"
   },
   {
     "title": "Réindustrialisation et Made in France : les propositions de la campagne présidentielle",
@@ -434,11 +512,13 @@
     "summary": "Le Salon du Made in France remet la production industrielle au centre de la campagne présidentielle. Plusieurs responsables y défendent leurs propositions : achats publics français ou européens, protection du marché, soutien aux entreprises et rôle de l’État. Les médias examinent l’écart entre ces engagements et les difficultés de l’industrie.",
     "angleNote": "Attal met en avant les achats publics, les normes et les impôts de production ; Glucksmann défend un marché européen davantage réservé aux producteurs européens ; Roussel demande un État stratège. Convergence sur la réindustrialisation, mais différences sur ses leviers. L’Opinion et La Tribune interrogent le passage des promesses aux actes.",
     "id": 38,
-    "startAt": null,
+    "startAt": "2026-11-13T18:55:58.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-industrie-presidentielle"
+    "review_import_id": "review-2026-11-15-industrie-presidentielle",
+    "category": "economie",
+    "editorialStatus": "published"
   },
   {
     "title": "Mort de Michel Destot : hommages à l’ancien maire de Grenoble",
@@ -446,11 +526,13 @@
     "summary": "Michel Destot, ancien maire de Grenoble et député de l’Isère, meurt à 80 ans. Des publications reviennent sur son parcours politique et industriel, ainsi que sur ses choix pour la ville. François Hollande et Olivier Faure lui rendent hommage, en évoquant son engagement, ses réalisations et leurs liens personnels avec lui.",
     "angleNote": "Libération et CNews annoncent le décès et présentent le parcours de l’ancien élu. Hollande souligne l’innovation, l’industrie et la recherche ; Faure exprime une reconnaissance plus personnelle envers un soutien politique. Convergence dans l’hommage, avec des accents biographiques distincts ; aucun clivage d’opinions n’est établi dans ce corpus.",
     "id": 39,
-    "startAt": null,
+    "startAt": "2026-11-14T17:58:38.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-michel-destot"
+    "review_import_id": "review-2026-11-15-michel-destot",
+    "category": "politique",
+    "editorialStatus": "published"
   },
   {
     "title": "Agression d’un vice-président de l’université de Versailles : enquête et réactions",
@@ -458,10 +540,12 @@
     "summary": "Un vice-président de l’université de Versailles Saint-Quentin-en-Yvelines est agressé à l’arme blanche dans son bureau. Les articles recueillis exposent les premiers éléments connus et les réactions à cette violence. Valérie Pécresse et Bruno Retailleau réclament une réponse ferme, en reliant l’affaire à la protection des personnels et à la sécurité.",
     "angleNote": "L’Obs et CNews présentent les faits et les premières informations disponibles. Pécresse demande des sanctions sévères ; Retailleau élargit sa réaction à un durcissement de l’arsenal juridique par référendum. Convergence dans la condamnation, avec une politisation plus large de la réponse sécuritaire, sans contre-position documentée dans ce corpus.",
     "id": 40,
-    "startAt": null,
+    "startAt": "2026-11-14T06:09:37.000Z",
     "endAt": null,
     "created_at": "2026-11-15T21:29:38.181Z",
     "updatedAt": "2026-11-15T21:29:38.181Z",
-    "review_import_id": "review-2026-11-15-agression-uvsq"
+    "review_import_id": "review-2026-11-15-agression-uvsq",
+    "category": "justice",
+    "editorialStatus": "published"
   }
 ]

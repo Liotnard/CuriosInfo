@@ -21,3 +21,7 @@ Les archives thématiques datées peuvent être nettoyées après trois mois cal
 ## Collecte quotidienne locale
 
 Voir DAILY_COLLECTION.md. La tâche Windows lance collect:daily à 21 h sans IA, import, Git ou publication. Les rapports privés indiquent les limites et erreurs restantes. Pour nettoyer une archive, exiger plus de trois mois, une clôture explicite dans retention.json et aucun travail en attente ; ne jamais contourner les protections en approuvant des brouillons artificiellement. La planification reste sur ce PC, pas sur le serveur.
+
+## Périmètre de publication et accueil
+
+Respecter le périmètre politique et les catégories définis dans EDITORIAL.md. Classer explicitement chaque nouveau sujet (`category`, `editorialStatus`). Conserver les dossiers hors périmètre ou de démonstration en archive, sans les publier. Ne jamais fixer articleCount manuellement : il provient des publications liées. La fraîcheur des sujets et la Une utilisent startAt puis created_at, pas updatedAt.

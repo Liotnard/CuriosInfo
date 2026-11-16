@@ -513,3 +513,7 @@ Voir [DAILY_COLLECTION.md](DAILY_COLLECTION.md) pour l’installation Windows, l
 
 
 Pour cibler des publications originales connues : `npm run collect:social -- --posts-file CHEMIN.json --max-pages 20`. Le fichier doit contenir un tableau d’URL de comptes documentés. Les rapports sociaux indiquent maintenant la progression et les résultats déjà sauvegardés ; voir DAILY_COLLECTION.md.
+
+## Classement des sujets et Une
+
+La publication exporte seulement les sujets dont editorialStatus vaut published ; les archives restent dans data/topics.json et leurs articles sont conservés dans les sources. Son bilan peut donc être inférieur au nombre de lignes des JSON sources. category et editorialStatus se choisissent pendant la revue ; articleCount est recalculé depuis les liens réels. Voir EDITORIAL.md pour le périmètre politique, les catégories et la fraîcheur de la Une.
