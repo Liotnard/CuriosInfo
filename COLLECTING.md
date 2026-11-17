@@ -66,7 +66,7 @@ Pour actualiser le sujet en même temps, ajouter `topic_update` avec les champs 
 
 ## Création et rejet
 
-Pour créer un sujet, utiliser `action: "create_topic"`, au moins deux clés de candidats d’acteurs distincts, puis un objet `topic` contenant `title`, `slug`, `summary` et `angleNote`. Le script attribue les identifiants et vérifie les références ; il n’invente pas le contenu.
+Pour créer un sujet, utiliser `action: "create_topic"`, au moins deux clés de candidats d’acteurs distincts, puis un objet `topic` contenant `title`, `slug`, `summary` et `angleNote`. Renseigner aussi `category` et `editorialStatus`. `topic.startAt` peut préciser la date de l’événement ; sinon l’import retient la plus ancienne date de publication confirmée du lot. Un rattachement ultérieur ne rajeunit pas ce sujet. Le script attribue les identifiants et vérifie les références ; il n’invente pas le contenu.
 
 Pour rejeter, utiliser `action: "reject"`, les `candidate_keys` et un `reason` explicite. Le rejet sort le candidat du fichier de travail mais garde son URL dans l’historique pour éviter de le récupérer à nouveau. Un article déjà importé ne peut pas être rejeté ainsi.
 

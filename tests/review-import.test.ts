@@ -51,3 +51,16 @@ test("recovery restores an incomplete transaction and publication refuses unfini
  assert.equal((await recoverReview(f.dataDir,f.collectionDir)).restored,true);assert.deepEqual(await snapshot(f),before);
  }finally{await fs.rm(f.root,{recursive:true,force:true});}
 });
+
+test("new topics use the earliest confirmed publication or explicit event date, while later links preserve it",()=>{
+ const base:any=input();base.inbox.entries[0].date_basis="updated";
+ const d:any=decisions();const earlier="2026-11-06T09:00:00.000Z";
+ d.decisions[0].publication_dates={[candidate(1).key]:earlier};
+ const first=planImport({...base,decisions:d});assert.equal(first.topics[0].startAt,earlier);
+ assert.equal(planImport({...base,...first,decisions:d}).topics[0].startAt,earlier);
+ d.decisions[0].topic.startAt="2026-11-01T00:00:00.000Z";
+ const explicit=planImport({...base,decisions:d});assert.equal(explicit.topics[0].startAt,d.decisions[0].topic.startAt);
+ const linked=planImport({...input(),topics:explicit.topics,articles:[],decisions:{version:1,reviewer:"Reviewer",decisions:[{id:"later-link",action:"link_topic",approved:true,sources_verified:true,candidate_keys:[candidate(2).key],topicId:1}]}});
+ assert.equal(linked.topics[0].startAt,d.decisions[0].topic.startAt);
+ assert.throws(()=>planImport({...base,...first,decisions:d}),/already imported decision was edited/);
+});
